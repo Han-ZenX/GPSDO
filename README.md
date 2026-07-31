@@ -45,7 +45,7 @@ GPSDO (GPS Disciplined Oscillator) 是一种利用 GPS 卫星信号来校准高�
 
 ```
 GPSDO/
-├── firmware/          # 嵌入式固件 (STM32G431)
+├── firmware/          # 嵌入式固件 (STM32G431KBU6)
 │   ├── src/
 │   │   ├── app/       # 应用层：业务逻辑、算法、UI
 │   │   ├── hal/       # 硬件抽象层：GPIO、时钟、中断
@@ -89,12 +89,12 @@ GPSDO/
 ## 🛠️ 硬件规格 (Hardware Specs)
 
 ### 主控芯片
-- **MCU**: STM32F407ZGT6 (Cortex-M4F, 168MHz)
+- **MCU**: STM32G431KBU6 (Cortex-M4F, 170MHz)
 - **Flash**: 1MB
 - **RAM**: 112KB
 
 ### GPS 模块
-- **芯片**: u-blox NEO-M8N / F10
+- **芯片**: SKG123NT
 - **通道数**: 72 通道
 - **定位精度**: 水平 < 2.5m CEP
 
