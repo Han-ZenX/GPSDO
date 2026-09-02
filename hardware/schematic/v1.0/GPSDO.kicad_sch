@@ -4094,6 +4094,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -7052,7 +7219,7 @@
 	)
 	(polyline
 		(pts
-			(xy 157.48 13.97) (xy 157.48 57.15)
+			(xy 161.29 13.97) (xy 161.29 57.15)
 		)
 		(stroke
 			(width 0)
@@ -7079,6 +7246,16 @@
 			(type default)
 		)
 		(uuid "0dcf40a5-18a5-4a76-8566-9fae0240b86d")
+	)
+	(wire
+		(pts
+			(xy 146.05 31.75) (xy 146.05 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd9b037-ce65-47f3-8339-dad845d00a9e")
 	)
 	(wire
 		(pts
@@ -7692,7 +7869,7 @@
 	)
 	(polyline
 		(pts
-			(xy 157.48 57.15) (xy 88.9 57.15)
+			(xy 161.29 57.15) (xy 88.9 57.15)
 		)
 		(stroke
 			(width 0)
@@ -8442,7 +8619,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 30.48) (xy 146.05 33.02)
+			(xy 146.05 24.13) (xy 146.05 26.67)
 		)
 		(stroke
 			(width 0)
@@ -9502,7 +9679,7 @@
 	)
 	(polyline
 		(pts
-			(xy 88.9 13.97) (xy 157.48 13.97)
+			(xy 88.9 13.97) (xy 161.29 13.97)
 		)
 		(stroke
 			(width 0)
@@ -14377,7 +14554,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 146.05 30.48 0)
+		(at 146.05 24.13 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14388,7 +14565,7 @@
 		(fields_autoplaced yes)
 		(uuid "49fb7605-195e-47a7-9a19-22ab0695a5d0")
 		(property "Reference" "#PWR028"
-			(at 146.05 34.29 0)
+			(at 146.05 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14399,7 +14576,7 @@
 			)
 		)
 		(property "Value" "+3.3/+5V"
-			(at 146.05 25.4 0)
+			(at 146.05 19.05 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14409,7 +14586,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 30.48 0)
+			(at 146.05 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14420,7 +14597,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 30.48 0)
+			(at 146.05 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14431,7 +14608,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 146.05 30.48 0)
+			(at 146.05 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19565,6 +19742,87 @@
 			(project "GPSDO"
 				(path "/bb9f04d0-06e2-4b9f-871a-754dc45b8574"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 146.05 29.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "aaf30b3f-067a-4064-a6b9-1ba919c9b8f5")
+		(property "Reference" "FB1"
+			(at 141.732 24.892 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100R@100MHz/2A"
+			(at 146.304 26.924 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_1206_3216Metric"
+			(at 144.272 29.21 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "OCXO VCC 滤波磁珠，DCR 不大于 0.02 欧，额定电流不小于 2 A"
+			(at 146.05 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15edde9c-bb71-44b4-b946-bf2402b52ef7")
+		)
+		(pin "2"
+			(uuid "81a613a9-b3ab-43a2-9762-c758ce96f21b")
+		)
+		(instances
+			(project "GPSDO"
+				(path "/bb9f04d0-06e2-4b9f-871a-754dc45b8574"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
