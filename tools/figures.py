@@ -630,6 +630,294 @@ def ocxo_chain():
     return d
 
 
+# ---------------------------------------------------------------- 图：GNSS 模组尺寸对比
+
+def gnss_size():
+    """主流 GNSS 模组本体尺寸等比对比，颜色区分定时级与导航级。"""
+    d = Drawing(W, 236)
+    K = 6.4                                        # mm -> pt
+    base = 58
+    mods = [(4.5, 4.5, 'MIA-M10Q', '导航级', AMBER),
+            (10.1, 9.7, 'PX1100T', '定时级', GREEN),
+            (12.2, 16.0, 'NEO-M8T / F10T', '定时级', ACCENT),
+            (17.0, 22.0, 'ZED-F9T', '定时级', ACCENT)]
+    x = 34
+    for mw, mh, name, tier, col in mods:
+        w, h = mw * K, mh * K
+        _box(d, x, base, w, h, colors.white, col, 1.3, r=2)
+        _txt(d, x + w / 2, base + h + 7, '%g x %g' % (mw, mh), 8, BOLD, col, 'middle')
+        _txt(d, x + w / 2, base - 13, name, 8.5, BOLD, DARK, 'middle')
+        _txt(d, x + w / 2, base - 24, tier, 7.5, FONT, col, 'middle')
+        _txt(d, x + w / 2, base + h / 2 - 3, '%.0f' % (mw * mh), 7.5, FONT,
+             colors.HexColor('#aab7c2'), 'middle')
+        x += w + 46
+
+    # 本板现有焊盘标注
+    ny = base + 16.0 * K
+    d.add(Line(214, ny + 4, 300, ny + 20, strokeColor=RED, strokeWidth=0.8))
+    _txt(d, 302, ny + 17, '本板现有焊盘 12.20 x 16.30 mm / 24 pad', 8, BOLD, RED)
+    _txt(d, 302, ny + 5, '与 u-blox NEO 封装尺寸一致', 8, FONT, RED)
+
+    _txt(d, 34, 16, '方框内数字为占板面积 (mm2)。尺寸等比绘制。', 7.5, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：本板 GNSS 链路
+
+def gnss_chain():
+    """本板 GNSS 的射频、时间、数据三条链路（取自工程文件实测）。"""
+    d = Drawing(W, 236)
+    bw, bh = 88, 26
+
+    def chain(y, title, tcol, items, note):
+        _txt(d, 2, y + bh + 12, title, 9, BOLD, tcol)
+        x = 2
+        for i, (top, bot) in enumerate(items):
+            _box(d, x, y, bw, bh, colors.white, tcol, 1.0, r=3)
+            _txt(d, x + bw / 2, y + bh - 11, top, 8, BOLD, DARK, 'middle')
+            _txt(d, x + bw / 2, y + 5, bot, 7, FONT, GREY, 'middle')
+            if i < len(items) - 1:
+                _arrow(d, x + bw + 1, y + bh / 2, x + bw + 17, y + bh / 2, tcol, .9)
+            x += bw + 18
+        _txt(d, 2, y - 12, note, 8, BOLD, RED)
+
+    chain(182, '射频链路', GREEN,
+          [('有源天线', '需外部供电'), ('IPEX 座 U4', '2.7 x 2.7 mm'),
+           ('L1 33nH 偏置', 'ANT_POWER pin9'), ('模组 RF_IN', 'pin 11')],
+          '天线偏置由模组的 ANT_POWER 引脚经 L1 供出到 VANT，换料时必须确认新模组有同样的天线供电引脚')
+
+    chain(104, '时间链路', ACCENT,
+          [('模组 PPS', 'pin 3'), ('R1 100 欧', '串联限流'),
+           ('MCU 32bit TIM', 'U1 pin 5 区'), ('闸门计数', '频差测量')],
+          '这条链路的真实精度由模组是否支持定时模式与锯齿波修正决定，不由走线决定')
+
+    chain(26, '数据与备电', AMBER,
+          [('模组 UART0', 'pin 20 / 21'), ('R2 / R3 33 欧', '串联匹配'),
+           ('MCU USART', 'NMEA 解析'), ('V_BCKP pin22', 'R7 470 + C5 1uF')],
+          'V_BCKP 当前只经 R7 从 3.3V 取电，没有电池或超级电容，断电后星历丢失，每次都是冷启动')
+    return d
+
+
+# ---------------------------------------------------------------- 图：ADEV 对比
+
+def gpsdo_adev():
+    """各类振荡器与 GPS 1PPS 的典型 ADEV，以及 GPSDO 输出的合成包络。"""
+    from math import log10
+    d = Drawing(W, 306)
+    X0, Y0, XW, YH = 62, 96, 372, 186             # 绘图区
+    TMIN, TMAX = 0, 6                              # log10(tau): 1 s .. 1e6 s
+    AMIN, AMAX = -13, -8                           # log10(ADEV)
+
+    def px(t):
+        return X0 + (log10(t) - TMIN) / (TMAX - TMIN) * XW
+
+    def py(a):
+        return Y0 + (log10(a) - AMIN) / (AMAX - AMIN) * YH
+
+    # 网格
+    for e in range(TMIN, TMAX + 1):
+        x = px(10 ** e)
+        d.add(Line(x, Y0, x, Y0 + YH, strokeColor=colors.HexColor('#e2e8ee'),
+                   strokeWidth=0.5))
+        lab = {0: '1 s', 1: '10 s', 2: '100 s', 3: '1 ks', 4: '10 ks',
+               5: '100 ks', 6: '1 Ms'}[e]
+        _txt(d, x, Y0 - 12, lab, 7.5, FONT, GREY, 'middle')
+    for e in range(AMIN, AMAX + 1):
+        y = py(10.0 ** e)
+        d.add(Line(X0, y, X0 + XW, y, strokeColor=colors.HexColor('#e2e8ee'),
+                   strokeWidth=0.5))
+        _txt(d, X0 - 6, y - 3, '1e%d' % e, 7.5, FONT, GREY, 'end')
+    _box(d, X0, Y0, XW, YH, colors.transparent if hasattr(colors, 'transparent')
+         else None, colors.HexColor('#9fb0bf'), 0.8)
+    _txt(d, X0 + XW / 2, Y0 - 26, '取样时间 tau', 8.5, BOLD, DARK, 'middle')
+    _txt(d, X0 - 46, Y0 + YH + 8, 'ADEV', 8.5, BOLD, DARK)
+
+    curves = [
+        ('GPS 1PPS (定时级+锯齿修正)', AMBER, 1.3, 0,
+         [(1, 2e-8), (10, 2e-9), (100, 2e-10), (1e3, 2e-11), (1e4, 2e-12),
+          (1e5, 4e-13), (1e6, 2e-13)]),
+        ('普通 TCXO 自由运行', colors.HexColor('#b0b8c0'), 1.0, 1,
+         [(1, 5e-10), (10, 5e-10), (100, 1e-9), (300, 2e-9)]),
+        ('超稳 MEMS 自由运行', colors.HexColor('#16a085'), 1.0, 1,
+         [(1, 2e-10), (10, 1.5e-10), (100, 2e-10), (1e3, 5e-10), (1e4, 2e-9)]),
+        ('普通 OCXO 自由运行', RED, 1.1, 1,
+         [(1, 1e-11), (10, 8e-12), (100, 1e-11), (1e3, 3e-11), (1e4, 1e-10),
+          (1e5, 8e-10), (3e5, 2e-9)]),
+        ('高端 OCXO / 双恒温 自由运行', colors.HexColor('#8e44ad'), 1.0, 1,
+         [(1, 1e-12), (10, 8e-13), (100, 1e-12), (1e3, 3e-12), (1e4, 2e-11),
+          (1e5, 1e-10), (1e6, 8e-10)]),
+        ('铷原子钟 自由运行', colors.HexColor('#2980b9'), 1.0, 1,
+         [(1, 2e-11), (10, 7e-12), (100, 2e-12), (1e3, 1e-12), (1e4, 1e-12),
+          (1e5, 2e-12), (1e6, 1e-11)]),
+        ('GPSDO 输出 (普通 OCXO 被驯服)', ACCENT, 2.4, 0,
+         [(1, 1e-11), (10, 8e-12), (100, 1e-11), (1e3, 2e-11), (2e3, 1.4e-11),
+          (1e4, 2e-12), (1e5, 4e-13), (1e6, 2e-13)]),
+    ]
+    for name, col, sw, dash, pts in curves:
+        p = []
+        for t, a in pts:
+            p += [px(t), py(a)]
+        pl = PolyLine(p, strokeColor=col, strokeWidth=sw)
+        if dash:
+            pl.strokeDashArray = (3, 2)
+        d.add(pl)
+
+    # 交越点标注
+    xc = px(1.6e3)
+    d.add(Line(xc, Y0, xc, py(6e-11), strokeColor=DARK, strokeWidth=0.7,
+               strokeDashArray=(2, 2)))
+    _txt(d, xc + 4, py(8e-11), '交越点 tau_c', 7.5, BOLD, DARK)
+    _txt(d, xc + 4, py(4e-11), '由环路时间常数决定', 7, FONT, GREY)
+
+    # 图例
+    ly = 56
+    for i, (name, col, sw, dash, _) in enumerate(curves):
+        cx = 8 + (i % 2) * 238
+        cy = ly - (i // 2) * 14
+        ln = Line(cx, cy + 3, cx + 20, cy + 3, strokeColor=col,
+                  strokeWidth=max(sw, 1.2))
+        if dash:
+            ln.strokeDashArray = (3, 2)
+        d.add(ln)
+        _txt(d, cx + 25, cy, name, 7.5, BOLD if sw > 2 else FONT, DARK)
+    _txt(d, 8, 4, '典型量级示意，非实测曲线。要点：GPSDO 输出在短 tau 跟随 OCXO，在长 tau 跟随 GPS，两者交越处由环路带宽决定。',
+         7.5, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：三种 TIC 架构
+
+def gpsdo_tic():
+    """开源 GPSDO 用过的三种时间差测量架构及其分辨率。"""
+    d = Drawing(W, 236)
+    cards = [
+        ('MCU 定时器直接捕获', '5.9 ns @170 MHz', AMBER,
+         ['1PPS 触发定时器输入捕获，', '读 OCXO 时钟的计数值', '',
+          '分辨率 = 1 / f_clk', '', '代表：AndrewBCN/STM32-GPSDO', '本项目 v1.0 当前方案', '',
+          '优：零外部器件', '缺：分辨率被主频锁死']),
+        ('模拟相位比较', '约 1 ns', ACCENT,
+         ['HC390 分频 + HC4046 相位比较，', '输出经二极管与 RC 网络',
+          '直接进 MCU 的 10 bit ADC', '', '量程 1 us，分辨率约 1 ns', '',
+          '代表：Lars Walenius GPSDO', 'jimharman/Arduino-GPSDO', '',
+          '优：几个无源件做到 1 ns', '缺：需线性化标定，有温漂']),
+        ('专用 TDC 芯片', '55 - 60 ps', GREEN,
+         ['TI TDC7200 直接测量两个', '边沿之间的时间间隔', '',
+          '单次分辨率 55 ps，', '长观测区间约 60 ps 为其极限', '',
+          '代表：thinkfat 的 STM32+TDC7200', 'Carsten Andrich 的 STM32G4 方案', 'TAPR TICC 计数器', '',
+          '优：分辨率最高，无需标定', '缺：多一颗芯片，固件复杂']),
+    ]
+    cw, gap = 148, 14
+    x = 2
+    for title, res, col, lines in cards:
+        _box(d, x, 20, cw, 200, colors.white, col, 1.2, r=4)
+        d.add(Rect(x, 192, cw, 28, fillColor=col, strokeColor=col))
+        _txt(d, x + cw / 2, 201, title, 9, BOLD, colors.white, 'middle')
+        _txt(d, x + cw / 2, 170, res, 13, BOLD, col, 'middle')
+        y = 152
+        for ln in lines:
+            if ln:
+                _txt(d, x + 9, y, ln, 7.2, FONT, DARK)
+            y -= 11
+        x += cw + gap
+    _txt(d, 2, 6, '分辨率指时间差测量环节的分辨率，不等于 GPSDO 输出的 ADEV。', 7.5, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：分辨率横向对比
+
+def gpsdo_res_bar():
+    """各开源 GPSDO 的时间差测量分辨率，对数横轴。"""
+    from math import log10
+    d = Drawing(W, 206)
+    X0, BW = 186, 250
+    LO, HI = -11, -6.6                             # log10(秒)：10 ps .. 250 ns
+
+    def px(v):
+        return X0 + (log10(v) - LO) / (HI - LO) * BW
+
+    items = [('TAPR TICC / TDC7200 架构', 55e-12, GREEN),
+             ('thinkfat STM32 + TDC7200', 55e-12, GREEN),
+             ('Carsten Andrich STM32G4 方案', 50e-12, GREEN),
+             ('Lars Walenius GPSDO', 1e-9, ACCENT),
+             ('本项目 v1.0 (10 MHz 作时基，单次)', 100e-9, RED),
+             ('AndrewBCN STM32-GPSDO', 10e-9, AMBER)]
+    y = 164
+    for name, v, col in items:
+        w = px(v) - X0
+        d.add(Rect(X0, y, max(w, 2), 15, fillColor=col, strokeColor=col))
+        _txt(d, X0 - 8, y + 4, name, 8, FONT, DARK, 'end')
+        lab = ('%.0f ps' % (v * 1e12)) if v < 1e-9 else ('%.0f ns' % (v * 1e9))
+        _txt(d, px(v) + 6, y + 4, lab, 8, BOLD, col)
+        y -= 24
+    for e in range(LO, -6):
+        x = px(10.0 ** e)
+        d.add(Line(x, 12, x, 180, strokeColor=colors.HexColor('#e2e8ee'),
+                   strokeWidth=0.5))
+        lab = {-11: '10 ps', -10: '100 ps', -9: '1 ns', -8: '10 ns',
+               -7: '100 ns'}.get(e, '')
+        if lab:
+            _txt(d, x, 2, lab, 7.5, FONT, GREY, 'middle')
+    _txt(d, X0, 190, '横轴为对数刻度，越短越好', 7.5, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：v1.1 双轨路线
+
+def v11_roadmap():
+    """v1.1 的硬件改板轨与固件里程碑轨，以及两者的依赖关系。"""
+    d = Drawing(W, 262)
+
+    # ---- 硬件轨 ----
+    _txt(d, 2, 236, '硬件轨（依赖采购与打样周期）', 9, BOLD, RED)
+    hw = [('HW-1', '选型与采购'), ('HW-2', '原理图与 PCB 改动'),
+          ('HW-3', '打样与焊接'), ('HW-4', '硬件验收实测')]
+    hx, hw_w, hgap, hy = 30, 104, 8, 182
+    for i, (tag, name) in enumerate(hw):
+        x = hx + i * (hw_w + hgap)
+        _box(d, x, hy, hw_w, 40, colors.white, RED, 1.2, r=3)
+        d.add(Rect(x, hy + 28, hw_w, 12, fillColor=RED, strokeColor=RED))
+        _txt(d, x + hw_w / 2, hy + 31, tag, 7.5, BOLD, colors.white, 'middle')
+        _txt(d, x + hw_w / 2, hy + 12, name, 8, BOLD, DARK, 'middle')
+        if i < len(hw) - 1:
+            _arrow(d, x + hw_w + 1, hy + 20, x + hw_w + hgap - 1, hy + 20, RED, .9)
+
+    # ---- 固件轨 ----
+    _txt(d, 2, 124, '固件轨（纯软件，不占用采购周期）', 9, BOLD, GREEN)
+    fw = [('M0', '构建系统', 0), ('M1', '板级校正', 0), ('M2', '基础驱动', 0),
+          ('M3', '时间测量', 0), ('M4', '锯齿修正', 1), ('M5', '控制环', 0),
+          ('M6', '数据记录', 0), ('M7', '守时启动', 0)]
+    fx, fw_w, fgap, fy = 30, 52, 4, 66
+    for i, (tag, name, dep) in enumerate(fw):
+        x = fx + i * (fw_w + fgap)
+        col = AMBER if dep else GREEN
+        _box(d, x, fy, fw_w, 40, colors.white, col, 1.2, r=3)
+        d.add(Rect(x, fy + 28, fw_w, 12, fillColor=col, strokeColor=col))
+        _txt(d, x + fw_w / 2, fy + 31, tag, 7.5, BOLD, colors.white, 'middle')
+        _txt(d, x + fw_w / 2, fy + 12, name, 7, BOLD, DARK, 'middle')
+        if i < len(fw) - 1:
+            _arrow(d, x + fw_w + 0.5, fy + 20, x + fw_w + fgap - 0.5, fy + 20, col, .8)
+
+    # ---- 依赖箭头：M4 需要定时级 GNSS 模组到货 ----
+    m4x = fx + 4 * (fw_w + fgap) + fw_w / 2
+    d.add(Line(hx + hw_w / 2, hy - 1, hx + hw_w / 2, 150,
+               strokeColor=AMBER, strokeWidth=0.9, strokeDashArray=(3, 2)))
+    d.add(Line(hx + hw_w / 2, 150, m4x, 150,
+               strokeColor=AMBER, strokeWidth=0.9, strokeDashArray=(3, 2)))
+    _arrow(d, m4x, 150, m4x, fy + 41, AMBER, .9)
+    _txt(d, m4x + 6, 152, 'M4 需要定时级 GNSS 模组到货', 7.5, BOLD, AMBER)
+
+    # ---- 图例 ----
+    for i, (c, t) in enumerate(((GREEN, '可在现有 v1.0 板上立即开始'),
+                                (AMBER, '需等器件到货'),
+                                (RED, '需等打样'))):
+        bx = 30 + i * 150
+        d.add(Rect(bx, 26, 14, 9, fillColor=colors.white, strokeColor=c, strokeWidth=1.2))
+        _txt(d, bx + 19, 27, t, 7.5, FONT, GREY)
+    _txt(d, 30, 8, '要点：固件的 M0 到 M3、M5 到 M7 全部不依赖改板，可与硬件轨完全并行。',
+         7.5, BOLD, DARK)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -644,6 +932,12 @@ FIGURES = {
     'sch_erc': sch_erc,
     'ocxo_pinout': ocxo_pinout,
     'ocxo_chain': ocxo_chain,
+    'gnss_size': gnss_size,
+    'gnss_chain': gnss_chain,
+    'gpsdo_adev': gpsdo_adev,
+    'gpsdo_tic': gpsdo_tic,
+    'gpsdo_res_bar': gpsdo_res_bar,
+    'v11_roadmap': v11_roadmap,
 }
 
 
