@@ -652,7 +652,7 @@
         "uuid": "7fcb1340-2836-48b1-8b47-374fa7e6ca96"
       }
     ],
-    "used_designators": "U1-4",
+    "used_designators": "U1-8,#PWR1-10,#PWR126-130,#FLG1,R1-3,R13-15,R28-30,R39,TP1-2,RF1,RF10,C9-13,C56-58",
     "variants": []
   },
   "sheets": [
@@ -671,6 +671,10 @@
     [
       "1e6d2fc9-653e-45d2-a1bc-ab2903490aa7",
       "EXT"
+    ],
+    [
+      "73734292-4707-44de-b5e5-87f3016d7c18",
+      "GNSS"
     ]
   ],
   "text_variables": {},

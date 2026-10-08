@@ -1,0 +1,182 @@
+(footprint "DOPFITKR2-10M"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ 10MHz 5V Sine Wave ±3ppb DIP,25.4x25.4mm Oven Controlled Crystal Oscillators (OCXOs) ROHS")
+	(tags "C48735468 DOPFITKR2-10M OSC-TH_5P-L25.4-W25.4-P9.52 YXC Crystal Oscillators")
+	(property "Reference" "REF**"
+		(at 0 -13.7 0)
+		(layer "F.SilkS")
+		(uuid "9c943fb0-22a5-4698-b777-c60ca347727c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 13.7 0)
+		(layer "F.Fab")
+		(uuid "70cbb7f0-2d4d-4570-bf6b-c9b6b9691f24")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://img.jlc.com/pdf/applyPasteComponent/2023-05-24/107415D/c300a5a9259e48e8b838a5fc3bd694a8/K425.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c81ca18-33bf-460f-8f93-ef9850cfbc72")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ 10MHz 5V Sine Wave ±3ppb DIP,25.4x25.4mm Oven Controlled Crystal Oscillators (OCXOs) ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "14fa5f07-85cd-48ca-8a20-6b3fb5ba34d5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C48735468"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d193bd71-409f-4bb3-a180-b54439a60fc8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -12.7 -12.7)
+		(end 12.7 -12.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8f0c0656-634d-451c-aee6-956ab8dd7ac1")
+	)
+	(fp_line
+		(start -12.7 12.7)
+		(end -12.7 -12.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d65d8d9c-11c7-4b15-a554-d1b521e2e406")
+	)
+	(fp_line
+		(start 12.7 -12.7)
+		(end 12.7 12.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "76e2d56e-7581-4b23-8d23-ee6cc4af5232")
+	)
+	(fp_line
+		(start 12.7 12.7)
+		(end -12.7 12.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7dced569-dbd2-43ab-be56-7628ea323eb7")
+	)
+	(fp_circle
+		(center -11.1 10.799826)
+		(end -10.459593 10.799826)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "f72ff6d9-5af2-4869-a1f0-3edfda95efb4")
+	)
+	(fp_circle
+		(center -10.3 9.99998)
+		(end -10.050145 9.99998)
+		(stroke
+			(width 0.5)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "f76856b6-7544-4101-9564-f814dc674627")
+	)
+	(pad "1" thru_hole oval
+		(at -9.52 9.51992)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "29096843-8295-43ae-9094-22d43e633d81")
+	)
+	(pad "2" thru_hole oval
+		(at -0.000127 9.51992)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "506bb00c-0ac5-47ee-b81d-83fa1183fde6")
+	)
+	(pad "3" thru_hole oval
+		(at 9.52 9.51992)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "29ce1b2d-2070-4aa7-b8f0-7ba546de9b53")
+	)
+	(pad "4" thru_hole oval
+		(at 9.52 -9.51992)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c4964ddf-47d5-4102-9f1e-539cf8de03c2")
+	)
+	(pad "5" thru_hole oval
+		(at -9.52 -9.51992)
+		(size 1.6 1.6)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "db281cc9-e332-425c-85ae-a6b944b61895")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/DOPFITKR2-10M.wrl"
+		(offset
+			(xyz 0 0 0.5)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

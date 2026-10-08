@@ -4,550 +4,7 @@
 	(generator_version "10.0")
 	(uuid "7fcb1340-2836-48b1-8b47-374fa7e6ca96")
 	(paper "A4")
-	(lib_symbols
-		(symbol "GPSDO_Rev1.0:TDC7200PWR"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 0 12.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TDC7200PWR"
-				(at 0 -12.16 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "GPSDO_Rev1.0:TDC7200PWR"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303011701_Texas-Instruments-TDC7200PWR_C2653139.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "-40℃~+85℃ 0.5uA 20MHz 2V~3.6V SPI TSSOP-14 ADCs/DACs - Special Purpose ROHS"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC" "C2653139"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "Texas Instruments"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer Part" "TDC7200PWR"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "C2653139 TDC7200PWR TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL Texas Instruments"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TDC7200PWR_0_1"
-				(circle
-					(center -8.89 8.89)
-					(radius 0.381)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 9.652 -10.16) (xy 9.7511 -10.1502) (xy 9.8464 -10.1213) (xy 9.9342 -10.0744) (xy 10.0112 -10.0112)
-						(xy 10.0744 -9.9342) (xy 10.1213 -9.8464) (xy 10.1502 -9.7511) (xy 10.16 -9.652) (xy 10.1502 9.7511)
-						(xy 10.1213 9.8464) (xy 10.0744 9.9342) (xy 10.0112 10.0112) (xy 9.9342 10.0744) (xy 9.8464 10.1213)
-						(xy 9.7511 10.1502) (xy 9.652 10.16) (xy -9.7511 10.1502) (xy -9.8464 10.1213) (xy -9.9342 10.0744)
-						(xy -10.0112 10.0112) (xy -10.0744 9.9342) (xy -10.1213 9.8464) (xy -10.1502 9.7511) (xy -10.16 9.652)
-						(xy -10.1502 -9.7511) (xy -10.1213 -9.8464) (xy -10.0744 -9.9342) (xy -10.0112 -10.0112) (xy -9.9342 -10.0744)
-						(xy -9.8464 -10.1213) (xy -9.7511 -10.1502) (xy -9.652 -10.16) (xy 9.652 -10.16)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "TDC7200PWR_1_1"
-				(pin passive line
-					(at -12.7 7.62 0)
-					(length 2.54)
-					(name "ENABLE"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 5.08 0)
-					(length 2.54)
-					(name "TRIGG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.54 0)
-					(length 2.54)
-					(name "START"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 0 0)
-					(length 2.54)
-					(name "STOP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.54 0)
-					(length 2.54)
-					(name "CLOCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -5.08 0)
-					(length 2.54)
-					(name "N.C."
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -7.62 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -7.62 180)
-					(length 2.54)
-					(name "INTB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -2.54 180)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "CSB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "SCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "VREG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 7.62 180)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-	)
-	(symbol
-		(lib_id "GPSDO_Rev1.0:TDC7200PWR")
-		(at 163.83 121.92 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "18c54a36-a6f4-4ae0-90d2-5bbf8a502cc5")
-		(property "Reference" "U1"
-			(at 163.83 106.68 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TDC7200PWR"
-			(at 163.83 109.22 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "GPSDO_Rev1.0:TDC7200PWR"
-			(at 163.83 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303011701_Texas-Instruments-TDC7200PWR_C2653139.pdf"
-			(at 163.83 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "-40℃~+85℃ 0.5uA 20MHz 2V~3.6V SPI TSSOP-14 ADCs/DACs - Special Purpose ROHS"
-			(at 163.83 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2653139"
-			(at 163.83 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 163.83 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "TDC7200PWR"
-			(at 163.83 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "f79facde-cd8a-46f8-a470-17afc524d4a4")
-		)
-		(pin "6"
-			(uuid "bfd14da9-b6a2-466e-bdd3-d34e50ab3433")
-		)
-		(pin "10"
-			(uuid "70aaa331-1ce6-428f-88c0-20d0e07b2733")
-		)
-		(pin "13"
-			(uuid "0b602edf-5362-41ad-a28b-bc34591878d6")
-		)
-		(pin "9"
-			(uuid "9d936851-b7d7-4cda-8ca1-b614b43c9617")
-		)
-		(pin "1"
-			(uuid "9dac7150-d0c3-4ac1-aa90-6e4c13eab03a")
-		)
-		(pin "2"
-			(uuid "a9da11ce-75d0-46c7-8584-f57490fd63cd")
-		)
-		(pin "3"
-			(uuid "b89ceedb-e63a-42bf-b355-eb8574786e59")
-		)
-		(pin "4"
-			(uuid "3515b6b9-5fe7-4ccf-a578-0491d36a08cd")
-		)
-		(pin "7"
-			(uuid "6cf71c23-fcdc-476e-bec0-0cda5062b1a0")
-		)
-		(pin "8"
-			(uuid "10cc2918-d155-4f2b-85ed-2129173704b6")
-		)
-		(pin "11"
-			(uuid "6af946ae-e7b8-4940-a844-8db0b319c328")
-		)
-		(pin "12"
-			(uuid "44b2b7a6-4595-4c6d-b0f9-1f056f85b764")
-		)
-		(pin "14"
-			(uuid "7b195d34-b789-4eb4-a118-896d76a22f8e")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
+	(lib_symbols)
 	(sheet
 		(at 113.03 143.51)
 		(size 17.78 29.21)
@@ -636,6 +93,52 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115.57 92.71)
+		(size 13.97 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "73734292-4707-44de-b5e5-87f3016d7c18")
+		(property "Sheetname" "GNSS"
+			(at 115.57 91.9984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "GNSS.kicad_sch"
+			(at 115.57 121.2346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96"
+					(page "5")
 				)
 			)
 		)
