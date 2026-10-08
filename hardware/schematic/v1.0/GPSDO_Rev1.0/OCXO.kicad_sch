@@ -436,338 +436,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Counter:OCXO_20x20mm"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 1.524 4.572 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "OCXO_20x20mm"
-				(at 1.524 2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "JLCImport:OCXO_20x20mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "OCXO_20x20mm_0_1"
-				(rectangle
-					(start -6.35 -1.27)
-					(end 11.43 -19.05)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "OCXO_20x20mm_1_1"
-				(pin output line
-					(at -8.89 -6.35 0)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -10.16 0)
-					(length 2.54)
-					(name "RF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -8.89 -13.97 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 13.97 -13.97 180)
-					(length 2.54)
-					(name "VCTRL/NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 13.97 -6.35 180)
-					(length 2.54)
-					(name "VREF/NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Counter:OCXO_25.4x25.4mm"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.048 14.224 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "OCXO_25.4x25.4mm"
-				(at -2.54 10.922 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "JLCImport:DOPFITKR2-10M"
-				(at -0.508 16.256 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "OCXO_25.4x25.4mm_0_1"
-				(rectangle
-					(start -8.89 8.89)
-					(end 8.89 -8.89)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "OCXO_25.4x25.4mm_1_1"
-				(pin output line
-					(at -11.43 3.81 0)
-					(length 2.54)
-					(name "RF"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -11.43 0 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -11.43 -3.81 0)
-					(length 2.54)
-					(name "VCTRL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 11.43 -3.81 180)
-					(length 2.54)
-					(name "VREF/NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 11.43 3.81 180)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1063,6 +731,161 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GPSDO_Rev1.0:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_0201_0603Metric C_0402_1005Metric C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric C_1210_3225Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GPSDO_Rev1.0:LMK1C1103PWR"
 			(pin_names
 				(offset 1.016)
@@ -1338,6 +1161,478 @@
 						)
 					)
 					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GPSDO_Rev1.0:OCXO_20x20mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 1.524 4.572 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OCXO_20x20mm"
+				(at 1.524 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:OCXO_20x20mm"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "OCXO_20x20mm_0_1"
+				(rectangle
+					(start -6.35 -1.27)
+					(end 11.43 -19.05)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "OCXO_20x20mm_1_1"
+				(pin output line
+					(at -8.89 -6.35 0)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -8.89 -10.16 0)
+					(length 2.54)
+					(name "RF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -13.97 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 13.97 -13.97 180)
+					(length 2.54)
+					(name "VCTRL/NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 13.97 -6.35 180)
+					(length 2.54)
+					(name "VREF/NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GPSDO_Rev1.0:OCXO_25.4x25.4mm"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.048 14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "OCXO_25.4x25.4mm"
+				(at -2.54 10.922 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:DOPFITKR2-10M"
+				(at -0.508 16.256 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "OCXO_25.4x25.4mm_0_1"
+				(rectangle
+					(start -8.89 8.89)
+					(end 8.89 -8.89)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "OCXO_25.4x25.4mm_1_1"
+				(pin output line
+					(at -11.43 3.81 0)
+					(length 2.54)
+					(name "RF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -11.43 0 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -11.43 -3.81 0)
+					(length 2.54)
+					(name "VCTRL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 11.43 -3.81 180)
+					(length 2.54)
+					(name "VREF/NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 11.43 3.81 180)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GPSDO_Rev1.0:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:R_0603_1608Metric"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_0201_0603Metric R_0402_1005Metric R_0603_1608Metric R_0805_2012Metric R_1206_3216Metric R_1210_3225Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2425,12 +2720,6 @@
 		(uuid "06c6d3c4-248e-4570-a70a-fc232491cc1e")
 	)
 	(junction
-		(at 100.33 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1de29b26-95cc-4372-ae18-08c6c0f8817c")
-	)
-	(junction
 		(at 100.33 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2483,6 +2772,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8c886bda-cc5b-4c55-a94a-5a9a4939eb10")
+	)
+	(junction
+		(at 100.33 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d19d763-86e1-409a-bc8b-996931ed24bb")
 	)
 	(junction
 		(at 134.62 121.92)
@@ -3723,8 +4018,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 134.62 116.84 180)
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 134.62 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3732,31 +4027,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0d92a32f-4d1d-4ad2-b574-a40371c84aa6")
-		(property "Reference" "C10"
-			(at 134.874 114.3 0)
+		(uuid "0f29d582-4515-4310-a640-11401e6b308a")
+		(property "Reference" "C1"
+			(at 135.128 114.554 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "100nF"
-			(at 134.874 119.38 0)
+			(at 135.128 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 133.6548 113.03 0)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 135.5852 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3788,16 +4083,16 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "59a0c155-5d6f-4f47-ac0b-5ac486e60f98")
-		)
 		(pin "2"
-			(uuid "a4a292d6-ec35-4871-ab86-98195021c52b")
+			(uuid "98dceb17-9cad-4fe2-9381-9d807e78ee7c")
+		)
+		(pin "1"
+			(uuid "c41d86d9-2987-4076-ae05-e716a6dbdd39")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
-					(reference "C10")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -4379,8 +4674,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 96.52 57.15 180)
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 142.24 116.84 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4388,9 +4683,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "41a1de25-f9ec-4c92-b3b7-9e3242468db5")
-		(property "Reference" "R30"
-			(at 94.996 55.88 0)
+		(uuid "4360908f-00d7-4fec-86f8-6f94f49e8fed")
+		(property "Reference" "C2"
+			(at 142.748 114.554 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4400,8 +4695,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0R"
-			(at 94.742 58.674 0)
+		(property "Value" "10uF"
+			(at 143.002 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4411,8 +4706,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 98.298 57.15 90)
+		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+			(at 143.2052 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4423,7 +4718,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 57.15 0)
+			(at 142.24 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4433,8 +4728,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 96.52 57.15 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 142.24 116.84 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4443,17 +4738,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "5a558497-4069-4163-8ae4-8f65494600cb")
 		)
 		(pin "1"
-			(uuid "eefd6b4d-43bb-4746-b154-b5b62da67418")
+			(uuid "53c5f3b7-9778-42c4-9a4e-77c63e35e070")
+		)
+		(pin "2"
+			(uuid "96732f6f-7652-4ac6-a889-cba2b2862630")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
-					(reference "R30")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4775,176 +5070,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:OCXO_20x20mm")
-		(at 110.49 43.18 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(fields_autoplaced yes)
-		(uuid "80956871-583a-4311-b9ef-bfd3e32345b5")
-		(property "Reference" "U5"
-			(at 113.03 39.37 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OCXO_20x20mm"
-			(at 113.03 41.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "JLCImport:OCXO_20x20mm"
-			(at 110.49 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 110.49 43.18 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f0cbebd3-d625-4bc2-99a9-a3db1d6b8bdf")
-		)
-		(pin "3"
-			(uuid "8aed6ab8-9fd1-41af-96db-b9410395c343")
-		)
-		(pin "4"
-			(uuid "63be574b-0014-4c4a-b19f-0145f37c0027")
-		)
-		(pin "5"
-			(uuid "cfc8593a-db7c-447a-9327-1372c4506a41")
-		)
-		(pin "2"
-			(uuid "ca7ff62b-4d63-46ec-ae68-5d1b39ff68af")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 142.24 116.84 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8b092f73-fa1f-43f2-867c-7caead45f563")
-		(property "Reference" "C12"
-			(at 146.558 114.3 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10uF"
-			(at 148.844 119.634 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 143.2052 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 142.24 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 142.24 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bce94ef3-dba3-479f-a748-4e517da42d93")
-		)
-		(pin "2"
-			(uuid "fdb4cd99-8947-4ed5-bb82-aa90b4b59f0c")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 138.43 111.76 180)
 		(unit 1)
@@ -5024,40 +5149,39 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 93.98 49.53 270)
+		(lib_id "GPSDO_Rev1.0:OCXO_20x20mm")
+		(at 110.49 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
-		(uuid "b1853e09-26bc-4abf-9d34-34567e543e53")
-		(property "Reference" "R39"
-			(at 91.948 46.736 90)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "a167ac8e-afcb-4f3a-a36f-3c4498c61e01")
+		(property "Reference" "U5"
+			(at 113.03 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "0R"
-			(at 92.71 52.07 90)
+		(property "Value" "OCXO_20x20mm"
+			(at 113.03 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 93.98 47.752 90)
+		(property "Footprint" "GPSDO_Rev1.0:OCXO_20x20mm"
+			(at 110.49 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5068,7 +5192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 93.98 49.53 0)
+			(at 110.49 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5078,8 +5202,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 93.98 49.53 0)
+		(property "Description" ""
+			(at 110.49 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5089,16 +5213,25 @@
 				)
 			)
 		)
-		(pin "2"
-			(uuid "c01d3e78-81f1-4f0f-b1b2-97665f703ee3")
+		(pin "4"
+			(uuid "0528aad8-ae64-42bc-bf3c-df38e28953d4")
 		)
 		(pin "1"
-			(uuid "4f844c0b-95f5-4037-9fda-c0342c8ebfaa")
+			(uuid "9d6bd4d8-ad79-4d80-8f78-7ff69d767c64")
+		)
+		(pin "5"
+			(uuid "171e0c83-10ea-41d0-aab3-6c8c2c1eaaa6")
+		)
+		(pin "2"
+			(uuid "a0cb42b0-40e6-4627-862e-c571e6ccb420")
+		)
+		(pin "3"
+			(uuid "f27e009a-237f-43de-a0c2-67e276693606")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
-					(reference "R39")
+					(reference "U5")
 					(unit 1)
 				)
 			)
@@ -5186,6 +5319,85 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 93.98 49.53 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b7d7c929-d919-4995-af43-711e43d8a4eb")
+		(property "Reference" "R5"
+			(at 93.98 47.244 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0R"
+			(at 93.98 51.816 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:R_0805_2012Metric"
+			(at 93.98 51.308 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 93.98 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97654da3-f914-43a7-b10a-4782273d0418")
+		)
+		(pin "2"
+			(uuid "32dea6cd-b83f-417b-a292-f1196cd141ed")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 246.38 49.53 180)
 		(unit 1)
@@ -5267,7 +5479,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Counter:OCXO_25.4x25.4mm")
+		(lib_id "GPSDO_Rev1.0:OCXO_25.4x25.4mm")
 		(at 111.76 125.73 0)
 		(unit 1)
 		(body_style 1)
@@ -5277,7 +5489,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b9c48218-37db-4173-99e5-cbdf998315e3")
+		(uuid "cb952ae9-f2dd-4d33-9e60-3a8508512bc5")
 		(property "Reference" "U7"
 			(at 111.76 111.76 0)
 			(show_name no)
@@ -5298,7 +5510,7 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCImport:DOPFITKR2-10M"
+		(property "Footprint" "GPSDO_Rev1.0:DOPFITKR2-10M"
 			(at 111.252 109.474 0)
 			(hide yes)
 			(show_name no)
@@ -5331,20 +5543,20 @@
 				)
 			)
 		)
-		(pin "4"
-			(uuid "f0ac3c5e-6891-4bb1-933d-4336d8562e80")
-		)
-		(pin "3"
-			(uuid "427a9815-587a-4b58-834a-e606db025b9c")
-		)
-		(pin "5"
-			(uuid "726c0245-8c6f-4d51-baeb-d383505e5b25")
-		)
 		(pin "1"
-			(uuid "12c26f41-c2d6-45cf-b8fc-bafb497c7cfb")
+			(uuid "b0a27391-2fac-485b-9a00-f7f338b9b31f")
 		)
 		(pin "2"
-			(uuid "e97f3619-6fb0-4a0c-be46-b674d4de0c00")
+			(uuid "d74c7082-a165-4599-a3cf-87b560fea18e")
+		)
+		(pin "5"
+			(uuid "0389dd1f-fd17-4166-8b8b-68ba80bf21f2")
+		)
+		(pin "4"
+			(uuid "337a7ab3-fa1c-4e89-82ff-5ba07137749e")
+		)
+		(pin "3"
+			(uuid "340c03fa-9a97-48fc-91be-8bebcf8911d7")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
@@ -5508,6 +5720,87 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 96.52 57.15 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d4d18d7f-292b-4a5a-ae5e-2b28fad4b9e8")
+		(property "Reference" "R4"
+			(at 92.202 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0R"
+			(at 92.202 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 94.742 57.15 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 96.52 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "008f9b8d-30ba-4063-b637-28de3d0eafb1")
+		)
+		(pin "1"
+			(uuid "6600dc93-a7dd-49b3-bb58-dd984776f3fc")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
+					(reference "R4")
 					(unit 1)
 				)
 			)
