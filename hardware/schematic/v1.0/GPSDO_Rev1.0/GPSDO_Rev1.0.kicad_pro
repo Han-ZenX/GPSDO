@@ -652,13 +652,25 @@
         "uuid": "7fcb1340-2836-48b1-8b47-374fa7e6ca96"
       }
     ],
-    "used_designators": "U1-3",
+    "used_designators": "U1-4",
     "variants": []
   },
   "sheets": [
     [
       "7fcb1340-2836-48b1-8b47-374fa7e6ca96",
       "GPSDO_Rev1.0"
+    ],
+    [
+      "a223c499-b8b9-41df-ac1a-b6212c61923a",
+      "MCU"
+    ],
+    [
+      "40d668d4-3bfe-4d48-b2dd-b6741ecb73a3",
+      "OCXO"
+    ],
+    [
+      "1e6d2fc9-653e-45d2-a1bc-ab2903490aa7",
+      "EXT"
     ]
   ],
   "text_variables": {},

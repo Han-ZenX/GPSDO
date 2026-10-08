@@ -1,0 +1,151 @@
+(footprint "BUF602IDBVT"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ -6.3V~6.3V 1 125uV/℃ 16mV 1GHz 2.8V~12.6V 4.8nV/√Hz@100kHz 5.8mA 60mA 8.5uA 8V/ns SOT-23-5 Operational Amplifier ROHS")
+	(tags "BUF602IDBVT C2862949 SOT-23-5_L2.9-W1.6-P0.95-LS2.8-BL Texas Instruments")
+	(property "Reference" "REF**"
+		(at 0 -2.6 0)
+		(layer "F.SilkS")
+		(uuid "cf87a787-2608-4a49-a5d8-b680bb312213")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.6 0)
+		(layer "F.Fab")
+		(uuid "9c978460-6eea-4828-9ffa-a54843c481fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010800_Texas-Instruments-BUF602IDBVT_C2862949.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a5caf3a0-f6af-46f4-8180-4b5236035574")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ -6.3V~6.3V 1 125uV/℃ 16mV 1GHz 2.8V~12.6V 4.8nV/√Hz@100kHz 5.8mA 60mA 8.5uA 8V/ns SOT-23-5 Operational Amplifier ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "997ed2dc-0964-47e0-a00c-a0e416cdb433")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C2862949"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "db88e052-ede0-4dfe-a307-6cabfea32679")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.524 -0.6985)
+		(end -1.524 0.6985)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "add59e77-84c9-43eb-a1c2-a7acaa55bb5c")
+	)
+	(fp_line
+		(start -0.381 -0.889)
+		(end 0.381 -0.889)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "45fda14f-8a71-46f9-95c6-79704e9b1bf5")
+	)
+	(fp_line
+		(start 1.397 -0.422402)
+		(end 1.397 0.422377)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c868a398-5d6a-468f-9413-5c46629fb6f7")
+	)
+	(fp_circle
+		(center -1.016 1.778)
+		(end -0.866 1.778)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "169fe97e-32ab-4d49-8397-287027b9c3e4")
+	)
+	(pad "1" smd rect
+		(at -0.94996 1.1)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7948dd10-bf4f-44b9-8fbc-151aba061d56")
+	)
+	(pad "2" smd rect
+		(at 0 1.1)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8d261597-ee54-49ab-a950-88980618c634")
+	)
+	(pad "3" smd rect
+		(at 0.94996 1.1)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bda6505a-2695-40f9-8be2-b199354523dd")
+	)
+	(pad "4" smd rect
+		(at 0.94996 -1.1)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "81efe540-e5c0-4968-b7da-835c0e7a2a17")
+	)
+	(pad "5" smd rect
+		(at -0.94996 -1.1)
+		(size 0.6 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3eddb3ae-fdf4-4652-b64a-c6f60ae48550")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/BUF602IDBVT.wrl"
+		(offset
+			(xyz 0 0 0.75)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
