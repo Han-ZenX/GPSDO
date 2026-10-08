@@ -8,7 +8,10 @@ md2pdf.py 的配套绘图模块：为硬件文档生成矢量示意图。
 纯 reportlab.graphics 矢量绘制，不依赖外部图片文件。
 """
 
-from reportlab.graphics.shapes import Drawing, Line, PolyLine, Polygon, Rect, String
+import math
+
+from reportlab.graphics.shapes import (Circle, Drawing, Group, Line, PolyLine, Polygon,
+                                       Rect, String)
 from reportlab.lib import colors
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
@@ -527,10 +530,10 @@ def sch_erc():
             d.add(Rect(x0 + j * cs, y, cs - 3, cs * 0.62 - 3,
                        fillColor=fill, strokeColor=edge, strokeWidth=0.7))
             _txt(d, x0 + j * cs + (cs - 3) / 2, y + 8,
-                 {0: '✓', 1: '!', 2: '✕'}[v], 9, BOLD, edge, 'middle')
+                 {0: '✓', 1: '!', 2: '×'}[v], 9, BOLD, edge, 'middle')
 
     ly = 30
-    for i, (c, t) in enumerate(((GREEN, '✓ 正常'), (AMBER, '! 警告'), (RED, '✕ 错误'))):
+    for i, (c, t) in enumerate(((GREEN, '✓ 正常'), (AMBER, '! 警告'), (RED, '× 错误'))):
         _txt(d, 8 + i * 76, ly, t, 8, BOLD, c)
     _txt(d, 8, 16, '两个输出引脚直接相连是硬错误（会短路）；电源输出对电源输出同理。',
          8, FONT, DARK)
@@ -918,6 +921,937 @@ def v11_roadmap():
     return d
 
 
+# ======================================================= Carsten Andrich 方案图解
+# 以下各图用于 docs/hardware/Carsten-Andrich-GNSSDO方案图解.md。
+# 电路细节取自作者 2022-08-05（v1）与 2022-08-11（v2）两版原理图及 v2 版图。
+
+CLK = ACCENT                                   # 10 MHz 时钟
+PPS = RED                                      # 脉冲
+ANA = GREEN                                    # 模拟调谐电压
+BUS = colors.HexColor('#7f8c8d')               # 数字总线
+SEN = colors.HexColor('#8e44ad')               # 传感器
+TDC = colors.HexColor('#16a085')               # TDC 相关
+MCU_C = colors.HexColor('#34495e')
+LIGHT = colors.HexColor('#e2e8ee')
+
+
+def _wire(d, pts, col=DARK, sw=0.8, dash=None):
+    pl = PolyLine(pts, strokeColor=col, strokeWidth=sw)
+    if dash:
+        pl.strokeDashArray = dash
+    d.add(pl)
+
+
+def _dot(d, x, y, col=DARK, r=1.8):
+    d.add(Circle(x, y, r, fillColor=col, strokeColor=col, strokeWidth=0.5))
+
+
+def _blk(d, x, y, w, h, title, lines=(), col=ACCENT, size=7):
+    """带色条标题的功能块。"""
+    _box(d, x, y, w, h, colors.white, col, 1.1, r=3)
+    d.add(Rect(x, y + h - 13, w, 13, fillColor=col, strokeColor=col))
+    _txt(d, x + w / 2, y + h - 9.5, title, 7.8, BOLD, colors.white, 'middle')
+    for i, ln in enumerate(lines):
+        _txt(d, x + 5, y + h - 24 - i * 10, ln, size, FONT, DARK)
+
+
+def _res(d, x1, y1, x2, y2, col=DARK):
+    """两点间的电阻（矩形体），只支持水平或竖直。"""
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    if abs(y2 - y1) < 0.01:
+        _wire(d, [min(x1, x2), cy, cx - 8, cy], col)
+        _wire(d, [cx + 8, cy, max(x1, x2), cy], col)
+        d.add(Rect(cx - 8, cy - 3, 16, 6, fillColor=colors.white,
+                   strokeColor=col, strokeWidth=0.9))
+    else:
+        _wire(d, [cx, max(y1, y2), cx, cy + 8], col)
+        _wire(d, [cx, cy - 8, cx, min(y1, y2)], col)
+        d.add(Rect(cx - 3, cy - 8, 6, 16, fillColor=colors.white,
+                   strokeColor=col, strokeWidth=0.9))
+
+
+def _cap(d, x1, y1, x2, y2, col=DARK):
+    """两点间的电容（两块极板），只支持水平或竖直。"""
+    cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
+    g, p = 2.2, 6
+    if abs(y2 - y1) < 0.01:
+        _wire(d, [min(x1, x2), cy, cx - g, cy], col)
+        _wire(d, [cx + g, cy, max(x1, x2), cy], col)
+        for xx in (cx - g, cx + g):
+            d.add(Line(xx, cy - p, xx, cy + p, strokeColor=col, strokeWidth=1.4))
+    else:
+        _wire(d, [cx, max(y1, y2), cx, cy + g], col)
+        _wire(d, [cx, cy - g, cx, min(y1, y2)], col)
+        for yy in (cy - g, cy + g):
+            d.add(Line(cx - p, yy, cx + p, yy, strokeColor=col, strokeWidth=1.4))
+
+
+def _gnd(d, x, y, col=DARK):
+    """接地符号，(x, y) 为连接点。"""
+    d.add(Line(x, y, x, y - 4, strokeColor=col, strokeWidth=0.8))
+    for i, hw in enumerate((5, 3.2, 1.4)):
+        yy = y - 4 - i * 2.2
+        d.add(Line(x - hw, yy, x + hw, yy, strokeColor=col, strokeWidth=0.8))
+
+
+def _tri(d, x, y, w, h, col=DARK, fill=colors.HexColor('#fffbe6')):
+    """朝右的放大器三角形，(x, y) 为左边中点。"""
+    d.add(Polygon([x, y + h / 2, x, y - h / 2, x + w, y],
+                  fillColor=fill, strokeColor=col, strokeWidth=1))
+
+
+def _sma(d, x, y, col=DARK):
+    d.add(Circle(x, y, 6, fillColor=colors.white, strokeColor=col, strokeWidth=1.1))
+    d.add(Circle(x, y, 1.8, fillColor=col, strokeColor=col))
+
+
+# ---------------------------------------------------------------- 图：应用场景
+
+def ca_usecase():
+    """固定基准站 + 移动车辆上的 GNSSDO，做车辆之间的相对时间同步。"""
+    d = Drawing(W, 236)
+    # 卫星
+    for i, sx in enumerate((168, 250, 332, 414)):
+        sy = 220 - (i % 2) * 6
+        d.add(Rect(sx - 4, sy - 4, 8, 8, fillColor=GREY, strokeColor=GREY))
+        for px0 in (sx - 16, sx + 6):
+            d.add(Rect(px0, sy - 2, 10, 4, fillColor=colors.HexColor('#a9c1d9'),
+                       strokeColor=GREY, strokeWidth=0.4))
+    _txt(d, 6, 214, 'GNSS 卫星（基准站与车辆共视）', 7.5, FONT, GREY)
+
+    # 基准站与天线
+    _blk(d, 6, 92, 128, 70, '固定基准站', ['ZED-F9T 时间模式', '已测量坐标，1D 授时解',
+                                           '持续输出 RTCM 3 MSM7'], GREEN)
+    _wire(d, [70, 162, 70, 178])
+    d.add(Polygon([61, 188, 79, 188, 70, 178], fillColor=colors.white,
+                  strokeColor=DARK, strokeWidth=0.8))
+
+    # 无线链路
+    _wire(d, [134, 127, 182, 127], GREEN, 1.1, (4, 2))
+    _wire(d, [182, 59, 182, 171], GREEN, 1.1, (4, 2))
+    _txt(d, 138, 131, '无线链路', 7, BOLD, GREEN)
+    _txt(d, 138, 116, '差分修正', 7, FONT, GREEN)
+
+    for i, (vy, tag) in enumerate(((149, 'A'), (93, 'B'), (37, 'C'))):
+        _arrow(d, 182, vy + 22, 206, vy + 22, GREEN, 1.0)
+        _blk(d, 208, vy, 152, 44, '车辆 %s：GNSSDO' % tag,
+             ['ZED-F9T 差分授时 + 低 g 敏感 OCXO', '输出 10 MHz 与稳定脉冲'], ACCENT)
+        _arrow(d, 360, vy + 22, 378, vy + 22, ACCENT, 1.0)
+        _blk(d, 380, vy, 98, 44, '被同步设备', ['分布式 SDR 相干采样', '毫米波变频器'], SEN)
+
+    _txt(d, 6, 20, '目标：10 km 半径内、移动中相对时间误差 < 10 ns，期望 < 1 ns。'
+         '1 ns 对应电波传播约 30 cm。', 7.5, BOLD, DARK)
+    _txt(d, 6, 6, '只要求车辆之间相对同步，不关心绝对 UTC 误差。作者用过的 Ministd、LC_XO、'
+         'FS740 在移动中均不达标。', 7.5, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：系统总框图
+
+def ca_system():
+    """整机功能块与信号流向，颜色区分信号类型。"""
+    d = Drawing(W, 330)
+    # ---- 功能块 ----
+    _blk(d, 4, 196, 86, 66, 'RCB-F9T 板', ['u-blox ZED-F9T', '定时级 + 差分授时',
+                                            'TP1 / TP2 / UART'], PPS)
+    _blk(d, 124, 196, 82, 66, 'TDC7200', ['单次约 55 ps', 'START：GNSS 脉冲',
+                                          'STOP/CLK：10 MHz'], TDC)
+    _blk(d, 236, 140, 122, 122, 'STM32G474RE',
+         ['SYSCLK 170 MHz', '（由 OCXO 10 MHz 倍频）', '', 'TIM2 32 bit 捕获 5.88 ns',
+          'HRTIM 脉冲微调 184 ps', 'SPI1 / SPI2 / I2C3 / UART4', '数字环路与 qErr 修正',
+          'USB 调试与数据'], MCU_C)
+    _blk(d, 4, 40, 74, 56, 'LMK1C1103', ['1 分 3 缓冲', '通道偏斜 <= 50 ps',
+                                          '无分频无同步器'], CLK)
+    _blk(d, 100, 40, 84, 56, 'OCXO 10 MHz', ['Abracon AOCJY', '塑料罩挡气流',
+                                             '罩内 TMP117 测温'], CLK)
+    _blk(d, 206, 40, 92, 56, '有源低通', ['OPA189 二阶 SK', 'v1 约 1 Hz / v2 约 10 Hz',
+                                         '+ 无源 RC 159 Hz'], ANA)
+    _blk(d, 320, 40, 66, 56, '调谐 DAC', ['AD5542A 16 bit', 'ADR4533 3.3 V',
+                                         '或 OCXO VREF'], ANA)
+
+    # ---- 输出驱动 ----
+    _box(d, 398, 52, 80, 210, colors.white, DARK, 1.1, r=3)
+    d.add(Rect(398, 249, 80, 13, fillColor=DARK, strokeColor=DARK))
+    _txt(d, 438, 252.5, 'BUF602 x5 + SMA', 7.8, BOLD, colors.white, 'middle')
+    for y, name, col in ((230, 'F9T TP2 原始', PPS), (196, '稳定脉冲 1', PPS),
+                         (168, '稳定脉冲 2', PPS), (96, '10 MHz 1', CLK),
+                         (68, '10 MHz 2', CLK)):
+        _txt(d, 404, y - 3, name, 7, FONT, DARK)
+        _sma(d, 466, y, col)
+    _txt(d, 438, 136, '49.9 欧源端匹配', 6.8, FONT, GREY, 'middle')
+    _txt(d, 438, 125, '可驱动 50 欧负载', 6.8, FONT, GREY, 'middle')
+
+    # ---- GNSS 侧 ----
+    _arrow(d, 90, 228, 123, 228, PPS, 1.1)
+    _dot(d, 106, 228, PPS)
+    _wire(d, [106, 228, 106, 280, 272, 280], PPS, 1.1)
+    _arrow(d, 272, 280, 272, 263, PPS, 1.1)
+    _txt(d, 112, 283, 'TP1：TDC START 与 TIM2_CH4 捕获', 7, BOLD, PPS)
+    _wire(d, [64, 262, 64, 296, 318, 296], BUS, 1.0)
+    _arrow(d, 318, 296, 318, 263, BUS, 1.0)
+    _txt(d, 112, 299, 'UART4：UBX 配置、TIM-TP（qErr）、RTCM 修正数据', 7, FONT, BUS)
+    _wire(d, [24, 262, 24, 312, 390, 312, 390, 230], PPS, 1.0, (3, 2))
+    _arrow(d, 390, 230, 397, 230, PPS, 1.0)
+    _txt(d, 112, 315, 'TP2：原始 GNSS 脉冲直接送 SMA，作对照', 7, FONT, PPS)
+
+    # ---- MCU 侧 ----
+    _wire(d, [206, 236, 236, 236], BUS, 1.0)
+    _txt(d, 221, 240, 'SPI2', 6.5, FONT, BUS, 'middle')
+    _txt(d, 221, 226, 'INTB', 6.5, FONT, BUS, 'middle')
+    _arrow(d, 358, 196, 397, 196, PPS, 1.1)
+    _dot(d, 378, 196, PPS)
+    _wire(d, [378, 196, 378, 168], PPS, 1.1)
+    _arrow(d, 378, 168, 397, 168, PPS, 1.1)
+    _txt(d, 362, 200, 'PA9', 6.5, BOLD, PPS)
+    _arrow(d, 353, 140, 353, 97, BUS, 1.0)
+    _txt(d, 356, 116, 'SPI1', 6.5, FONT, BUS)
+    _wire(d, [300, 140, 300, 114, 160, 114], SEN, 1.0)
+    _arrow(d, 160, 114, 160, 97, SEN, 1.0)
+    _txt(d, 270, 105, 'I2C3', 6.5, FONT, SEN)
+
+    # ---- 时钟分配 ----
+    _wire(d, [60, 96, 60, 128, 250, 128], CLK, 1.2)
+    _arrow(d, 250, 128, 250, 139, CLK, 1.2)
+    _txt(d, 66, 131, '10MHZ_MCU：送 PF0（HSE 旁路）', 7, BOLD, CLK)
+    _wire(d, [30, 96, 30, 170, 165, 170], CLK, 1.2)
+    _arrow(d, 165, 170, 165, 195, CLK, 1.2)
+    _txt(d, 36, 173, '10MHZ_TDC：CLOCK + STOP', 7, BOLD, CLK)
+    _wire(d, [40, 40, 40, 26, 390, 26, 390, 96], CLK, 1.2)
+    _arrow(d, 390, 96, 397, 96, CLK, 1.2)
+    _dot(d, 390, 68, CLK)
+    _arrow(d, 390, 68, 397, 68, CLK, 1.2)
+    _txt(d, 200, 29, '10MHZ_OUT', 7, BOLD, CLK)
+
+    # ---- 调谐链路 ----
+    _arrow(d, 320, 68, 299, 68, ANA, 1.3)
+    _arrow(d, 206, 68, 185, 68, ANA, 1.3)
+    _txt(d, 195, 73, 'VCTL', 6.5, BOLD, ANA, 'middle')
+    _arrow(d, 100, 68, 79, 68, CLK, 1.3)
+
+    for i, (c, t) in enumerate(((CLK, '10 MHz 时钟'), (PPS, '脉冲'), (ANA, '模拟调谐'),
+                                (BUS, '数字总线'), (SEN, '传感器'), (TDC, 'TDC'))):
+        bx = 6 + i * 80
+        d.add(Line(bx, 9, bx + 16, 9, strokeColor=c, strokeWidth=1.8))
+        _txt(d, bx + 21, 6, t, 7.5, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：时钟与脉冲分配
+
+def ca_clock_tree():
+    """10 MHz 与各路脉冲的完整路径，按相干域与异步域分区。"""
+    d = Drawing(W, 300)
+    bw, bh, gap = 76, 26, 18
+
+    def bx(i):
+        return 4 + i * (bw + gap)
+
+    d.add(Rect(0, 126, W, 168, fillColor=colors.HexColor('#eef4fb'), strokeColor=None))
+    d.add(Rect(0, 20, W, 100, fillColor=colors.HexColor('#fdf1ec'), strokeColor=None))
+    _txt(d, W - 4, 282, 'OCXO 相干时钟域', 8.5, BOLD, CLK, 'end')
+    _txt(d, W - 4, 108, 'GNSS 异步域', 8.5, BOLD, PPS, 'end')
+
+    def chain(y, title, col, items):
+        _txt(d, 4, y + bh + 5, title, 8, BOLD, col)
+        for i, it in enumerate(items):
+            if it is None:
+                continue
+            top, bot = it
+            x = bx(i)
+            _box(d, x, y, bw, bh, colors.white, col, 1.0, r=3)
+            _txt(d, x + bw / 2, y + bh - 10, top, 7.3, BOLD, DARK, 'middle')
+            _txt(d, x + bw / 2, y + 4.5, bot, 6.6, FONT, GREY, 'middle')
+            if i < len(items) - 1 and items[i + 1] is not None:
+                _arrow(d, x + bw + 1, y + bh / 2, x + bw + gap - 1, y + bh / 2, col, 0.9)
+
+    chain(242, 'A. 10 MHz 直接输出', CLK,
+          [('OCXO', '10 MHz CMOS'), ('LMK1C1103', 'Y0 / Y1 / Y2'),
+           ('BUF602 x2', '49.9 欧源端匹配'), ('SMA x2', '10 MHz 输出')])
+    chain(190, 'B. MCU 时钟与脉冲', CLK,
+          [None, ('Y1 + R331', '0 欧'), ('PF0 / OSC_IN', 'HSE 旁路输入'),
+           ('PLL + TIM2', '170 MHz，5.88 ns'), ('HRTIM -> PA9', '184 ps，PULSE_MCU')])
+    chain(138, 'C. TDC 时基', CLK,
+          [None, ('Y2 + R332', '0 欧'), ('TDC7200', 'CLOCK + STOP')])
+    chain(70, 'D. GNSS 脉冲（被测对象）', PPS,
+          [('ZED-F9T TP1', '内部时钟量化'), ('R101', 'PULSE_GNSS')])
+    chain(24, 'E. GNSS 原始脉冲直通', PPS,
+          [('ZED-F9T TP2', '同一接收机'), ('R102', 'F9T_PULSE_OUT'),
+           ('BUF602', '49.9 欧'), ('SMA', '对照用原始脉冲')])
+
+    # LMK 的 Y1 / Y2 分支
+    lx = bx(1)
+    _arrow(d, lx + 52, 242, lx + 52, 217, CLK, 0.9)
+    _txt(d, lx + 56, 228, 'Y1', 6.5, BOLD, CLK)
+    _wire(d, [lx + 12, 242, lx + 12, 229, lx - 12, 229, lx - 12, 151], CLK, 0.9)
+    _arrow(d, lx - 12, 151, lx - 1, 151, CLK, 0.9)
+    _txt(d, lx + 16, 233, 'Y2', 6.5, BOLD, CLK)
+    _txt(d, 334, 154, 'TDC 的 CLOCK 与 STOP 经 JP231', 6.8, FONT, CLK)
+    _txt(d, 334, 143, '接同一路 10 MHz', 6.8, FONT, CLK)
+
+    # GNSS 脉冲分到 TDC START 与 TIM2_CH4
+    y0 = 70 + bh / 2
+    _wire(d, [bx(1) + bw, y0, 230, y0], PPS, 1.1)
+    _dot(d, 230, y0, PPS)
+    _arrow(d, 230, y0, 230, 137, PPS, 1.1)
+    _txt(d, 234, 108, 'START', 7, BOLD, PPS)
+    _wire(d, [230, y0, 324, y0], PPS, 1.1)
+    _arrow(d, 324, y0, 324, 189, PPS, 1.1)
+    _txt(d, 328, 108, 'TIM2_CH4 捕获（PB11）', 7, BOLD, PPS)
+
+    _txt(d, 4, 6, '要点：只有 GNSS 脉冲是异步信号。TDC 时基、MCU 定时器、输出脉冲全部来自同一个 10 MHz，'
+         '链路中没有 74 系列分频器或同步器。', 7, FONT, DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：两级时间测量时序
+
+def ca_tic_timing():
+    """TIM2 粗测 + TDC7200 细测的时序，含死区折叠的两种情形。"""
+    d = Drawing(W, 290)
+    T0, T1, X0, X1 = -20.0, 232.0, 118, 476
+    H = 11
+
+    def px(t):
+        return X0 + (t - T0) / (T1 - T0) * (X1 - X0)
+
+    def step(y, t_rise, col):
+        _wire(d, [px(T0), y, px(t_rise), y, px(t_rise), y + H, px(T1), y + H], col, 1.2)
+
+    for e in (0, 100, 200):
+        _wire(d, [px(e), 82, px(e), 250], colors.HexColor('#c9d3dc'), 0.6, (2, 2))
+        _txt(d, px(e), 254, '%d ns' % e, 7, FONT, GREY, 'middle')
+
+    # 10 MHz
+    pts, lvl = [px(T0), 230], 0
+    for t in (0, 50, 100, 150, 200):
+        pts += [px(t), 230 + lvl * H]
+        lvl = 1 - lvl
+        pts += [px(t), 230 + lvl * H]
+    pts += [px(T1), 230 + lvl * H]
+    _wire(d, pts, CLK, 1.2)
+    _txt(d, 4, 232, '10 MHz（CLOCK/STOP）', 7.5, BOLD, CLK)
+
+    # TIM2 计数节拍
+    k = -3
+    while k * 100 / 17 <= T1:
+        t = k * 100 / 17
+        if t >= T0:
+            d.add(Line(px(t), 204, px(t), 210, strokeColor=MCU_C, strokeWidth=0.6))
+        k += 1
+    d.add(Line(px(T0), 204, px(T1), 204, strokeColor=MCU_C, strokeWidth=0.6))
+    _txt(d, 4, 204, 'TIM2 节拍 5.88 ns', 7.5, BOLD, MCU_C)
+
+    def case(y, tp, label, tau, note, ignored=None):
+        d.add(Rect(px(tp), y - 1, px(tp + 12) - px(tp), H + 2,
+                   fillColor=colors.HexColor('#f9d5d0'), strokeColor=None))
+        step(y, tp, PPS)
+        _txt(d, 4, y + 2, label, 7.5, BOLD, PPS)
+        # TIM2 捕获点（示意：边沿后第 2 个节拍）
+        tc = (math.floor(tp * 17 / 100) + 2) * 100 / 17
+        d.add(Polygon([px(tc) - 3, y + H + 9, px(tc) + 3, y + H + 9, px(tc), y + H + 3],
+                      fillColor=MCU_C, strokeColor=MCU_C))
+        _txt(d, px(tc) + 5, y + H + 4, 't_c', 7, BOLD, MCU_C)
+        # TDC 测得的 tau
+        by = y - 13
+        stop = tp + tau
+        d.add(Line(px(tp), by, px(stop), by, strokeColor=TDC, strokeWidth=1.1))
+        for xx in (px(tp), px(stop)):
+            d.add(Line(xx, by - 3, xx, by + 3, strokeColor=TDC, strokeWidth=1.1))
+        _txt(d, (px(tp) + px(stop)) / 2, by - 10, note, 7, BOLD, TDC, 'middle')
+        if ignored is not None:
+            xi = px(ignored)
+            for s in (-1, 1):
+                d.add(Line(xi - 4, by - 4 * s, xi + 4, by + 4 * s,
+                           strokeColor=RED, strokeWidth=1.3))
+
+    case(166, 37, '情形 A：GNSS 脉冲', 63, 'TDC 读数 tau = 63 ns')
+    case(112, 94, '情形 B：GNSS 脉冲', 106,
+         'tau = 106 ns：100 ns 处的沿落在 12 ns 死区内被忽略，取下一个沿', ignored=100)
+
+    lines = [('(1) 粗测', 'TIM2 捕获 GNSS 脉冲得 t_c。误差只要小于 +/-50 ns 即可，输入同步带来的固定延迟可一次标定。'),
+             ('(2) 细测', 'TDC7200 测 tau：脉冲到其后第一个可用 10 MHz 上升沿，范围 12 ~ 112 ns，红色为 12 ns 死区。'),
+             ('(3) 组合', 'k = round((t_c + tau) / 100 ns)，脉冲精确时刻 t = k x 100 ns - tau，分辨率由 TDC 决定。')]
+    for i, (h, s) in enumerate(lines):
+        _txt(d, 4, 54 - i * 15, h, 7.5, BOLD, DARK)
+        _txt(d, 44, 54 - i * 15, s, 7.5, FONT, DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：TDC 死区折叠与实测
+
+TDC_DATA = [  # 作者 2022-08-28 在 EEVblog 发布：设定间隔对应的平均读数 (ns) 与标准差 (ps)
+    (6.71, 10), (12.54, 13), (18.47, 28), (24.31, 22), (30.14, 26), (36.05, 32),
+    (41.92, 35), (47.77, 40), (53.68, 43), (59.57, 47), (71.34, 53), (83.08, 57),
+    (94.84, 64), (106.59, 71), (118.37, 80), (147.86, 96), (177.31, 117),
+    (206.68, 136), (236.14, 159), (265.53, 178), (294.94, 205), (353.80, 260),
+    (412.64, 311), (471.39, 370), (530.29, 425), (589.12, 481), (647.95, 537),
+    (706.81, 588), (765.66, 648), (824.37, 703), (883.24, 761), (942.11, 826),
+    (1000.94, 872), (1059.80, 917), (1118.67, 967), (1177.35, 1013)]
+
+
+def _axes(d, X0, Y0, XW, YH, xt, yt, xlab, ylab, fx, fy):
+    """线性坐标轴与网格。xt / yt 为刻度值列表，fx / fy 为刻度文本格式。"""
+    for v in xt:
+        x = X0 + (v - xt[0]) / (xt[-1] - xt[0]) * XW
+        d.add(Line(x, Y0, x, Y0 + YH, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, x, Y0 - 10, fx(v), 7, FONT, GREY, 'middle')
+    for v in yt:
+        y = Y0 + (v - yt[0]) / (yt[-1] - yt[0]) * YH
+        d.add(Line(X0, y, X0 + XW, y, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, X0 - 4, y - 2.5, fy(v), 7, FONT, GREY, 'end')
+    d.add(Rect(X0, Y0, XW, YH, fillColor=None, strokeColor=colors.HexColor('#9fb0bf'),
+               strokeWidth=0.8))
+    _txt(d, X0 + XW / 2, Y0 - 22, xlab, 7.5, BOLD, DARK, 'middle')
+    _txt(d, X0, Y0 + YH + 6, ylab, 7.5, BOLD, DARK)
+
+
+def ca_tdc():
+    """左：周期性 STOP 下的读数折叠关系；右：作者实测的单次标准差。"""
+    d = Drawing(W, 262)
+    # ---- 左：折叠 ----
+    X0, Y0, XW, YH = 40, 54, 172, 168
+
+    def lx(v):
+        return X0 + v / 100 * XW
+
+    def ly(v):
+        return Y0 + v / 120 * YH
+
+    d.add(Rect(lx(0), Y0, lx(12) - lx(0), YH, fillColor=colors.HexColor('#fbe3e0'),
+               strokeColor=None))
+    _axes(d, X0, Y0, XW, YH, list(range(0, 101, 20)), list(range(0, 121, 20)),
+          '相位 phi：脉冲到下一个 10 MHz 沿 (ns)', 'TDC 读数 tau (ns)',
+          lambda v: '%d' % v, lambda v: '%d' % v)
+    for yv in (12, 112):
+        _wire(d, [X0, ly(yv), X0 + XW, ly(yv)], GREY, 0.7, (3, 2))
+    _wire(d, [lx(12), ly(12), lx(100), ly(100)], CLK, 1.8)
+    _wire(d, [lx(0), ly(100), lx(12), ly(112)], PPS, 1.8)
+    _txt(d, lx(14), ly(104), '折叠：读数 100 ~ 112 ns', 7, BOLD, PPS)
+    _txt(d, lx(14), ly(94), '约 12% 的脉冲落在此区', 7, FONT, PPS)
+    _txt(d, lx(46), ly(36), 'tau = phi', 7.5, BOLD, CLK)
+    _txt(d, lx(1), ly(5), '死区', 7, BOLD, PPS)
+
+    # ---- 右：实测标准差 ----
+    X0, Y0, XW, YH = 296, 54, 178, 168
+
+    def rx(v):
+        return X0 + v / 1200 * XW
+
+    def ry(v):
+        return Y0 + v / 1100 * YH
+
+    d.add(Rect(rx(12), Y0, rx(112) - rx(12), YH, fillColor=colors.HexColor('#dcebf7'),
+               strokeColor=None))
+    _axes(d, X0, Y0, XW, YH, list(range(0, 1201, 300)), list(range(0, 1101, 220)),
+          '测量间隔 TOF (ns)', '单次标准差 (ps)', lambda v: '%d' % v, lambda v: '%d' % v)
+    _wire(d, [rx(20), ry(0.87 * 20 - 18), rx(1200), ry(0.87 * 1200 - 18)], GREY, 0.7, (3, 2))
+    for tof, sig in TDC_DATA:
+        d.add(Circle(rx(tof), ry(sig), 1.7, fillColor=TDC, strokeColor=TDC))
+    _txt(d, rx(130), ry(1010), '<- 工作区 12 ~ 112 ns', 7, BOLD, CLK)
+    _txt(d, rx(130), ry(950), '   sigma 约 13 ~ 75 ps', 7, BOLD, CLK)
+    _txt(d, rx(130), ry(870), '虚线：拟合斜率约 0.87 ps/ns', 7, FONT, GREY)
+
+    _txt(d, 4, 6, '右图数据：作者 2022-08-28 实测，模式 1，CALIBRATION2 = 10 周期，每点 10 万次。'
+         'STOP 先于或等于 START 时全部判为无效。', 7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：调谐电压链路原理图
+
+def ca_dac_sch():
+    """按作者原理图重绘的调谐电压链路，元件值标注为 v1 / v2。"""
+    d = Drawing(W, 222)
+    g = Group()
+    Y = 150
+
+    # 分组虚线框
+    for x, w, lab in ((4, 204, '调谐 DAC 与电压基准'), (211, 167, '二阶 Sallen-Key 有源低通'),
+                      (382, 48, '无源 RC')):
+        g.add(Rect(x, 96, w, 140, fillColor=None, strokeColor=colors.HexColor('#9aa8e0'),
+                   strokeWidth=0.7, strokeDashArray=(3, 2)))
+        _txt(g, x + 4, 228, lab, 7.5, BOLD, colors.HexColor('#3446a8'))
+
+    # ADR4533
+    _box(g, 12, 126, 50, 48, colors.HexColor('#fffbe6'), DARK, 0.9)
+    _txt(g, 37, 160, 'ADR4533', 7.5, BOLD, DARK, 'middle')
+    _txt(g, 37, 148, '3.300 V', 7, FONT, DARK, 'middle')
+    _txt(g, 37, 136, 'U301', 6.5, FONT, GREY, 'middle')
+    _wire(g, [37, 174, 37, 206])
+    g.add(Rect(33, 186, 8, 7, fillColor=colors.HexColor('#c0392b'), strokeColor=None, rx=2, ry=2))
+    _txt(g, 44, 187, 'JP301', 6.5, FONT, GREY)
+    _txt(g, 44, 203, '+5 V（FB302）', 6.5, FONT, GREY)
+    _wire(g, [37, 126, 37, 120])
+    _gnd(g, 37, 120)
+
+    # JP302 选择基准
+    _wire(g, [62, Y, 80, Y])
+    _box(g, 80, 142, 26, 16, colors.white, DARK, 0.9, r=2)
+    _txt(g, 93, 147, 'JP302', 6.3, BOLD, DARK, 'middle')
+    _wire(g, [106, Y, 140, Y])
+    _dot(g, 120, Y)
+    _cap(g, 120, Y, 120, 118)
+    _gnd(g, 120, 118)
+    _txt(g, 104, 112, '1u+100n', 6.3, FONT, GREY, 'end')
+    _txt(g, 129, 154, 'VREF', 6.5, BOLD, DARK, 'middle')
+
+    # AD5542A
+    _box(g, 140, 118, 66, 64, colors.HexColor('#fffbe6'), DARK, 0.9)
+    _txt(g, 173, 170, 'AD5542A', 7.5, BOLD, DARK, 'middle')
+    _txt(g, 173, 160, '16 bit R-2R', 6.5, FONT, DARK, 'middle')
+    _txt(g, 143, 146, 'REF', 6.3, FONT, GREY)
+    _txt(g, 203, 146, 'VOUT', 6.3, FONT, GREY, 'end')
+    _txt(g, 173, 133, '无缓冲输出', 6.3, FONT, RED, 'middle')
+    _txt(g, 173, 124, '内阻约 6.25 k', 6.3, FONT, RED, 'middle')
+    _wire(g, [173, 118, 173, 104], BUS, 0.9)
+    _txt(g, 169, 102, 'SPI1 <- MCU', 6.5, FONT, BUS, 'end')
+
+    # R311 / R312 / C313 / C314
+    _wire(g, [206, Y, 214, Y])
+    _res(g, 214, Y, 250, Y)
+    _txt(g, 232, Y + 6, 'R311', 6.5, BOLD, DARK, 'middle')
+    _txt(g, 232, Y - 12, '13k / 8k2', 6.5, FONT, ANA, 'middle')
+    _wire(g, [250, Y, 254, Y])
+    _dot(g, 254, Y)
+    _res(g, 254, Y, 288, Y)
+    _txt(g, 271, Y + 6, 'R312', 6.5, BOLD, DARK, 'middle')
+    _txt(g, 271, Y - 12, '10k / 15k', 6.5, FONT, ANA, 'middle')
+    _dot(g, 294, Y)
+    _wire(g, [288, Y, 314, Y])
+    _cap(g, 294, Y, 294, 118)
+    _gnd(g, 294, 118)
+    _txt(g, 286, 128, 'C314', 6.5, BOLD, DARK, 'end')
+    _txt(g, 286, 120, '10u / 1u', 6.5, FONT, ANA, 'end')
+
+    # 运放（同相端 Y，反相端 Y-17，输出 x=354）
+    _tri(g, 314, Y - 8.5, 40, 34)
+    _txt(g, 317, Y - 3, '+', 8, BOLD, DARK)
+    _txt(g, 318, Y - 20, '-', 8, BOLD, DARK)
+    _txt(g, 336, Y - 34, 'OPA189', 7, BOLD, DARK, 'middle')
+    _wire(g, [330, Y + 1.7, 330, 176])
+    _txt(g, 333, 172, '+5 V', 6.5, FONT, GREY)
+    yo = Y - 8.5
+    _wire(g, [354, yo, 372, yo])
+    _dot(g, 366, yo)
+    _wire(g, [366, yo, 366, 108, 306, 108, 306, Y - 17, 314, Y - 17])
+    _wire(g, [254, Y, 254, 196, 302, 196])
+    _cap(g, 302, 196, 314, 196)
+    _wire(g, [314, 196, 366, 196, 366, yo])
+    _txt(g, 308, 204, 'C313  20u / 2u2', 6.5, BOLD, DARK, 'middle')
+
+    # R313 / C315
+    _res(g, 372, yo, 410, yo)
+    _txt(g, 391, yo + 6, 'R313', 6.5, BOLD, DARK, 'middle')
+    _txt(g, 391, yo - 12, '100', 6.5, FONT, ANA, 'middle')
+    _dot(g, 416, yo)
+    _wire(g, [410, yo, 436, yo], ANA, 1.1)
+    _cap(g, 416, yo, 416, 112)
+    _gnd(g, 416, 112)
+    _txt(g, 403, 122, '10u', 6.5, FONT, ANA, 'end')
+    _txt(g, 419, yo + 4, 'VCTL', 6, BOLD, ANA)
+
+    # OCXO
+    _box(g, 436, 118, 42, 58, colors.HexColor('#eef4fb'), CLK, 1.0)
+    _txt(g, 457, 160, 'OCXO', 7.5, BOLD, CLK, 'middle')
+    _txt(g, 457, 149, 'AOCJY', 6.5, FONT, DARK, 'middle')
+    _txt(g, 457, 125, 'OUT', 6.3, FONT, GREY, 'middle')
+    _txt(g, 457, 104, '-> LMK1C1103', 6.5, FONT, CLK, 'middle')
+    _wire(g, [457, 176, 457, 246, 93, 246, 93, 158], CLK, 0.9, (3, 2))
+    _txt(g, 200, 249, 'OCXO_VREF：可改用 OCXO 自身基准，做比率式调谐', 6.8, FONT, CLK)
+
+    notes = ['元件值格式：v1（2022-08-05，约 1 Hz）/ v2（2022-08-11，约 10 Hz）。R313 与 C315 两版相同。',
+             'AD5542A 是无缓冲输出，约 6.25 k 内阻与 R311 串联，会把实际截止频率拉低约 20%，见第 5.2 节。',
+             'OPA189 由 +5 V 单电源供电；同相端共模上限约 V+ - 2.5 V = 2.5 V，见第 5.4 节。']
+    for i, s in enumerate(notes):
+        _txt(g, 4, 76 - i * 14, s, 7, FONT, DARK)
+    g.translate(0, -40)
+    d.add(g)
+    return d
+
+
+# ---------------------------------------------------------------- 图：滤波器幅频响应
+
+def _sk_out(f, R1, R2, C1, C2, Ro=8.0, gbw=14e6):
+    """单位增益 Sallen-Key 低通（运放取有限增益带宽积与输出电阻 Ro，负载为 R313/C315）。
+    返回 (有源级输出, 经 R313/C315 后的 VCTL)，输入为 1 V。"""
+    s = 2j * math.pi * f
+    A = 2 * math.pi * gbw / s
+    yl = 1 / (100 + 1 / (s * 10e-6))
+    a = [[1 / R1 + 1 / R2 + s * C1, -1 / R2, -s * C1],
+         [-1 / R2, 1 / R2 + s * C2, 0],
+         [-s * C1, -A / Ro, (1 + A) / Ro + s * C1 + yl]]
+    b = [1 / R1, 0, 0]
+
+    def det(m):
+        return (m[0][0] * (m[1][1] * m[2][2] - m[1][2] * m[2][1])
+                - m[0][1] * (m[1][0] * m[2][2] - m[1][2] * m[2][0])
+                + m[0][2] * (m[1][0] * m[2][1] - m[1][1] * m[2][0]))
+
+    vo = det([[a[i][0], a[i][1], b[i]] for i in range(3)]) / det(a)
+    return vo, vo / (1 + s * 100 * 10e-6)
+
+
+def ca_lpf_bode():
+    """两版调谐滤波器的幅频响应（按原理图元件值计算）。"""
+    d = Drawing(W, 286)
+    X0, Y0, XW, YH = 54, 74, 404, 182
+    FL, FH, DL, DH = -1, 6, -180, 0
+
+    def px(f):
+        return X0 + (math.log10(f) - FL) / (FH - FL) * XW
+
+    def py(db):
+        return Y0 + (max(db, DL) - DL) / (DH - DL) * YH
+
+    for e in range(FL, FH + 1):
+        x = px(10.0 ** e)
+        d.add(Line(x, Y0, x, Y0 + YH, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, x, Y0 - 10, {-1: '0.1', 0: '1', 1: '10', 2: '100', 3: '1k', 4: '10k',
+                             5: '100k', 6: '1M'}[e], 7, FONT, GREY, 'middle')
+    for db in range(DL, DH + 1, 30):
+        y = py(db)
+        d.add(Line(X0, y, X0 + XW, y, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, X0 - 4, y - 2.5, '%d' % db, 7, FONT, GREY, 'end')
+    d.add(Rect(X0, Y0, XW, YH, fillColor=None, strokeColor=colors.HexColor('#9fb0bf'),
+               strokeWidth=0.8))
+    _txt(d, X0 + XW / 2, Y0 - 22, '频率 (Hz)', 7.5, BOLD, DARK, 'middle')
+    _txt(d, X0 - 40, Y0 + YH + 6, '增益 (dB)', 7.5, BOLD, DARK)
+
+    xr = px(159.15)
+    _wire(d, [xr, Y0, xr, Y0 + YH], GREY, 0.6, (1.5, 2))
+    _txt(d, xr + 3, Y0 + YH - 10, 'RC 极点 159 Hz', 6.8, FONT, GREY)
+
+    vers = [('v1', 13e3, 10e3, 20e-6, 10e-6, ANA), ('v2', 8.2e3, 15e3, 2.2e-6, 1e-6, CLK)]
+    fs = [10 ** (FL + i * (FH - FL) / 280) for i in range(281)]
+    for name, R1, R2, C1, C2, col in vers:
+        act, tot = [], []
+        for f in fs:
+            a, t = _sk_out(f, R1, R2, C1, C2)
+            act.append(20 * math.log10(abs(a)))
+            tot.append(20 * math.log10(abs(t)))
+        _wire(d, sum(([px(f), py(v)] for f, v in zip(fs, act)), []), col, 0.8, (3, 2))
+        _wire(d, sum(([px(f), py(v)] for f, v in zip(fs, tot)), []), col, 1.8)
+        # -3 dB 点（对分法细化）与有源级的斜率反转点
+        lo = max(f for f, v in zip(fs, tot) if v >= -3)
+        hi = lo * 10 ** ((FH - FL) / 280)
+        for _ in range(40):
+            mid = math.sqrt(lo * hi)
+            if 20 * math.log10(abs(_sk_out(mid, R1, R2, C1, C2)[1])) >= -3:
+                lo = mid
+            else:
+                hi = mid
+        f3 = lo
+        d.add(Circle(px(f3), py(-3), 2.4, fillColor=colors.white, strokeColor=col,
+                     strokeWidth=1.2))
+        i_min = min(range(len(fs)), key=lambda i: act[i])
+        fm = fs[i_min]
+        d.add(Circle(px(fm), py(act[i_min]), 2.4, fillColor=col, strokeColor=col))
+        _txt(d, X0 + XW - 6, py(-60 if name == 'v1' else -45),
+             '%s 有源级斜率反转 %.1f kHz（实心点）' % (name, fm / 1e3), 7, BOLD, col, 'end')
+        _txt(d, X0 + 6, py(-120 if name == 'v1' else -135),
+             '%s：-3 dB 点 %.2f Hz（空心圈）' % (name, f3), 7, BOLD, col)
+
+    ly = 30
+    for i, (c, dash, t) in enumerate(((ANA, None, 'v1 总响应（至 VCTL）'),
+                                      (ANA, (3, 2), 'v1 仅有源级'),
+                                      (CLK, None, 'v2 总响应（至 VCTL）'),
+                                      (CLK, (3, 2), 'v2 仅有源级'))):
+        bx = 8 + i * 118
+        ln = Line(bx, ly + 3, bx + 18, ly + 3, strokeColor=c, strokeWidth=1.6 if not dash else 0.9)
+        if dash:
+            ln.strokeDashArray = dash
+        d.add(ln)
+        _txt(d, bx + 22, ly, t, 7, FONT, DARK)
+    _txt(d, 8, 12, '按原理图元件值计算；运放取 GBW 14 MHz，等效输出电阻 8 欧（使反转频率与作者 PSpice 结论一致）。'
+         '未计 DAC 内阻。', 7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：调谐分辨率
+
+def ca_tuning():
+    """DAC 一个 LSB 的频率步进在 tau 秒内累积出的时间误差。"""
+    d = Drawing(W, 250)
+    X0, Y0, XW, YH = 60, 62, 392, 166
+    TL, TH, EL, EH = 0, 3, -12, -7               # 1 s..1000 s；1 ps..100 ns
+
+    def px(t):
+        return X0 + (math.log10(t) - TL) / (TH - TL) * XW
+
+    def py(e):
+        return Y0 + (math.log10(e) - EL) / (EH - EL) * YH
+
+    for e in range(TL, TH + 1):
+        x = px(10 ** e)
+        d.add(Line(x, Y0, x, Y0 + YH, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, x, Y0 - 10, ('1 s', '10 s', '100 s', '1000 s')[e], 7, FONT, GREY, 'middle')
+    for e in range(EL, EH + 1):
+        y = py(10.0 ** e)
+        d.add(Line(X0, y, X0 + XW, y, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, X0 - 4, y - 2.5, {-12: '1 ps', -11: '10 ps', -10: '100 ps',
+                                  -9: '1 ns', -8: '10 ns', -7: '100 ns'}[e], 7, FONT, GREY, 'end')
+    d.add(Rect(X0, Y0, XW, YH, fillColor=None, strokeColor=colors.HexColor('#9fb0bf'),
+               strokeWidth=0.8))
+    _txt(d, X0 + XW / 2, Y0 - 22, '持续时间 tau', 7.5, BOLD, DARK, 'middle')
+    _txt(d, X0 - 50, Y0 + YH + 6, '1 LSB 累积的时间误差', 7.5, BOLD, DARK)
+
+    _wire(d, [X0, py(50e-12), X0 + XW, py(50e-12)], TDC, 1.0, (4, 2))
+    _txt(d, X0 + XW - 4, py(50e-12) + 3, 'TDC7200 单次约 50 ps', 7, BOLD, TDC, 'end')
+    _wire(d, [X0, py(1e-9), X0 + XW, py(1e-9)], RED, 1.0, (4, 2))
+    _txt(d, X0 + 4, py(1e-9) + 3, '作者期望的 1 ns', 7, BOLD, RED)
+
+    lines = ((16, ANA, 1.8), (20, CLK, 1.4))
+    for bits, col, sw in lines:
+        step = 2e-6 / 2 ** bits                    # 2 ppm 调谐范围
+        _wire(d, [px(1), py(step), px(1000), py(step * 1000)], col, sw)
+
+    d.add(Circle(px(10), py(305e-12), 3, fillColor=RED, strokeColor=RED))
+    _txt(d, px(10) + 6, py(305e-12) - 12, '作者算例 305 ps', 7, BOLD, RED)
+
+    for i, (bits, col, sw) in enumerate(lines):
+        bx = 8 + i * 170
+        d.add(Line(bx, 27, bx + 18, 27, strokeColor=col, strokeWidth=sw))
+        _txt(d, bx + 22, 24, '%d bit DAC：%.3g ppt / LSB' % (bits, 2e-6 / 2 ** bits * 1e12),
+             7, BOLD, col)
+    _txt(d, 8, 9, '假设 OCXO 调谐范围 2 ppm 全部落在 DAC 满量程内。斜线是 1 LSB 频率步进在 tau 内累积的时间误差。',
+         7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：控制环信号流
+
+def ca_loop():
+    """数字锁相环的信号流（按帖子描述整理，作者未公开固件）。"""
+    d = Drawing(W, 292)
+    _blk(d, 4, 196, 82, 44, 'ZED-F9T', ['TP1 脉冲', 'TIM-TP 含 qErr'], PPS)
+    _blk(d, 108, 196, 86, 44, '两级 TIC', ['TIM2 粗测', 'TDC7200 细测'], TDC)
+    d.add(Circle(222, 218, 11, fillColor=colors.white, strokeColor=DARK, strokeWidth=1))
+    _txt(d, 222, 215, '+', 9, BOLD, DARK, 'middle')
+    _blk(d, 250, 196, 98, 44, '锯齿修正', ['减去 qErr', '得时间误差 x(n)'], PPS)
+    _blk(d, 372, 196, 106, 44, '数字 PI 控制器', ['时间常数远大于', '滤波器群时延'], MCU_C)
+    _box(d, 372, 254, 106, 26, colors.white, SEN, 0.9, r=3)
+    _txt(d, 425, 269, 'TMP117 温度 / IMU 加速度', 6.8, BOLD, SEN, 'middle')
+    _txt(d, 425, 259, '前馈补偿（v2 加 IMU，待实现）', 6.5, FONT, SEN, 'middle')
+    _arrow(d, 425, 254, 425, 241, SEN, 0.9)
+
+    _blk(d, 372, 118, 106, 44, '16 bit DAC', ['AD5542A', '可加 PWM 抖动扩位'], ANA)
+    _blk(d, 372, 40, 106, 44, '有源低通', ['群时延 v1 0.23 s', 'v2 0.024 s'], ANA)
+    _blk(d, 250, 40, 98, 44, '被控 OCXO', ['VCTL -> 频率', '低 g 敏感型（规划）'], CLK)
+    _blk(d, 128, 40, 80, 44, '时钟分配', ['LMK1C1103', '3 路同相'], CLK)
+    _blk(d, 176, 118, 92, 40, '本地脉冲生成', ['TIM2 / HRTIM', '同时驱动脉冲输出'], MCU_C)
+
+    _arrow(d, 86, 218, 107, 218, PPS, 1.1)
+    _arrow(d, 194, 218, 210, 218, TDC, 1.1)
+    _arrow(d, 233, 218, 249, 218, DARK, 1.1)
+    _arrow(d, 348, 218, 371, 218, PPS, 1.1)
+    _arrow(d, 425, 196, 425, 163, MCU_C, 1.1)
+    _txt(d, 429, 177, 'DAC 码', 6.5, BOLD, MCU_C)
+    _arrow(d, 425, 118, 425, 85, ANA, 1.1)
+    _arrow(d, 372, 62, 349, 62, ANA, 1.2)
+    _txt(d, 360, 66, 'VCTL', 6.3, BOLD, ANA, 'middle')
+    _arrow(d, 250, 62, 209, 62, CLK, 1.2)
+    _txt(d, 229, 66, '10 MHz', 6.5, BOLD, CLK, 'middle')
+    # LMK -> 本地脉冲生成、LMK -> TIC
+    _wire(d, [184, 84, 184, 100, 222, 100], CLK, 1.1)
+    _arrow(d, 222, 100, 222, 117, CLK, 1.1)
+    _arrow(d, 222, 158, 222, 206, MCU_C, 1.1)
+    _txt(d, 226, 176, 't_local（-）', 6.5, BOLD, MCU_C)
+    _arrow(d, 150, 84, 150, 195, CLK, 1.1)
+    # 对外输出
+    _arrow(d, 128, 62, 92, 62, CLK, 1.2)
+    _txt(d, 6, 59, '10 MHz 输出', 7, BOLD, CLK)
+    # RTCM 输入
+    _arrow(d, 45, 270, 45, 241, GREEN, 1.0)
+    _txt(d, 50, 262, 'RTCM 3 差分修正', 7, BOLD, GREEN)
+
+    _txt(d, 4, 20, '作者未公开固件。本图按帖子中的描述整理：qErr 修正、群时延补偿、IMU 前馈均为推断或规划项。',
+         7, FONT, GREY)
+    _txt(d, 4, 7, '环路的所有比较都在 OCXO 相干时钟域内完成，只有 GNSS 脉冲是外部异步输入。', 7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：输出驱动
+
+def ca_output():
+    """BUF602 输出级：源端 49.9 欧匹配，可驱动 50 欧或高阻负载。"""
+    d = Drawing(W, 236)
+    Y = 160
+    _txt(d, 4, 226, 'BUF602 输出级（5 路相同）', 8.5, BOLD, DARK)
+    _txt(d, 6, Y + 6, 'CMOS 3.3 V', 7, BOLD, DARK)
+    _txt(d, 6, Y - 8, '来自 LMK / MCU / F9T', 6.5, FONT, GREY)
+    _arrow(d, 64, Y, 86, Y, DARK, 0.9)
+    _tri(d, 86, Y, 42, 40)
+    _txt(d, 101, Y - 3, 'BUF', 7, BOLD, DARK, 'middle')
+    _wire(d, [104, Y + 11.4, 104, 196])
+    _txt(d, 108, 192, '+5 V', 6.5, FONT, GREY)
+    _wire(d, [104, Y - 11.4, 104, 124])
+    _txt(d, 108, 124, '-5 V', 6.5, FONT, GREY)
+    _res(d, 128, Y, 172, Y)
+    _txt(d, 150, Y + 6, '49.9 欧', 6.8, BOLD, DARK, 'middle')
+    _dot(d, 182, Y)
+    _wire(d, [172, Y, 200, Y])
+    # TVS（双向）
+    _wire(d, [182, Y, 182, Y - 12])
+    cy = Y - 20
+    d.add(Polygon([176, cy + 8, 188, cy + 8, 182, cy], fillColor=DARK, strokeColor=DARK))
+    d.add(Polygon([176, cy - 8, 188, cy - 8, 182, cy], fillColor=DARK, strokeColor=DARK))
+    d.add(Line(176, cy, 188, cy, strokeColor=DARK, strokeWidth=1))
+    _wire(d, [182, cy - 8, 182, cy - 16])
+    _gnd(d, 182, cy - 16)
+    _txt(d, 192, cy - 3, 'TVS', 6.5, FONT, GREY)
+    _sma(d, 206, Y)
+    _txt(d, 206, Y + 10, 'SMA', 6.5, FONT, GREY, 'middle')
+    for dy in (-4, 4):
+        _wire(d, [212, Y + dy, 296, Y + dy], GREY, 0.9)
+    _txt(d, 254, Y + 8, '50 欧同轴', 6.8, FONT, GREY, 'middle')
+    _wire(d, [296, Y, 312, Y + 30], GREY, 0.8, (2, 2))
+    _wire(d, [296, Y, 312, Y - 30], GREY, 0.8, (2, 2))
+
+    def load(y, title, line2, amp):
+        _box(d, 314, y - 18, 164, 36, colors.white, ACCENT, 0.9, r=3)
+        _txt(d, 320, y + 6, title, 7, BOLD, DARK)
+        _txt(d, 320, y - 6, line2, 6.6, FONT, GREY)
+        h = 12 * amp / 3.3
+        bx0 = 434
+        _wire(d, [bx0, y - 8, bx0 + 8, y - 8, bx0 + 8, y - 8 + h, bx0 + 22, y - 8 + h,
+                  bx0 + 22, y - 8, bx0 + 34, y - 8], ACCENT, 1.1)
+        _txt(d, bx0 + 17, y + 8, '%.2f V' % amp, 6.5, BOLD, ACCENT, 'middle')
+
+    load(Y + 30, '50 欧负载', '与源端 49.9 欧分压', 1.65)
+    load(Y - 30, '高阻负载', '末端全反射，源端吸收反射波', 3.3)
+
+    chans = [('J401', '10 MHz', 'LMK Y0', CLK), ('J411', '10 MHz', 'LMK Y0', CLK),
+             ('J441', '稳定脉冲', 'MCU PA9', PPS), ('J451', '稳定脉冲', 'MCU PA9', PPS),
+             ('J491', 'F9T TP2', '接收机直出', PPS)]
+    for i, (ref, name, src, col) in enumerate(chans):
+        x = 4 + i * 95
+        _box(d, x, 46, 88, 40, colors.white, col, 1.0, r=3)
+        _txt(d, x + 44, 72, '%s  %s' % (ref, name), 7.3, BOLD, col, 'middle')
+        _txt(d, x + 44, 56, '来源：%s' % src, 6.8, FONT, GREY, 'middle')
+    _txt(d, 4, 26, 'BUF602 压摆率 8 V/ns，上升沿 < 0.5 ns，PSRR > 45 dB（至 1 MHz），以上为作者引用的数据手册值。',
+         7, FONT, DARK)
+    _txt(d, 4, 12, '+/-5 V 与 +3.3 V 全部由 J101 端子从外部供入，板上没有稳压器。', 7, FONT, DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：MCU 引脚分配
+
+def ca_pinmap():
+    """STM32G474RET6 在 v2 原理图中的引脚分配。"""
+    d = Drawing(W, 300)
+    cx0, cx1, cy0, cy1 = 160, 322, 30, 282
+    _box(d, cx0, cy0, cx1 - cx0, cy1 - cy0, colors.HexColor('#f4f6f8'), MCU_C, 1.2, r=4)
+    mx = (cx0 + cx1) / 2
+    _txt(d, mx, 160, 'STM32G474RET6', 8.5, BOLD, MCU_C, 'middle')
+    _txt(d, mx, 148, 'LQFP64，170 MHz', 7, FONT, GREY, 'middle')
+    _txt(d, mx, 136, '时钟取自 OCXO', 7, FONT, GREY, 'middle')
+
+    left = [('PF0', '5', '10MHZ_MCU（HSE 旁路）', CLK),
+            ('PB11', '33', 'PULSE_GNSS（TIM2_CH4）', PPS),
+            ('PC10', '52', 'UART4_TX -> F9T RXD', BUS),
+            ('PC11', '53', 'UART4_RX <- F9T TXD', BUS),
+            ('PC8', '40', 'I2C3_SCL -> TMP117', SEN),
+            ('PC9', '41', 'I2C3_SDA <-> TMP117', SEN),
+            ('PA11', '45', 'USB D-', BUS),
+            ('PA12', '46', 'USB D+', BUS),
+            ('PA13', '49', 'SWDIO', GREY),
+            ('PA14', '50', 'SWCLK', GREY),
+            ('PA0~2', '12~14', 'LED 绿 / 黄 / 红', GREY)]
+    right = [('PA9', '43', 'PULSE_MCU（TIM2_CH3）', PPS),
+             ('PA4', '18', 'SPI1_NSS -> DAC', ANA),
+             ('PA5', '19', 'SPI1_SCK -> DAC', ANA),
+             ('PA7', '21', 'SPI1_MOSI -> DAC', ANA),
+             ('PB12', '34', 'SPI2_NSS -> TDC', TDC),
+             ('PB13', '35', 'SPI2_SCK -> TDC', TDC),
+             ('PB14', '36', 'SPI2_MISO <- TDC', TDC),
+             ('PB15', '37', 'SPI2_MOSI -> TDC', TDC),
+             ('PC6', '38', 'TDC INTB（4k7 上拉）', TDC),
+             ('PC7', '39', 'TDC ENABLE', TDC),
+             ('PA15', '51', 'SPI3_NSS -> IMU', SEN),
+             ('PB3~5', '56~58', 'SPI3 <-> IMU', SEN),
+             ('PB6', '59', 'TIM4_CH1 -> IMU CLKIN', SEN)]
+    for i, (pin, num, net, col) in enumerate(left):
+        y = 268 - i * 21
+        d.add(Line(cx0 - 12, y, cx0, y, strokeColor=col, strokeWidth=1.4))
+        _txt(d, cx0 + 4, y - 2.5, '%s · %s' % (pin, num), 6.8, BOLD, col)
+        _txt(d, cx0 - 16, y - 2.5, net, 7, FONT, DARK, 'end')
+    for i, (pin, num, net, col) in enumerate(right):
+        y = 270 - i * 18.5
+        d.add(Line(cx1, y, cx1 + 12, y, strokeColor=col, strokeWidth=1.4))
+        _txt(d, cx1 - 4, y - 2.5, '%s · %s' % (pin, num), 6.8, BOLD, col, 'end')
+        _txt(d, cx1 + 16, y - 2.5, net, 7, FONT, DARK)
+    for i, s in enumerate(('PA9 也可作', 'HRTIM1_CHA2', '184 ps 输出')):
+        _txt(d, mx, 112 - i * 10, s, 6.8, BOLD if i == 1 else FONT, PPS, 'middle')
+    _txt(d, 4, 12, 'v1（08-05）差异：TDC ENABLE / INTB 在 PC8 / PC9，TMP117 走 I2C4（PC6 / PC7），无 IMU 与 LED。',
+         7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：PCB 布局
+
+def ca_board():
+    """v2 版图（100 x 100 mm）的器件分区，按作者版图 PDF 量取，示意。"""
+    d = Drawing(W, 300)
+    K, BX, BT = 2.6, 16, 288                       # mm -> pt；板左边与上边
+
+    def r(x, y, w, h, fill, stroke, lab='', sub='', sw=0.9, dash=None, fs=6.8):
+        rect = Rect(BX + x * K, BT - (y + h) * K, w * K, h * K, fillColor=fill,
+                    strokeColor=stroke, strokeWidth=sw)
+        if dash:
+            rect.strokeDashArray = dash
+        d.add(rect)
+        cxp, cyp = BX + (x + w / 2) * K, BT - (y + h / 2) * K
+        if lab:
+            _txt(d, cxp, cyp + (1 if sub else -2.5), lab, fs, BOLD, DARK, 'middle')
+        if sub:
+            _txt(d, cxp, cyp - 8, sub, 6.2, FONT, GREY, 'middle')
+
+    r(0, 0, 100, 100, colors.HexColor('#eef3ea'), colors.HexColor('#5d7a52'), sw=1.4)
+    for hx, hy in ((4, 4), (96, 4), (4, 96), (96, 96)):
+        d.add(Circle(BX + hx * K, BT - hy * K, 4, fillColor=colors.white,
+                     strokeColor=GREY, strokeWidth=0.8))
+    r(13.5, 0.5, 22.5, 11, colors.white, DARK, 'J101 电源端子', '-5V GND 3V3 5V')
+    r(41, 1, 11, 11, colors.white, GREY, 'SWD')
+    r(2, 23, 40, 40, colors.HexColor('#fde8f6'), colors.HexColor('#d63384'), sw=1.6)
+    _txt(d, BX + 22 * K, BT - 61 * K, 'Hammond 1551P 塑料罩', 6.5, BOLD,
+         colors.HexColor('#d63384'), 'middle')
+    r(7, 30, 29, 26, colors.white, CLK, 'OCXO', 'Abracon AOCJY')
+    r(4, 24.5, 10, 4.5, colors.white, SEN, 'TMP117', fs=5.6)
+    r(44, 23, 19.5, 18.5, colors.white, SEN, 'IMU 子板', 'IIM-42652')
+    r(66, 0.5, 32, 68, colors.HexColor('#fff4e5'), PPS, sw=1.2, dash=(4, 2))
+    _txt(d, BX + 82 * K, BT - 18 * K, 'RCB-F9T 子板', 6.8, BOLD, PPS, 'middle')
+    _txt(d, BX + 82 * K, BT - 22 * K, '叠插区域', 6.5, FONT, PPS, 'middle')
+    r(74, 0.5, 7, 9, colors.white, PPS, '天线', fs=5.8)
+    r(83, 0.5, 9, 5, colors.white, BUS, 'USB', fs=5.8)
+    r(72, 34, 15, 15, colors.white, MCU_C, 'STM32', 'G474RE')
+    r(70, 52, 8, 8, colors.white, TDC, 'TDC', fs=6)
+    r(82, 59, 9, 5, colors.white, PPS, 'J102', fs=5.8)
+    r(46, 44, 14, 9, colors.white, ANA, 'OPA189', fs=6)
+    r(50.5, 56, 9, 5.5, colors.white, ANA, 'DAC', fs=6)
+    r(43, 62, 6, 7, colors.white, ANA, '基准', fs=5.6)
+    r(19, 67, 10, 7, colors.white, CLK, 'LMK', fs=6)
+    r(67, 70, 9, 5, colors.white, GREY, 'LED', fs=5.6)
+    r(5, 77, 92, 12, colors.HexColor('#f4f6f8'), DARK, 'BUF602 x5 输出驱动')
+    for i, (sx, lab, col) in enumerate(((10, '10M', CLK), (30, '10M', CLK), (50, 'PPS', PPS),
+                                        (70, 'PPS', PPS), (90, 'TP2', PPS))):
+        d.add(Rect(BX + (sx - 4) * K, BT - 100 * K - 8, 8 * K, 12, fillColor=colors.white,
+                   strokeColor=col, strokeWidth=1))
+        _txt(d, BX + sx * K, BT - 100 * K - 5, lab, 6, BOLD, col, 'middle')
+    _txt(d, BX + 50 * K, BT + 3, '100 mm', 7, BOLD, GREY, 'middle')
+
+    notes = ['板框 100 x 100 mm（含 SMA 底座），可装入常见铝壳',
+             'OCXO 在左上，塑料罩挡气流；TMP117 放在罩内',
+             'RCB-F9T 用 2x4 排针 J102 叠插在右上方',
+             'MCU 与 TDC7200 紧挨，位于 RCB-F9T 下方',
+             '基准、DAC、有源滤波夹在 OCXO 罩与 MCU 之间',
+             'LMK1C1103 紧贴 OCXO 输出脚',
+             '5 路 SMA 全部排在下沿',
+             '无板载稳压器，三路电源由 J101 外供',
+             'IMU 子板位于板中央（v2 新增）']
+    for i, s in enumerate(notes):
+        _txt(d, 300, 270 - i * 17, '- ' + s, 7, FONT, DARK)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -938,6 +1872,18 @@ FIGURES = {
     'gpsdo_tic': gpsdo_tic,
     'gpsdo_res_bar': gpsdo_res_bar,
     'v11_roadmap': v11_roadmap,
+    'ca_usecase': ca_usecase,
+    'ca_system': ca_system,
+    'ca_clock_tree': ca_clock_tree,
+    'ca_tic_timing': ca_tic_timing,
+    'ca_tdc': ca_tdc,
+    'ca_dac_sch': ca_dac_sch,
+    'ca_lpf_bode': ca_lpf_bode,
+    'ca_tuning': ca_tuning,
+    'ca_loop': ca_loop,
+    'ca_output': ca_output,
+    'ca_pinmap': ca_pinmap,
+    'ca_board': ca_board,
 }
 
 

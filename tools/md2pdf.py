@@ -30,7 +30,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (BaseDocTemplate, Frame, HRFlowable, PageTemplate,
-                                Paragraph, Preformatted, Spacer, Table, TableStyle)
+                                Paragraph, Spacer, Table, TableStyle, XPreformatted)
 
 VF = r'C:\Windows\Fonts\NotoSansSC-VF.ttf'
 CACHE = os.path.join(os.path.expanduser('~'), '.cache', 'core-docs-fonts')
@@ -104,13 +104,23 @@ def ensure_fonts():
     return paths
 
 
+def escape(t):
+    return t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+
+
+def cjk(t):
+    """Courier 没有中文字形：把等宽文本里的非 ASCII 字符段改用思源黑体。"""
+    return re.sub(r'([^\x00-\x7f]+)', r'<font face="%s">\1</font>' % FONT, t)
+
+
 def inline(t):
     """Markdown 行内语法 -> reportlab 标记。"""
-    t = t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    t = escape(t)
     t = re.sub(r'\*\*(.+?)\*\*', r'<b>\1</b>', t)
     t = re.sub(r'\*(.+?)\*', r'<i>\1</i>', t)
     t = re.sub(r'`(.+?)`',
-               r'<font face="%s" size="8.5" color="#b5451b">\1</font>' % MONO, t)
+               lambda m: '<font face="%s" size="8.5" color="#b5451b">%s</font>'
+               % (MONO, cjk(m.group(1))), t)
     return t
 
 
@@ -167,7 +177,7 @@ def parse(lines, subtitle=''):
 
         if code is not None:
             if stripped.startswith('```'):
-                story.append(Preformatted('\n'.join(code), S['code']))
+                story.append(XPreformatted(cjk(escape('\n'.join(code))), S['code']))
                 code = None
             else:
                 code.append(line)

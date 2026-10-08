@@ -1,0 +1,216 @@
+(footprint "LMK1C1103PWR"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+125℃ 1 1.71V~1.89V、2.375V~2.625V、3.135V~3.465V 250MHz 3 TSSOP-8 Clock Buffers, Drivers, Distributors ROHS")
+	(tags "C2873274 LMK1C1103PWR TSSOP-8_L4.4-W3.0-P0.65-LS6.4-BL Texas Instruments")
+	(property "Reference" "REF**"
+		(at 0 -4.654 0)
+		(layer "F.SilkS")
+		(uuid "2c0cd4fe-30a9-452d-9764-695ce2e945e0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 4.654 0)
+		(layer "F.Fab")
+		(uuid "f25b96d4-f41c-4456-92c0-2decdd57171b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010130_Texas-Instruments-LMK1C1103PWR_C2873274.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1451d306-c143-4bad-986a-e35ec3bf379c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+125℃ 1 1.71V~1.89V、2.375V~2.625V、3.135V~3.465V 250MHz 3 TSSOP-8 Clock Buffers, Drivers, Distributors ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d593ea25-df8f-4394-9f7c-b7113ed23093")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C2873274"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "51546334-15a7-4dc9-89fa-6a65a3147819")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.50114 -0.508)
+		(end -1.50114 -1.96596)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "537c5266-d936-4dc9-aa4c-c9f51a2cd9f2")
+	)
+	(fp_line
+		(start -1.5 -1.96596)
+		(end 1.5 -1.96596)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f9dbd750-abe5-4aac-82db-c53432975a0b")
+	)
+	(fp_line
+		(start -1.5 0.508)
+		(end -1.5 1.938198)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "92bde819-9a7d-4d49-85e7-194b2a050913")
+	)
+	(fp_line
+		(start -1.5 1.938198)
+		(end 1.5 1.938198)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "169c2fb1-d09e-4ffa-8ee5-8314dc76c685")
+	)
+	(fp_line
+		(start 1.5 -1.96596)
+		(end 1.5 1.938198)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3f976076-ba85-44cc-8b12-34d2b85ed1cb")
+	)
+	(fp_arc
+		(start -1.50114 -0.508)
+		(mid -0.992568 -0.000572)
+		(end -1.5 0.508)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a182add4-12a3-4db2-bc24-1ae037faf0b8")
+	)
+	(fp_poly
+		(pts
+			(xy -1.293 1.27) (xy -1.274 1.14439) (xy -1.217 1.031) (xy -1.127495 0.940699) (xy -1.014443 0.882756)
+			(xy -0.889 0.862784) (xy -0.763531 0.882756) (xy -0.650479 0.940699) (xy -0.561 1.031) (xy -0.504 1.14439)
+			(xy -0.485 1.27) (xy -0.504 1.39561) (xy -0.561 1.509) (xy -0.650479 1.599301) (xy -0.763531 1.657244)
+			(xy -0.889 1.677216) (xy -1.014443 1.657244) (xy -1.127495 1.599301) (xy -1.217 1.509) (xy -1.274 1.39561)
+			(xy -1.293 1.27)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "f611089e-fb0b-4ed1-b90c-861fb44a08da")
+	)
+	(fp_circle
+		(center -0.975 3.6)
+		(end -0.825 3.6)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "87be2b54-3e6f-4eb4-9b39-dd45c4693ee9")
+	)
+	(pad "1" smd oval
+		(at -0.975 2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5df227aa-dec6-454d-92cd-038b75a3c2b0")
+	)
+	(pad "2" smd oval
+		(at -0.324866 2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "40b74769-a55a-4d32-b2d0-01ad978489cb")
+	)
+	(pad "3" smd oval
+		(at 0.32512 2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8430c4b4-ad82-4e5f-8106-83ced874c91c")
+	)
+	(pad "4" smd oval
+		(at 0.975 2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2f6e3ed9-dfb1-4980-830e-42cacf3e0552")
+	)
+	(pad "5" smd oval
+		(at 0.975 -2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b91c1829-b61e-443a-8cb1-249a9d6d4d24")
+	)
+	(pad "6" smd oval
+		(at 0.32512 -2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "318fd830-7a4c-45ab-95dd-86ac5d8d7072")
+	)
+	(pad "7" smd oval
+		(at -0.324866 -2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "863bb8ff-5afe-4f84-977e-a0502a609d20")
+	)
+	(pad "8" smd oval
+		(at -0.975 -2.927)
+		(size 0.353 1.454)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0034a0b9-93eb-4b60-b873-c38ffaa627e5")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/LMK1C1103PWR.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

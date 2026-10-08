@@ -1,0 +1,247 @@
+(footprint "TDC7200PWR"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ 0.5uA 20MHz 2V~3.6V SPI TSSOP-14 ADCs/DACs - Special Purpose ROHS")
+	(tags "C2653139 TDC7200PWR TSSOP-14_L5.0-W4.4-P0.65-LS6.4-BL Texas Instruments")
+	(property "Reference" "REF**"
+		(at 0 -4.65 0)
+		(layer "F.SilkS")
+		(uuid "04ab7767-f830-4640-a717-16d43a1eb545")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 4.65 0)
+		(layer "F.Fab")
+		(uuid "9f032dba-d7d6-4ca1-b9f3-f5646dda63b5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303011701_Texas-Instruments-TDC7200PWR_C2653139.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ec5e51b3-8a85-4cba-a24d-2385e26fb2b0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ 0.5uA 20MHz 2V~3.6V SPI TSSOP-14 ADCs/DACs - Special Purpose ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef72df4d-0b06-4427-80a1-59bbefe25c12")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C2653139"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ac4c2c3a-21ed-424a-bdc1-bc13e483ce6c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.5146 -1.743278)
+		(end 2.5 -1.743278)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8618894f-b811-44b2-a47e-8fe72b014f2a")
+	)
+	(fp_line
+		(start -2.5146 -0.6858)
+		(end -2.5146 -1.743278)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6b31ba34-7048-47e8-81b3-be8ac1144e0b")
+	)
+	(fp_line
+		(start -2.5146 1.6002)
+		(end -2.5146 0.6858)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "274a60a5-ddc8-477a-8871-9ff695bd0cbf")
+	)
+	(fp_line
+		(start -2.5146 1.740154)
+		(end 2.5 1.740154)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "375f1b98-abcb-402c-9d29-2b4f7a0f5f3e")
+	)
+	(fp_line
+		(start 2.5 -1.743278)
+		(end 2.5 1.740154)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "884e2a8d-e77f-4f4e-8554-55f0870561c4")
+	)
+	(fp_arc
+		(start -2.5146 -0.6858)
+		(mid -1.8288 0)
+		(end -2.5146 0.6858)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c621319b-2bdc-4096-943b-d0cde72263fb")
+	)
+	(fp_circle
+		(center -1.63 1.11)
+		(end -1.43002 1.11)
+		(stroke
+			(width 0.4)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "02f38f57-5fba-4cf4-baa4-a968e601ab69")
+	)
+	(fp_circle
+		(center -1.964 3.662)
+		(end -1.814 3.662)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "05a42b10-50c4-462a-ac23-bb6bdba5479b")
+	)
+	(pad "1" smd rect
+		(at -1.95 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "15d45f5b-59ce-4b8a-899c-cb0d2d9be2a9")
+	)
+	(pad "2" smd rect
+		(at -1.3 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0e7491c4-23b3-4c63-b854-70f9a1ffab80")
+	)
+	(pad "3" smd rect
+		(at -0.65 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "80f2ed7f-f593-407f-a053-ac257ee5f087")
+	)
+	(pad "4" smd rect
+		(at 0 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1f7ebbf3-3b42-4f7f-b5c5-172f9466d63a")
+	)
+	(pad "5" smd rect
+		(at 0.65 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5cc506e4-fee8-4997-bee6-62c4d04e7c8d")
+	)
+	(pad "6" smd rect
+		(at 1.3 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6ae74222-3565-4144-8967-03cf1307bd9e")
+	)
+	(pad "7" smd rect
+		(at 1.95 2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6a79ccd9-ed38-4e88-b5e0-237552e4298f")
+	)
+	(pad "8" smd rect
+		(at 1.95 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c20d7812-3cc8-4754-a8e3-2308abaf7c8d")
+	)
+	(pad "9" smd rect
+		(at 1.3 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "3d5a7cc0-c5bf-4e11-a93d-1bc3c2e8f1c2")
+	)
+	(pad "10" smd rect
+		(at 0.65 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "81ddef21-6c40-4b6f-a924-266995be131b")
+	)
+	(pad "11" smd rect
+		(at 0 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ac1da6ce-abbf-4959-b20e-e61b1148e6a5")
+	)
+	(pad "12" smd rect
+		(at -0.65 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e6823100-a114-4139-bbc1-844c6d9b1afc")
+	)
+	(pad "13" smd rect
+		(at -1.3 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "46f4b94e-3789-4b0f-9a3d-25eea852978e")
+	)
+	(pad "14" smd rect
+		(at -1.95 -2.8)
+		(size 0.4 1.7)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c34389b7-e43c-4fac-abd3-d7024a45e6e5")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/TDC7200PWR.wrl"
+		(offset
+			(xyz 0 0 0.069)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
+)
