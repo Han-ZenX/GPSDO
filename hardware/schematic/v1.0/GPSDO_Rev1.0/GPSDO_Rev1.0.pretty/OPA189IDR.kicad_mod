@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 0 -4.785591 0)
 		(layer "F.SilkS")
-		(uuid "1ff1ad45-d70b-4fd2-ac05-e0d2ad736d41")
+		(uuid "7b5be1f6-4aa0-430d-a001-633a96e4cf4e")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "~"
 		(at 0 4.785591 0)
 		(layer "F.Fab")
-		(uuid "a0361776-e67e-499b-8719-515dcc5bdb14")
+		(uuid "98acac8b-9727-4186-a12c-0c9bd4648ab5")
 		(effects
 			(font
 				(size 1 1)
@@ -31,7 +31,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "19fec588-1214-4925-a5e6-684b8612a975")
+		(uuid "fc840feb-f1f8-46b0-9516-f7099929e027")
 		(effects
 			(font
 				(size 1 1)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "1cb66414-4d49-4b7c-9a6f-250ac8488d11")
+		(uuid "52a72e4d-4df5-496b-803c-81187a439e88")
 		(effects
 			(font
 				(size 1 1)
@@ -55,7 +55,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "9f691450-0176-45ff-ad70-28eaeea78754")
+		(uuid "7ecdda86-b486-4f5f-bde2-1950dca038e8")
 		(effects
 			(font
 				(size 1 1)
@@ -73,7 +73,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "b957597a-fb84-492c-bfda-87d16a44c39d")
+		(uuid "7a61e71c-e95a-45bd-bd9a-cb58e42514ce")
 	)
 	(fp_line
 		(start -2.526208 1.52146)
@@ -83,7 +83,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0ad6c76b-0221-47ad-a21c-f6d7eee76ea5")
+		(uuid "c5cb0d17-9f27-4611-bce8-57e752edbce3")
 	)
 	(fp_line
 		(start 2.526208 -1.52146)
@@ -93,7 +93,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "47d1cfa2-645e-4315-a3ab-c687b84e2da6")
+		(uuid "aae63fcc-022d-4f9d-9ff9-57723ecce056")
 	)
 	(fp_line
 		(start 2.526208 1.52146)
@@ -103,7 +103,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "bc9622cc-06a6-484c-bda2-f0450282b7c5")
+		(uuid "e549dd98-ea7a-4438-9522-3a54c0c5c566")
 	)
 	(fp_circle
 		(center -2.644394 2.767838)
@@ -114,7 +114,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "d7b44b58-2e96-461e-adb2-91eb38e48aae")
+		(uuid "7cd0fe22-e5f7-48c6-9193-c9e44d8a74df")
 	)
 	(fp_circle
 		(center -1.905 0.769)
@@ -125,7 +125,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "522a5957-2a46-471e-9aae-f24181f6039e")
+		(uuid "713d16de-8c0d-4c87-903f-3d16ddfa0aff")
 	)
 	(fp_circle
 		(center -1.905 3.397504)
@@ -136,55 +136,55 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "319951c1-24bf-4de8-8b9a-b028e043b5be")
+		(uuid "b907bd8f-b94f-42f8-bd23-2bdf5d107ca8")
 	)
 	(pad "1" smd oval
 		(at -1.905 2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "4f7d5222-39a1-4099-9cae-683b5c6daf10")
+		(uuid "9bceac30-f437-4274-9f0a-e89cdc24db94")
 	)
 	(pad "2" smd oval
 		(at -0.635 2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "e866d536-4f9a-425b-a9de-7b86dd18bdb8")
+		(uuid "a2dcd5f4-9df3-4d19-b1f1-a25e1c1026bf")
 	)
 	(pad "3" smd oval
 		(at 0.635 2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "62afc503-851e-40b6-8ce9-7cf3a439cf11")
+		(uuid "94ae24a2-c3b0-4144-bf0c-15092533bf5a")
 	)
 	(pad "4" smd oval
 		(at 1.905 2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "ec1da7fa-3f3b-427c-8385-cc2b05d4f7e9")
+		(uuid "67caa6cd-499e-4e12-a05e-98320daed5ce")
 	)
 	(pad "5" smd oval
 		(at 1.905 -2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "1f309f1a-4977-4b1c-b68f-4ec85bdbab1d")
+		(uuid "26bede48-1b4e-4562-a9f6-357836c97f13")
 	)
 	(pad "6" smd oval
 		(at 0.635 -2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "fb7980a8-5d8e-4432-be1f-76330a5fec01")
+		(uuid "76d47cdf-3ac3-4bc9-bebf-abffef0f92db")
 	)
 	(pad "7" smd oval
 		(at -0.635 -2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "5b4554f0-2ed1-44be-a04a-490daac65e60")
+		(uuid "49917dc8-8125-4990-9e5e-e70e8db9b8e9")
 	)
 	(pad "8" smd oval
 		(at -1.905 -2.767838)
 		(size 0.574 2.035505)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "26ac203b-8dd1-4148-b253-46b635847d29")
+		(uuid "2546df75-2447-4be7-b40d-1e35ca47112e")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/OPA189IDR.wrl"
