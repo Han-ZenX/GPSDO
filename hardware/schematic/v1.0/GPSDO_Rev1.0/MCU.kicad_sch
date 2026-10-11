@@ -4056,6 +4056,16 @@
 	)
 	(wire
 		(pts
+			(xy 273.05 63.5) (xy 273.05 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce74852d-9108-4af9-aebe-2c8489b09460")
+	)
+	(wire
+		(pts
 			(xy 270.51 127) (xy 270.51 128.27)
 		)
 		(stroke
@@ -5495,84 +5505,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 273.05 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5d3acdd7-9a68-46f9-abb2-f90c6f9efc39")
-		(property "Reference" "#PWR015"
-			(at 273.05 73.66 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 273.05 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 273.05 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 273.05 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 273.05 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f91ccf49-2b9b-467f-998d-5a0fa887433c")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 72.39 78.74 0)
 		(unit 1)
@@ -5963,6 +5895,84 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
 					(reference "FB2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 273.05 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "943aac71-6e0d-4da2-b325-641a11488737")
+		(property "Reference" "#PWR015"
+			(at 273.05 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 273.05 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 273.05 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 273.05 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2a635707-9765-4d2f-a6d5-40c1b856cb93")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -6752,6 +6762,85 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:FerriteBead_Small")
+		(at 273.05 67.31 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc954877-d35f-4b86-8bfe-12c5a613bbce")
+		(property "Reference" "FB6"
+			(at 269.494 64.516 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 268.986 68.834 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:L_0603_1608Metric"
+			(at 274.828 67.31 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 273.05 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 273.05 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0c0df90a-9598-45af-a90a-55434ee312f4")
+		)
+		(pin "1"
+			(uuid "6d9acdcc-c65c-44a1-8d76-0c160c7fd495")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
+					(reference "FB6")
 					(unit 1)
 				)
 			)
