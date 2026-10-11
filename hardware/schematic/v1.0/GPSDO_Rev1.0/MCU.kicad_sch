@@ -492,6 +492,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GPSDO_Rev1.0:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:L_0603_1608Metric"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GPSDO_Rev1.0:R"
 			(pin_numbers
 				(hide yes)
@@ -3010,13 +3177,13 @@
 		(uuid "0aa75a12-f63c-4126-a296-172bb7d30551")
 	)
 	(junction
-		(at 99.06 39.37)
+		(at 104.14 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0faf38f1-7992-4505-a0af-d20d25d5320c")
 	)
 	(junction
-		(at 106.68 39.37)
+		(at 111.76 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "229d0ee4-5490-485f-8604-058c64db5154")
@@ -3040,7 +3207,7 @@
 		(uuid "6dd7db2b-e6e8-4f4c-97c5-0f00ed6c8616")
 	)
 	(junction
-		(at 91.44 31.75)
+		(at 96.52 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "700b2b71-5a88-43c2-88e5-31a7864e461e")
@@ -3064,19 +3231,13 @@
 		(uuid "8b7a873e-c27e-4fc7-bd60-dd4c5027b6a3")
 	)
 	(junction
-		(at 106.68 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9a987494-ddc3-4ce0-a8ba-ac64835d10c8")
-	)
-	(junction
 		(at 273.05 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a78ce90f-31e0-4fa6-bc8c-1b6da767d12d")
 	)
 	(junction
-		(at 99.06 31.75)
+		(at 104.14 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ac4e53ff-57a1-48d3-80b1-d8ee762acee4")
@@ -3098,6 +3259,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef616bc3-3768-4402-98ee-94f957bc4675")
+	)
+	(junction
+		(at 111.76 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f06d7f31-1018-449c-a4a9-24d33034a678")
 	)
 	(junction
 		(at 200.66 45.72)
@@ -3146,6 +3313,16 @@
 			(type default)
 		)
 		(uuid "009e7360-a596-460f-a756-bd06a52f61fb")
+	)
+	(wire
+		(pts
+			(xy 111.76 34.29) (xy 116.84 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "067fa88e-8868-440b-9755-828d051d2892")
 	)
 	(polyline
 		(pts
@@ -3229,7 +3406,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 39.37) (xy 99.06 39.37)
+			(xy 96.52 41.91) (xy 104.14 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3357,16 +3534,6 @@
 		)
 		(uuid "3b138314-8e9b-43b1-a9c1-d84352352888")
 	)
-	(wire
-		(pts
-			(xy 85.09 31.75) (xy 91.44 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d10c56c-d277-4863-94fc-a32a7b43c9a9")
-	)
 	(polyline
 		(pts
 			(xy 31.75 113.03) (xy 143.51 113.03)
@@ -3386,6 +3553,16 @@
 			(type default)
 		)
 		(uuid "41de2cf1-3a13-4851-bd3d-29d6d29f16ab")
+	)
+	(wire
+		(pts
+			(xy 121.92 34.29) (xy 128.27 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "436ee85c-1ebb-4f29-a18a-5f5183c10cd8")
 	)
 	(polyline
 		(pts
@@ -3499,6 +3676,16 @@
 	)
 	(wire
 		(pts
+			(xy 270.51 120.65) (xy 270.51 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6213409e-e502-47fb-9a21-b01c35180ebf")
+	)
+	(wire
+		(pts
 			(xy 200.66 54.61) (xy 203.2 54.61)
 		)
 		(stroke
@@ -3569,6 +3756,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 34.29) (xy 85.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68327ecb-d37f-471d-96a0-8b2bc3975242")
+	)
+	(wire
+		(pts
 			(xy 212.09 44.45) (xy 212.09 49.53)
 		)
 		(stroke
@@ -3619,16 +3816,6 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 31.75) (xy 85.09 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "74e5dfda-1e43-4a43-be07-d7a03be5633d")
-	)
-	(wire
-		(pts
 			(xy 226.06 140.97) (xy 241.3 140.97)
 		)
 		(stroke
@@ -3636,6 +3823,16 @@
 			(type default)
 		)
 		(uuid "772d0625-c6af-47b4-80c5-154bd3ab6b68")
+	)
+	(wire
+		(pts
+			(xy 85.09 34.29) (xy 96.52 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "784cba8f-c61f-4bba-893f-1671aff56d25")
 	)
 	(wire
 		(pts
@@ -3679,7 +3876,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 31.75) (xy 106.68 31.75)
+			(xy 104.14 34.29) (xy 111.76 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3749,7 +3946,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 31.75) (xy 99.06 31.75)
+			(xy 96.52 34.29) (xy 104.14 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3939,7 +4136,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 39.37) (xy 106.68 39.37)
+			(xy 104.14 41.91) (xy 111.76 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4594,7 +4791,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:C")
-		(at 106.68 35.56 0)
+		(at 111.76 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4604,7 +4801,7 @@
 		(dnp no)
 		(uuid "224cacde-2367-4556-b2f2-22c999f9a431")
 		(property "Reference" "C15"
-			(at 107.188 33.274 0)
+			(at 112.268 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4615,7 +4812,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 107.188 37.846 0)
+			(at 112.268 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4626,7 +4823,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
-			(at 107.6452 39.37 0)
+			(at 112.7252 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4637,7 +4834,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 35.56 0)
+			(at 111.76 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4648,7 +4845,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 106.68 35.56 0)
+			(at 111.76 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4823,6 +5020,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 270.51 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "347b1e5a-eb8f-46af-bc9d-5464721f12d5")
+		(property "Reference" "#PWR014"
+			(at 270.51 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 270.51 115.57 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 270.51 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 270.51 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98ca341a-25e0-4571-89b8-56901d523c33")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 236.22 77.47 270)
 		(unit 1)
@@ -4903,7 +5178,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:C")
-		(at 99.06 35.56 0)
+		(at 104.14 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4913,7 +5188,7 @@
 		(dnp no)
 		(uuid "48b1cd03-274d-4f8a-84e4-55353644500c")
 		(property "Reference" "C14"
-			(at 99.568 33.274 0)
+			(at 104.648 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4924,7 +5199,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 99.568 37.846 0)
+			(at 104.648 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4935,7 +5210,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
-			(at 100.0252 39.37 0)
+			(at 105.1052 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4946,7 +5221,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 35.56 0)
+			(at 104.14 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4957,7 +5232,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 99.06 35.56 0)
+			(at 104.14 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5214,84 +5489,6 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
 					(reference "#PWR0140")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 106.68 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5b87c8a8-5186-4d8d-bd2e-c2afc44df9dc")
-		(property "Reference" "#PWR017"
-			(at 106.68 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 106.68 26.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 106.68 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a7370471-0f11-4370-9f08-10da54e582a7")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -5616,7 +5813,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 270.51 127 0)
+		(at 128.27 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5625,9 +5822,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "90797e90-5e19-4744-9fd6-6897860a97a0")
-		(property "Reference" "#PWR014"
-			(at 270.51 130.81 0)
+		(uuid "8bc934d0-da1f-4ebb-ba1c-847c82f038b6")
+		(property "Reference" "#PWR017"
+			(at 128.27 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5638,7 +5835,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 270.51 121.92 0)
+			(at 128.27 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5648,7 +5845,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 270.51 127 0)
+			(at 128.27 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5659,7 +5856,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 127 0)
+			(at 128.27 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5670,7 +5867,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 270.51 127 0)
+			(at 128.27 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5681,12 +5878,91 @@
 			)
 		)
 		(pin "1"
-			(uuid "5c66cd71-f34d-49ed-9939-09313ca6e9e9")
+			(uuid "282aed19-95ac-4188-b15d-ad92467eca24")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
-					(reference "#PWR014")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:FerriteBead_Small")
+		(at 270.51 124.46 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8c6b68e3-fef8-484d-bdae-988f0b66eaba")
+		(property "Reference" "FB2"
+			(at 267.462 122.174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 266.954 126.238 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:L_0603_1608Metric"
+			(at 272.288 124.46 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 270.51 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 270.51 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1d11d14c-4bc5-4d2a-b823-bdc2b99d2286")
+		)
+		(pin "1"
+			(uuid "463ed3a7-3ae0-498f-b788-5e76d1b569c5")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
+					(reference "FB2")
 					(unit 1)
 				)
 			)
@@ -5773,7 +6049,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 106.68 39.37 0)
+		(at 111.76 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5783,7 +6059,7 @@
 		(dnp no)
 		(uuid "a8c315a9-24ff-467f-b89d-1c52431dfe7f")
 		(property "Reference" "#PWR0147"
-			(at 106.68 45.72 0)
+			(at 111.76 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5794,7 +6070,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 106.68 42.418 90)
+			(at 111.76 44.958 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5806,7 +6082,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 106.68 39.37 0)
+			(at 111.76 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5817,7 +6093,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 39.37 0)
+			(at 111.76 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5828,7 +6104,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 39.37 0)
+			(at 111.76 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6403,6 +6679,85 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:FerriteBead_Small")
+		(at 119.38 34.29 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca87e8e2-6eee-4395-b438-651c17e908de")
+		(property "Reference" "FB1"
+			(at 116.332 32.512 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 122.936 32.258 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:L_0603_1608Metric"
+			(at 119.38 36.068 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 119.38 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d44427c0-35fb-43f3-8a4a-b101b6f1eb78")
+		)
+		(pin "1"
+			(uuid "5bfcca2b-ec2b-4e5c-b47a-f295ef9a3001")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GPSDO_Rev1.0:TYPE-C_16PIN_2MD_073")
 		(at 228.6 45.72 0)
 		(unit 1)
@@ -6870,7 +7225,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:C")
-		(at 91.44 35.56 0)
+		(at 96.52 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6880,7 +7235,7 @@
 		(dnp no)
 		(uuid "f5da4663-7cc7-4fdc-a40d-35fdaffeca47")
 		(property "Reference" "C13"
-			(at 91.948 33.274 0)
+			(at 97.028 35.814 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6891,7 +7246,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 91.948 37.846 0)
+			(at 97.028 40.386 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6902,7 +7257,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
-			(at 92.4052 39.37 0)
+			(at 97.4852 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6913,7 +7268,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 35.56 0)
+			(at 96.52 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6924,7 +7279,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 91.44 35.56 0)
+			(at 96.52 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
