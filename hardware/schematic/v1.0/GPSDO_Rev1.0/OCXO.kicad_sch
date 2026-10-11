@@ -2693,6 +2693,12 @@
 		(uuid "8c886bda-cc5b-4c55-a94a-5a9a4939eb10")
 	)
 	(junction
+		(at 157.48 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "91e9cc81-8c3c-420d-81fa-a312ffe53c6b")
+	)
+	(junction
 		(at 134.62 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2703,6 +2709,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0aa517b-4f55-42c5-9383-8efdf4d79034")
+	)
+	(junction
+		(at 157.48 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b4ae23c7-808a-407f-a492-2e0509c110dc")
 	)
 	(junction
 		(at 205.74 57.15)
@@ -2850,6 +2862,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 105.41) (xy 153.67 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16a93e5b-5f51-4213-8a7f-be8a26888bbf")
+	)
+	(wire
+		(pts
 			(xy 46.99 41.91) (xy 46.99 43.18)
 		)
 		(stroke
@@ -2947,6 +2969,16 @@
 			(type default)
 		)
 		(uuid "3305bf25-1875-4ccc-9d26-c4bb74ce8c8d")
+	)
+	(wire
+		(pts
+			(xy 161.29 97.79) (xy 161.29 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33fbf08b-1af2-4b67-b4aa-69d6a8f7b9be")
 	)
 	(wire
 		(pts
@@ -3090,13 +3122,23 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 100.33) (xy 157.48 111.76)
+			(xy 157.48 106.68) (xy 157.48 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4c812a6e-8231-42b8-9f7c-b0140c5a2f12")
+	)
+	(wire
+		(pts
+			(xy 157.48 96.52) (xy 157.48 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ee8e20f-c6f7-4750-8b50-f98dcb1c7742")
 	)
 	(wire
 		(pts
@@ -3117,6 +3159,16 @@
 			(type dash)
 		)
 		(uuid "5bc2af1f-dada-403c-9f32-98b0321b116f")
+	)
+	(wire
+		(pts
+			(xy 157.48 106.68) (xy 161.29 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bdfd360-4118-4e3f-be8c-69837983f2e2")
 	)
 	(wire
 		(pts
@@ -3228,6 +3280,16 @@
 		)
 		(uuid "78239f53-7260-47a1-a630-f62a483791a0")
 	)
+	(wire
+		(pts
+			(xy 153.67 97.79) (xy 153.67 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "794c3c01-d9b5-40e2-9f10-1b3f24ed701d")
+	)
 	(polyline
 		(pts
 			(xy 180.34 81.28) (xy 180.34 148.59)
@@ -3257,6 +3319,16 @@
 			(type dash)
 		)
 		(uuid "7c713d6d-469c-4978-8b14-9f380a706dbf")
+	)
+	(wire
+		(pts
+			(xy 161.29 105.41) (xy 161.29 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7deda5d6-35b1-40ff-a221-2924312eaeef")
 	)
 	(wire
 		(pts
@@ -3640,6 +3712,26 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 106.68) (xy 157.48 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e54aa95a-910e-47db-aa97-4fe5b8d8f87c")
+	)
+	(wire
+		(pts
+			(xy 153.67 97.79) (xy 157.48 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5757c3e-e456-4724-9fe5-7d367e428ced")
+	)
+	(wire
+		(pts
 			(xy 142.24 111.76) (xy 157.48 111.76)
 		)
 		(stroke
@@ -3767,6 +3859,16 @@
 			(type default)
 		)
 		(uuid "f9fe6c71-1370-461e-99c6-c3340f2329e6")
+	)
+	(wire
+		(pts
+			(xy 157.48 97.79) (xy 161.29 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa00767b-79c0-4475-a1ef-9287db2e052c")
 	)
 	(wire
 		(pts
@@ -4015,6 +4117,17 @@
 	)
 	(hierarchical_label "OCXO_VCC"
 		(shape bidirectional)
+		(at 157.48 96.52 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91a1953d-7ccd-4df4-a432-83280bd695da")
+	)
+	(hierarchical_label "OCXO_VCC"
+		(shape bidirectional)
 		(at 198.12 34.29 90)
 		(effects
 			(font
@@ -4023,17 +4136,6 @@
 			(justify left)
 		)
 		(uuid "a1ef1bac-52ff-45d6-be4f-6d310b9d6676")
-	)
-	(hierarchical_label "OCXO_VCC"
-		(shape bidirectional)
-		(at 157.48 100.33 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d5b8d063-7bc1-4aab-a44e-defcae1fa539")
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:C")
@@ -5198,6 +5300,85 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:FerriteBead_Small")
+		(at 161.29 102.87 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "606c50e2-73be-4e3f-8846-2912c041781f")
+		(property "Reference" "FB5"
+			(at 158.242 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 157.734 104.648 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:L_0603_1608Metric"
+			(at 163.068 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 161.29 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "df4d019f-894f-4da1-a4ba-1bca237baec8")
+		)
+		(pin "1"
+			(uuid "d0d11d5a-66c2-4fae-a5d9-ae7641933a1e")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
+					(reference "FB5")
 					(unit 1)
 				)
 			)
@@ -7404,6 +7585,85 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
 					(reference "R28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:FerriteBead_Small")
+		(at 153.67 102.87 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e8373091-9a39-49c3-87d3-b48c0d04d0ae")
+		(property "Reference" "FB4"
+			(at 150.622 100.584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100R"
+			(at 150.114 104.648 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:L_0603_1608Metric"
+			(at 155.448 102.87 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 153.67 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "335a07d2-24b8-436d-8406-62e2a83f8559")
+		)
+		(pin "1"
+			(uuid "096e26cb-e3e0-4bb0-9685-93c2767938e2")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
+					(reference "FB4")
 					(unit 1)
 				)
 			)
