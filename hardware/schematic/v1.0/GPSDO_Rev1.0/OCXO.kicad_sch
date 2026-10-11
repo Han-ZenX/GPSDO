@@ -2384,6 +2384,8 @@
 		(effects
 			(font
 				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
 			)
 		)
 		(uuid "0f173753-7255-4b15-a594-1622bfcff11d")
@@ -2394,6 +2396,8 @@
 		(effects
 			(font
 				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
 			)
 		)
 		(uuid "4e8b1149-7932-4a16-b93a-1d57d0183088")
@@ -2404,6 +2408,8 @@
 		(effects
 			(font
 				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
 			)
 		)
 		(uuid "54433206-015d-41d7-83d2-1f02fc06f318")
