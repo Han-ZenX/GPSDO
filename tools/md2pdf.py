@@ -29,6 +29,7 @@ from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfbase.ttfonts import TTFont
+import reportlab.platypus.paragraph as _rlpara
 from reportlab.platypus import (BaseDocTemplate, Frame, HRFlowable, PageTemplate,
                                 Paragraph, Spacer, Table, TableStyle, XPreformatted)
 
@@ -72,6 +73,13 @@ S = {
     'cellh': ParagraphStyle('cellh', fontName=BOLD, fontSize=8.5, leading=12.5,
                             textColor=colors.white),
 }
+
+# 默认只在空格处断行，中英混排时整段中文会被挤到下一行；正文改按 CJK 规则逐字断行。
+# 表格不改：CJK 规则会把单元格里的英文型号从中间拆开
+for _k in ('body', 'quote', 'li'):
+    S[_k].wordWrap = 'CJK'
+# reportlab 的避头字符表缺少全角逗号等，补上以免行首出现标点
+_rlpara.ALL_CANNOT_START += ''.join(c for c in '，、；：！？）】」”' if c not in _rlpara.ALL_CANNOT_START)
 
 
 def ensure_fonts():

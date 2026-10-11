@@ -1852,6 +1852,620 @@ def ca_board():
     return d
 
 
+# ================================================================ 磁珠文档（FB231）
+
+BEAD_C = colors.HexColor('#3d4a57')
+SILVER = colors.HexColor('#b8c0c8')
+FERRITE = colors.HexColor('#4a4f55')
+PALE_L = colors.HexColor('#e8f1fa')            # 感性区底色
+PALE_R = colors.HexColor('#fdf2e1')            # 阻性区底色
+PALE_C = colors.HexColor('#f1eaf6')            # 容性区底色
+
+# 600R @ 100 MHz 片式磁珠的示意模型：Rdc + (L // Rp // Cp)，非某型号实测曲线
+FB600 = (0.38, 1.0e-6, 750.0, 1.0e-12)
+FB100 = (0.05, 0.2e-6, 150.0, 0.9e-12)
+
+
+def _zbead(f, Rdc, L, Rp, Cp):
+    w = 2 * math.pi * f
+    return Rdc + 1 / (1 / Rp + 1 / (1j * w * L) + 1j * w * Cp)
+
+
+def _bead(d, x1, x2, y, col=DARK):
+    """水平放置的磁珠符号（实心块），x1 / x2 为两端连接点。"""
+    cx = (x1 + x2) / 2
+    _wire(d, [x1, y, cx - 10, y], col)
+    _wire(d, [cx + 10, y, x2, y], col)
+    d.add(Rect(cx - 10, y - 4, 20, 8, fillColor=BEAD_C, strokeColor=BEAD_C, strokeWidth=0.8))
+
+
+def _ind(d, x1, x2, y, col=DARK, n=4):
+    """水平电感（n 个半圆）。"""
+    r = (x2 - x1) / (2 * n)
+    pts = []
+    for k in range(n):
+        cx = x1 + r * (2 * k + 1)
+        for i in range(13):
+            a = math.pi - math.pi * i / 12
+            pts += [cx + r * math.cos(a), y + r * math.sin(a)]
+    _wire(d, pts, col, 0.9)
+
+
+def _wave(d, x, y, w, col=RED, amp=2.5, n=3):
+    pts = []
+    for i in range(41):
+        t = i / 40
+        pts += [x + w * t, y + amp * math.sin(2 * math.pi * n * t)]
+    _wire(d, pts, col, 0.9)
+
+
+def _num(d, x, y, s, col):
+    """圆圈编号。"""
+    d.add(Circle(x, y, 5.5, fillColor=col, strokeColor=col))
+    _txt(d, x, y - 2.6, s, 7, BOLD, colors.white, 'middle')
+
+
+def _dim_h(d, x1, x2, y, s, col=ACCENT, size=7):
+    d.add(Line(x1, y, x2, y, strokeColor=col, strokeWidth=0.6))
+    for xx in (x1, x2):
+        d.add(Line(xx, y - 3, xx, y + 3, strokeColor=col, strokeWidth=0.6))
+    _txt(d, (x1 + x2) / 2, y + 3, s, size, BOLD, col, 'middle')
+
+
+def _dim_v(d, x, y1, y2, s, col=ACCENT, size=7):
+    d.add(Line(x, y1, x, y2, strokeColor=col, strokeWidth=0.6))
+    for yy in (y1, y2):
+        d.add(Line(x - 3, yy, x + 3, yy, strokeColor=col, strokeWidth=0.6))
+    _txt(d, x + 5, (y1 + y2) / 2 - 2.5, s, size, BOLD, col)
+
+
+def _logx(f, F0, F1, X0, XW):
+    return X0 + (math.log10(f) - math.log10(F0)) / (math.log10(F1) - math.log10(F0)) * XW
+
+
+# ---------------------------------------------------------------- 图：电路位置与噪声路径
+
+def fb_sch():
+    """TDC7200 供电电路重绘：磁珠把公共轨与 TDC 局部电源岛隔开。"""
+    d = Drawing(W, 250)
+    RY = 196                                         # 电源轨高度
+
+    # 公共 +3V3 轨与数字负载
+    _txt(d, 10, RY + 12, '+3V3 公共电源轨', 7.5, BOLD, DARK)
+    _wire(d, [10, RY, 220, RY], DARK, 1.2)
+    _blk(d, 18, 92, 100, 62, 'STM32G4 等数字负载', ['SPI / GPIO 翻转', 'ns 级边沿电流'], MCU_C)
+    _blk(d, 128, 92, 82, 62, '时钟缓冲', ['LMK1C1103', '10 MHz 方波边沿'], MCU_C)
+    for x in (68, 169):
+        _wire(d, [x, RY, x, 154])
+        _dot(d, x, RY)
+    _wave(d, 84, RY + 22, 70, RED)
+    _txt(d, 119, RY + 30, '高频噪声 10 MHz – 1 GHz', 7, BOLD, RED, 'middle')
+    _num(d, 160, RY + 22, '1', RED)
+
+    # 磁珠
+    _bead(d, 220, 280, RY)
+    d.add(Rect(222, RY - 13, 56, 44, fillColor=None, strokeColor=RED, strokeWidth=1.3))
+    _txt(d, 250, RY + 20, 'FB231', 7.5, BOLD, DARK, 'middle')
+    _txt(d, 250, RY + 9, '600R', 7, FONT, GREY, 'middle')
+    _txt(d, 250, RY - 24, '噪声在此', 7, BOLD, RED, 'middle')
+    _txt(d, 250, RY - 33, '转为热量', 7, BOLD, RED, 'middle')
+
+    # 局部电源岛
+    isl = Rect(286, 22, 192, 210, fillColor=None, strokeColor=TDC, strokeWidth=0.8)
+    isl.strokeDashArray = (3, 2)
+    d.add(isl)
+    _txt(d, 292, 222, 'VDD_TDC（磁珠后的局部电源岛）', 7.5, BOLD, TDC)
+    _wire(d, [280, RY, 392, RY], TDC, 1.2)
+    for x, ref, val in ((306, 'C232', '1u'), (334, 'C231', '100n')):
+        _dot(d, x, RY, TDC)
+        _cap(d, x, RY, x, 150)
+        _gnd(d, x, 150)
+        _txt(d, x, 130, ref, 7, BOLD, DARK, 'middle')
+        _txt(d, x, 121, val, 7, FONT, GREY, 'middle')
+    _num(d, 320, 104, '2', GREEN)
+
+    # TDC7200
+    _blk(d, 378, 66, 92, 104, 'TDC7200', ['环形振荡器 TDC', '粗计数 @10 MHz', 'SPI 接口', '内部 LDO'], TDC)
+    _wire(d, [392, RY, 392, 170], TDC, 1.2)
+    _txt(d, 396, 176, 'VDD 14', 6.5, FONT, GREY)
+    # R231 上拉
+    _dot(d, 360, RY, TDC)
+    _res(d, 360, RY, 360, 112)
+    _wire(d, [360, 112, 360, 80, 378, 80])
+    _txt(d, 355, 158, 'R231', 7, BOLD, DARK, 'end')
+    _txt(d, 355, 149, '4k7', 7, FONT, GREY, 'end')
+    _txt(d, 382, 77, '/INT 8', 6.5, FONT, GREY)
+    _num(d, 360, 70, '3', GREY)
+    # VREG
+    _wire(d, [452, 66, 452, 58])
+    _cap(d, 452, 58, 452, 36)
+    _gnd(d, 452, 36)
+    _txt(d, 444, 44, 'C233 1u', 7, BOLD, DARK, 'end')
+    _txt(d, 448, 58, 'VREG 13', 6.5, FONT, GREY, 'end')
+
+    # 底部注释
+    notes = [(RED, '1', '数字负载的高频噪声沿公共轨传播，'),
+             (None, '', '被 FB231 的电阻性阻抗吸收'),
+             (GREEN, '2', 'TDC 自身的瞬态电流由 C231/C232'),
+             (None, '', '就近供给，不经磁珠回灌公共轨'),
+             (GREY, '3', '/INT 上拉接在磁珠之后，同样用干净的 VDD')]
+    for i, (c, n, s) in enumerate(notes):
+        y = 74 - i * 12
+        if c:
+            _num(d, 16, y + 2.5, n, c)
+        _txt(d, 26, y, s, 7.2, FONT, DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：磁珠等效电路
+
+def fb_model():
+    """符号与 Rdc + (L // R // C) 等效电路。"""
+    d = Drawing(W, 176)
+    Y = 116
+    _txt(d, 50, 150, '原理图符号', 7.5, BOLD, DARK, 'middle')
+    _bead(d, 20, 80, Y)
+    _txt(d, 50, Y - 16, 'FB  600R', 7, FONT, GREY, 'middle')
+    _txt(d, 100, Y - 4, '≈', 14, BOLD, ACCENT, 'middle')
+
+    _txt(d, 222, 168, '等效电路', 7.5, BOLD, DARK, 'middle')
+    _dot(d, 118, Y)
+    _res(d, 118, Y, 176, Y, AMBER)
+    _txt(d, 147, Y + 7, 'Rdc', 7.5, BOLD, AMBER, 'middle')
+    _wire(d, [176, Y, 190, Y])
+    _wire(d, [190, Y - 30, 190, Y + 30])
+    _wire(d, [300, Y - 30, 300, Y + 30])
+    _dot(d, 190, Y)
+    _dot(d, 300, Y)
+    # L 支路
+    _wire(d, [190, Y + 30, 215, Y + 30])
+    _ind(d, 215, 275, Y + 30, ACCENT)
+    _wire(d, [275, Y + 30, 300, Y + 30])
+    _txt(d, 245, Y + 41, 'L', 7.5, BOLD, ACCENT, 'middle')
+    # R 支路
+    _res(d, 190, Y, 300, Y, RED)
+    _txt(d, 256, Y + 1, 'R(f)', 7.5, BOLD, RED)
+    # C 支路
+    _cap(d, 190, Y - 30, 300, Y - 30, SEN)
+    _txt(d, 252, Y - 40, 'Cp', 7.5, BOLD, SEN)
+    _wire(d, [300, Y, 324, Y])
+    _dot(d, 324, Y)
+
+    items = [(AMBER, 'Rdc', '直流电阻 0.05–0.5 Ω', '决定直流压降与发热'),
+             (ACCENT, 'L', '低频电感 约 0.5–2 µH', '低频段呈感性，几乎无损'),
+             (RED, 'R(f)', '铁氧体磁损耗，随频率上升', '噪声能量在此转为热'),
+             (SEN, 'Cp', '电极间寄生电容 约 1 pF', '高频段旁路，阻抗回落')]
+    for i, (c, k, a, b) in enumerate(items):
+        y = 160 - i * 30
+        d.add(Rect(340, y - 13, 3, 20, fillColor=c, strokeColor=c))
+        _txt(d, 348, y, k + '：' + a, 7.2, BOLD, DARK)
+        _txt(d, 348, y - 10, b, 7, FONT, GREY)
+
+    _txt(d, 8, 30, '低频：Z ≈ Rdc + jωL，像一只小电感，信号与直流几乎无损通过；', 7.3, FONT, DARK)
+    _txt(d, 8, 18, '中频：R(f) 主导，像一只电阻，把噪声变成热（这是磁珠与电感的根本区别）；', 7.3, FONT, DARK)
+    _txt(d, 8, 6, '高频：Cp 把 L 与 R 旁路，阻抗回落，GHz 以上滤波能力下降。', 7.3, FONT, DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：阻抗频率特性
+
+def fb_impedance():
+    """|Z|、R、X 随频率的变化与三个工作区。"""
+    d = Drawing(W, 292)
+    X0, Y0, XW, YH = 52, 72, 404, 196
+    F0, F1, Z0, Z1 = 1e6, 1e10, 0.1, 1000.0
+
+    def px(f):
+        return _logx(f, F0, F1, X0, XW)
+
+    def py(z):
+        z = min(max(z, Z0), Z1)
+        return Y0 + (math.log10(z) - math.log10(Z0)) / (math.log10(Z1) - math.log10(Z0)) * YH
+
+    fs = [10 ** (6 + i / 100) for i in range(401)]
+    zz = [_zbead(f, *FB600) for f in fs]
+    cross = [fs[i] for i in range(1, len(fs))
+             if (zz[i].real - abs(zz[i].imag)) * (zz[i - 1].real - abs(zz[i - 1].imag)) < 0]
+    fa, fb = cross[0], cross[1]
+    for xa, xb, c, t, cond, desc in ((F0, fa, PALE_L, '感性区', 'X > R', '反射为主'),
+                                     (fa, fb, PALE_R, '阻性区', 'R > |X|', '吸收为主'),
+                                     (fb, F1, PALE_C, '容性区', '|X| > R', 'Cp 旁路')):
+        d.add(Rect(px(xa), Y0, px(xb) - px(xa), YH, fillColor=c, strokeColor=None))
+        xm = (px(xa) + px(xb)) / 2
+        _txt(d, xm, Y0 + 24, t, 7.5, BOLD, DARK, 'middle')
+        _txt(d, xm, Y0 + 14, cond, 6.8, FONT, GREY, 'middle')
+        _txt(d, xm, Y0 + 5, desc, 6.8, FONT, GREY, 'middle')
+
+    for e in range(6, 11):
+        x = px(10.0 ** e)
+        d.add(Line(x, Y0, x, Y0 + YH, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, x, Y0 - 10, {6: '1M', 7: '10M', 8: '100M', 9: '1G', 10: '10G'}[e], 7, FONT, GREY, 'middle')
+    for e in range(-1, 4):
+        y = py(10.0 ** e)
+        d.add(Line(X0, y, X0 + XW, y, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, X0 - 4, y - 2.5, {-1: '0.1', 0: '1', 1: '10', 2: '100', 3: '1k'}[e], 7, FONT, GREY, 'end')
+    d.add(Rect(X0, Y0, XW, YH, fillColor=None, strokeColor=colors.HexColor('#9fb0bf'), strokeWidth=0.8))
+    _txt(d, X0 + XW / 2, Y0 - 22, '频率 (Hz)', 7.5, BOLD, DARK, 'middle')
+    _txt(d, X0 - 40, Y0 + YH + 6, '阻抗 (Ω)', 7.5, BOLD, DARK)
+
+    z100 = [_zbead(f, *FB100) for f in fs]
+    ln = PolyLine(sum(([px(f), py(abs(z))] for f, z in zip(fs, z100)), []),
+                  strokeColor=GREY, strokeWidth=1.0)
+    ln.strokeDashArray = (3, 2)
+    d.add(ln)
+    _wire(d, sum(([px(f), py(z.real)] for f, z in zip(fs, zz)), []), RED, 1.1)
+    _wire(d, sum(([px(f), py(abs(z.imag))] for f, z in zip(fs, zz)), []), ACCENT, 1.1)
+    _wire(d, sum(([px(f), py(abs(z))] for f, z in zip(fs, zz)), []), DARK, 2.0)
+
+    z = abs(_zbead(1e8, *FB600))
+    d.add(Circle(px(1e8), py(z), 2.8, fillColor=colors.white, strokeColor=DARK, strokeWidth=1.3))
+    _txt(d, X0 + XW, Y0 + YH + 6, '○ 规格书标称点：600 Ω @ 100 MHz', 7, BOLD, DARK, 'end')
+    _txt(d, px(1.1e6), py(0.7), 'Rdc 0.38 Ω（直流）', 6.8, FONT, RED)
+    _txt(d, px(2.5e8) + 4, py(80), '100R 磁珠 |Z|', 6.8, BOLD, GREY)
+
+    ly = 30
+    for i, (c, sw, dash, t) in enumerate(((DARK, 2.0, None, '600R 磁珠 |Z|'),
+                                          (RED, 1.1, None, '电阻分量 R'),
+                                          (ACCENT, 1.1, None, '电抗分量 |X|'),
+                                          (GREY, 1.0, (3, 2), '100R 磁珠 |Z|（对照）'))):
+        bx = 8 + i * 118
+        ln = Line(bx, ly + 3, bx + 18, ly + 3, strokeColor=c, strokeWidth=sw)
+        if dash:
+            ln.strokeDashArray = dash
+        d.add(ln)
+        _txt(d, bx + 22, ly, t, 7, FONT, DARK)
+    _txt(d, 8, 12, '示意模型 Rdc 0.38 Ω + (1 µH // 750 Ω // 1 pF)，量级与常见 0603/600R 磁珠一致；'
+         '实际曲线以厂商规格书为准。', 7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：磁珠 + 去耦电容的滤波响应
+
+def _fb_h(f, bead):
+    """公共轨噪声 -> TDC VDD 引脚的传递函数。轨源阻抗 20 mΩ + 2 nH；
+    C231 100 nF (30 mΩ, 0.4 nH) // C232 1 µF (10 mΩ, 0.5 nH)。"""
+    w = 2 * math.pi * f
+
+    def zc(C, esr, esl):
+        return esr + 1j * w * esl + 1 / (1j * w * C)
+
+    zs = 0.02 + 1j * w * 2e-9
+    zl = 1 / (1 / zc(100e-9, 0.03, 0.4e-9) + 1 / zc(1e-6, 0.01, 0.5e-9))
+    zb = _zbead(f, *bead) if bead else 0
+    return zl / (zs + zb + zl)
+
+
+def fb_filter():
+    """有无磁珠时，公共轨噪声传到 TDC VDD 引脚的比例。"""
+    d = Drawing(W, 290)
+    X0, Y0, XW, YH = 52, 72, 404, 192
+    F0, F1, DL, DH = 1e4, 1e9, -100, 30
+
+    def px(f):
+        return _logx(f, F0, F1, X0, XW)
+
+    def py(db):
+        return Y0 + (min(max(db, DL), DH) - DL) / (DH - DL) * YH
+
+    for e in range(4, 10):
+        x = px(10.0 ** e)
+        d.add(Line(x, Y0, x, Y0 + YH, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, x, Y0 - 10, {4: '10k', 5: '100k', 6: '1M', 7: '10M', 8: '100M', 9: '1G'}[e],
+             7, FONT, GREY, 'middle')
+    for db in range(DL, DH + 1, 20):
+        y = py(db)
+        d.add(Line(X0, y, X0 + XW, y, strokeColor=LIGHT, strokeWidth=0.5))
+        _txt(d, X0 - 4, y - 2.5, '%+d' % db if db else '0', 7, FONT, GREY, 'end')
+    _wire(d, [X0, py(0), X0 + XW, py(0)], GREY, 0.7)
+    d.add(Rect(X0, Y0, XW, YH, fillColor=None, strokeColor=colors.HexColor('#9fb0bf'), strokeWidth=0.8))
+    _txt(d, X0 + XW / 2, Y0 - 22, '噪声频率 (Hz)', 7.5, BOLD, DARK, 'middle')
+    _txt(d, X0 - 40, Y0 + YH + 6, 'VDD 引脚噪声 / 公共轨噪声 (dB)', 7.5, BOLD, DARK)
+
+    fs = [10 ** (4 + i / 100) for i in range(501)]
+    low_r = (0.05,) + FB600[1:]
+    curves = [(None, GREY, 1.2, (3, 2), '无磁珠：仅 C231 + C232'),
+              (FB600, TDC, 2.0, None, 'FB231（Rdc 0.38 Ω）+ C231 + C232'),
+              (low_r, AMBER, 1.1, None, '同上，但 Rdc 只有 0.05 Ω')]
+    for bead, col, sw, dash, _ in curves:
+        v = [20 * math.log10(abs(_fb_h(f, bead))) for f in fs]
+        ln = PolyLine(sum(([px(f), py(x)] for f, x in zip(fs, v)), []), strokeColor=col, strokeWidth=sw)
+        if dash:
+            ln.strokeDashArray = dash
+        d.add(ln)
+        if bead:
+            i = max(range(len(fs)), key=lambda k: v[k])
+            d.add(Circle(px(fs[i]), py(v[i]), 2.4, fillColor=col, strokeColor=col))
+            _txt(d, px(fs[i]) + 5, py(v[i]) + 3, '%+.1f dB @ %.0f kHz' % (v[i], fs[i] / 1e3),
+                 7, BOLD, col)
+
+    f0 = 1 / (2 * math.pi * math.sqrt(FB600[1] * 1.1e-6))
+    _wire(d, [px(f0), Y0, px(f0), Y0 + YH], GREY, 0.6, (1.5, 2))
+    _txt(d, px(f0) - 3, Y0 + 6, 'f0 = 1/(2π√(LC)) ≈ %.0f kHz' % (f0 / 1e3), 6.8, FONT, GREY, 'end')
+    v = 20 * math.log10(abs(_fb_h(1e8, FB600)))
+    _txt(d, px(1e8), py(v) - 11, '100 MHz：%.0f dB' % v, 7, BOLD, TDC, 'middle')
+    v = 20 * math.log10(abs(_fb_h(1e8, None)))
+    _txt(d, px(1e8), py(v) + 5, '100 MHz：%.0f dB' % v, 7, BOLD, GREY, 'middle')
+    _txt(d, px(2e7), py(-48), '← 磁珠 + 电容带来约 50 dB 额外衰减', 7, BOLD, TDC)
+
+    ly = 30
+    for i, (_, c, sw, dash, t) in enumerate(curves):
+        bx = 8 + i * 160
+        ln = Line(bx, ly + 3, bx + 18, ly + 3, strokeColor=c, strokeWidth=sw)
+        if dash:
+            ln.strokeDashArray = dash
+        d.add(ln)
+        _txt(d, bx + 22, ly, t, 7, FONT, DARK)
+    _txt(d, 8, 12, '假设：公共轨源阻抗 20 mΩ + 2 nH；C231 100 nF（ESR 30 mΩ，ESL 0.4 nH）；C232 1 µF'
+         '（ESR 10 mΩ，ESL 0.5 nH）；磁珠用图 3 模型。', 7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：封装与内部结构
+
+def fb_package():
+    """三种常用尺寸（按比例）与叠层片式磁珠剖面。"""
+    d = Drawing(W, 226)
+    K = 34                                           # pt / mm
+    _txt(d, 8, 212, '外形俯视（按比例，同一比例尺）', 7.5, BOLD, DARK)
+    x = 14
+    for code, metric, L, Wd, T, e in (('0402', '1005', 1.0, 0.5, '0.5', 0.25),
+                                       ('0603', '1608', 1.6, 0.8, '0.8', 0.3),
+                                       ('0805', '2012', 2.0, 1.25, '0.85', 0.4)):
+        w, h = L * K, Wd * K
+        y = 150 - h / 2
+        d.add(Rect(x, y, w, h, fillColor=FERRITE, strokeColor=DARK, strokeWidth=0.6))
+        for xx in (x, x + w - e * K):
+            d.add(Rect(xx, y, e * K, h, fillColor=SILVER, strokeColor=DARK, strokeWidth=0.6))
+        _txt(d, x + w / 2, 118, code + ' / ' + metric, 7.5, BOLD, DARK, 'middle')
+        _txt(d, x + w / 2, 108, '%g × %g mm' % (L, Wd), 7, FONT, GREY, 'middle')
+        _txt(d, x + w / 2, 98, '厚 %s mm' % T, 7, FONT, GREY, 'middle')
+        x += w + 18
+    # 比例尺
+    _dim_h(d, 14, 14 + K, 186, '1 mm', GREY, 6.8)
+    _txt(d, 8, 76, '· 本体为黑 / 深灰色铁氧体，通常无丝印', 7, FONT, DARK)
+    _txt(d, 8, 64, '· 外观与贴片电感、部分电容相近，', 7, FONT, DARK)
+    _txt(d, 8, 52, '  上料时须核对料盘，不能凭外观区分', 7, FONT, DARK)
+    _txt(d, 8, 40, '· 无极性，两端可互换', 7, FONT, DARK)
+    _txt(d, 8, 28, '· 本板推荐 0603：电流余量足，', 7, FONT, DARK)
+    _txt(d, 8, 16, '  手工焊接与返修方便', 7, FONT, DARK)
+
+    # 剖面
+    BX, BY, BW, BH = 258, 86, 196, 92
+    _txt(d, BX, 212, '叠层片式磁珠剖面示意（0603，非比例）', 7.5, BOLD, DARK)
+    d.add(Rect(BX, BY, BW, BH, fillColor=FERRITE, strokeColor=DARK, strokeWidth=0.8))
+    TW = 26
+    for xx, sgn in ((BX, -1), (BX + BW - TW, 1)):
+        for k, (c, th) in enumerate(((colors.HexColor('#9aa3ad'), 0), (colors.HexColor('#d6dbe0'), 2.5),
+                                     (colors.HexColor('#f2f2ee'), 5))):
+            ox = xx - th if sgn < 0 else xx
+            d.add(Rect(ox, BY - th, TW + th, BH + 2 * th, fillColor=c, strokeColor=DARK, strokeWidth=0.4))
+    # 内部导体：多层印刷导体经层间通孔串成线圈
+    n, x1, x2 = 5, BX + TW + 8, BX + BW - TW - 8
+    ys = [BY + 12 + i * (BH - 24) / (n - 1) for i in range(n)]
+    for i, y in enumerate(ys):
+        _wire(d, [x1, y, x2, y], colors.HexColor('#e8e8e8'), 2.2)
+        if i < n - 1:
+            xv = x2 if i % 2 == 0 else x1
+            _wire(d, [xv, y, xv, ys[i + 1]], colors.HexColor('#e8e8e8'), 2.2)
+    _wire(d, [BX + TW, ys[0], x1, ys[0]], colors.HexColor('#e8e8e8'), 2.2)
+    _wire(d, [x2, ys[-1], BX + BW - TW, ys[-1]], colors.HexColor('#e8e8e8'), 2.2)
+    # 引出标注
+    _wire(d, [BX + 100, ys[2], BX + 100, 70], GREY, 0.5)
+    _txt(d, BX + 100, 62, '内部银导体：多层印刷，层间通孔串成线圈', 7, FONT, DARK, 'middle')
+    _wire(d, [BX + 60, BY + BH - 4, BX + 60, 196], GREY, 0.5)
+    _txt(d, BX + 60, 199, '铁氧体本体（NiZn 系）', 7, FONT, DARK, 'middle')
+    _wire(d, [BX + BW - 8, BY - 5, BX + BW - 8, 46], GREY, 0.5)
+    _txt(d, BX + BW - 4, 38, '端电极：Ag 底层 / Ni 阻挡层 / Sn 可焊层', 7, FONT, DARK, 'end')
+    _txt(d, BX, 22, '导线被铁氧体包裹：电流产生的高频磁场在铁氧体内', 7, FONT, GREY)
+    _txt(d, BX, 11, '引起磁滞与涡流损耗，这正是 R(f) 的物理来源。', 7, FONT, GREY)
+    return d
+
+
+# ---------------------------------------------------------------- 图：0603 焊盘
+
+def fb_land():
+    """项目库 L_0603_1608Metric 焊盘尺寸。"""
+    d = Drawing(W, 206)
+    K, CX, CY = 64, 140, 104                          # pt / mm，封装中心
+    cy = Rect(CX - 1.48 * K, CY - 0.73 * K, 2.96 * K, 1.46 * K, fillColor=None,
+              strokeColor=colors.HexColor('#b0b0b0'), strokeWidth=0.6)
+    cy.strokeDashArray = (2, 2)
+    d.add(cy)
+    _txt(d, CX - 1.48 * K + 3, CY + 0.73 * K - 9, '禁布框 F.CrtYd', 6.5, FONT, GREY)
+    for sx in (-1, 1):
+        px0 = CX + sx * 0.7875 * K - 0.4375 * K
+        d.add(Rect(px0, CY - 0.475 * K, 0.875 * K, 0.95 * K, rx=0.11 * K, ry=0.11 * K,
+                   fillColor=colors.HexColor('#d4a24c'), strokeColor=COPPER, strokeWidth=0.8))
+        _txt(d, CX + sx * 1.02 * K, CY - 3, '1' if sx < 0 else '2', 9, BOLD, DARK, 'middle')
+    body = Rect(CX - 0.8 * K, CY - 0.4 * K, 1.6 * K, 0.8 * K, fillColor=None, strokeColor=DARK,
+                strokeWidth=0.8)
+    body.strokeDashArray = (4, 2)
+    d.add(body)
+    _dim_h(d, CX - 1.225 * K, CX + 1.225 * K, CY + 0.73 * K + 12, '外沿跨度 2.45')
+    _dim_h(d, CX - 0.35 * K, CX + 0.35 * K, CY + 0.475 * K + 6, '0.70', RED)
+    _dim_h(d, CX - 1.225 * K, CX - 0.35 * K, CY - 0.73 * K - 14, '0.875')
+    _dim_h(d, CX - 0.7875 * K, CX + 0.7875 * K, CY - 0.73 * K - 30, '中心距 1.575')
+    _dim_v(d, CX + 1.48 * K + 8, CY - 0.475 * K, CY + 0.475 * K, '0.95')
+    _txt(d, CX, 8, '单位 mm；黄色为焊盘（圆角 25%），黑色虚线为器件本体 1.6 × 0.8', 7, FONT, GREY, 'middle')
+
+    rows = [('封装', '焊盘 (mm)', '中心距', '禁布框'),
+            ('L_0402_1005', '0.59 × 0.64', '0.97', '1.86 × 0.94'),
+            ('L_0603_1608', '0.875 × 0.95', '1.575', '2.96 × 1.46'),
+            ('L_0805_2012', '0.875 × 1.20', '2.125', '3.50 × 1.70')]
+    TX = 288
+    _txt(d, TX, 186, '项目库 GPSDO_Rev1.0.pretty 中的焊盘', 7.5, BOLD, DARK)
+    cw = (60, 50, 32, 0)
+    for r, row in enumerate(rows):
+        y = 168 - r * 15
+        if r == 2:
+            d.add(Rect(TX - 3, y - 4, 178, 14, fillColor=colors.HexColor('#e6f4f1'), strokeColor=None))
+        xx = TX
+        for c, s in enumerate(row):
+            _txt(d, xx, y, s, 6.8, BOLD if r == 0 or r == 2 else FONT, DARK)
+            xx += cw[c]
+    _txt(d, TX, 92, '· 磁珠可直接复用 L_xxxx 电感封装', 7, FONT, DARK)
+    _txt(d, TX, 80, '· 内间隙 0.70 mm 下方不要走线 / 过孔', 7, FONT, DARK)
+    _txt(d, TX, 68, '· 两焊盘引出线宽度相同，避免立碑', 7, FONT, DARK)
+    _txt(d, TX, 56, '· 不要在焊盘上直接打过孔（漏锡）', 7, FONT, DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：PCB 布局对比
+
+def _tssop(d, x, y, col=DARK):
+    """简化 TSSOP-14 俯视：(x, y) 为本体左下角，返回引脚 14 / 13 焊盘中心。"""
+    bw, bh, p = 30, 50, 6.5
+    d.add(Rect(x, y, bw, bh, fillColor=colors.HexColor('#2b2f33'), strokeColor=col, strokeWidth=0.5))
+    d.add(Circle(x + 5, y + bh - 5, 1.6, fillColor=colors.HexColor('#777777'), strokeColor=None))
+    pads = {}
+    for i in range(7):
+        yy = y + bh - 5.5 - i * p
+        for side, n in ((-1, i + 1), (1, 14 - i)):
+            px0 = x - 9 if side < 0 else x + bw + 1
+            d.add(Rect(px0, yy - 1.6, 8, 3.2, fillColor=colors.HexColor('#d4a24c'),
+                       strokeColor=None))
+            pads[n] = (px0 + 4, yy)
+    _txt(d, x + bw / 2, y + bh / 2 - 3, 'TDC', 6.5, BOLD, colors.white, 'middle')
+    return pads
+
+
+def _smd(d, x, y, vertical=True, lbl='', col=colors.HexColor('#d4a24c')):
+    """0402 级两焊盘器件，(x, y) 为中心；返回两焊盘中心。"""
+    if vertical:
+        a, b = (x, y + 4.5), (x, y - 4.5)
+        for (px0, py0) in (a, b):
+            d.add(Rect(px0 - 3, py0 - 2.5, 6, 5, fillColor=col, strokeColor=None))
+        if lbl:
+            _txt(d, x, y + 10, lbl, 6.2, BOLD, DARK, 'middle')
+    else:
+        a, b = (x - 6, y), (x + 6, y)
+        for (px0, py0) in (a, b):
+            d.add(Rect(px0 - 3.5, py0 - 3.5, 7, 7, fillColor=col, strokeColor=None))
+        d.add(Rect(x - 2.5, y - 3, 5, 6, fillColor=FERRITE, strokeColor=None))
+        if lbl:
+            _txt(d, x, y + 7, lbl, 6.2, BOLD, DARK, 'middle')
+    return a, b
+
+
+def _via(d, x, y):
+    d.add(Circle(x, y, 2.6, fillColor=colors.HexColor('#d4a24c'), strokeColor=None))
+    d.add(Circle(x, y, 1.1, fillColor=colors.white, strokeColor=None))
+
+
+def _trace(d, pts, w=2.2, col=colors.HexColor('#c8801f')):
+    pl = PolyLine(pts, strokeColor=col, strokeWidth=w)
+    pl.strokeLineCap = 1
+    pl.strokeLineJoin = 1
+    d.add(pl)
+
+
+def fb_pcb():
+    """推荐与应避免的布局（俯视示意，F.Cu）。"""
+    d = Drawing(W, 262)
+    for ox, good in ((0, True), (246, False)):
+        col = GREEN if good else RED
+        d.add(Rect(ox + 2, 88, 234, 160, fillColor=colors.HexColor('#f5f8f2'),
+                   strokeColor=col, strokeWidth=1))
+        d.add(Rect(ox + 2, 234, 234, 14, fillColor=col, strokeColor=col))
+        _txt(d, ox + 119, 238, '推荐布局' if good else '应避免的布局', 7.8, BOLD, colors.white, 'middle')
+        pads = _tssop(d, ox + 40, 130)
+        p14, p13 = pads[14], pads[13]
+        _txt(d, ox + 20, 112, 'U231 TDC7200（TSSOP-14）', 6.5, FONT, GREY)
+        if good:
+            # 3V3 主干 -> 磁珠 -> C232 -> C231 -> 引脚 14
+            _trace(d, [ox + 234, 218, ox + 212, 218], 4.0)
+            _txt(d, ox + 232, 222, '+3V3', 6.5, BOLD, DARK, 'end')
+            fa, fb_ = _smd(d, ox + 196, 218, False, 'FB231')
+            _trace(d, [fa[0], fa[1], ox + 150, 218, ox + 150, p14[1], p14[0], p14[1]])
+            c2a, c2b = _smd(d, ox + 125, p14[1] - 4.5, True, '')
+            c1a, c1b = _smd(d, ox + 100, p14[1] - 4.5, True, '')
+            _txt(d, ox + 125, p14[1] + 8, 'C232', 6.2, BOLD, DARK, 'middle')
+            _txt(d, ox + 100, p14[1] + 8, 'C231', 6.2, BOLD, DARK, 'middle')
+            for cx in (ox + 100, ox + 125):
+                _trace(d, [cx, p14[1] - 9, cx, p14[1] - 15], 2.2)
+                _via(d, cx, p14[1] - 17)
+            # VREG 电容
+            _trace(d, [p13[0], p13[1], ox + 92, p13[1], ox + 92, p13[1] - 14], 1.6)
+            _smd(d, ox + 92, p13[1] - 18.5, True)
+            _via(d, ox + 92, p13[1] - 30)
+            _txt(d, ox + 99, p13[1] - 23, 'C233', 6.2, BOLD, DARK)
+            # 编号
+            _num(d, ox + 176, 228, '1', GREEN)
+            _num(d, ox + 112, p14[1] + 18, '2', GREEN)
+            _num(d, ox + 140, p14[1] - 22, '3', GREEN)
+            _num(d, ox + 166, 202, '4', GREEN)
+            notes = ['1  磁珠放在局部电源岛入口，紧挨电容组',
+                     '2  100n 最靠近 VDD 引脚，1u 次之',
+                     '3  电容地端就近打孔到 In1 GND，每颗一孔',
+                     '4  磁珠输入与输出走线不平行、不靠近']
+        else:
+            _trace(d, [ox + 234, 218, ox + 212, 218], 4.0)
+            _txt(d, ox + 232, 222, '+3V3', 6.5, BOLD, DARK, 'end')
+            # 电容放在磁珠之前（滤的是公共轨，不是 TDC）
+            _smd(d, ox + 214, 205, True, '')
+            _smd(d, ox + 198, 205, True, '')
+            _txt(d, ox + 206, 190, 'C231/C232', 6.2, BOLD, DARK, 'middle')
+            _trace(d, [ox + 214, 218, ox + 214, 209.5], 2.2)
+            _trace(d, [ox + 198, 218, ox + 198, 209.5], 2.2)
+            _trace(d, [ox + 198, 200.5, ox + 198, 176, ox + 206, 168], 1.4)
+            _trace(d, [ox + 214, 200.5, ox + 214, 176, ox + 206, 168], 1.4)
+            _via(d, ox + 206, 165)
+            _trace(d, [ox + 212, 218, ox + 160, 218], 2.2)
+            fa, fb_ = _smd(d, ox + 154, 218, False, 'FB231')
+            # 绕远的长走线到引脚 14
+            _trace(d, [fa[0], fa[1], ox + 110, 218, ox + 110, 104, ox + 90, 104, ox + 90, p14[1],
+                       p14[0], p14[1]], 1.6)
+            # 平行的 SPI 时钟
+            spi = PolyLine([ox + 234, 100, ox + 116, 100, ox + 116, 212, ox + 132, 212],
+                           strokeColor=BUS, strokeWidth=1.2)
+            spi.strokeDashArray = (3, 1.5)
+            d.add(spi)
+            _txt(d, ox + 232, 92, 'SPI_SCK', 6.2, BOLD, BUS, 'end')
+            for x, y in ((ox + 228, 200), (ox + 100, 160), (ox + 124, 120)):
+                _txt(d, x, y - 4, '×', 12, BOLD, RED, 'middle')
+            notes = ['×  电容放在磁珠前：滤的是公共轨，TDC 端无电容',
+                     '×  磁珠到 VDD 走线绕远，等于一根拾噪天线',
+                     '×  SPI 时钟紧贴磁珠后的走线平行，耦合绕过磁珠',
+                     '×  两颗电容共用一个远处地孔，回路电感大']
+        for i, s in enumerate(notes):
+            _txt(d, ox + 6, 72 - i * 14, s, 6.9, FONT, col if s[0] == '×' else DARK)
+    return d
+
+
+# ---------------------------------------------------------------- 图：选型流程
+
+def fb_select():
+    """磁珠选型的六步检查。"""
+    d = Drawing(W, 238)
+    steps = [('1', '确认噪声频段', '≥ 10 MHz 用磁珠；< 5 MHz 的 DC-DC 纹波磁珠基本无效', TDC),
+             ('2', '定阻抗等级', '小电流敏感模拟：600R–1k；大电流 / 数字：100–220R', TDC),
+             ('3', '核额定电流', '≥ 2 × 最大负载电流，并查直流偏置下的阻抗曲线', AMBER),
+             ('4', '算直流压降', 'I × Rdc ≪ 供电容差；本例 5 mA × 0.38 Ω ≈ 2 mV', AMBER),
+             ('5', '查 LC 谐振', 'f0 = 1/(2π√(LC))；上游在 f0 附近有噪声就要加阻尼', RED),
+             ('6', '定封装', '按电流与板密度；本板推荐 0603，复用 L_0603 封装', GREEN)]
+    bw, bh, gx, gy = 222, 46, 22, 10
+    x0, y0 = 4, 238 - bh - 6
+    for i, (n, name, sub, col) in enumerate(steps):
+        cx = x0 + (i % 2) * (bw + gx)
+        cy = y0 - (i // 2) * (bh + gy)
+        _box(d, cx, cy, bw, bh, colors.white, col, 1.1, r=4)
+        d.add(Rect(cx, cy, 4, bh, fillColor=col, strokeColor=col))
+        _num(d, cx + 16, cy + bh - 13, n, col)
+        _txt(d, cx + 27, cy + bh - 16, name, 9, BOLD, DARK)
+        _txt(d, cx + 10, cy + 10, sub, 6.9, FONT, GREY)
+        if i % 2 == 0:
+            _arrow(d, cx + bw + 3, cy + bh / 2, cx + bw + gx - 3, cy + bh / 2, GREY, .8)
+        elif i < len(steps) - 1:
+            _arrow(d, cx + bw / 2, cy - 1, cx + bw / 2, cy - gy + 1, GREY, .8)
+    _txt(d, 4, 46, '若第 1 步结论是低频噪声：改用 LDO（高 PSRR）、RC 滤波（小电流负载）或 LC 滤波（电感而非磁珠）。',
+         7.2, BOLD, RED)
+    _txt(d, 4, 32, '若第 5 步谐振峰过高：选 Rdc 稍大的磁珠、串 1–2 Ω 电阻，或在本地并一颗 ESR 较大的 10 µF 钽 / 聚合物电容。',
+         7.2, FONT, DARK)
+    _txt(d, 4, 18, '第 3 步的直流偏置：铁氧体在大电流下磁饱和，额定电流时 100 MHz 阻抗可能只剩标称值的一半甚至更低。',
+         7.2, FONT, DARK)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -1884,6 +2498,14 @@ FIGURES = {
     'ca_output': ca_output,
     'ca_pinmap': ca_pinmap,
     'ca_board': ca_board,
+    'fb_sch': fb_sch,
+    'fb_model': fb_model,
+    'fb_impedance': fb_impedance,
+    'fb_filter': fb_filter,
+    'fb_package': fb_package,
+    'fb_land': fb_land,
+    'fb_pcb': fb_pcb,
+    'fb_select': fb_select,
 }
 
 

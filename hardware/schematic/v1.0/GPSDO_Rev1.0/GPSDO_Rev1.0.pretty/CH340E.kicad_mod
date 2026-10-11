@@ -1,0 +1,213 @@
+(footprint "CH340E"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "150uA 20mA 2Mbps 3.3V、5V Transceiver USB 2.0 MSOP-10 USB Converters ROHS")
+	(tags "C99652 CH340E MSOP-10_L3.0-W3.0-P0.50-LS5.0-BL WCH(Jiangsu Qin Heng)")
+	(property "Reference" "REF**"
+		(at 0 -3.92 0)
+		(layer "F.SilkS")
+		(uuid "65198341-df64-4de1-b07c-731dc9f37c08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 3.92 0)
+		(layer "F.Fab")
+		(uuid "a3d60627-3369-44d9-bac8-371be4d7ae57")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2403131141_WCH-Jiangsu-Qin-Heng-CH340E_C99652.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4aac130c-be3f-43c1-ba1d-f7c42abe5d04")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "150uA 20mA 2Mbps 3.3V、5V Transceiver USB 2.0 MSOP-10 USB Converters ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "94a547c3-8082-4de7-bbd8-81b1eba11b68")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C99652"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b33bc6ae-8015-468c-91df-4b00cc60a8ac")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.576197 -1.071397)
+		(end 1.576197 -1.071397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cff03481-f59a-4c6d-bb7e-68c4aa4bfd00")
+	)
+	(fp_line
+		(start -1.576197 1.071397)
+		(end -1.576197 -1.071397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a63f4f02-ee2b-4ad5-9a85-d325f467c74a")
+	)
+	(fp_line
+		(start 1.576197 -1.071397)
+		(end 1.576197 1.071397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "491e4d6e-273d-42c2-896a-32034d6111bf")
+	)
+	(fp_line
+		(start 1.576197 1.071397)
+		(end -1.576197 1.071397)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c2291bff-68bc-46e4-b549-988b07802e42")
+	)
+	(fp_circle
+		(center -1.592326 2.11)
+		(end -1.442212 2.11)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "bc2f9e52-5b41-48b2-a812-1491cde0345f")
+	)
+	(fp_circle
+		(center -1 0.319)
+		(end -0.85 0.319)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "63e7265b-1bb9-49ca-8ff2-71f99eacc36c")
+	)
+	(fp_circle
+		(center -1.016 2.794)
+		(end -0.916 2.794)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "5d6e0d2c-b11e-4065-83f0-858edaa38a03")
+	)
+	(pad "1" smd oval
+		(at -1 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "1fbb90a7-ab4f-4fff-92c9-2d67d7380f6a")
+	)
+	(pad "2" smd oval
+		(at -0.499872 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "18a1f8f6-be41-4080-a707-9bc8f7df2aa9")
+	)
+	(pad "3" smd oval
+		(at 0 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fc877d2b-e78f-4eec-be10-c1d99895f437")
+	)
+	(pad "4" smd oval
+		(at 0.500126 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e2a51681-1bc4-47f8-8eed-8987327b3154")
+	)
+	(pad "5" smd oval
+		(at 1 2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2b04d79e-0dba-4c50-89a3-0731043502b3")
+	)
+	(pad "6" smd oval
+		(at 1 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a6e0495f-c933-483d-9083-ffed8d9f0f0f")
+	)
+	(pad "7" smd oval
+		(at 0.500126 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bad71272-5787-4d91-ade5-e1f6992e227e")
+	)
+	(pad "8" smd oval
+		(at 0 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0c4a979e-99c3-403a-81a2-443a6eb5189f")
+	)
+	(pad "9" smd oval
+		(at -0.499872 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "79cddcdd-158c-4d64-9d09-3a7269d7f714")
+	)
+	(pad "10" smd oval
+		(at -1 -2.11)
+		(size 0.28 1.62)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "23fbd425-d6bc-4429-87ea-bdf669df8b42")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/CH340E.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

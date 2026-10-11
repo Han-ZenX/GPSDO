@@ -6107,7 +6107,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:TMP117AIDRVR")
-		(at 148.59 181.61 0)
+		(at 142.24 173.99 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6118,7 +6118,7 @@
 		(fields_autoplaced yes)
 		(uuid "e8dcd946-c912-49e6-93f7-b2965aa3c9f7")
 		(property "Reference" "U3"
-			(at 148.59 170.18 0)
+			(at 142.24 162.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6128,7 +6128,7 @@
 			)
 		)
 		(property "Value" "TMP117AIDRVR"
-			(at 148.59 172.72 0)
+			(at 142.24 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6138,7 +6138,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:TMP117AIDRVR"
-			(at 148.59 181.61 0)
+			(at 142.24 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6149,7 +6149,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2309221403_Texas-Instruments-TMP117AIDRVR_C699536.pdf"
-			(at 148.59 181.61 0)
+			(at 142.24 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6160,7 +6160,7 @@
 			)
 		)
 		(property "Description" "-55℃~+150℃ 1.7V~5.5V 15.5ms 16bit 3.1uA Factory temperature calibration、Temperature threshold monitoring、Low-power standby、On-chip non-volatile parameter storage、On-chip digital filtering/averaging I2C、SMBus ±0.1℃ WDFN-6-EP(2x2) Temperature Sensors ROHS"
-			(at 148.59 181.61 0)
+			(at 142.24 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6171,7 +6171,7 @@
 			)
 		)
 		(property "LCSC" "C699536"
-			(at 148.59 181.61 0)
+			(at 142.24 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6182,7 +6182,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 148.59 181.61 0)
+			(at 142.24 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6193,7 +6193,7 @@
 			)
 		)
 		(property "Manufacturer Part" "TMP117AIDRVR"
-			(at 148.59 181.61 0)
+			(at 142.24 173.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
