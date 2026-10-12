@@ -3893,7 +3893,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 50.8) (xy 161.29 50.8)
+			(xy 158.75 50.8) (xy 168.91 50.8)
 		)
 		(stroke
 			(width 0)
@@ -4791,6 +4791,16 @@
 		)
 		(uuid "813e667c-cd3e-4c45-8179-48bb7a7f9c3f")
 	)
+	(label "VCTRL"
+		(at 162.56 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8e277eff-3545-475b-a0fa-d405642df74f")
+	)
 	(label "OCXO_MON"
 		(at 78.74 101.6 90)
 		(effects
@@ -4876,30 +4886,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-	)
-	(global_label "VCTRL"
-		(shape input)
-		(at 161.29 50.8 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "9c9b213b-185b-4fe4-9ed3-c2c03ef8f92c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.8995 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 	)
