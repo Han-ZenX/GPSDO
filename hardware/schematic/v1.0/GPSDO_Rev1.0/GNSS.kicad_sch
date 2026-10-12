@@ -1920,7 +1920,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 77.47) (xy 101.6 77.47)
+			(xy 100.33 77.47) (xy 101.6 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2040,7 +2040,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 74.93) (xy 101.6 74.93)
+			(xy 100.33 74.93) (xy 101.6 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2158,9 +2158,9 @@
 		)
 		(uuid "3d76a251-1e70-4a81-9875-7eaabcb7a91d")
 	)
-	(hierarchical_label "RXD"
-		(shape output)
-		(at 97.79 77.47 180)
+	(hierarchical_label "GNSS_UART_RXD"
+		(shape input)
+		(at 100.33 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2169,9 +2169,9 @@
 		)
 		(uuid "17bcd672-3910-41c2-945e-7f70d8fc223d")
 	)
-	(hierarchical_label "TXD"
+	(hierarchical_label "GNSS_UART_TXD"
 		(shape output)
-		(at 97.79 74.93 180)
+		(at 100.33 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2180,7 +2180,7 @@
 		)
 		(uuid "1acf4a45-51cc-4d4d-932a-65cefb0e986b")
 	)
-	(hierarchical_label "1PPS"
+	(hierarchical_label "PULSE_GNSS"
 		(shape output)
 		(at 182.88 72.39 0)
 		(effects
@@ -3383,7 +3383,7 @@
 				)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "0"
 			(at 177.038 70.104 90)
 			(show_name no)
 			(do_not_autoplace no)

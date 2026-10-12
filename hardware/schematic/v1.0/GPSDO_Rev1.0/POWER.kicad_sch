@@ -5,161 +5,6 @@
 	(uuid "6fc37e14-5098-4c48-b5c7-fe2124303380")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -361,40 +206,42 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "GPSDO_Rev1.0:C"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
+			(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+				(at 0.9652 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -415,7 +262,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -426,7 +273,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "cap capacitor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -437,7 +284,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "R_*"
+			(property "ki_fp_filters" "C_0201_0603Metric C_0402_1005Metric C_0603_1608Metric C_0805_2012Metric C_1206_3216Metric C_1210_3225Metric"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -448,12 +295,25 @@
 					)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
 					(stroke
-						(width 0.254)
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -461,10 +321,10 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
-					(length 1.27)
+					(length 2.794)
 					(name ""
 						(effects
 							(font
@@ -482,7 +342,7 @@
 				)
 				(pin passive line
 					(at 0 -3.81 90)
-					(length 1.27)
+					(length 2.794)
 					(name ""
 						(effects
 							(font
@@ -530,7 +390,7 @@
 					)
 				)
 			)
-			(property "Footprint" "JLCImport:LAIL-PHC2_54-2P-01-XH-L"
+			(property "Footprint" "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -678,7 +538,147 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "JLCImport:TPS7A5201RPSR"
+		(symbol "GPSDO_Rev1.0:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:R_0603_1608Metric"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_0201_0603Metric R_0402_1005Metric R_0603_1608Metric R_0805_2012Metric R_1206_3216Metric R_1210_3225Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GPSDO_Rev1.0:TPS7A5201RPSR"
 			(pin_names
 				(offset 1.016)
 			)
@@ -707,7 +707,7 @@
 					)
 				)
 			)
-			(property "Footprint" "JLCImport:TPS7A5201RPSR"
+			(property "Footprint" "GPSDO_Rev1.0:TPS7A5201RPSR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1440,7 +1440,7 @@
 		)
 		(uuid "1ba3776b-40ca-4fbc-b2d9-8c4a297cf5ea")
 	)
-	(text "U3  TPS7A52   5V -> 3.3V   给LMK5B12204供电"
+	(text "U3  TPS7A52   5V -> 3.3V   给整体供电"
 		(exclude_from_sim no)
 		(at 115.824 51.816 0)
 		(effects
@@ -1515,7 +1515,7 @@
 		(at 182.88 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9ed2ce6b-9cf0-40d5-9f4c-66ce3221a3a6")
+		(uuid "980b5059-537b-45af-9cae-c1ef63b151a3")
 	)
 	(junction
 		(at 153.67 66.04)
@@ -2640,88 +2640,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 182.88 143.51 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "09bcf74e-7609-4f7c-aae9-3da46a62884d")
-		(property "Reference" "C28"
-			(at 186.69 142.2399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 186.69 144.7799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 182.88 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 182.88 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0b50b5d8-0841-4a51-bc94-67368b200b84")
-		)
-		(pin "2"
-			(uuid "7c01a08a-dd62-489c-ad30-84b7fef1ba1c")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C28")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 182.88 138.43 0)
 		(unit 1)
@@ -2800,8 +2718,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 111.76 149.86 0)
+		(lib_id "GPSDO_Rev1.0:TPS7A5201RPSR")
+		(at 134.62 143.51 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2809,31 +2727,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0e879ab8-23ee-4fbd-b51b-99305fe0de3f")
-		(property "Reference" "C26"
-			(at 107.442 147.066 0)
+		(fields_autoplaced yes)
+		(uuid "0cead68e-9b38-417f-9f8a-1df8ee4c4a59")
+		(property "Reference" "U16"
+			(at 134.62 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 105.41 152.4 0)
+		(property "Value" "TPS7A5201RPSR"
+			(at 134.62 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 111.76 149.86 0)
+		(property "Footprint" "GPSDO_Rev1.0:TPS7A5201RPSR"
+			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2843,8 +2760,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 111.76 149.86 0)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220600_Texas-Instruments-TPS7A5201RPSR_C2876777.pdf"
+			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2854,8 +2771,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 111.76 149.86 0)
+		(property "Description" "-40℃~+125℃@(Tj) 1 125mV@(2A) 2A 4.4uVrms 40dB@(500kHz) 4mA 6.5V 800mV~5.2V Adjustable PG Pin、Over Current Protection、Over Temperature Protection、Soft Start Positive VQFN-12(2.2x2.5) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
+			(at 134.62 143.51 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2865,16 +2782,222 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "95cc8841-569d-41dc-afa9-b20190067fda")
+		(property "LCSC" "C2876777"
+			(at 134.62 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 134.62 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TPS7A5201RPSR"
+			(at 134.62 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "22474b82-dc9d-4954-8808-88a6d3103f6c")
+		)
+		(pin "3"
+			(uuid "5d234ff5-4a47-4d10-970d-f8e94a3ec68d")
+		)
+		(pin "5"
+			(uuid "9a2f2e78-cab5-42bc-90c8-3b34934305a2")
+		)
+		(pin "6"
+			(uuid "bbe5998d-807a-40e0-a6f1-95b877455fec")
+		)
+		(pin "10"
+			(uuid "47c4db04-bf85-4366-af6f-04f6a0dbb291")
+		)
+		(pin "4"
+			(uuid "727fe261-d8d7-4713-912e-7c7b11f2b4c0")
+		)
+		(pin "12"
+			(uuid "53ad3b23-6b77-4646-b9c0-6225dc74e95e")
 		)
 		(pin "2"
-			(uuid "ab367d32-1467-4f86-94ea-3e9b011a5d99")
+			(uuid "33aa3086-9d71-46c5-83fa-f237c9e1d241")
+		)
+		(pin "8"
+			(uuid "79b38060-9733-4aea-b186-cb3513042c2f")
+		)
+		(pin "11"
+			(uuid "9611a1a2-7d6a-4c34-b88a-6da51099129c")
+		)
+		(pin "9"
+			(uuid "cf7240a7-2bd4-44ba-a57d-d0d7ce7f08f5")
+		)
+		(pin "1"
+			(uuid "3106dac3-bef3-411c-b857-7242d0f9af1e")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C26")
+					(reference "U16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:TPS7A5201RPSR")
+		(at 137.16 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dc3a2e8-7b94-4223-9cef-bef2247ec542")
+		(property "Reference" "U14"
+			(at 137.16 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS7A5201RPSR"
+			(at 137.16 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:TPS7A5201RPSR"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220600_Texas-Instruments-TPS7A5201RPSR_C2876777.pdf"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+125℃@(Tj) 1 125mV@(2A) 2A 4.4uVrms 40dB@(500kHz) 4mA 6.5V 800mV~5.2V Adjustable PG Pin、Over Current Protection、Over Temperature Protection、Soft Start Positive VQFN-12(2.2x2.5) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2876777"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TPS7A5201RPSR"
+			(at 137.16 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "f182348c-8f37-48e4-8c6a-494734d04717")
+		)
+		(pin "3"
+			(uuid "4c363e51-9a66-4e12-91e2-5113ef3c3067")
+		)
+		(pin "5"
+			(uuid "fd971f6b-d874-41c3-8322-668bd578bec3")
+		)
+		(pin "6"
+			(uuid "801eb559-1e0e-4324-b778-08616edcd415")
+		)
+		(pin "10"
+			(uuid "d88b4e95-4e12-44e4-9783-4a5ab8c68ac7")
+		)
+		(pin "4"
+			(uuid "b485ce82-7b95-47ac-a1a1-327e23dd774b")
+		)
+		(pin "12"
+			(uuid "8437b3d2-e5c1-40cf-8fff-a33719a75aa5")
+		)
+		(pin "2"
+			(uuid "f5869b34-5bbb-4d96-b75e-970a5b03f4da")
+		)
+		(pin "8"
+			(uuid "7849fa0a-6284-497f-b8a7-3b0f3fc663e1")
+		)
+		(pin "11"
+			(uuid "8a1d28a7-5087-4896-9ab9-94fc2cea8d9c")
+		)
+		(pin "9"
+			(uuid "baf94db3-a6ff-4ec6-a019-2144f9623dc3")
+		)
+		(pin "1"
+			(uuid "019eb899-310c-4566-89ca-01f1434d7ed6")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "U14")
 					(unit 1)
 				)
 			)
@@ -2960,6 +3083,87 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 176.53 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "11619c06-aacc-4e03-9f92-61de100e9fd8")
+		(property "Reference" "C36"
+			(at 177.038 68.834 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10nF"
+			(at 177.038 73.406 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 177.4952 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 176.53 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "07eac197-d10f-43a2-8290-643ea4d40f92")
+		)
+		(pin "1"
+			(uuid "9a5fdcfe-247d-48a4-83ba-c52e39927b08")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 185.42 64.77 0)
 		(unit 1)
@@ -3038,8 +3242,8 @@
 		)
 	)
 	(symbol
-		(lib_id "JLCImport:TPS7A5201RPSR")
-		(at 137.16 69.85 0)
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 111.76 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3047,30 +3251,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16fa2688-3716-436b-8d10-2ac4622e3c09")
-		(property "Reference" "U13"
-			(at 137.16 55.88 0)
+		(uuid "237bd3de-02da-4977-b524-e864b647dd20")
+		(property "Reference" "C39"
+			(at 112.268 147.574 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "TPS7A5201RPSR"
-			(at 137.16 58.42 0)
+		(property "Value" "100nF"
+			(at 112.268 152.146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "JLCImport:TPS7A5201RPSR"
-			(at 137.16 69.85 0)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 112.7252 153.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3080,8 +3285,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220600_Texas-Instruments-TPS7A5201RPSR_C2876777.pdf"
-			(at 137.16 69.85 0)
+		(property "Datasheet" ""
+			(at 111.76 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3091,8 +3296,8 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+125℃@(Tj) 1 125mV@(2A) 2A 4.4uVrms 40dB@(500kHz) 4mA 6.5V 800mV~5.2V Adjustable PG Pin、Over Current Protection、Over Temperature Protection、Soft Start Positive VQFN-12(2.2x2.5) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
-			(at 137.16 69.85 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 111.76 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3101,88 +3306,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "LCSC" "C2876777"
-			(at 137.16 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 137.16 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "TPS7A5201RPSR"
-			(at 137.16 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "12"
-			(uuid "cfd1d2f8-9b74-423f-ba1e-7a8a18958598")
-		)
-		(pin "10"
-			(uuid "2fd56809-b5ef-4aa7-9e36-9cae86921745")
-		)
-		(pin "11"
-			(uuid "52b76478-38bf-428a-a9d8-390a1c033f79")
 		)
 		(pin "2"
-			(uuid "2f9a7854-57dc-4e4c-99f1-f7b23e2d7e93")
-		)
-		(pin "3"
-			(uuid "6cffbafb-3444-4d42-8c4a-f8d74efb3bb5")
-		)
-		(pin "4"
-			(uuid "5d49fea6-1d98-4892-9f90-6b8eb093c808")
-		)
-		(pin "5"
-			(uuid "a69695d5-4dd4-4c48-86e3-737c6b12b1c8")
-		)
-		(pin "6"
-			(uuid "9a9b5ae8-218b-4427-abc7-f200167b1f31")
+			(uuid "40cbbe4e-5a2b-4206-bbe0-8ea99e1f3a2d")
 		)
 		(pin "1"
-			(uuid "8ed71c2f-38a4-4502-9188-deaa80723e44")
-		)
-		(pin "9"
-			(uuid "2407e127-e3e1-4648-8f33-6e910aa1bd67")
-		)
-		(pin "7"
-			(uuid "6142731a-059e-4077-b2d1-940e8d96f09c")
-		)
-		(pin "8"
-			(uuid "866d1a21-93b6-46e7-9bbb-bdff7a578128")
+			(uuid "070b2712-f018-408d-bfc9-3a24b1074c7c")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "U13")
+					(reference "C39")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 176.53 71.12 0)
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 168.91 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3190,31 +3332,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "272f3e5e-7cb8-43b2-b8c1-e4da43326f9d")
-		(property "Reference" "C27"
-			(at 177.292 68.834 0)
+		(uuid "27ea2729-c14e-4569-8aea-7ad6a6390ac9")
+		(property "Reference" "R33"
+			(at 172.212 152.4 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10nF"
-			(at 177.8 73.406 0)
+		(property "Value" "3.87K"
+			(at 173.228 156.972 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 176.53 71.12 0)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 167.132 154.94 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3224,8 +3364,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 176.53 71.12 0)
+		(property "Datasheet" ""
+			(at 168.91 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3235,8 +3375,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 176.53 71.12 0)
+		(property "Description" "Resistor"
+			(at 168.91 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3247,416 +3387,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "45675198-6171-45e8-98e0-63945bf45c62")
+			(uuid "7d0b80b8-6249-4af9-860c-7805e10d8b82")
 		)
 		(pin "2"
-			(uuid "13814c9e-399b-47c7-b2ff-0ae599beb0dc")
+			(uuid "d727178b-a466-4b8e-a72a-592934d8b4ec")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C27")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 107.95 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2928719b-6983-4760-9b16-0517fee2879b")
-		(property "Reference" "C22"
-			(at 102.616 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 101.6 70.866 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 107.95 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2d31ec7c-2bc0-4b2f-8966-9df55e48c1bc")
-		)
-		(pin "2"
-			(uuid "5ef2f303-d565-498e-bebe-2a53172da0ca")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 157.48 157.48 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3789102c-547a-45f0-b884-fec7939abd69")
-		(property "Reference" "R23"
-			(at 161.036 154.686 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100K"
-			(at 161.798 160.274 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 157.48 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 157.48 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 157.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c83b1202-758b-4520-b90a-bd83aeb6abf4")
-		)
-		(pin "2"
-			(uuid "a1e91738-f9a1-425a-9f12-c4658b948c3e")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 105.41 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "37de16dc-c013-44a9-9997-e8a165e28976")
-		(property "Reference" "C23"
-			(at 100.076 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF"
-			(at 99.06 144.526 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 105.41 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "93dadddf-ea12-45de-aea5-cc54b8257c46")
-		)
-		(pin "2"
-			(uuid "ffa67b65-73bb-46bd-a8a6-98ac95d776bc")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 160.02 83.82 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3923a203-d477-4df9-8f68-0f06f18e0616")
-		(property "Reference" "R20"
-			(at 163.576 81.026 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100K"
-			(at 164.338 86.614 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 160.02 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 160.02 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 160.02 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f53393f-e3ef-4430-a98d-1869a13a75c2")
-		)
-		(pin "2"
-			(uuid "53c8447b-2426-422b-a87f-cf97e617b2da")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 173.99 144.78 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3a7fe634-7c06-46ca-9e12-fbd8712245f2")
-		(property "Reference" "C25"
-			(at 174.752 142.494 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10nF"
-			(at 175.26 147.066 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 173.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 173.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 173.99 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "45cded19-f89c-4abf-a070-92e14c6c9643")
-		)
-		(pin "2"
-			(uuid "18c9005f-9343-4d1a-9ca6-83f4bf1dbeef")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C25")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -3742,6 +3481,87 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 107.95 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4c0e6388-753e-4198-879a-6c7c3e3be5fe")
+		(property "Reference" "C34"
+			(at 103.124 66.294 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 102.616 70.866 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0805_2012Metric"
+			(at 108.9152 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 107.95 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ecb29a4-748b-4cff-a29a-fb22e430666f")
+		)
+		(pin "2"
+			(uuid "cf7766b5-6ee8-4575-a686-883dfb6ae195")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 148.59 63.5 90)
 		(unit 1)
@@ -3816,6 +3636,87 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 182.88 143.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "651d57e8-afde-46b4-a1cd-ebcacc555088")
+		(property "Reference" "C41"
+			(at 183.896 141.224 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 183.896 146.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0805_2012Metric"
+			(at 183.8452 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 182.88 143.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c85b218a-f1b5-40ba-a8e9-d0e3fe6b9e06")
+		)
+		(pin "2"
+			(uuid "56e26d0d-520a-42a1-8f88-a304932865b8")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -4061,8 +3962,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 185.42 69.85 0)
+		(lib_id "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L")
+		(at 52.07 85.09 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4070,10 +3972,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7323c9f7-6b1f-4059-9528-0a8627d9fc3d")
-		(property "Reference" "C29"
-			(at 189.23 68.5799 0)
+		(uuid "85fae96a-5927-40fb-9424-061515ded5df")
+		(property "Reference" "CN1"
+			(at 53.594 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4083,8 +3984,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
-			(at 189.23 71.1199 0)
+		(property "Value" "LAIL-PHC2_54-2P-01-XH-L"
+			(at 59.944 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4094,8 +3995,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 185.42 69.85 0)
+		(property "Footprint" "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L"
+			(at 52.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4105,8 +4006,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 185.42 69.85 0)
+		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
+			(at 52.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4116,8 +4017,41 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 185.42 69.85 0)
+		(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
+			(at 52.07 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C54905973"
+			(at 52.07 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "LAILAN"
+			(at 52.07 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "LAIL-PHC2.54-2P-01-XH-L"
+			(at 52.07 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4128,93 +4062,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5faefc25-130a-43a8-a743-de1a088c110f")
+			(uuid "a0a371bb-6967-4944-a157-024538f1e54f")
 		)
 		(pin "2"
-			(uuid "d56f1a0d-7cdd-453c-8a96-74b3fdbc5bb6")
+			(uuid "e9bc9d67-91b1-4082-bc06-ed09a15239e4")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 105.41 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "79522cd7-2070-440a-afe9-e1cdb1a4d840")
-		(property "Reference" "#PWR050"
-			(at 105.41 139.7 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 103.632 131.318 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9769c0a2-86d3-4e83-8d8f-cec9a88e2f12")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "#PWR050")
+					(reference "CN1")
 					(unit 1)
 				)
 			)
@@ -4230,8 +4086,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8ad19aae-07a8-4067-9203-82ee31628662")
-		(property "Reference" "#PWR027"
+		(fields_autoplaced yes)
+		(uuid "8968b82e-b6e3-40b9-8716-6b5d183adc69")
+		(property "Reference" "#PWR037"
 			(at 107.95 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -4243,14 +4100,13 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 106.172 57.658 0)
+			(at 107.95 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -4275,7 +4131,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 107.95 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4287,20 +4143,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "5596bdcf-d8c5-4182-9807-440ae89c2600")
+			(uuid "506930b9-a05a-421f-b2df-53b02bae8b19")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "#PWR027")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 165.1 71.12 0)
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 160.02 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4308,31 +4164,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "8f204b43-e062-45c0-8b00-3d70839d3b89")
-		(property "Reference" "R22"
-			(at 166.624 69.342 0)
+		(uuid "91a18e70-2d65-4238-97f9-aee995948f98")
+		(property "Reference" "R27"
+			(at 163.322 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "12.1K"
-			(at 166.624 72.39 0)
+		(property "Value" "100K"
+			(at 164.338 85.852 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 165.1 71.12 0)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 158.242 83.82 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4342,8 +4196,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 165.1 71.12 0)
+		(property "Datasheet" ""
+			(at 160.02 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4353,8 +4207,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 165.1 71.12 0)
+		(property "Description" "Resistor"
+			(at 160.02 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4365,23 +4219,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "d487b186-608d-4a84-b662-e0c1aa47501e")
+			(uuid "f725573d-1ed9-4293-8ec9-16b5df385776")
 		)
 		(pin "2"
-			(uuid "bd462446-a00e-48f3-a5f1-719b8fb13cc0")
+			(uuid "054d9265-9392-48d5-95ce-5b02ba01b21c")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "R22")
+					(reference "R27")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 162.56 144.78 0)
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 157.48 157.48 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4389,31 +4243,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "93b887b1-0035-450d-9c4e-d9ba4ae1f4fa")
-		(property "Reference" "R21"
-			(at 164.084 143.002 0)
+		(uuid "9dcd5dce-99df-4fc7-9805-0ce00004c838")
+		(property "Reference" "R31"
+			(at 160.782 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "12.1K"
-			(at 164.084 146.05 0)
+		(property "Value" "100K"
+			(at 161.798 159.512 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 162.56 144.78 0)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 155.702 157.48 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4423,8 +4275,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 162.56 144.78 0)
+		(property "Datasheet" ""
+			(at 157.48 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4434,8 +4286,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 162.56 144.78 0)
+		(property "Description" "Resistor"
+			(at 157.48 157.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4446,15 +4298,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "02a03814-4311-41f5-bc39-41b06bc3cd9e")
+			(uuid "a730c026-983f-4ae2-ad6a-71c7064374a1")
 		)
 		(pin "2"
-			(uuid "7c1bded4-553a-41de-a546-745952d47a5a")
+			(uuid "d9915ca1-6b67-4ca7-859c-39df92d27c26")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "R21")
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 171.45 81.28 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a1bafd52-3b0c-4892-87e4-d2310bcb1287")
+		(property "Reference" "R30"
+			(at 174.752 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3.87K"
+			(at 175.768 83.312 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 169.672 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 171.45 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6ecd22c-0556-4730-aea2-e71c59e8b9f1")
+		)
+		(pin "2"
+			(uuid "b4f16a6b-7c1f-4081-98b6-343e294781a1")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -4615,6 +4546,87 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
 					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 185.42 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac7ba681-f0bd-4538-9820-956d15155b33")
+		(property "Reference" "C37"
+			(at 186.436 67.564 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 186.436 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0805_2012Metric"
+			(at 186.3852 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 185.42 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 185.42 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2a607cee-a6c1-49d6-85c7-9c4c7551653f")
+		)
+		(pin "2"
+			(uuid "58ac70dd-bdd0-4c87-bb40-c83a66c69ba8")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -4859,8 +4871,8 @@
 		)
 	)
 	(symbol
-		(lib_id "JLCImport:TPS7A5201RPSR")
-		(at 134.62 143.51 0)
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 165.1 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4868,10 +4880,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c163c1d2-fd31-495e-bb73-6f1e263dfffd")
-		(property "Reference" "U12"
-			(at 134.62 129.54 0)
+		(uuid "b6de429c-fe95-4520-be1f-9ee406f6d15d")
+		(property "Reference" "R26"
+			(at 168.402 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4880,8 +4891,8 @@
 				)
 			)
 		)
-		(property "Value" "TPS7A5201RPSR"
-			(at 134.62 132.08 0)
+		(property "Value" "12.1K"
+			(at 169.418 73.152 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4890,8 +4901,8 @@
 				)
 			)
 		)
-		(property "Footprint" "JLCImport:TPS7A5201RPSR"
-			(at 134.62 143.51 0)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 163.322 71.12 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4901,8 +4912,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2302220600_Texas-Instruments-TPS7A5201RPSR_C2876777.pdf"
-			(at 134.62 143.51 0)
+		(property "Datasheet" ""
+			(at 165.1 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4912,8 +4923,8 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+125℃@(Tj) 1 125mV@(2A) 2A 4.4uVrms 40dB@(500kHz) 4mA 6.5V 800mV~5.2V Adjustable PG Pin、Over Current Protection、Over Temperature Protection、Soft Start Positive VQFN-12(2.2x2.5) Voltage Regulators - Linear, Low Drop Out (LDO) Regulators ROHS"
-			(at 134.62 143.51 0)
+		(property "Description" "Resistor"
+			(at 165.1 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4922,88 +4933,25 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "LCSC" "C2876777"
-			(at 134.62 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 134.62 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "TPS7A5201RPSR"
-			(at 134.62 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "12"
-			(uuid "4fe23218-e588-47d5-918b-ca464e10c513")
-		)
-		(pin "10"
-			(uuid "dcff6e9b-e383-4c46-b9b2-8ffb6e2a1d39")
-		)
-		(pin "11"
-			(uuid "8027d973-061b-4f20-bb2e-c309e8ddd9bc")
-		)
-		(pin "2"
-			(uuid "bee6503d-8383-4f1b-a1f6-eb8f49113830")
-		)
-		(pin "3"
-			(uuid "9010b9c3-be81-4dbf-b2e9-af022a4cde04")
-		)
-		(pin "4"
-			(uuid "f353a33b-bed0-4a5a-a57e-7a91e499a003")
-		)
-		(pin "5"
-			(uuid "452a415b-a10d-4866-9757-740619648bd2")
-		)
-		(pin "6"
-			(uuid "8906e370-5891-4685-abb3-c5212f62ac6b")
 		)
 		(pin "1"
-			(uuid "4062600f-62f2-4d83-8830-cdc62afe6228")
+			(uuid "4bd50150-779f-4574-b13f-c089c28eca58")
 		)
-		(pin "9"
-			(uuid "b8d34b10-4870-4941-83b8-b823a50be52b")
-		)
-		(pin "7"
-			(uuid "6fb48261-f82b-40c3-9f41-cfeac330fd30")
-		)
-		(pin "8"
-			(uuid "fba8cc5b-38fe-48cc-927d-e1935ed73f05")
+		(pin "2"
+			(uuid "4356d9f1-d954-4fdc-b683-e1f0d0c3cc64")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "U12")
+					(reference "R26")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 171.45 81.28 0)
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 173.99 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5011,31 +4959,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "c2d25427-a932-4090-a30d-3980da59f8ff")
-		(property "Reference" "R25"
-			(at 176.53 78.486 0)
+		(uuid "c68faa73-53ef-4108-94aa-6ccf2ca9596a")
+		(property "Reference" "C40"
+			(at 174.498 142.494 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "3.87K"
-			(at 178.308 84.582 0)
+		(property "Value" "10nF"
+			(at 174.498 147.066 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 171.45 81.28 0)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 174.9552 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5045,8 +4993,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 171.45 81.28 0)
+		(property "Datasheet" ""
+			(at 173.99 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5056,8 +5004,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 171.45 81.28 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 173.99 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5066,17 +5014,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "6445e45d-1294-4b57-9e97-9e716d8aeebe")
 		)
 		(pin "2"
-			(uuid "9e4d1860-fd73-424a-8014-19d3ba02b833")
+			(uuid "787876e8-14aa-4391-9c24-6d9571d656ff")
+		)
+		(pin "1"
+			(uuid "287ad7b3-ea9c-4210-a8c5-bbf907a25d64")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "R25")
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -5243,8 +5191,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 168.91 154.94 0)
+		(lib_id "power:+5V")
+		(at 105.41 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5252,31 +5200,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e660ef3d-c974-4c04-936d-ea55a59749d6")
-		(property "Reference" "R24"
-			(at 173.99 152.146 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3.87K"
-			(at 175.768 158.242 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 168.91 154.94 0)
+		(fields_autoplaced yes)
+		(uuid "e4df67cc-f49d-4bcb-96dd-040ecdfcfc2e")
+		(property "Reference" "#PWR038"
+			(at 105.41 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5286,8 +5213,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 168.91 154.94 0)
+		(property "Value" "+5V"
+			(at 105.41 130.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5297,8 +5234,19 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 168.91 154.94 0)
+		(property "Datasheet" ""
+			(at 105.41 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 105.41 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5309,24 +5257,20 @@
 			)
 		)
 		(pin "1"
-			(uuid "37e47aea-e996-4262-a601-b7fcc93a26fe")
-		)
-		(pin "2"
-			(uuid "146c37ec-2bc4-4bda-a656-1aa1e7cb0fb8")
+			(uuid "a650063b-d2de-42ed-9b0b-14e0abf1500e")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "R24")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L")
-		(at 53.34 67.31 0)
-		(mirror y)
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 105.41 142.24 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5334,9 +5278,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "eea9824d-afea-4462-b5f0-3f3c4e415dd6")
-		(property "Reference" "CN1"
-			(at 49.53 66.0399 0)
+		(uuid "e943fd58-4d2b-4991-83a1-f29a6331a8dc")
+		(property "Reference" "C38"
+			(at 100.584 139.954 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5346,8 +5290,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "LAIL-PHC2_54-2P-01-XH-L"
-			(at 49.53 68.5799 0)
+		(property "Value" "22uF"
+			(at 100.076 144.526 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5357,8 +5301,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "JLCImport:LAIL-PHC2_54-2P-01-XH-L"
-			(at 53.34 67.31 0)
+		(property "Footprint" "GPSDO_Rev1.0:C_0805_2012Metric"
+			(at 106.3752 146.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5368,8 +5312,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
-			(at 53.34 67.31 0)
+		(property "Datasheet" ""
+			(at 105.41 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5379,8 +5323,8 @@
 				)
 			)
 		)
-		(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
-			(at 53.34 67.31 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 105.41 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5389,57 +5333,24 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "LCSC" "C54905973"
-			(at 53.34 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "LAILAN"
-			(at 53.34 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "LAIL-PHC2.54-2P-01-XH-L"
-			(at 53.34 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "f465f39b-f4cd-4bdb-9ea7-a79940446f4c")
 		)
 		(pin "1"
-			(uuid "16b0027c-b240-44ca-bc25-adddcc13fcaa")
+			(uuid "7b5af8f2-907a-4588-b36d-2ed13685a363")
+		)
+		(pin "2"
+			(uuid "3f050520-daec-4801-85ed-2358e69eafa6")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "CN1")
+					(reference "C38")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
+		(lib_id "GPSDO_Rev1.0:C")
 		(at 114.3 76.2 0)
 		(unit 1)
 		(body_style 1)
@@ -5448,9 +5359,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "f8b24a16-c2af-46a0-8a46-e609ccd11574")
-		(property "Reference" "C24"
-			(at 109.982 73.406 0)
+		(uuid "f03c9560-2a09-453d-b260-1e8b72238d46")
+		(property "Reference" "C35"
+			(at 114.808 73.914 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5461,7 +5372,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 107.95 78.74 0)
+			(at 114.808 78.486 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5471,7 +5382,18 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 115.2652 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
 			(at 114.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5482,7 +5404,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Description" "Unpolarized capacitor"
 			(at 114.3 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -5493,8 +5415,76 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 114.3 76.2 0)
+		(pin "2"
+			(uuid "b4cbef0a-4186-4ee7-b501-6a7a50b354e6")
+		)
+		(pin "1"
+			(uuid "ccc8d036-6486-46d5-8a81-82e5d49c19ec")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 162.56 144.78 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f853bca5-a017-41b0-83b1-ca6b9551f58d")
+		(property "Reference" "R32"
+			(at 165.862 142.24 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "12.1K"
+			(at 166.878 146.812 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 160.782 144.78 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 162.56 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5505,15 +5495,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "24e270f2-2be0-4e4c-a0f0-e6bf63e12199")
+			(uuid "6281006b-1af0-4dac-b9d9-d3c419bde852")
 		)
 		(pin "2"
-			(uuid "48c20b97-0a6b-4928-a396-fabcf89d4e88")
+			(uuid "e9306c35-bbe7-4f48-9a4a-c700d85949bc")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
-					(reference "C24")
+					(reference "R32")
 					(unit 1)
 				)
 			)
