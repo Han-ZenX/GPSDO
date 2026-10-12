@@ -1672,7 +1672,7 @@
 	)
 	(text "装 R19 = 5V OCXO 直供   /   装 R20 = 3.3V OCXO 经 U4 稳压"
 		(exclude_from_sim no)
-		(at 209.55 51.44 0)
+		(at 211.328 54.356 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1683,7 +1683,7 @@
 	)
 	(text "OCXO 供电选配 (二者互斥, 严禁同装):"
 		(exclude_from_sim no)
-		(at 209.55 48.26 0)
+		(at 211.328 51.176 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4868,7 +4868,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L")
-		(at 52.07 85.09 0)
+		(at 44.45 64.77 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4879,7 +4879,7 @@
 		(dnp no)
 		(uuid "85fae96a-5927-40fb-9424-061515ded5df")
 		(property "Reference" "CN1"
-			(at 53.594 78.74 0)
+			(at 45.974 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4890,7 +4890,7 @@
 			)
 		)
 		(property "Value" "LAIL-PHC2_54-2P-01-XH-L"
-			(at 59.944 92.964 0)
+			(at 52.324 72.644 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4901,7 +4901,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L"
-			(at 52.07 85.09 0)
+			(at 44.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4912,7 +4912,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
-			(at 52.07 85.09 0)
+			(at 44.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4923,7 +4923,7 @@
 			)
 		)
 		(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
-			(at 52.07 85.09 0)
+			(at 44.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4934,7 +4934,7 @@
 			)
 		)
 		(property "LCSC" "C54905973"
-			(at 52.07 85.09 0)
+			(at 44.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4945,7 +4945,7 @@
 			)
 		)
 		(property "Manufacturer" "LAILAN"
-			(at 52.07 85.09 0)
+			(at 44.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4956,7 +4956,7 @@
 			)
 		)
 		(property "Manufacturer Part" "LAIL-PHC2.54-2P-01-XH-L"
-			(at 52.07 85.09 0)
+			(at 44.45 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
