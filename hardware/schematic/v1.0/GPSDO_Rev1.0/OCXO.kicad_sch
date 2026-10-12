@@ -2995,7 +2995,7 @@
 	)
 	(text "Passive LPF to compensate\nattenuation reversal of \nactive LPF."
 		(exclude_from_sim no)
-		(at 128.27 166.116 0)
+		(at 128.524 164.846 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3723,7 +3723,7 @@
 	)
 	(polyline
 		(pts
-			(xy 127 161.29) (xy 127 194.31)
+			(xy 127 160.02) (xy 127 194.31)
 		)
 		(stroke
 			(width 0)
@@ -4133,7 +4133,7 @@
 	)
 	(polyline
 		(pts
-			(xy 46.99 161.29) (xy 46.99 194.31)
+			(xy 46.99 160.02) (xy 46.99 194.31)
 		)
 		(stroke
 			(width 0)
@@ -4173,7 +4173,7 @@
 	)
 	(polyline
 		(pts
-			(xy 46.99 161.29) (xy 127 161.29)
+			(xy 46.99 160.02) (xy 127 160.02)
 		)
 		(stroke
 			(width 0)
@@ -4253,7 +4253,7 @@
 	)
 	(polyline
 		(pts
-			(xy 127 161.29) (xy 160.02 161.29)
+			(xy 127 160.02) (xy 160.02 160.02)
 		)
 		(stroke
 			(width 0)
