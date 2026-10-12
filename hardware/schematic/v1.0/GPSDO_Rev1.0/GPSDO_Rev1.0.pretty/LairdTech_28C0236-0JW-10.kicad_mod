@@ -8,7 +8,7 @@
 	(property "Reference" "REF**"
 		(at 2.54 -4.064 0)
 		(layer "F.SilkS")
-		(uuid "47b01318-6f9b-47d9-a079-479a519d5bb9")
+		(uuid "372ce0ee-45af-48de-b7ce-eb3210bef1c7")
 		(effects
 			(font
 				(size 1 1)
@@ -19,7 +19,7 @@
 	(property "Value" "LairdTech_28C0236-0JW-10"
 		(at 2.54 4.953 0)
 		(layer "F.Fab")
-		(uuid "06dfba11-a251-4908-a8a0-bedcfc3cd16f")
+		(uuid "b79aca20-7f09-4914-9479-9a635ef53b05")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "15c6e37d-20e6-4071-985b-91d941c9b69c")
+		(uuid "a5d0937a-8c46-4024-bf44-c4da2f348d27")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -45,7 +45,7 @@
 		(unlocked yes)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "917959b4-f48f-4e4c-b741-b0c927562e55")
+		(uuid "409303ca-35e4-48a8-b7bb-9b5b6f9a07ae")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -64,7 +64,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "6bbc914e-3909-4baa-b4ec-94284c5591d7")
+		(uuid "19e23c0f-fcb2-4a00-8e4e-858ad129dc62")
 	)
 	(fp_arc
 		(start 0.239932 -2.300068)
@@ -75,7 +75,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "d1ae3206-afaa-4ed8-9b4c-1efff35664df")
+		(uuid "81a78e8f-356f-4580-ab59-b1bb0f25d579")
 	)
 	(fp_arc
 		(start 5.064465 2.019572)
@@ -86,7 +86,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "bbd27470-cef1-4f51-b87f-4ea8cf139e62")
+		(uuid "c0e326b3-628b-4684-ad93-a294c9ade2bb")
 	)
 	(fp_arc
 		(start 5.588 -1.27)
@@ -97,7 +97,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "24e39734-b66a-41b6-9980-6c2057a200b7")
+		(uuid "a4784f7a-ca07-4426-a1d2-16276d9732d3")
 	)
 	(fp_circle
 		(center 2.54 0)
@@ -108,7 +108,7 @@
 		)
 		(fill no)
 		(layer "F.CrtYd")
-		(uuid "aa45fd88-fcbd-4d68-b564-09b08ce3f412")
+		(uuid "5581d4cc-6f9e-48f2-8f19-54e2f6d022ad")
 	)
 	(fp_line
 		(start 0 -1.145)
@@ -118,7 +118,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4ef7b226-77b0-486b-b353-127da3a00628")
+		(uuid "574b2f72-df69-472a-ad62-d027566bfd26")
 	)
 	(fp_line
 		(start 0 1.145)
@@ -128,7 +128,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9e04ad24-0e87-430e-9e1a-733b276872f5")
+		(uuid "a02ac077-475e-4f9f-9020-35363eac05ad")
 	)
 	(fp_arc
 		(start 0 1.145)
@@ -139,7 +139,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4e17dc70-26cf-45d3-ba38-acd6cdf81b45")
+		(uuid "9021caab-4331-450d-90b0-0ad8915d0372")
 	)
 	(fp_arc
 		(start 5.08 -1.145)
@@ -150,7 +150,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "50c5210b-17fe-4a00-aeef-d2d9e92a098d")
+		(uuid "e2d1c8f2-8cf3-4dd9-bc55-6510ebabbe47")
 	)
 	(fp_circle
 		(center 2.54 0)
@@ -161,12 +161,12 @@
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "848f54f7-fef4-4aaf-a14c-409c52b6fc96")
+		(uuid "797626a6-ba21-43b8-b048-de9ca89f71db")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 2.54 0 0)
 		(layer "F.Fab")
-		(uuid "5db61527-b32c-40a4-804d-bfe13ec44ad9")
+		(uuid "a8f6980d-3e79-42e1-af8b-77525114fd73")
 		(effects
 			(font
 				(size 1 1)
@@ -180,7 +180,7 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "47e7793e-de30-45af-b57f-1ab41489375b")
+		(uuid "9d1b1ce9-4445-4154-8c70-1a4e04056abc")
 	)
 	(pad "2" thru_hole circle
 		(at 5.08 0)
@@ -188,7 +188,7 @@
 		(drill 0.8)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "6366fb9d-6c7a-469b-8f99-488f85062376")
+		(uuid "eb7d945e-1285-4750-902f-9c820ef074d8")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/LairdTech_28C0236-0JW-10.step"

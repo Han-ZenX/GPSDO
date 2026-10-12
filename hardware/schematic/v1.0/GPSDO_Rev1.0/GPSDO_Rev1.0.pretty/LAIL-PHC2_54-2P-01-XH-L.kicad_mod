@@ -1,0 +1,263 @@
+(footprint "LAIL-PHC2_54-2P-01-XH-L"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS")
+	(tags "C54905973 CONN-TH_2P-P2.50_HC-XH-2A-G LAIL-PHC2.54-2P-01-XH-L LAILAN")
+	(property "Reference" "REF**"
+		(at 0 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "3a4ed0f1-236c-4669-a46d-dd41ca869daa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 3.4 0)
+		(layer "F.Fab")
+		(uuid "512974a7-ac0b-4a15-b9fd-5a0a9da89bca")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5dfda018-3297-4ef1-bd8d-20bd0ad7567a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "36568707-ef1b-4a7c-b5f7-ff48046a1a8a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C54905973"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6f0e2440-e0f7-49eb-abb2-21c5d7afe055")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -3.75 -3.5)
+		(end -3.75 2.4)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ffe63642-a2df-414e-87c3-093900eaad81")
+	)
+	(fp_line
+		(start -3.75 0.981)
+		(end -3.15 0.981)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c9fea566-4dad-4ffe-96fc-ebdfcebb1f1a")
+	)
+	(fp_line
+		(start -3.75 1.721)
+		(end -1.6 1.721)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "31b05cca-134b-4905-b5ed-2226873d193c")
+	)
+	(fp_line
+		(start -3.15 -2.9)
+		(end 3.1 -2.9)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1972ed64-991e-4a41-a6ef-313f97979965")
+	)
+	(fp_line
+		(start -3.15 0.981)
+		(end -3.15 -2.9)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6444dc68-4033-449f-aa14-5bc342e02073")
+	)
+	(fp_line
+		(start -1.6 1.721)
+		(end -1.6 2.4)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2bf2175b-3678-4498-951f-b580a625e3b4")
+	)
+	(fp_line
+		(start 1.65 1.709852)
+		(end 1.65 2.4)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "08723972-c3ad-40be-a5e6-e98d763bd670")
+	)
+	(fp_line
+		(start 3.1 -2.9)
+		(end 3.1 0.95)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ea435581-d9d1-4c80-8c49-9d2704275e68")
+	)
+	(fp_line
+		(start 3.1 0.95)
+		(end 3.75 0.95)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f5005fe6-8047-41e3-a106-19a02d091b46")
+	)
+	(fp_line
+		(start 3.75 -3.5)
+		(end -3.75 -3.5)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9a8a8a4f-243b-46f7-bf99-64b916aa7292")
+	)
+	(fp_line
+		(start 3.75 -3.5)
+		(end 3.75 2.4)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b6019777-3553-4abf-a022-fb3e457d039f")
+	)
+	(fp_line
+		(start 3.75 1.709852)
+		(end 1.65 1.709852)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e66dd10-26f9-40dc-92d7-ba25e854d4ae")
+	)
+	(fp_line
+		(start 3.75 2.4)
+		(end -3.75 2.4)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f04fbcb0-81d7-4682-9551-8f46f70d469d")
+	)
+	(fp_poly
+		(pts
+			(xy -3.7 1.85) (xy -1.7 1.85) (xy -1.7 2.3) (xy -3.7 2.3)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "6e3cd856-e009-43f9-9b7a-62c1fecdf155")
+	)
+	(fp_poly
+		(pts
+			(xy 1.716608 1.815821) (xy 3.71663 1.815821) (xy 3.71663 2.265807) (xy 1.716608 2.265807)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "855a18db-eda7-4b77-ade1-c1c15b588ac2")
+	)
+	(fp_poly
+		(pts
+			(xy -3.6 0.85) (xy -3.3 0.85) (xy -3.3 -3.05) (xy 3.3 -3.05) (xy 3.3 0.8) (xy 3.6 0.8) (xy 3.6 -3.3)
+			(xy -3.6 -3.3)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "c703cf67-e2b4-4ad7-be64-8756273c0c2e")
+	)
+	(pad "1" thru_hole rect
+		(at -1.25 0)
+		(size 1.524 1.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "284dbc80-a5ee-4816-a28a-654f2af150b4")
+	)
+	(pad "2" thru_hole oval
+		(at 1.25 0)
+		(size 1.5 1.5)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "64b420c0-f00d-4bfb-b58f-017ea1b97d33")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/LAIL-PHC2_54-2P-01-XH-L.wrl"
+		(offset
+			(xyz 0 0.55 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
