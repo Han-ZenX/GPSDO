@@ -1035,6 +1035,178 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "JLCImport:BSMD1206C-1300T"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "F"
+				(at 0 3.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BSMD1206C-1300T"
+				(at 0 -3.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "JLCImport:BSMD1206C-1300T"
+				(at -1.016 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412171635_BHFUSE-BSMD1206C-1300T_C41367225.pdf"
+				(at -1.016 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-55℃~+150℃ 1.52 1.6mm 3.2mm 3A 50A 72V Surface Mount Fuse 1206 Disposable fuses ROHS"
+				(at -1.016 8.128 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C41367225"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "BHFUSE"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "BSMD1206C-1300T"
+				(at 0.508 6.096 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BHFUSE BSMD1206C-1300T C41367225 F1206"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BSMD1206C-1300T_0_1"
+				(rectangle
+					(start -2.54 1.016)
+					(end 2.54 -1.016)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BSMD1206C-1300T_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "JLCImport:TAJB107M010RNJ"
 			(pin_names
 				(offset 1.016)
@@ -1705,6 +1877,12 @@
 		(uuid "256835b6-93b3-4600-832e-071d753094f7")
 	)
 	(junction
+		(at 59.69 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26f9b1f8-af99-48bd-b310-6b9b689fe412")
+	)
+	(junction
 		(at 238.76 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1807,10 +1985,22 @@
 		(uuid "c3d2806e-8085-4c54-a63d-321b326e0654")
 	)
 	(junction
+		(at 67.31 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c47a5623-42cd-4794-b887-a96968857f00")
+	)
+	(junction
 		(at 147.32 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1ed03b3-dc96-4f7b-92b3-6e4af1ad408b")
+	)
+	(junction
+		(at 52.07 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d55ebe16-0155-4c31-bbc4-6f9cfe7a1fc3")
 	)
 	(junction
 		(at 162.56 149.86)
@@ -1943,6 +2133,16 @@
 			(type default)
 		)
 		(uuid "1abdcb9f-9f65-4297-bf61-a8ece1c511c9")
+	)
+	(wire
+		(pts
+			(xy 52.07 63.5) (xy 52.07 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b06cdc5-cbe2-4b00-a945-536f64534b6e")
 	)
 	(wire
 		(pts
@@ -2306,6 +2506,16 @@
 	)
 	(wire
 		(pts
+			(xy 52.07 80.01) (xy 52.07 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ada90c3-e001-4658-ab4b-031ae09191b9")
+	)
+	(wire
+		(pts
 			(xy 144.78 76.2) (xy 144.78 80.01)
 		)
 		(stroke
@@ -2333,6 +2543,16 @@
 			(type default)
 		)
 		(uuid "80708abf-57cc-4e7d-abcc-06da7304405a")
+	)
+	(wire
+		(pts
+			(xy 52.07 63.5) (xy 59.69 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80dfb7a1-be5e-4206-8c0d-d687d5588946")
 	)
 	(wire
 		(pts
@@ -2393,6 +2613,26 @@
 			(type default)
 		)
 		(uuid "8bb23d23-45c2-496f-9b15-52a6df9be92f")
+	)
+	(wire
+		(pts
+			(xy 59.69 63.5) (xy 67.31 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d28ff8e-d5ab-4d76-99df-3065bc29439c")
+	)
+	(wire
+		(pts
+			(xy 36.83 66.04) (xy 36.83 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92d739b8-66b2-4492-bade-c020f7f0f6e6")
 	)
 	(wire
 		(pts
@@ -2666,6 +2906,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 63.5) (xy 52.07 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca8a8800-545b-4489-aadf-c89b64241817")
+	)
+	(wire
+		(pts
 			(xy 256.54 105.41) (xy 261.62 105.41)
 		)
 		(stroke
@@ -2693,6 +2943,16 @@
 			(type default)
 		)
 		(uuid "d16762a9-74dd-4a45-b29b-8470971bfcaf")
+	)
+	(wire
+		(pts
+			(xy 34.29 63.5) (xy 39.37 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2d8f059-8c1e-41e1-a072-941451847501")
 	)
 	(wire
 		(pts
@@ -2804,6 +3064,16 @@
 		)
 		(uuid "f901ee60-d650-4bb0-9142-6ea19ab22d95")
 	)
+	(wire
+		(pts
+			(xy 34.29 66.04) (xy 36.83 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc896c6a-f5ee-4d59-85a6-8f7734c3f428")
+	)
 	(label "LDO_OCXO_FB"
 		(at 152.4 149.86 0)
 		(effects
@@ -2843,6 +3113,16 @@
 			(justify left bottom)
 		)
 		(uuid "b3d7d2df-99bb-4439-ae44-d632126ed823")
+	)
+	(label "+5V_IN"
+		(at 36.83 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bbfe4df3-5bd4-4617-b68a-4760615d889a")
 	)
 	(label "LDO_OCXO_NR"
 		(at 111.76 144.78 0)
@@ -3751,6 +4031,87 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 67.31 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "201b9e02-1355-4b2a-a42d-83ef8290c85f")
+		(property "Reference" "C46"
+			(at 62.738 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 61.214 69.596 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 68.2752 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 67.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "45aed261-6a47-4507-8bda-32c47cf8a277")
+		)
+		(pin "1"
+			(uuid "b81f88e0-cbd1-45cd-8bfb-bc224dba98a8")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 238.76 73.66 0)
 		(unit 1)
@@ -3991,6 +4352,278 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 36.83 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41ab328a-827a-4b06-b1bd-d5fc96c4c9a2")
+		(property "Reference" "#PWR049"
+			(at 36.83 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 36.83 71.628 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 36.83 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "109e9515-ab5e-44d8-bb20-dafe7b42169a")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCImport:BSMD1206C-1300T")
+		(at 44.45 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "468c8531-aefe-4665-aef1-76156decba6a")
+		(property "Reference" "F1"
+			(at 44.45 57.15 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BSMD1206C-1300T"
+			(at 44.45 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "JLCImport:BSMD1206C-1300T"
+			(at 43.434 55.372 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2412171635_BHFUSE-BSMD1206C-1300T_C41367225.pdf"
+			(at 43.434 55.372 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-55℃~+150℃ 1.52 1.6mm 3.2mm 3A 50A 72V Surface Mount Fuse 1206 Disposable fuses ROHS"
+			(at 43.434 55.372 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C41367225"
+			(at 44.45 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "BHFUSE"
+			(at 44.45 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BSMD1206C-1300T"
+			(at 44.958 57.404 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "bd58ecdf-6e1e-40f6-8763-ba755cddf6d0")
+		)
+		(pin "1"
+			(uuid "00851ba9-109c-40ed-ba7c-f71be37bfe79")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "F1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49d629d1-60ec-4a93-af0d-d783c5d3cb58")
+		(property "Reference" "#PWR048"
+			(at 67.31 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 67.31 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 67.31 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a232c469-2267-484b-8682-250acc55fef1")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 176.53 147.32 0)
 		(unit 1)
 		(body_style 1)
@@ -4223,6 +4856,96 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
 					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:LED")
+		(at 52.07 76.2 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5912b016-23f2-4711-b455-003d248c3f29")
+		(property "Reference" "D8"
+			(at 49.276 72.644 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LED"
+			(at 49.276 79.248 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:LED_0603_1608Metric"
+			(at 52.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 52.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 52.07 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "df6bdddc-3f11-485d-a0ea-a47064504063")
+		)
+		(pin "2"
+			(uuid "f5961208-7330-4aab-8092-0c8fd8118ef8")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -4868,7 +5591,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L")
-		(at 44.45 64.77 0)
+		(at 29.21 64.77 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4879,7 +5602,7 @@
 		(dnp no)
 		(uuid "85fae96a-5927-40fb-9424-061515ded5df")
 		(property "Reference" "CN1"
-			(at 45.974 58.42 0)
+			(at 30.734 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4890,7 +5613,8 @@
 			)
 		)
 		(property "Value" "LAIL-PHC2_54-2P-01-XH-L"
-			(at 52.324 72.644 0)
+			(at 37.084 72.644 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4901,7 +5625,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L"
-			(at 44.45 64.77 0)
+			(at 29.21 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4912,7 +5636,7 @@
 			)
 		)
 		(property "Datasheet" "https://atta.szlcsc.com/upload/public/pdf/source/20230105/4FFD2EFD3DA44AA828171A44400F3EDE.pdf"
-			(at 44.45 64.77 0)
+			(at 29.21 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4923,7 +5647,7 @@
 			)
 		)
 		(property "Description" "-25℃~+85℃ 1 1x2P 2 2.54mm 250V 2P 3A 5.8mm 7.1mm 7.5mm Brass PA66 Through Hole Tin UL94V-0 White XH Plugin,P=2.5mm Wire To Board Connector ROHS"
-			(at 44.45 64.77 0)
+			(at 29.21 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4934,7 +5658,7 @@
 			)
 		)
 		(property "LCSC" "C54905973"
-			(at 44.45 64.77 0)
+			(at 29.21 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4945,7 +5669,7 @@
 			)
 		)
 		(property "Manufacturer" "LAILAN"
-			(at 44.45 64.77 0)
+			(at 29.21 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4956,7 +5680,7 @@
 			)
 		)
 		(property "Manufacturer Part" "LAIL-PHC2.54-2P-01-XH-L"
-			(at 44.45 64.77 0)
+			(at 29.21 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5313,6 +6037,87 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 59.69 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9241d113-db7d-423c-a253-1950c8fb2330")
+		(property "Reference" "C26"
+			(at 55.118 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 53.848 69.596 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+			(at 60.6552 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 59.69 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e3620e8-4b42-4379-bbb2-5b5d3909b7ca")
+		)
+		(pin "2"
+			(uuid "6d0357da-5282-4926-a37b-006e27cf8128")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GPSDO_Rev1.0:R")
 		(at 151.13 157.48 0)
 		(unit 1)
@@ -5386,6 +6191,84 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
 					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 67.31 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e322634-ebce-4feb-97c6-463d4d8b261e")
+		(property "Reference" "#PWR047"
+			(at 67.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 67.31 58.42 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 67.31 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "806c96f2-5642-4d92-be52-01d86f78c080")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6102,6 +6985,85 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
 					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 52.07 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b96c2499-c37c-43bb-be61-1b873d9c4f1b")
+		(property "Reference" "#PWR0168"
+			(at 52.07 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 52.07 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 52.07 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1f5d7b9d-6a95-4a6b-823f-3f384036b00d")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "#PWR0168")
 					(unit 1)
 				)
 			)
@@ -6988,6 +7950,85 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 59.69 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffdf3599-f9e7-4468-9aa9-b163f0fa3f7c")
+		(property "Reference" "#PWR046"
+			(at 59.69 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.69 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 59.69 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "facfa977-7270-4be8-a352-37000c2d9380")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d"
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
