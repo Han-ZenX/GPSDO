@@ -2466,6 +2466,121 @@ def fb_select():
     return d
 
 
+# ---------------------------------------------------------------- 图：GPSDO 功能需求文档
+
+def fr_loop():
+    """GPSDO 基本原理框图。"""
+    d = Drawing(W, 244)
+    _blk(d, 4, 140, 92, 50, 'GNSS 接收机', ['定时模式', '位置保持', 'qErr 修正量'], PPS)
+    _blk(d, 124, 140, 100, 50, '时间间隔测量', ['GNSS 1PPS 与', '本地 1PPS 的相位差'], TDC)
+    _blk(d, 252, 140, 104, 50, '控制器 + 状态机', ['PI，时间常数', '100 至 1000 s', '保持 / 恢复'], MCU_C)
+    _blk(d, 384, 140, 94, 50, 'EFC 压控电压', ['DAC 或 PWM', '加有源低通'], ANA)
+    _blk(d, 384, 50, 94, 50, 'OCXO', ['短期稳定度来源', '老化 / 温漂'], CLK)
+    _blk(d, 252, 50, 104, 50, '分频 / 1PPS 生成', ['10 MHz 分频 10^7', '与 10 MHz 同相'], CLK)
+    _box(d, 252, 208, 104, 22, colors.white, SEN, 0.9, r=3)
+    _txt(d, 304, 216, '温度传感器 / 老化学习', 7, BOLD, SEN, 'middle')
+
+    _arrow(d, 50, 230, 50, 191, PPS, 1.0)
+    _txt(d, 55, 216, '天线', 7, BOLD, PPS)
+    _arrow(d, 96, 165, 123, 165, PPS, 1.1)
+    _txt(d, 110, 169, '1PPS', 6.5, BOLD, PPS, 'middle')
+    _arrow(d, 224, 165, 251, 165, TDC, 1.1)
+    _txt(d, 238, 169, '相位差', 6.5, BOLD, TDC, 'middle')
+    _arrow(d, 356, 165, 383, 165, MCU_C, 1.1)
+    _txt(d, 370, 169, '控制码', 6.5, BOLD, MCU_C, 'middle')
+    _arrow(d, 304, 208, 304, 191, SEN, 0.9)
+    _arrow(d, 431, 140, 431, 101, ANA, 1.2)
+    _txt(d, 436, 118, 'EFC', 6.8, BOLD, ANA)
+    _arrow(d, 384, 75, 357, 75, CLK, 1.2)
+    _txt(d, 370, 79, '10 MHz', 6.5, BOLD, CLK, 'middle')
+    _wire(d, [252, 75, 174, 75], CLK, 1.1)
+    _arrow(d, 174, 75, 174, 139, CLK, 1.1)
+    _txt(d, 179, 105, '本地 1PPS', 6.8, BOLD, CLK)
+    _arrow(d, 431, 50, 431, 26, CLK, 1.2)
+    _txt(d, 437, 30, '10 MHz 输出', 7, BOLD, CLK)
+    _arrow(d, 304, 50, 304, 26, PPS, 1.2)
+    _txt(d, 310, 30, '1PPS 输出', 7, BOLD, PPS)
+    _txt(d, 4, 6, '环路时间常数取在 OCXO 与 GNSS 1PPS 的 ADEV 交越点附近：短于它输出继承 GNSS 噪声，长于它输出继承 OCXO 漂移。',
+         7, FONT, GREY)
+    return d
+
+
+def fr_features():
+    """GPSDO 功能地图，标注优先级。"""
+    d = Drawing(W, 300)
+    pcol = {0: RED, 1: AMBER, 2: GREY}
+    cards = [
+        ('输出', CLK, [(0, '10 MHz 频率输出'), (0, '1PPS 时间输出'), (1, '多路输出与隔离'),
+                      (1, '输出 ESD / TVS 保护'), (1, '1PPS 与 10 MHz 同相'), (2, '未锁定时静默输出')]),
+        ('GNSS 定时', TDC, [(0, '自测量 Survey-in'), (0, '位置保持'), (1, '天线线缆时延补偿'),
+                           (1, '仰角掩码 / 闰秒'), (1, '天线开路与短路检测'), (2, 'qErr 锯齿波修正')]),
+        ('驯服环路', MCU_C, [(0, 'TIC 相位差测量'), (0, 'PI 控制器'), (0, 'EFC 极性与上下限'),
+                            (0, '1PPS 有效性检查'), (1, '快速锁定（变增益）'), (2, '手动 EFC')]),
+        ('保持', SEN, [(0, '冻结 EFC 于历史平均'), (0, '保持时长上报'), (1, '老化补偿'),
+                      (1, '温度补偿'), (1, '保持超时告警'), (2, '卡尔曼滤波学习')]),
+        ('告警与指示', colors.HexColor('#7d6608'),
+         [(0, 'EFC 到达 / 接近上下限'), (1, '天线开路 / 短路告警'), (1, '状态 LED'),
+          (1, '上电自检'), (1, '卫星与信噪比信息')]),
+        ('通信与维护', GREEN, [(0, '串口命令行'), (0, '状态查询'), (0, '参数非易失存储'),
+                              (1, '环路参数可调'), (1, 'NMEA 透传'), (1, '固件升级')]),
+    ]
+
+    def tag(x, y, p):
+        _box(d, x, y - 2.5, 16, 10, pcol[p], pcol[p], 0.5, r=2)
+        _txt(d, x + 8, y, 'P%d' % p, 6.2, BOLD, colors.white, 'middle')
+
+    bw, bh, gx = 152, 112, 11
+    for i, (title, col, items) in enumerate(cards):
+        x = 2 + (i % 3) * (bw + gx)
+        y = 168 - (i // 3) * (bh + 10)
+        _blk(d, x, y, bw, bh, title, [], col)
+        for j, (p, s) in enumerate(items):
+            yy = y + bh - 30 - j * 14
+            tag(x + 6, yy, p)
+            _txt(d, x + 28, yy, s, 7, FONT, DARK)
+
+    for k, s in enumerate(('没有就不是 GPSDO', '合格产品应有', '进阶或可选')):
+        tag(4 + k * 130, 22, k)
+        _txt(d, 26 + k * 130, 22, s, 7, FONT, DARK)
+    _txt(d, 4, 6, '优先级与第 3、5、7、9 节表格一致。', 7, FONT, GREY)
+    return d
+
+
+def fr_states():
+    """GPSDO 驯服状态机（取自 ThunderBolt 用户手册第 5 章，补充 Survey）。"""
+    d = Drawing(W, 252)
+    _blk(d, 4, 150, 96, 52, 'Power-Up 上电', ['OCXO 预热', '粗调频率并移 1PPS'], MCU_C)
+    _blk(d, 128, 150, 96, 52, 'Survey 自测量', ['平均定位结果', '典型约 1 小时'], TDC)
+    _blk(d, 252, 150, 96, 52, 'Normal 正常', ['只调频率维持相位', '学习 OCXO 特性'], ACCENT)
+    _blk(d, 382, 150, 96, 52, 'Holdover 保持', ['按学习值修正 EFC', '上报保持时长'], AMBER)
+    _blk(d, 300, 56, 110, 52, 'Recovery 恢复', ['跳步同步 或 限速调频', '默认 300 ns / 50 ppb'], GREEN)
+    _blk(d, 4, 56, 150, 52, 'Disabled 禁用', ['用户命令进入与退出', '环路停止，直接设控制电压'], GREY)
+
+    _arrow(d, 100, 176, 127, 176, DARK, 1.0)
+    _txt(d, 114, 180, '预热完成', 6.3, BOLD, DARK, 'middle')
+    _arrow(d, 224, 176, 251, 176, DARK, 1.0)
+    _txt(d, 238, 180, '位置保持', 6.3, BOLD, DARK, 'middle')
+    _arrow(d, 348, 176, 381, 176, RED, 1.1)
+    _txt(d, 365, 180, 'GNSS 丢失', 6.3, BOLD, RED, 'middle')
+    _wire(d, [430, 150, 430, 82], GREEN, 1.1)
+    _arrow(d, 430, 82, 411, 82, GREEN, 1.1)
+    _txt(d, 435, 116, 'GNSS 恢复', 6.8, BOLD, GREEN)
+    _wire(d, [300, 82, 276, 82], ACCENT, 1.1)
+    _arrow(d, 276, 82, 276, 149, ACCENT, 1.1)
+    _txt(d, 281, 124, '相位对齐完成', 6.8, BOLD, ACCENT)
+    # 已存储位置时跳过自测量
+    _wire(d, [52, 202, 52, 224, 300, 224], GREY, 0.9, (3, 2))
+    _arrow(d, 300, 224, 300, 203, GREY, 0.9)
+    _txt(d, 176, 228, '已存储位置时跳过自测量', 6.8, FONT, GREY, 'middle')
+
+    _txt(d, 4, 30, '手动保持：用户命令进入，必须由用户命令退出；退出时若 GNSS 无效，则转入自动保持。',
+         7, FONT, DARK)
+    _txt(d, 4, 16, '恢复取舍：允许跳步同步则恢复快；要保证每秒严格 10 000 000 个周期，就禁用跳步、限制最大频偏。',
+         7, FONT, DARK)
+    _txt(d, 4, 2, '状态划分取自 Trimble ThunderBolt 用户手册第 5 章，Survey 状态为本文补充。', 7, FONT, GREY)
+    return d
+
+
 FIGURES = {
     'flow': flow,
     'stackup': stackup,
@@ -2506,6 +2621,9 @@ FIGURES = {
     'fb_land': fb_land,
     'fb_pcb': fb_pcb,
     'fb_select': fb_select,
+    'fr_loop': fr_loop,
+    'fr_features': fr_features,
+    'fr_states': fr_states,
 }
 
 
