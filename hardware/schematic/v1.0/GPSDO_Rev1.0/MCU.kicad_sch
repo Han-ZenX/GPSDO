@@ -6731,17 +6731,6 @@
 		)
 		(uuid "086acfbf-dd15-4e2a-874e-f4bdc02a179d")
 	)
-	(hierarchical_label "GNSS_UART_RXD"
-		(shape output)
-		(at 123.19 161.29 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1176e5d0-b0b1-4511-8ec1-2c93702aed22")
-	)
 	(hierarchical_label "10MHZ_MCU"
 		(shape input)
 		(at 50.8 96.52 180)
@@ -6763,17 +6752,6 @@
 			(justify left)
 		)
 		(uuid "35d1a979-91ea-4762-8456-40759fe71b03")
-	)
-	(hierarchical_label "GNSS_UART_TXD"
-		(shape input)
-		(at 123.19 158.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4286c8d9-621c-4398-9c67-4eda93923e4b")
 	)
 	(hierarchical_label "PWM"
 		(shape output)

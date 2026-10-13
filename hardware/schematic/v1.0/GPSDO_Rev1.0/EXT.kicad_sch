@@ -972,6 +972,32 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "10 MHz Outputs"
+		(exclude_from_sim no)
+		(at 37.846 41.656 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "758c51ea-79fc-49c2-b107-780180c38358")
+	)
+	(text "Pulse Outputs"
+		(exclude_from_sim no)
+		(at 37.592 104.14 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "d18869d9-ef37-46ed-b58f-8b6aac838bf8")
+	)
 	(junction
 		(at 77.47 53.34)
 		(diameter 0)
@@ -988,6 +1014,16 @@
 		(at 95.25 73.66)
 		(uuid "72d6f76d-1e33-4107-9fec-f7f6e5393de4")
 	)
+	(polyline
+		(pts
+			(xy 38.1 106.68) (xy 38.1 160.02)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "0a87c675-ebb1-4341-97f8-3995db6982dd")
+	)
 	(wire
 		(pts
 			(xy 64.77 73.66) (xy 72.39 73.66)
@@ -997,6 +1033,16 @@
 			(type default)
 		)
 		(uuid "10e44137-5439-4f52-b53c-1160a0b9acf3")
+	)
+	(polyline
+		(pts
+			(xy 38.1 160.02) (xy 171.45 160.02)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "3d0688da-446e-49c8-9369-57edecf513b9")
 	)
 	(wire
 		(pts
@@ -1028,6 +1074,56 @@
 		)
 		(uuid "5a03be4b-28a1-4d4b-a32c-19c22b2855d8")
 	)
+	(polyline
+		(pts
+			(xy 171.45 44.45) (xy 171.45 97.79)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "6291db4c-7534-45b9-9717-5208462fcf67")
+	)
+	(polyline
+		(pts
+			(xy 38.1 44.45) (xy 171.45 44.45)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "82e5e792-d57c-467e-b323-fe7be3d250dc")
+	)
+	(polyline
+		(pts
+			(xy 38.1 97.79) (xy 171.45 97.79)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "84f3eb2d-3715-4e43-9412-4b0b45187e11")
+	)
+	(polyline
+		(pts
+			(xy 38.1 106.68) (xy 171.45 106.68)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "ab34dc41-0a1b-4029-a000-1ba6083a5824")
+	)
+	(polyline
+		(pts
+			(xy 171.45 106.68) (xy 171.45 160.02)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "b48cd24a-80e2-4422-b8b3-bf78d80a5a17")
+	)
 	(wire
 		(pts
 			(xy 68.58 78.74) (xy 72.39 78.74)
@@ -1047,6 +1143,16 @@
 			(type default)
 		)
 		(uuid "dbf3c5b7-15c4-443e-83f6-b5966e8c98a5")
+	)
+	(polyline
+		(pts
+			(xy 38.1 44.45) (xy 38.1 97.79)
+		)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(uuid "e55cc0ae-a5e4-4286-9b10-3278de4aa160")
 	)
 	(wire
 		(pts
