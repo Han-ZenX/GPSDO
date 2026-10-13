@@ -717,6 +717,191 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GPSDO_Rev1.0:TPD1E10B06DPYR"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPD1E10B06DPYR"
+				(at 0 -2 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:TPD1E10B06DPYR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809050228_Texas-Instruments-TPD1E10B06DPYR_C48260.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-40℃~+125℃ 1 100nA 12pF 14V 5.5V 6A@8/20us 6V 90W@8/20us Bidirectional ESD IEC 61000-4-2 X1-SON-2(0.6x1) ESD and Surge Protection (TVS/ESD) ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C48260"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Texas Instruments"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "TPD1E10B06DPYR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C48260 TPD1E10B06DPYR Texas Instruments X1SON-2_L1.0-W0.6-P0.65-BI-1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TPD1E10B06DPYR_0_1"
+				(polyline
+					(pts
+						(xy -2.54 -1.778) (xy 0 0) (xy -2.54 1.778) (xy -2.54 -1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 2.286) (xy -0.508 2.286) (xy 0 1.778) (xy 0 -1.778) (xy 0.508 -2.286) (xy 0.508 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.778) (xy 0 0) (xy 2.54 -1.778) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TPD1E10B06DPYR_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power global)
 			(pin_numbers
@@ -987,7 +1172,7 @@
 	)
 	(text "Pulse Outputs"
 		(exclude_from_sim no)
-		(at 37.592 104.14 0)
+		(at 37.592 110.49 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -999,24 +1184,74 @@
 		(uuid "d18869d9-ef37-46ed-b58f-8b6aac838bf8")
 	)
 	(junction
-		(at 77.47 53.34)
+		(at 80.01 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "35ad7872-b7d9-445b-b0d0-8140b3d11c17")
 	)
 	(junction
-		(at 68.58 53.34)
+		(at 78.74 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f0a94a3-72a5-48e7-a79d-c3c435a35006")
+	)
+	(junction
+		(at 115.57 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82c9ce6e-9981-4410-af12-0feb18de34af")
+	)
+	(junction
+		(at 123.19 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8a94e0e-fe60-4dbe-99ab-8615e4f30179")
+	)
+	(junction
+		(at 69.85 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a960eb49-6132-4a70-9f49-f27b6ee1f1aa")
+	)
+	(junction
+		(at 115.57 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b1d12dce-cd32-412b-9187-46a4ffea335c")
+	)
+	(junction
+		(at 123.19 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c399e0c4-3acd-48dd-bada-40c8139cea66")
+	)
+	(junction
+		(at 71.12 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "daf37f87-f979-4772-9539-ef632af3e164")
 	)
 	(no_connect
-		(at 95.25 73.66)
+		(at 97.79 74.93)
 		(uuid "72d6f76d-1e33-4107-9fec-f7f6e5393de4")
+	)
+	(no_connect
+		(at 96.52 146.05)
+		(uuid "95f005c5-8c9b-41ca-808d-cc62bc98697f")
+	)
+	(wire
+		(pts
+			(xy 115.57 151.13) (xy 115.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "007c9cd1-2244-49bb-b7a5-dbf9a5bb86c6")
 	)
 	(polyline
 		(pts
-			(xy 38.1 106.68) (xy 38.1 160.02)
+			(xy 38.1 113.03) (xy 38.1 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1026,7 +1261,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 73.66) (xy 72.39 73.66)
+			(xy 67.31 74.93) (xy 74.93 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1034,9 +1269,49 @@
 		)
 		(uuid "10e44137-5439-4f52-b53c-1160a0b9acf3")
 	)
+	(wire
+		(pts
+			(xy 115.57 93.98) (xy 115.57 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2388539a-7036-444a-a79b-20004a76c4ef")
+	)
+	(wire
+		(pts
+			(xy 78.74 127) (xy 86.36 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28c79323-4ee2-478f-afad-0bb07517d446")
+	)
+	(wire
+		(pts
+			(xy 115.57 151.13) (xy 118.11 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "330479db-d45e-40ce-b7de-075d0aaa79f8")
+	)
+	(wire
+		(pts
+			(xy 69.85 127) (xy 78.74 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c1ae362-ffc2-4f3c-85c8-e7ae25efa23f")
+	)
 	(polyline
 		(pts
-			(xy 38.1 160.02) (xy 171.45 160.02)
+			(xy 38.1 177.8) (xy 171.45 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1046,7 +1321,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 78.74) (xy 115.57 78.74)
+			(xy 113.03 80.01) (xy 115.57 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1056,7 +1331,17 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 53.34) (xy 68.58 78.74)
+			(xy 115.57 166.37) (xy 123.19 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5684e7ac-2cd1-4e9b-a3ed-c776e600f262")
+	)
+	(wire
+		(pts
+			(xy 71.12 55.88) (xy 71.12 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1066,7 +1351,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 78.74) (xy 102.87 78.74)
+			(xy 97.79 80.01) (xy 105.41 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1076,13 +1361,73 @@
 	)
 	(polyline
 		(pts
-			(xy 171.45 44.45) (xy 171.45 97.79)
+			(xy 171.45 44.45) (xy 171.45 105.41)
 		)
 		(stroke
 			(width 0)
 			(type dash)
 		)
 		(uuid "6291db4c-7534-45b9-9717-5208462fcf67")
+	)
+	(wire
+		(pts
+			(xy 115.57 93.98) (xy 123.19 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c6f57cf-b2fb-478d-8248-68f96c62a646")
+	)
+	(wire
+		(pts
+			(xy 66.04 146.05) (xy 73.66 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cb48813-209d-4cbd-928e-046b3aa839a2")
+	)
+	(wire
+		(pts
+			(xy 69.85 127) (xy 69.85 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dd865dc-5d66-44ae-9ecb-906a9eccd2b2")
+	)
+	(wire
+		(pts
+			(xy 96.52 151.13) (xy 104.14 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c80f674-98d5-4dd6-97f9-fe9ff5cb7018")
+	)
+	(wire
+		(pts
+			(xy 69.85 151.13) (xy 73.66 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81909510-fc1f-4a8f-9a5f-b5a80cf8b3d3")
+	)
+	(wire
+		(pts
+			(xy 115.57 80.01) (xy 118.11 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82c2dfb9-1005-4814-affa-f705374b9715")
 	)
 	(polyline
 		(pts
@@ -1096,7 +1441,7 @@
 	)
 	(polyline
 		(pts
-			(xy 38.1 97.79) (xy 171.45 97.79)
+			(xy 38.1 105.41) (xy 171.45 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1104,9 +1449,39 @@
 		)
 		(uuid "84f3eb2d-3715-4e43-9412-4b0b45187e11")
 	)
+	(wire
+		(pts
+			(xy 115.57 80.01) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93c20e8b-fdd9-4933-83c2-60534133b28f")
+	)
+	(wire
+		(pts
+			(xy 123.19 85.09) (xy 123.19 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a57b50aa-db6f-4290-acaa-86a36e969c0b")
+	)
+	(wire
+		(pts
+			(xy 115.57 163.83) (xy 115.57 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a974d38b-dd19-459d-8021-406dcd8db6b3")
+	)
 	(polyline
 		(pts
-			(xy 38.1 106.68) (xy 171.45 106.68)
+			(xy 38.1 113.03) (xy 171.45 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1116,7 +1491,7 @@
 	)
 	(polyline
 		(pts
-			(xy 171.45 106.68) (xy 171.45 160.02)
+			(xy 171.45 113.03) (xy 171.45 177.8)
 		)
 		(stroke
 			(width 0)
@@ -1126,7 +1501,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 78.74) (xy 72.39 78.74)
+			(xy 71.12 80.01) (xy 74.93 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1136,7 +1511,37 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 53.34) (xy 85.09 53.34)
+			(xy 111.76 151.13) (xy 115.57 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbb9def1-d5d7-4e5e-8cf0-7602e2e7c965")
+	)
+	(wire
+		(pts
+			(xy 123.19 93.98) (xy 123.19 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd18aa55-92e5-44ed-b7f3-58de94f04647")
+	)
+	(wire
+		(pts
+			(xy 123.19 156.21) (xy 123.19 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd4996ec-bdaf-478e-a2a1-b075b23fb814")
+	)
+	(wire
+		(pts
+			(xy 80.01 55.88) (xy 87.63 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1144,9 +1549,19 @@
 		)
 		(uuid "dbf3c5b7-15c4-443e-83f6-b5966e8c98a5")
 	)
+	(wire
+		(pts
+			(xy 123.19 166.37) (xy 123.19 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e077368e-ca1a-4bd3-ad31-429975d59cc5")
+	)
 	(polyline
 		(pts
-			(xy 38.1 44.45) (xy 38.1 97.79)
+			(xy 38.1 44.45) (xy 38.1 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1156,7 +1571,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 53.34) (xy 77.47 53.34)
+			(xy 71.12 55.88) (xy 80.01 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1166,7 +1581,7 @@
 	)
 	(hierarchical_label "10MHZ_OUT"
 		(shape input)
-		(at 64.77 73.66 180)
+		(at 67.31 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1175,9 +1590,20 @@
 		)
 		(uuid "d51660f9-b45e-4cda-a729-29f5165311be")
 	)
+	(hierarchical_label "PULSE_OUT"
+		(shape input)
+		(at 66.04 146.05 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e67544af-98d1-42b3-ac5a-361821823e3d")
+	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 60.96 0)
+		(at 87.63 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1187,7 +1613,7 @@
 		(dnp no)
 		(uuid "0a2f91f2-064a-433a-a6a7-4dd628adfbda")
 		(property "Reference" "#PWR0154"
-			(at 85.09 67.31 0)
+			(at 87.63 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1198,7 +1624,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 64.008 90)
+			(at 87.63 66.548 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1210,7 +1636,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 60.96 0)
+			(at 87.63 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1221,7 +1647,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 60.96 0)
+			(at 87.63 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1232,7 +1658,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 60.96 0)
+			(at 87.63 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1256,7 +1682,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 68.58 53.34 0)
+		(at 71.12 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1267,7 +1693,7 @@
 		(fields_autoplaced yes)
 		(uuid "1678f1f9-7a9e-42c9-80f3-2f717352eaf0")
 		(property "Reference" "#PWR036"
-			(at 68.58 57.15 0)
+			(at 71.12 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1278,7 +1704,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 68.58 48.26 0)
+			(at 71.12 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1288,7 +1714,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 53.34 0)
+			(at 71.12 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1299,7 +1725,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 53.34 0)
+			(at 71.12 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1310,7 +1736,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 68.58 53.34 0)
+			(at 71.12 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1333,8 +1759,244 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:BUF602IDBVT")
+		(at 85.09 148.59 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2149a81f-febf-4389-b650-725df0f18c55")
+		(property "Reference" "U12"
+			(at 85.09 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BUF602IDBVT"
+			(at 85.09 140.97 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:BUF602IDBVT"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010800_Texas-Instruments-BUF602IDBVT_C2862949.pdf"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+85℃ -6.3V~6.3V 1 125uV/℃ 16mV 1GHz 2.8V~12.6V 4.8nV/√Hz@100kHz 5.8mA 60mA 8.5uA 8V/ns SOT-23-5 Operational Amplifier ROHS"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2862949"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "BUF602IDBVT"
+			(at 85.09 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "731ea4ef-547c-48f6-9766-e76b89d842fc")
+		)
+		(pin "4"
+			(uuid "f1a7107e-878d-44e0-9369-ace44c2ea67d")
+		)
+		(pin "5"
+			(uuid "54ee5abc-7fdf-4265-be67-c2a887e61950")
+		)
+		(pin "3"
+			(uuid "ca354954-cf73-487b-ba20-6cf4faf21d6d")
+		)
+		(pin "1"
+			(uuid "9e2a0cfd-3b82-4c57-bd19-7e4899e13317")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "U12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:TPD1E10B06DPYR")
+		(at 115.57 158.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "231bde35-ad71-44a8-aa53-d2f8649bd2ca")
+		(property "Reference" "D7"
+			(at 110.236 156.464 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TPD1E10B06DPYR"
+			(at 110.744 158.496 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:TPD1E10B06DPYR"
+			(at 115.57 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809050228_Texas-Instruments-TPD1E10B06DPYR_C48260.pdf"
+			(at 115.57 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+125℃ 1 100nA 12pF 14V 5.5V 6A@8/20us 6V 90W@8/20us Bidirectional ESD IEC 61000-4-2 X1-SON-2(0.6x1) ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 115.57 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C48260"
+			(at 115.57 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 115.57 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TPD1E10B06DPYR"
+			(at 115.57 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5028e20-a3fd-4607-b97e-acf30f770ff9")
+		)
+		(pin "2"
+			(uuid "b87dd6a9-6ec0-4e91-b432-f75cb497caed")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_Coaxial")
-		(at 120.65 78.74 0)
+		(at 123.19 80.01 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1344,7 +2006,7 @@
 		(dnp no)
 		(uuid "2cff6cb4-ad22-4553-a0e0-d15901f4a555")
 		(property "Reference" "J1"
-			(at 121.666 70.866 0)
+			(at 124.206 72.136 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1355,7 +2017,7 @@
 			)
 		)
 		(property "Value" "Conn_Coaxial"
-			(at 127.254 73.914 0)
+			(at 129.794 75.184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1366,7 +2028,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
-			(at 120.65 78.74 0)
+			(at 123.19 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1377,7 +2039,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 78.74 0)
+			(at 123.19 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1388,7 +2050,7 @@
 			)
 		)
 		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
-			(at 120.65 78.74 0)
+			(at 123.19 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1415,7 +2077,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 76.2 90)
+		(at 97.79 77.47 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1425,7 +2087,7 @@
 		(dnp no)
 		(uuid "33e5efdf-f551-4f34-91f4-8b2f44d96e17")
 		(property "Reference" "#PWR0155"
-			(at 101.6 76.2 0)
+			(at 104.14 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1436,7 +2098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 98.298 76.2 90)
+			(at 100.838 77.47 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1448,7 +2110,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 76.2 0)
+			(at 97.79 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1459,7 +2121,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 76.2 0)
+			(at 97.79 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1470,7 +2132,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 76.2 0)
+			(at 97.79 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1494,7 +2156,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 83.82 0)
+		(at 123.19 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1504,7 +2166,7 @@
 		(dnp no)
 		(uuid "3c6043e6-376c-4422-9c6b-7c8acc3d0074")
 		(property "Reference" "#PWR0163"
-			(at 120.65 90.17 0)
+			(at 123.19 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1515,7 +2177,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 86.868 90)
+			(at 123.19 100.838 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1527,7 +2189,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 83.82 0)
+			(at 123.19 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1538,7 +2200,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 83.82 0)
+			(at 123.19 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1549,7 +2211,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 83.82 0)
+			(at 123.19 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1573,7 +2235,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 77.47 60.96 0)
+		(at 96.52 148.59 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1581,9 +2243,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "42a10ac4-20fe-4ca7-9faa-8e116fd3ecce")
-		(property "Reference" "#PWR0153"
-			(at 77.47 67.31 0)
+		(uuid "406ad7fa-4eb6-4b97-8668-8c4b028b71d2")
+		(property "Reference" "#PWR0167"
+			(at 102.87 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1594,7 +2256,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 77.47 64.008 90)
+			(at 99.568 148.59 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1606,7 +2268,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 77.47 60.96 0)
+			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1617,7 +2279,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 60.96 0)
+			(at 96.52 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1628,7 +2290,86 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 77.47 60.96 0)
+			(at 96.52 148.59 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2feb6de9-84e0-4903-bcc7-f64282dd8240")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR0167")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "42a10ac4-20fe-4ca7-9faa-8e116fd3ecce")
+		(property "Reference" "#PWR0153"
+			(at 80.01 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 66.548 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1651,8 +2392,8 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:R")
-		(at 106.68 78.74 90)
+		(lib_id "power:+5V")
+		(at 69.85 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1660,9 +2401,11 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "869b2346-c644-48a3-b2e9-79c3631c2c71")
-		(property "Reference" "R20"
-			(at 101.6 77.47 90)
+		(fields_autoplaced yes)
+		(uuid "4972782c-4d43-46d6-90cf-79b7f55c36de")
+		(property "Reference" "#PWR044"
+			(at 69.85 130.81 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1671,8 +2414,8 @@
 				)
 			)
 		)
-		(property "Value" "49.9"
-			(at 112.014 77.47 90)
+		(property "Value" "+5V"
+			(at 69.85 121.92 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1681,8 +2424,8 @@
 				)
 			)
 		)
-		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
-			(at 106.68 80.518 90)
+		(property "Footprint" ""
+			(at 69.85 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1693,7 +2436,162 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 106.68 78.74 0)
+			(at 69.85 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 69.85 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ffc5b504-e671-43f2-8f00-134e3b5ce07f")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 26.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5a220cfc-b634-4615-bcf4-b2b38401998f")
+		(property "Reference" "#PWR0168"
+			(at 80.01 20.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 23.622 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d31026d8-36ab-4430-8603-f4eb4252bd40")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR0168")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 109.22 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "869b2346-c644-48a3-b2e9-79c3631c2c71")
+		(property "Reference" "R20"
+			(at 104.14 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "49.9"
+			(at 114.554 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+			(at 109.22 81.788 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1704,7 +2602,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 106.68 78.74 0)
+			(at 109.22 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1731,7 +2629,7 @@
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:C")
-		(at 85.09 57.15 0)
+		(at 87.63 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1741,7 +2639,7 @@
 		(dnp no)
 		(uuid "96df6b8b-becb-42ae-82b6-01755a972dda")
 		(property "Reference" "C31"
-			(at 85.598 54.864 0)
+			(at 88.138 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1752,7 +2650,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 85.852 59.436 0)
+			(at 88.392 61.976 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1763,7 +2661,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
-			(at 86.0552 60.96 0)
+			(at 88.5952 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1774,7 +2672,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 57.15 0)
+			(at 87.63 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1785,7 +2683,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 85.09 57.15 0)
+			(at 87.63 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1811,8 +2709,8 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:C")
-		(at 77.47 57.15 0)
+		(lib_id "power:GND")
+		(at 123.19 170.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1820,31 +2718,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "cca3bf3e-e33c-4398-8c1a-fba4c2f727f2")
-		(property "Reference" "C30"
-			(at 77.978 54.864 0)
+		(uuid "9877f7b8-c63a-4c9b-ac8b-f91a4dc8c873")
+		(property "Reference" "#PWR0169"
+			(at 123.19 176.53 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nF"
-			(at 77.978 59.436 0)
+		(property "Value" "GND"
+			(at 123.19 173.228 90)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
-			(at 78.4352 60.96 0)
+		(property "Footprint" ""
+			(at 123.19 170.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1855,7 +2754,359 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 77.47 57.15 0)
+			(at 123.19 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7419d798-109f-42da-8e0d-1182c31b9c49")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR0169")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:TPD1E10B06DPYR")
+		(at 115.57 87.63 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a92c3a1d-ab02-443a-9153-7747a47e1d9d")
+		(property "Reference" "D6"
+			(at 110.236 85.344 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TPD1E10B06DPYR"
+			(at 110.744 87.376 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:TPD1E10B06DPYR"
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809050228_Texas-Instruments-TPD1E10B06DPYR_C48260.pdf"
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+125℃ 1 100nA 12pF 14V 5.5V 6A@8/20us 6V 90W@8/20us Bidirectional ESD IEC 61000-4-2 X1-SON-2(0.6x1) ESD and Surge Protection (TVS/ESD) ROHS"
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C48260"
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TPD1E10B06DPYR"
+			(at 115.57 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "765b3c8b-71eb-4ee4-a3bd-d8206133d7ed")
+		)
+		(pin "2"
+			(uuid "d109da9c-8183-46d5-a478-acbcf3323074")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 123.19 151.13 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b6520b5b-1d86-4271-a41a-fb71568093b4")
+		(property "Reference" "J2"
+			(at 124.206 143.256 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 129.794 146.304 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+			(at 123.19 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 123.19 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "42213663-45a1-4d67-b2a3-f4229e62b5a8")
+		)
+		(pin "2"
+			(uuid "66d7db0a-3645-4fc5-9a16-3bd615316399")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bb2f4739-6ed0-4fce-aa60-8f77e6dc7df3")
+		(property "Reference" "#PWR0166"
+			(at 86.36 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 137.668 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "05c5cfbb-05eb-4ae2-ada7-379ac63dc5ab")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR0166")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 80.01 59.69 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cca3bf3e-e33c-4398-8c1a-fba4c2f727f2")
+		(property "Reference" "C30"
+			(at 80.518 57.404 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 80.518 61.976 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 80.9752 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1866,7 +3117,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 77.47 57.15 0)
+			(at 80.01 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1892,8 +3143,87 @@
 		)
 	)
 	(symbol
+		(lib_id "GPSDO_Rev1.0:R")
+		(at 107.95 151.13 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cfe07e48-46a4-4d55-a3b7-8916bcf758e2")
+		(property "Reference" "R34"
+			(at 102.87 149.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "49.9"
+			(at 113.284 149.86 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+			(at 107.95 152.908 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 107.95 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "50cdce77-6459-4e07-af2d-2ddb83c495cb")
+		)
+		(pin "2"
+			(uuid "ea256c6c-489c-44e8-951e-bf42234d7094")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "GPSDO_Rev1.0:BUF602IDBVT")
-		(at 83.82 76.2 180)
+		(at 86.36 77.47 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1904,7 +3234,7 @@
 		(fields_autoplaced yes)
 		(uuid "d5dd57d4-4752-4aff-b446-563934fb6469")
 		(property "Reference" "U4"
-			(at 83.82 66.04 0)
+			(at 86.36 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1914,7 +3244,7 @@
 			)
 		)
 		(property "Value" "BUF602IDBVT"
-			(at 83.82 68.58 0)
+			(at 86.36 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1924,7 +3254,7 @@
 			)
 		)
 		(property "Footprint" "GPSDO_Rev1.0:BUF602IDBVT"
-			(at 83.82 76.2 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1935,7 +3265,7 @@
 			)
 		)
 		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303010800_Texas-Instruments-BUF602IDBVT_C2862949.pdf"
-			(at 83.82 76.2 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1946,7 +3276,7 @@
 			)
 		)
 		(property "Description" "-40℃~+85℃ -6.3V~6.3V 1 125uV/℃ 16mV 1GHz 2.8V~12.6V 4.8nV/√Hz@100kHz 5.8mA 60mA 8.5uA 8V/ns SOT-23-5 Operational Amplifier ROHS"
-			(at 83.82 76.2 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1957,7 +3287,7 @@
 			)
 		)
 		(property "LCSC" "C2862949"
-			(at 83.82 76.2 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1968,7 +3298,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 83.82 76.2 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1979,7 +3309,7 @@
 			)
 		)
 		(property "Manufacturer Part" "BUF602IDBVT"
-			(at 83.82 76.2 0)
+			(at 86.36 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2008,6 +3338,247 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 86.36 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "dabd1062-c4f9-44ac-a780-36f0ea82b7e9")
+		(property "Reference" "C45"
+			(at 86.868 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 87.122 133.096 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+			(at 87.3252 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 86.36 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e18ed096-f00d-486c-8ebd-6be1aa8e35ba")
+		)
+		(pin "2"
+			(uuid "9070d032-6748-4c7a-8b92-cb7b3cb61204")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "C45")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 78.74 134.62 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "de04f5ba-9824-426a-bdc2-85b90602d40a")
+		(property "Reference" "#PWR0165"
+			(at 78.74 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 78.74 137.668 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 78.74 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4d3a3682-c3a1-4adb-ab54-5f0e37232723")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR0165")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:C")
+		(at 78.74 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f7bf1047-cb44-4e0d-8e0f-22b6221cf510")
+		(property "Reference" "C44"
+			(at 79.248 128.524 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 79.248 133.096 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:C_0402_1005Metric"
+			(at 79.7052 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 78.74 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 78.74 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e50dcbcd-d49d-4aa4-9acc-a21a7fbb4558")
+		)
+		(pin "1"
+			(uuid "21268e8f-b542-42ea-928f-1b45d596cedb")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "C44")
 					(unit 1)
 				)
 			)
