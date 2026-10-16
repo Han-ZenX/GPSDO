@@ -1,0 +1,284 @@
+(footprint "TPS63700"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-15V~-2V -40℃~+85℃@(TA) 1 1.38MHz 2.7V~5.5V 360mA 400uA Adjustable Buck-Boost Built-in Inverting No VSON-10-EP(3x3) DC-DC Converters ROHS")
+	(tags "C54792 TPS63700DRCR Texas Instruments VSON-10_L3.0-W3.0-P0.50-TL-EP")
+	(property "Reference" "REF**"
+		(at 0 -2.701 0)
+		(layer "F.SilkS")
+		(uuid "529e8e52-d37d-494c-b7d9-dcc35cab5e81")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.719 0)
+		(layer "F.Fab")
+		(uuid "937447e4-6133-47e8-b43a-65537b98b4cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810111120_Texas-Instruments-TPS63700DRCR_C54792.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b6ac7cbd-c762-4a3d-9597-d55667f2ef45")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-15V~-2V -40℃~+85℃@(TA) 1 1.38MHz 2.7V~5.5V 360mA 400uA Adjustable Buck-Boost Built-in Inverting No VSON-10-EP(3x3) DC-DC Converters ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b509bbb0-34ce-42a1-80eb-cb8c306bb328")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C54792"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47ad413b-7c75-4478-b8b6-b6ffed407b3d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.4986 -1.49606)
+		(end -1.4986 -1.345286)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4cbe1bb8-2bba-469f-8772-f8af6d417f23")
+	)
+	(fp_line
+		(start -1.4986 -1.49606)
+		(end -0.6477 -1.49606)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6683bfc1-4357-46c2-bb2c-2be1a82c5d6e")
+	)
+	(fp_line
+		(start -1.4986 1.353)
+		(end -1.4986 1.503832)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7d0ad857-4af1-443d-a70b-abb276d09833")
+	)
+	(fp_line
+		(start -0.6477 1.503832)
+		(end -1.4986 1.503832)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0fb1f926-ad7e-4ae9-acad-9e584921e593")
+	)
+	(fp_line
+		(start 0.00061 -1.49606)
+		(end 0.002362 -1.49606)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "13a2fe07-8bc9-4797-95ea-f21eb2179e2d")
+	)
+	(fp_line
+		(start 0.002362 1.503832)
+		(end 0.00061 1.503832)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "895be622-dbf0-46f5-bf2f-962a876e58af")
+	)
+	(fp_line
+		(start 0.650646 -1.49606)
+		(end 1.50147 -1.49606)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0a704fea-48e3-4283-be50-863dd334fe11")
+	)
+	(fp_line
+		(start 1.501496 -1.49606)
+		(end 1.501496 -1.29032)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "165cebaf-1f94-4c11-bbf5-6d8ba920296b")
+	)
+	(fp_line
+		(start 1.501496 1.298)
+		(end 1.501496 1.503832)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e1a368ce-af35-47f5-8e60-dac176b5d6af")
+	)
+	(fp_line
+		(start 1.501496 1.503832)
+		(end 0.650621 1.503832)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "772749a9-aa7b-4b41-903b-49619d22df7a")
+	)
+	(fp_circle
+		(center -1.905 -1.523873)
+		(end -1.83 -1.523873)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "b39cbdfd-1d30-47c0-b2c7-8800483c30ce")
+	)
+	(fp_circle
+		(center -1.778 -1.015873)
+		(end -1.703 -1.015873)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "64c07264-c4c7-4572-88a2-8260d9f0ac55")
+	)
+	(pad "1" smd rect
+		(at -1.49987 -0.999871)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "985bf7f2-2518-4363-84ee-9c04380c1e5a")
+	)
+	(pad "2" smd rect
+		(at -1.49987 -0.5)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "05776473-c8b9-469a-8450-632ff62fafa0")
+	)
+	(pad "3" smd rect
+		(at -1.49987 0.000127)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c542211b-cff8-4a01-9c2d-a34d2c50a2a6")
+	)
+	(pad "4" smd rect
+		(at -1.49987 0.5)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d6e41cf9-1f83-4297-ac7e-a179f5d01b1a")
+	)
+	(pad "5" smd rect
+		(at -1.49987 1)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7acc4ea8-d7b8-427e-80af-5795db35c71d")
+	)
+	(pad "6" smd rect
+		(at 1.49987 1)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4a6f77ba-1e3b-4536-9fae-c70308cc33dd")
+	)
+	(pad "7" smd rect
+		(at 1.49987 0.5)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "14b89717-668c-4962-844b-5d7ecb5954c1")
+	)
+	(pad "8" smd rect
+		(at 1.49987 0.000127)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4638192b-7329-4a7a-84a5-6f5fa7db6ec0")
+	)
+	(pad "9" smd rect
+		(at 1.49987 -0.5)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9e5e7cd6-b6a0-4176-b220-79ccc849b7b8")
+	)
+	(pad "10" smd rect
+		(at 1.49987 -0.999871)
+		(size 0.8 0.3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8d505061-83ab-43ba-8695-fea6a4dbf3c6")
+	)
+	(pad "11" smd custom
+		(at 0.001524 0.009)
+		(size 0.1 0.1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(options
+			(clearance outline)
+			(anchor rect)
+		)
+		(primitives
+			(gr_poly
+				(pts
+					(xy -0.76 -1.2) (xy -0.4 -1.2) (xy -0.4 -1.715186) (xy -0.1 -1.715186) (xy -0.1 -1.2) (xy 0.1 -1.2)
+					(xy 0.1 -1.715186) (xy 0.4 -1.715186) (xy 0.4 -1.2) (xy 0.76 -1.2) (xy 0.76 1.2) (xy 0.4 1.2) (xy 0.4 1.704823)
+					(xy 0.1 1.704823) (xy 0.1 1.2) (xy -0.1 1.2) (xy -0.1 1.704823) (xy -0.4 1.704823) (xy -0.4 1.2)
+					(xy -0.76 1.2) (xy -0.76 -0.895172) (xy -0.76 -0.895198)
+				)
+				(width 0)
+				(fill yes)
+			)
+		)
+		(uuid "83bfdcc2-fde0-4b9e-b448-a7c4b8f8dc93")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/TPS63700.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -270)
+		)
+	)
+)
