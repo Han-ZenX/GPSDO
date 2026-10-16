@@ -1,0 +1,226 @@
+(footprint "TAJB107M010RNJ"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-55℃~+125℃ 1.4Ω@100kHz 100uF 10V ±20% CASE-B-3528-21(mm) Tantalum Capacitors ROHS")
+	(tags "-- C7196 CASE-B_3528 TAJB107M010RNJ")
+	(property "Reference" "REF**"
+		(at 0 -2.476197 0)
+		(layer "F.SilkS")
+		(uuid "151d76b0-4ce8-4626-b695-5181c83a22e2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.476197 0)
+		(layer "F.Fab")
+		(uuid "ec358021-3dac-4677-a286-643016380e9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Kyocera-AVX-TAJB107M010RNJ_C7196.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0010f07c-2dc0-4f71-8ba5-321ac31ca338")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-55℃~+125℃ 1.4Ω@100kHz 100uF 10V ±20% CASE-B-3528-21(mm) Tantalum Capacitors ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9c6abb0-fdc4-4ddc-8e45-243548e8d2e9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C7196"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b509d28a-251d-4ffd-ae18-b7debda9a485")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.90424 1.476197)
+		(end -0.90424 -1.476197)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "40ef98a5-92fa-466f-b708-b4eb98dc99f3")
+	)
+	(fp_line
+		(start 1.82626 -1.476197)
+		(end -1.82626 -1.476197)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9db4d1a3-fa7d-44fb-890a-86813e2c31a3")
+	)
+	(fp_line
+		(start 1.82626 -1.476197)
+		(end 1.82626 -1.391234)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8e08c7c8-37de-410d-ba8b-78e7c459da83")
+	)
+	(fp_line
+		(start 1.82626 1.476197)
+		(end -1.82626 1.476197)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c6935c6d-845d-4ecd-bf63-f8ae1d8d6de8")
+	)
+	(fp_line
+		(start 1.82626 1.476197)
+		(end 1.82626 1.391234)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f87bebc0-ebff-49dd-b751-72109b46b55f")
+	)
+	(fp_poly
+		(pts
+			(xy -1.75 -1.552397) (xy -1.75 -1.340409) (xy -2.20726 -1.340409) (xy -2.20726 -1.552397)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "4addd641-2ef6-4b2c-9303-6373359cf7dd")
+	)
+	(fp_poly
+		(pts
+			(xy -1.75 1.552397) (xy -1.75 1.340409) (xy -2.20726 1.340409) (xy -2.20726 1.552397)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "e29bc44d-5eae-4941-9780-a6cc86132b5e")
+	)
+	(fp_poly
+		(pts
+			(xy -1.75 -1.4) (xy -1.75 -0.7) (xy -1.33 -0.7) (xy -1.33 -1.4)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "5603149f-13dd-4a6f-907b-fab1156d4784")
+	)
+	(fp_poly
+		(pts
+			(xy -1.75 1.4) (xy -1.75 0.7) (xy -1.33 0.7) (xy -1.33 1.4)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "145837be-2b08-4bd9-9deb-567450d1a19b")
+	)
+	(fp_poly
+		(pts
+			(xy -1.54 -0.105) (xy -1.54 0.105) (xy -0.7 0.105) (xy -0.7 -0.105)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "bc710bee-690a-4c61-8a57-0c7b56d6f8ce")
+	)
+	(fp_poly
+		(pts
+			(xy -1.225 -0.7) (xy -1.225 0.7) (xy -1.015 0.7) (xy -1.015 -0.7)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "089f000d-d624-4e08-afe6-33c593991c49")
+	)
+	(fp_poly
+		(pts
+			(xy 1.54 -0.105) (xy 1.54 0.105) (xy 0.7 0.105) (xy 0.7 -0.105)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "24f8cc20-4a3b-4a14-b1b4-b91296a79e65")
+	)
+	(pad "1" smd rect
+		(at -1.86055 0 180)
+		(size 1.50622 2.376)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "abd50400-f221-4ec5-bd99-4f91ad0e5975")
+	)
+	(pad "2" smd rect
+		(at 1.86055 0 180)
+		(size 1.50622 2.376)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "215711fe-ab9d-470b-a555-376f6703bd83")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/TAJB107M010RNJ.wrl"
+		(offset
+			(xyz 0 0 1.049)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

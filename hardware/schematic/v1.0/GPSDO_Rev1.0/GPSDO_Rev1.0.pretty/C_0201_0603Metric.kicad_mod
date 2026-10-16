@@ -125,7 +125,7 @@
 		(uuid "3ddb20d5-2ade-479e-81c4-dc0fb288febc")
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0201_0603Metric.step"
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/C_0201_0603Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)

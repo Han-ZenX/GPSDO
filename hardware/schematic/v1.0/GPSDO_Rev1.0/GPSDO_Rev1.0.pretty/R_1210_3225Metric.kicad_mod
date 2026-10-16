@@ -98,7 +98,7 @@
 		(roundrect_rratio 0.222222)
 	)
 	(embedded_fonts no)
-	(model "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_1210_3225Metric.step"
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/R_1210_3225Metric.step"
 		(offset
 			(xyz 0 0 0)
 		)
