@@ -9,6 +9,10 @@
 
 所有运行时模型引用均使用 `${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/文件名`。
 
+## USB / 外部 5 V 切换新增资产
+
+新增 TPS2116DRL 本地符号（实装 TPS2116DRLR），绑定 `GPSDO_Rev1.0:SOT-583-8`，模型为 `${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/SOT-583-8.step`。U18、R43～R45、C68～C71 均使用本地符号及本地封装。以下为此前迁移统计。
+
 ## 迁移统计
 
 - local_footprint_files: 51
