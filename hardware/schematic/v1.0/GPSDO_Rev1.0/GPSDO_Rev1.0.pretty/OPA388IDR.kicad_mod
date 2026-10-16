@@ -1,0 +1,311 @@
+(footprint "OPA388IDR"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-2.75V~-1.25V、1.25V~2.75V -40℃~+125℃ 1 10MHz 140dB 2.4mA 2.5V~5.5V 250nV 30pA 5V/us 5nV/℃ 60mA 60pA 7nV/√Hz@1kHz EMI filtering/RF suppression、Zero drift / auto-zero、Built-in compensation Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Precision Op Amps ROHS")
+	(tags "C154118 OPA388IDR SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL Texas Instruments")
+	(property "Reference" "REF**"
+		(at 0 -4.5 0)
+		(layer "F.SilkS")
+		(uuid "b8f98567-a8b5-4cab-ad5c-ebc277b10e6e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 4.5 0)
+		(layer "F.Fab")
+		(uuid "c74b4bed-e3e0-4248-a5e7-b7df7efe7d63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809141431_Texas-Instruments-OPA388IDR_C154118.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "036ddb69-8230-476d-9ed5-33db7d967f88")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-2.75V~-1.25V、1.25V~2.75V -40℃~+125℃ 1 10MHz 140dB 2.4mA 2.5V~5.5V 250nV 30pA 5V/us 5nV/℃ 60mA 60pA 7nV/√Hz@1kHz EMI filtering/RF suppression、Zero drift / auto-zero、Built-in compensation Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Precision Op Amps ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7ae858b5-900b-4227-82c7-34ac442cdfde")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C154118"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c18c060e-c665-46a7-971f-60d910e06d48")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.526208 -1.52146)
+		(end 2.526208 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b3439eb4-7fcd-43f5-87c8-7d43ecb85fc4")
+	)
+	(fp_line
+		(start -2.526208 -0.449)
+		(end -2.526208 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a103cceb-d6a2-49b6-94d6-269eec94f28d")
+	)
+	(fp_line
+		(start -2.526208 0.435381)
+		(end -2.526208 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "02ee8182-91aa-4a56-96c3-93b29822a709")
+	)
+	(fp_line
+		(start -2.526208 1.52146)
+		(end 2.526208 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "524d059a-4d6c-4c92-a511-b5a6884818f9")
+	)
+	(fp_line
+		(start -2.06756 -1.52146)
+		(end -2.526208 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "c531f6c0-f521-4343-ba1a-c1bd68f95514")
+	)
+	(fp_line
+		(start -2.06756 1.52146)
+		(end -2.526208 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "48a65a40-aa67-486e-8802-9b1e65dc206b")
+	)
+	(fp_line
+		(start -0.79756 -1.52146)
+		(end -1.74244 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3eadac0c-4f0f-4d9c-b5e4-692d1938edbd")
+	)
+	(fp_line
+		(start -0.79756 1.52146)
+		(end -1.74244 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9fb833f7-e478-443a-a3ed-8b22a82335ff")
+	)
+	(fp_line
+		(start 0.47244 -1.52146)
+		(end -0.47244 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "77b28edd-bb6c-4dbf-b9f1-19fa1e4ace2d")
+	)
+	(fp_line
+		(start 0.47244 1.52146)
+		(end -0.47244 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d3c0af83-36c7-451e-a377-7bd4a55a7c7c")
+	)
+	(fp_line
+		(start 1.74244 -1.52146)
+		(end 0.79756 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d1865ae9-b4a9-47a9-84b3-808db8ff1406")
+	)
+	(fp_line
+		(start 1.74244 1.52146)
+		(end 0.79756 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "edf0839b-798a-49ce-9f95-2e9605fcb8ec")
+	)
+	(fp_line
+		(start 2.526208 -1.52146)
+		(end 2.06756 -1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ddb6da13-e4ac-4d1f-b4a7-d51387036d77")
+	)
+	(fp_line
+		(start 2.526208 -1.52146)
+		(end 2.526208 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7c41733a-519e-447c-b26b-21d3bf5946bf")
+	)
+	(fp_line
+		(start 2.526208 1.52146)
+		(end 2.06756 1.52146)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7374e277-5786-45f1-add5-bb4c0018b232")
+	)
+	(fp_arc
+		(start -2.526208 -0.449)
+		(mid -2.084 -0.006756)
+		(end -2.526208 0.435381)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "75af8b6c-3649-46e0-85fc-d310b92e9b4f")
+	)
+	(fp_circle
+		(center -1.905 1.016)
+		(end -1.755 1.016)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "4afe1e83-e36a-42cc-94a1-77132c1a048e")
+	)
+	(fp_circle
+		(center -1.905 3.4)
+		(end -1.755 3.4)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "ec61ec93-7c17-4e36-bb05-b9f45c0e72b0")
+	)
+	(pad "1" smd oval
+		(at -1.905 2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bdb90467-7bf3-46b0-ae68-a5cdbf9d029f")
+	)
+	(pad "2" smd oval
+		(at -0.635 2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e0bac698-e95d-448a-ae21-6a6dbe90c860")
+	)
+	(pad "3" smd oval
+		(at 0.635 2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f408e17e-7732-4935-a602-05c70527d3ee")
+	)
+	(pad "4" smd oval
+		(at 1.905 2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "771c4948-899b-497f-bd0d-1d41fdfff6db")
+	)
+	(pad "5" smd oval
+		(at 1.905 -2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6eb488b5-58ec-4387-93ef-88c2a1a75618")
+	)
+	(pad "6" smd oval
+		(at 0.635 -2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "0927f5f1-bba0-4ca1-842d-e2714216b871")
+	)
+	(pad "7" smd oval
+		(at -0.635 -2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5297d4e5-b2fd-418a-bcc8-75b837756f95")
+	)
+	(pad "8" smd oval
+		(at -1.905 -2.6)
+		(size 0.588 1.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "61cc2ef6-57c7-4cf4-8723-6996074ae4fa")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/OPA388IDR.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

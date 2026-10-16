@@ -1587,7 +1587,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GPSDO_Rev1.0:OPA189IDR"
+		(symbol "GPSDO_Rev1.0:OPA388IDR"
 			(pin_names
 				(offset 1.016)
 			)
@@ -1597,7 +1597,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at 0 8.35 0)
+				(at 0 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1606,8 +1606,8 @@
 					)
 				)
 			)
-			(property "Value" "OPA189IDR"
-				(at 0 -8.35 0)
+			(property "Value" "OPA388IDR"
+				(at 0 -9.398 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1616,7 +1616,7 @@
 					)
 				)
 			)
-			(property "Footprint" "GPSDO_Rev1.0:OPA189IDR"
+			(property "Footprint" "GPSDO_Rev1.0:OPA388IDR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1627,7 +1627,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-OPA189IDR_C781811.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809141431_Texas-Instruments-OPA388IDR_C154118.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1638,7 +1638,7 @@
 					)
 				)
 			)
-			(property "Description" "-18V~-2.25V、2.25V~18V -40℃~+125℃ 1 1.7mA 140pA 14MHz 168dB 20V/us 3uV 4.5V~36V 5.2nV/√Hz@1kHz 5nV/℃ 65mA 70pA EMI filtering/RF suppression、Zero drift / auto-zero、ESD protection、Reverse-phase input protection Rail-to-rail output SOP-8 Precision Op Amps ROHS"
+			(property "Description" "-2.75V~-1.25V、1.25V~2.75V -40℃~+125℃ 1 10MHz 140dB 2.4mA 2.5V~5.5V 250nV 30pA 5V/us 5nV/℃ 60mA 60pA 7nV/√Hz@1kHz EMI filtering/RF suppression、Zero drift / auto-zero、Built-in compensation Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Precision Op Amps ROHS"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1649,7 +1649,7 @@
 					)
 				)
 			)
-			(property "LCSC" "C781811"
+			(property "LCSC" "C154118"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1671,7 +1671,7 @@
 					)
 				)
 			)
-			(property "Manufacturer Part" "OPA189IDR"
+			(property "Manufacturer Part" "OPA388IDR"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1682,7 +1682,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "C781811 OPA189IDR SOP-8_L5.0-W4.0-P1.27-LS6.0-BL Texas Instruments"
+			(property "ki_keywords" "C154118 OPA388IDR SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL Texas Instruments"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1693,7 +1693,7 @@
 					)
 				)
 			)
-			(symbol "OPA189IDR_0_1"
+			(symbol "OPA388IDR_0_1"
 				(circle
 					(center -5.08 5.08)
 					(radius 0.381)
@@ -1724,7 +1724,7 @@
 					)
 				)
 			)
-			(symbol "OPA189IDR_1_1"
+			(symbol "OPA388IDR_1_1"
 				(pin passive line
 					(at -8.89 3.81 0)
 					(length 2.54)
@@ -5331,6 +5331,136 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
 					(reference "#PWR0133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:OPA388IDR")
+		(at 102.87 172.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1f0d866b-2e0b-4fed-bd76-eb94a67fcfab")
+		(property "Reference" "U9"
+			(at 102.616 180.594 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA388IDR"
+			(at 102.616 183.134 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:OPA388IDR"
+			(at 102.87 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1809141431_Texas-Instruments-OPA388IDR_C154118.pdf"
+			(at 102.87 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-2.75V~-1.25V、1.25V~2.75V -40℃~+125℃ 1 10MHz 140dB 2.4mA 2.5V~5.5V 250nV 30pA 5V/us 5nV/℃ 60mA 60pA 7nV/√Hz@1kHz EMI filtering/RF suppression、Zero drift / auto-zero、Built-in compensation Rail-to-Rail Input, Rail-to-Rail Output SOIC-8 Precision Op Amps ROHS"
+			(at 102.87 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C154118"
+			(at 102.87 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 102.87 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "OPA388IDR"
+			(at 102.87 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "23d32b20-d391-45ed-b8cc-25303eb5fca0")
+		)
+		(pin "2"
+			(uuid "11cc3a60-f637-40b4-8a58-15a6dc262ac1")
+		)
+		(pin "5"
+			(uuid "f4f1c0a2-ea68-4f34-9247-032779a32032")
+		)
+		(pin "7"
+			(uuid "99ab1374-6eba-447a-8c58-30ce4069e690")
+		)
+		(pin "1"
+			(uuid "892dca33-f26c-49ea-a738-c418ffd7b0af")
+		)
+		(pin "8"
+			(uuid "45b6d502-0d51-447a-9aa5-adc4a3b01f13")
+		)
+		(pin "6"
+			(uuid "275f6366-98a9-4d51-abbf-a7d2867ee2af")
+		)
+		(pin "3"
+			(uuid "6ad383d7-9a77-4de8-b3ec-3372c32d578b")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
+					(reference "U9")
 					(unit 1)
 				)
 			)
@@ -10228,136 +10358,6 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
 					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "GPSDO_Rev1.0:OPA189IDR")
-		(at 102.87 172.72 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f5c88493-550f-42d6-b0b4-93968c12ded2")
-		(property "Reference" "U10"
-			(at 102.87 164.592 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA189IDR"
-			(at 102.87 182.118 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "GPSDO_Rev1.0:OPA189IDR"
-			(at 102.87 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Texas-Instruments-OPA189IDR_C781811.pdf"
-			(at 102.87 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "-18V~-2.25V、2.25V~18V -40℃~+125℃ 1 1.7mA 140pA 14MHz 168dB 20V/us 3uV 4.5V~36V 5.2nV/√Hz@1kHz 5nV/℃ 65mA 70pA EMI filtering/RF suppression、Zero drift / auto-zero、ESD protection、Reverse-phase input protection Rail-to-rail output SOP-8 Precision Op Amps ROHS"
-			(at 102.87 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C781811"
-			(at 102.87 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 102.87 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer Part" "OPA189IDR"
-			(at 102.87 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "473846c3-732a-437d-9160-dfe6db94c8ed")
-		)
-		(pin "2"
-			(uuid "9164728f-1511-4993-aeed-4a647513e58d")
-		)
-		(pin "8"
-			(uuid "9af743ea-dfd3-4c36-a502-896b266f5a05")
-		)
-		(pin "4"
-			(uuid "3cf1815a-95d8-493f-a664-2ce1bee7c1ea")
-		)
-		(pin "3"
-			(uuid "f94ab3b6-9bb7-475b-90c2-a1172475f44b")
-		)
-		(pin "7"
-			(uuid "4bd971ae-bce6-49b5-91cd-ef5e6955e4a7")
-		)
-		(pin "5"
-			(uuid "bbe48201-bc46-4188-8ebd-6899c7f5b31f")
-		)
-		(pin "6"
-			(uuid "15246ee2-fb4e-40b0-8018-70942c1d6e2a")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3"
-					(reference "U10")
 					(unit 1)
 				)
 			)
