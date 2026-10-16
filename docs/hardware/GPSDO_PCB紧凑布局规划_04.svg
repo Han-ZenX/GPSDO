@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210"><rect width="297" height="210" fill="white"/>
+<text x="13" y="15" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="5.5" fill="#183146" text-anchor="start">GPSDO / PCB 布局规划</text>
+<text x="13" y="23" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="4" fill="#236EA2" text-anchor="start">04 / 建议坐标、实施边界与放板前检查</text>
+<text x="13" y="29" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#587084" text-anchor="start">坐标为器件本体/功能区中心，原点在板框左上角、X 向右、Y 向下；不是 KiCad 封装原点。</text>
+<line x1="13" y1="33" x2="284" y2="33" stroke="#CBD7DF" stroke-width="0.3"/>
+<rect x="15" y="40" width="267" height="8" rx="0" fill="#183146" stroke="#183146" stroke-width=".25"/>
+<text x="18" y="45.6" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3" fill="#FFFFFF" text-anchor="start">器件 / 区域</text>
+<text x="77" y="45.6" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3" fill="#FFFFFF" text-anchor="start">X,Y / mm</text>
+<text x="145" y="45.6" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3" fill="#FFFFFF" text-anchor="start">实施说明</text>
+<rect x="15" y="48" width="267" height="8.5" rx="0" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="53.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">U7 / OCXO</text>
+<text x="77" y="53.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">49, 22</text>
+<text x="145" y="53.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">25.4 × 25.4 mm 本体；输出朝左下、调谐朝右下</text>
+<rect x="15" y="56.5" width="267" height="8.5" rx="0" fill="white" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="62.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">U6 / NEO-M8T</text>
+<text x="77" y="62.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">16, 17</text>
+<text x="145" y="62.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">12.2 × 16 mm 本体；RF_IN 朝 RF1</text>
+<rect x="15" y="65.0" width="267" height="8.5" rx="0" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="70.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">RF1 / RF2</text>
+<text x="77" y="70.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">4, 20 / 28, 28</text>
+<text x="145" y="70.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">IPEX 竖向插拔；RF2 监测支路避免长桩</text>
+<rect x="15" y="73.5" width="267" height="8.5" rx="0" fill="white" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="79.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">U2 / U1 / U15</text>
+<text x="77" y="79.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">31,34 / 31,45 / 15,42</text>
+<text x="145" y="79.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">时钟分配 → TDC → MCU；周围预留去耦</text>
+<rect x="15" y="82.0" width="267" height="8.5" rx="0" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="87.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">U10 / U9 / U8</text>
+<text x="77" y="87.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">40,42 / 57,43 / 43,52</text>
+<text x="145" y="87.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">PWM 输入朝数字区；基准输出走安静路径</text>
+<rect x="15" y="90.5" width="267" height="8.5" rx="0" fill="white" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="96.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">末级 RC / U3</text>
+<text x="77" y="96.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">61,35 / 63.8,28</text>
+<text x="145" y="96.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">RC 靠调谐脚；U3 靠 OCXO 外缘</text>
+<rect x="15" y="99.0" width="267" height="8.5" rx="0" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="104.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">U18 / LDO 区</text>
+<text x="77" y="104.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">16,59 / 27,59</text>
+<text x="145" y="104.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">电源入口及散热铜避开基准、GNSS</text>
+<rect x="15" y="107.5" width="267" height="8.5" rx="0" fill="white" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="113.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">CN1 / USB1</text>
+<text x="77" y="113.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">1.5,56 / 10,69</text>
+<text x="145" y="113.2" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">接口沿左边、下边；外伸量按实物确认</text>
+<rect x="15" y="116.0" width="267" height="8.5" rx="0" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="18" y="121.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.75" fill="#183146" text-anchor="start">U4 / U12 / J1 / J2</text>
+<text x="77" y="121.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.55" fill="#183146" text-anchor="start">56,58.5 / 42,61 / 56,69 / 41,69</text>
+<text x="145" y="121.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.65" fill="#183146" text-anchor="start">输出驱动区暂留；SMA 焊盘与板边需单独定位</text>
+<rect x="15" y="129" width="130" height="36" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="19" y="136" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#BA4148" text-anchor="start">本次检查发现，布线前必须处理</text>
+<text x="19" y="143" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U4/U12 仍为 BUF602，-5 V 源已删，先确定输出驱动。</text>
+<text x="19" y="148" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">网表中 /GNSS/PULSE_GNSS 与 /MCU/PULSE_GNSS</text>
+<text x="19" y="153" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">仍分属不同网络；UART 与 10MHZ_TDC 等跨页也需核对。</text>
+<text x="19" y="158" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">先统一全局/层次连接，再更新 PCB 并运行 ERC。</text>
+<text x="19" y="163" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">当前 PCB 136 个封装、0 条走线；部分器件在板框外。</text>
+<rect x="151" y="129" width="131" height="36" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="155" y="136" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#236EA2" text-anchor="start">执行与验证</text>
+<text x="155" y="143" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">本次仅交付布局规划，没有移动原 PCB 或修改原理图。</text>
+<text x="155" y="148" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">先放固定接口/孔/OCXO，再摆 RF、时钟和调谐，最后电源。</text>
+<text x="155" y="153" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">70 mm 的全部封装可放性、散热和布线尚未验证。</text>
+<text x="155" y="158" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">验证冷启动热漂、GNSS 载噪比、切换跌落及 50 Ω 负载。</text>
+<text x="155" y="163" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">拥挤时优先改回 75 × 75 mm，保留安静路径与回流。</text>
+<text x="16" y="179" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.1" fill="#236EA2" text-anchor="start">依据与适用范围</text>
+<text x="16" y="184" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#183146" text-anchor="start">[1] u-blox NEO-M8 手册 §2.5：热源与快速温变；[2] TI TDC7200 §11：叠层、计时及 SPI 布局。</text>
+<text x="16" y="189" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#183146" text-anchor="start">[3] TI OPA388 布局指南；[4] 当前工程原理图、封装及导出网表。详细链接见同名 Markdown 说明。</text>
+<line x1="13" y1="198" x2="284" y2="198" stroke="#CBD7DF" stroke-width="0.25"/>
+<text x="13" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="start">2026-10-16  |  紧凑方案 A  |  规划文档，非生产 PCB</text>
+<text x="284" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="end">4 / 4</text>
+</svg>

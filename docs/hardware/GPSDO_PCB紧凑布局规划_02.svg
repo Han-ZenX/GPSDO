@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210"><rect width="297" height="210" fill="white"/>
+<text x="13" y="15" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="5.5" fill="#183146" text-anchor="start">GPSDO / PCB 布局规划</text>
+<text x="13" y="23" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="4" fill="#236EA2" text-anchor="start">02 / 信号路径与供电回流规划</text>
+<text x="13" y="29" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#587084" text-anchor="start">箭头表示功能关系和走线方向，不是已完成连通检查的铜线；必须先修复跨页网络。</text>
+<line x1="13" y1="33" x2="284" y2="33" stroke="#CBD7DF" stroke-width="0.3"/>
+<rect x="20" y="44" width="140" height="140" rx="1" fill="#FCFDFD" stroke="#183146" stroke-width=".25"/>
+<line x1="40" y1="44" x2="40" y2="184" stroke="#E5ECEF" stroke-width="0.15"/>
+<line x1="20" y1="64" x2="160" y2="64" stroke="#E5ECEF" stroke-width="0.15"/>
+<text x="40" y="41.0" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="middle">10</text>
+<text x="18" y="64.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">10</text>
+<line x1="60" y1="44" x2="60" y2="184" stroke="#E5ECEF" stroke-width="0.15"/>
+<line x1="20" y1="84" x2="160" y2="84" stroke="#E5ECEF" stroke-width="0.15"/>
+<text x="60" y="41.0" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="middle">20</text>
+<text x="18" y="84.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">20</text>
+<line x1="80" y1="44" x2="80" y2="184" stroke="#E5ECEF" stroke-width="0.15"/>
+<line x1="20" y1="104" x2="160" y2="104" stroke="#E5ECEF" stroke-width="0.15"/>
+<text x="80" y="41.0" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="middle">30</text>
+<text x="18" y="104.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">30</text>
+<line x1="100" y1="44" x2="100" y2="184" stroke="#E5ECEF" stroke-width="0.15"/>
+<line x1="20" y1="124" x2="160" y2="124" stroke="#E5ECEF" stroke-width="0.15"/>
+<text x="100" y="41.0" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="middle">40</text>
+<text x="18" y="124.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">40</text>
+<line x1="120" y1="44" x2="120" y2="184" stroke="#E5ECEF" stroke-width="0.15"/>
+<line x1="20" y1="144" x2="160" y2="144" stroke="#E5ECEF" stroke-width="0.15"/>
+<text x="120" y="41.0" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="middle">50</text>
+<text x="18" y="144.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">50</text>
+<line x1="140" y1="44" x2="140" y2="184" stroke="#E5ECEF" stroke-width="0.15"/>
+<line x1="20" y1="164" x2="160" y2="164" stroke="#E5ECEF" stroke-width="0.15"/>
+<text x="140" y="41.0" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="middle">60</text>
+<text x="18" y="164.7" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">60</text>
+<text x="20" y="41" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="start">0</text>
+<text x="160" y="41" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#587084" text-anchor="end">X → 70 mm</text>
+<circle cx="27.0" cy="51.0" r="5.5" fill="#F4F6F7" stroke="#CBD7DF" stroke-width=".25"/>
+<circle cx="27.0" cy="51.0" r="3.2" fill="white" stroke="#587084" stroke-width=".25"/>
+<circle cx="153.0" cy="51.0" r="5.5" fill="#F4F6F7" stroke="#CBD7DF" stroke-width=".25"/>
+<circle cx="153.0" cy="51.0" r="3.2" fill="white" stroke="#587084" stroke-width=".25"/>
+<circle cx="27.0" cy="177.0" r="5.5" fill="#F4F6F7" stroke="#CBD7DF" stroke-width=".25"/>
+<circle cx="27.0" cy="177.0" r="3.2" fill="white" stroke="#587084" stroke-width=".25"/>
+<circle cx="153.0" cy="177.0" r="5.5" fill="#F4F6F7" stroke="#CBD7DF" stroke-width=".25"/>
+<circle cx="153.0" cy="177.0" r="3.2" fill="white" stroke="#587084" stroke-width=".25"/>
+<line x1="20" y1="190" x2="160" y2="190" stroke="#587084" stroke-width="0.25"/>
+<line x1="20" y1="187" x2="20" y2="192" stroke="#587084" stroke-width="0.25"/>
+<line x1="160" y1="187" x2="160" y2="192" stroke="#587084" stroke-width="0.25"/>
+<text x="90" y="194" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="middle">70 mm  /  打印比例约 2:1；以标注尺寸为准</text>
+<rect x="39.8" y="62.0" width="24.4" height="32" rx="0.7" fill="#E6F2FA" stroke="#236EA2" stroke-width=".25"/>
+<text x="52.0" y="75.39999999999999" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">U6</text>
+<text x="52.0" y="78.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">NEO-M8T</text>
+<text x="52.0" y="82.19999999999999" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">12.2 × 16</text>
+<rect x="92.6" y="62.6" width="50.8" height="50.8" rx="0.7" fill="#E5F2EB" stroke="#17846B" stroke-width=".25"/>
+<text x="118.0" y="85.39999999999999" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="middle">U7 / OCXO</text>
+<text x="118.0" y="88.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="middle">25.4 × 25.4 mm</text>
+<text x="118.0" y="92.19999999999999" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="middle">热源 / 不叠放 GNSS</text>
+<rect x="74.0" y="105.0" width="16" height="14" rx="0.7" fill="#E5F2EB" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="82.0" y="111.1" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.3" fill="#183146" text-anchor="middle">U2</text>
+<text x="82.0" y="114.5" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.3" fill="#183146" text-anchor="middle">时钟分配</text>
+<rect x="72.0" y="124.0" width="20" height="20" rx="0.7" fill="#EDEAF8" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="82.0" y="133.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">U1</text>
+<text x="82.0" y="136.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">TDC7200</text>
+<rect x="37.0" y="115.0" width="26" height="26" rx="0.7" fill="#EDEAF8" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="50.0" y="127.1" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">U15</text>
+<text x="50.0" y="130.5" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">STM32G431</text>
+<rect x="93.0" y="121.0" width="14" height="14" rx="0.7" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="100.0" y="127.1" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.1" fill="#183146" text-anchor="middle">U10</text>
+<text x="100.0" y="130.5" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.1" fill="#183146" text-anchor="middle">PWM转换</text>
+<rect x="123.0" y="121.0" width="22" height="18" rx="0.7" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="134.0" y="129.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.4" fill="#183146" text-anchor="middle">U9 / OPA388</text>
+<text x="134.0" y="132.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.4" fill="#183146" text-anchor="middle">有源低通</text>
+<rect x="97.0" y="140.5" width="18" height="15.0" rx="0.7" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="106.0" y="147.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.3" fill="#183146" text-anchor="middle">U8</text>
+<text x="106.0" y="150.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.3" fill="#183146" text-anchor="middle">REF5040</text>
+<rect x="137.0" y="110.0" width="10" height="8" rx="0.7" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="142.0" y="114.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2" fill="#183146" text-anchor="middle">末级RC</text>
+<rect x="143.1" y="95.5" width="9.0" height="9.0" rx="0.7" fill="#E5F2EB" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="147.6" y="99.1" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="1.9" fill="#183146" text-anchor="middle">U3</text>
+<text x="147.6" y="102.5" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="1.9" fill="#183146" text-anchor="middle">测温</text>
+<rect x="24.0" y="80.0" width="8" height="8" rx="0.7" fill="#E6F2FA" stroke="#236EA2" stroke-width=".25"/>
+<text x="28.0" y="84.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2" fill="#183146" text-anchor="middle">RF1</text>
+<rect x="72.0" y="96.0" width="8" height="8" rx="0.7" fill="#E5F2EB" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="76.0" y="100.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2" fill="#183146" text-anchor="middle">RF2</text>
+<rect x="30.0" y="176.0" width="20" height="12" rx="0.7" fill="#F8E8E7" stroke="#BA4148" stroke-width=".25"/>
+<text x="40.0" y="182.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">USB1</text>
+<rect x="15.0" y="149.0" width="16" height="14" rx="0.7" fill="#F8E8E7" stroke="#BA4148" stroke-width=".25"/>
+<text x="23.0" y="156.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#183146" text-anchor="middle">CN1</text>
+<rect x="44.0" y="155.0" width="16" height="14" rx="0.7" fill="#F8E8E7" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="52.0" y="161.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#183146" text-anchor="middle">U18</text>
+<text x="52.0" y="164.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#183146" text-anchor="middle">电源切换</text>
+<rect x="65.0" y="154.0" width="18" height="16" rx="0.7" fill="#F8E8E7" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="74.0" y="161.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.1" fill="#183146" text-anchor="middle">U14/U16</text>
+<text x="74.0" y="164.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.1" fill="#183146" text-anchor="middle">LDO区域</text>
+<rect x="122.0" y="154.0" width="20" height="14" rx="0.7" fill="#F8E8E7" stroke="#BA4148" stroke-width=".25"/>
+<text x="132.0" y="160.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#183146" text-anchor="middle">U4 待改</text>
+<text x="132.0" y="163.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.2" fill="#183146" text-anchor="middle">10 MHz驱动</text>
+<rect x="96.0" y="160.0" width="16" height="12" rx="0.7" fill="#F8E8E7" stroke="#BA4148" stroke-width=".25"/>
+<text x="104.0" y="165.10000000000002" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.1" fill="#183146" text-anchor="middle">U12 待改</text>
+<text x="104.0" y="168.50000000000003" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.1" fill="#183146" text-anchor="middle">脉冲驱动</text>
+<rect x="121.0" y="176.0" width="22" height="12" rx="0.7" fill="#F8E8E7" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="132.0" y="182.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.3" fill="#183146" text-anchor="middle">J1 / 10 MHz</text>
+<rect x="91.0" y="176.0" width="22" height="12" rx="0.7" fill="#F8E8E7" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="102.0" y="182.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.3" fill="#183146" text-anchor="middle">J2 / PULSE</text>
+<rect x="34.0" y="143.0" width="16" height="6" rx="0.7" fill="#EDEAF8" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="42.0" y="146.8" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2" fill="#183146" text-anchor="middle">J3 / SWD</text>
+<line x1="32" y1="84" x2="39.8" y2="88" stroke="#236EA2" stroke-width="0.8"/>
+<line x1="39.8" y1="88" x2="37.80068371364419" y2="88.0522913674753" stroke="#236EA2" stroke-width="0.8"/>
+<line x1="39.8" y1="88" x2="38.67576313183583" y2="86.34588650200162" stroke="#236EA2" stroke-width="0.8"/>
+<line x1="98.96" y1="107.03999999999999" x2="90" y2="107.03999999999999" stroke="#17846B" stroke-width="0.8"/>
+<line x1="90" y1="107.03999999999999" x2="91.75516512378074" y2="106.08114892279158" stroke="#17846B" stroke-width="0.8"/>
+<line x1="90" y1="107.03999999999999" x2="91.75516512378074" y2="107.9988510772084" stroke="#17846B" stroke-width="0.8"/>
+<line x1="82" y1="119.0" x2="82" y2="124" stroke="#17846B" stroke-width="0.65"/>
+<line x1="82" y1="124" x2="81.04114892279159" y2="122.24483487621926" stroke="#17846B" stroke-width="0.65"/>
+<line x1="82" y1="124" x2="82.95885107720841" y2="122.24483487621926" stroke="#17846B" stroke-width="0.65"/>
+<line x1="76" y1="119.0" x2="68" y2="122" stroke="#17846B" stroke-width="0.6"/>
+<line x1="68" y1="122" x2="63.0" y2="128" stroke="#17846B" stroke-width="0.6"/>
+<line x1="63.0" y1="128" x2="63.38701952960324" y2="126.03780330147417" stroke="#17846B" stroke-width="0.6"/>
+<line x1="63.0" y1="128" x2="64.86023913255598" y2="127.26548630393478" stroke="#17846B" stroke-width="0.6"/>
+<line x1="74" y1="112" x2="68" y2="112" stroke="#17846B" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="68" y1="112" x2="68" y2="149.0" stroke="#17846B" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="68" y1="149.0" x2="88" y2="149.0" stroke="#17846B" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="88" y1="149.0" x2="88" y2="156" stroke="#17846B" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="88" y1="156" x2="122" y2="156" stroke="#17846B" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="122" y1="156" x2="122" y2="161.0" stroke="#17846B" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="122" y1="161.0" x2="121.04114892279159" y2="159.24483487621924" stroke="#17846B" stroke-width="0.6"/>
+<line x1="122" y1="161.0" x2="122.95885107720841" y2="159.24483487621924" stroke="#17846B" stroke-width="0.6"/>
+<line x1="39.8" y1="68.4" x2="34" y2="68.4" stroke="#236EA2" stroke-width="0.65" stroke-dasharray="1.4 1"/>
+<line x1="34" y1="68.4" x2="34" y2="98" stroke="#236EA2" stroke-width="0.65" stroke-dasharray="1.4 1"/>
+<line x1="34" y1="98" x2="40" y2="115.0" stroke="#236EA2" stroke-width="0.65" stroke-dasharray="1.4 1"/>
+<line x1="40" y1="115.0" x2="38.51165843970562" y2="113.6640211828399" stroke="#236EA2" stroke-width="0.65"/>
+<line x1="40" y1="115.0" x2="40.32003303401175" y2="113.02577132602597" stroke="#236EA2" stroke-width="0.65"/>
+<line x1="60" y1="141.0" x2="66" y2="147.0" stroke="#A76C16" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="66" y1="147.0" x2="94" y2="147.0" stroke="#A76C16" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="94" y1="147.0" x2="94" y2="138" stroke="#A76C16" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="94" y1="138" x2="100" y2="138" stroke="#A76C16" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="100" y1="138" x2="100" y2="135.0" stroke="#A76C16" stroke-width="0.6" stroke-dasharray="1.4 1"/>
+<line x1="100" y1="135.0" x2="100.95885107720841" y2="136.75516512378076" stroke="#A76C16" stroke-width="0.6"/>
+<line x1="100" y1="135.0" x2="99.04114892279159" y2="136.75516512378076" stroke="#A76C16" stroke-width="0.6"/>
+<line x1="107.0" y1="128" x2="123.0" y2="128" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="123.0" y1="128" x2="121.24483487621926" y2="128.9588510772084" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="123.0" y1="128" x2="121.24483487621926" y2="127.04114892279159" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="142" y1="121.0" x2="142" y2="118" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="142" y1="118" x2="142.9588510772084" y2="119.75516512378074" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="142" y1="118" x2="141.0411489227916" y2="119.75516512378074" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="140" y1="110" x2="137.04000000000002" y2="107.03999999999999" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="137.04000000000002" y1="107.03999999999999" x2="138.9590992599696" y2="107.6030790622854" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="137.04000000000002" y1="107.03999999999999" x2="137.60307906228542" y2="108.95909925996958" stroke="#A76C16" stroke-width="0.7"/>
+<line x1="132" y1="168" x2="132" y2="176" stroke="#17846B" stroke-width="0.7"/>
+<line x1="132" y1="176" x2="131.0411489227916" y2="174.24483487621924" stroke="#17846B" stroke-width="0.7"/>
+<line x1="132" y1="176" x2="132.9588510772084" y2="174.24483487621924" stroke="#17846B" stroke-width="0.7"/>
+<line x1="104" y1="172" x2="102" y2="176" stroke="#17846B" stroke-width="0.7"/>
+<line x1="102" y1="176" x2="101.92731123012736" y2="174.00132135080838" stroke="#17846B" stroke-width="0.7"/>
+<line x1="102" y1="176" x2="103.64255618127687" y2="174.85894382638315" stroke="#17846B" stroke-width="0.7"/>
+<line x1="32" y1="156" x2="44" y2="156" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="44" y1="156" x2="44" y2="162" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="44" y1="162" x2="43.04114892279159" y2="160.24483487621924" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="44" y1="162" x2="44.95885107720841" y2="160.24483487621924" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="40" y1="176" x2="40" y2="168" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="40" y1="168" x2="44" y2="168" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="44" y1="168" x2="42.24483487621926" y2="168.9588510772084" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="44" y1="168" x2="42.24483487621926" y2="167.0411489227916" stroke="#BA4148" stroke-width="0.6"/>
+<line x1="60" y1="162" x2="65.0" y2="162" stroke="#BA4148" stroke-width="0.7"/>
+<line x1="65.0" y1="162" x2="63.24483487621926" y2="162.9588510772084" stroke="#BA4148" stroke-width="0.7"/>
+<line x1="65.0" y1="162" x2="63.24483487621926" y2="161.0411489227916" stroke="#BA4148" stroke-width="0.7"/>
+<rect x="174" y="40" width="110" height="36" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="178" y="47" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#236EA2" text-anchor="start">走线优先顺序</text>
+<text x="178" y="54" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">① RF1 → U6：短、50 Ω、有完整参考地。</text>
+<text x="178" y="59" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">② OCXO → U2 → U1/MCU：少过孔、少分叉。</text>
+<text x="178" y="64" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">③ U9 → 末级 RC → VCTRL：短且远离时钟。</text>
+<text x="178" y="69" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">④ TDC START/STOP：按实际源端控制延迟。</text>
+<text x="178" y="74" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">⑤ PWM、SPI、UART 最后绕行数字区域。</text>
+<rect x="174" y="88" width="110" height="36" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="178" y="95" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#236EA2" text-anchor="start">供电与回流</text>
+<text x="178" y="102" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">CN1/USB → U18，合并后各负载分支供电。</text>
+<text x="178" y="107" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">OCXO 大电流走宽线或 L3 独立电源铜区，</text>
+<text x="178" y="112" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">不串经 GNSS、基准或 TDC 的供电支路。</text>
+<text x="178" y="117" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">各分支的输入/输出电容贴对应芯片。</text>
+<text x="178" y="122" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">连续 L2 地平面，不用割地制造区域隔离。</text>
+<rect x="174" y="136" width="110" height="36" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="178" y="143" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#BA4148" text-anchor="start">图例与重要约束</text>
+<text x="178" y="150" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">蓝：GNSS RF/数据；绿：10 MHz/输出。</text>
+<text x="178" y="155" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">橙：PWM 与调谐；红：主供电示意。</text>
+<text x="178" y="160" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">虚线为功能路径，交叉处不表示连接。</text>
+<text x="178" y="165" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">源端串阻贴驱动端；禁止绕调谐区走时钟。</text>
+<text x="178" y="170" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">输出驱动尚待换型，区域先保留。</text>
+<line x1="13" y1="198" x2="284" y2="198" stroke="#CBD7DF" stroke-width="0.25"/>
+<text x="13" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="start">2026-10-16  |  紧凑方案 A  |  规划文档，非生产 PCB</text>
+<text x="284" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="end">2 / 4</text>
+</svg>

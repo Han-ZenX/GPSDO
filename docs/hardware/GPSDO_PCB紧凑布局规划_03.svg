@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210"><rect width="297" height="210" fill="white"/>
+<text x="13" y="15" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="5.5" fill="#183146" text-anchor="start">GPSDO / PCB 布局规划</text>
+<text x="13" y="23" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="4" fill="#236EA2" text-anchor="start">03 / 四层叠层与局部布局要求</text>
+<text x="13" y="29" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#587084" text-anchor="start">建议 Signal / GND / Power + low-speed / Signal；线宽与间距由最终板厂叠层计算。</text>
+<line x1="13" y1="33" x2="284" y2="33" stroke="#CBD7DF" stroke-width="0.3"/>
+<rect x="15" y="43" width="267" height="13" rx="1" fill="#E6F2FA" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="20" y="51" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.4" fill="#183146" text-anchor="start">L1 / 顶层</text>
+<text x="69" y="51" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.2" fill="#183146" text-anchor="start">主要器件、GNSS RF、时钟与敏感模拟线。</text>
+<rect x="15" y="59" width="267" height="13" rx="1" fill="#E5F2EB" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="20" y="67" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.4" fill="#183146" text-anchor="start">L2 / 完整地</text>
+<text x="69" y="67" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.2" fill="#183146" text-anchor="start">保持连续；RF、时钟及 VCTRL 下方不跨地缝。</text>
+<rect x="15" y="75" width="267" height="13" rx="1" fill="#F8E8E7" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="20" y="83" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.4" fill="#183146" text-anchor="start">L3 / 电源与低速</text>
+<text x="69" y="83" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.2" fill="#183146" text-anchor="start">5 V、3.3 V 分区供电；必要低速线避免切断电源通路。</text>
+<rect x="15" y="91" width="267" height="13" rx="1" fill="#EDEAF8" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="20" y="99" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.4" fill="#183146" text-anchor="start">L4 / 底层</text>
+<text x="69" y="99" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.2" fill="#183146" text-anchor="start">低速控制、辅助器件；过孔换层时就近提供地回流。</text>
+<rect x="15" y="112" width="130" height="41" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="19" y="119" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#236EA2" text-anchor="start">GNSS / 时钟 / TDC</text>
+<text x="19" y="126" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U6 各 GND 脚短接地平面，RF 路径尽量无过孔。</text>
+<text x="19" y="131" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">模块本体下方保留良好地，不按天线净空挖空。</text>
+<text x="19" y="136" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U2 输入匹配及串阻贴近源端，禁止长支路悬空。</text>
+<text x="19" y="141" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U1 的 VDD、VREG 电容贴引脚；SPI 远离计时输入。</text>
+<text x="19" y="146" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">START/STOP 尽量短直、少过孔；匹配相关路径延迟。</text>
+<text x="19" y="151" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">外接天线置于视野开阔处，机壳内模块无需朝天。</text>
+<rect x="151" y="112" width="131" height="41" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="155" y="119" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#236EA2" text-anchor="start">基准 / 调谐 / 热与机械</text>
+<text x="155" y="126" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U8 远离 OCXO 热边缘及 LDO 热区，保持温度稳定。</text>
+<text x="155" y="131" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U9 反馈 R/C 紧凑；C19/R17 等末级靠 VCTRL。</text>
+<text x="155" y="136" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U10 的数字 PWM 输入侧朝 MCU，模拟输出侧朝 U9。</text>
+<text x="155" y="141" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U3 测量的是周边 PCB 温度，不是 OCXO 内部炉温。</text>
+<text x="155" y="146" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">安装孔初定距板边 3.5 mm；避让实际螺钉与垫圈。</text>
+<text x="155" y="151" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">不要为隔热直接切断 L2 地或关键回流路径。</text>
+<text x="16" y="163" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.2" fill="#236EA2" text-anchor="start">局部布局示意：</text>
+<rect x="16" y="169" width="43" height="17" rx="1" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="37.5" y="176" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">MCU PWM</text>
+<text x="37.5" y="182" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#587084" text-anchor="middle">数字侧</text>
+<rect x="66" y="169" width="43" height="17" rx="1" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="87.5" y="176" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">U10</text>
+<text x="87.5" y="182" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#587084" text-anchor="middle">参考供电转换</text>
+<rect x="116" y="169" width="43" height="17" rx="1" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="137.5" y="176" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">U9 + 反馈 RC</text>
+<text x="137.5" y="182" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#587084" text-anchor="middle">有源低通</text>
+<rect x="166" y="169" width="43" height="17" rx="1" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="187.5" y="176" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">R17 / C19</text>
+<text x="187.5" y="182" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#587084" text-anchor="middle">靠近调谐脚</text>
+<rect x="216" y="169" width="43" height="17" rx="1" fill="#FFF4DC" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="237.5" y="176" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">U7 VCTRL</text>
+<text x="237.5" y="182" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.7" fill="#587084" text-anchor="middle">敏感输入</text>
+<line x1="59" y1="177" x2="65" y2="177" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="65" y1="177" x2="63.24483487621926" y2="177.9588510772084" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="65" y1="177" x2="63.24483487621926" y2="176.0411489227916" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="109" y1="177" x2="115" y2="177" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="115" y1="177" x2="113.24483487621926" y2="177.9588510772084" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="115" y1="177" x2="113.24483487621926" y2="176.0411489227916" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="159" y1="177" x2="165" y2="177" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="165" y1="177" x2="163.24483487621924" y2="177.9588510772084" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="165" y1="177" x2="163.24483487621924" y2="176.0411489227916" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="209" y1="177" x2="215" y2="177" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="215" y1="177" x2="213.24483487621924" y2="177.9588510772084" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="215" y1="177" x2="213.24483487621924" y2="176.0411489227916" stroke="#A76C16" stroke-width="0.5"/>
+<line x1="13" y1="198" x2="284" y2="198" stroke="#CBD7DF" stroke-width="0.25"/>
+<text x="13" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="start">2026-10-16  |  紧凑方案 A  |  规划文档，非生产 PCB</text>
+<text x="284" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="end">3 / 4</text>
+</svg>
