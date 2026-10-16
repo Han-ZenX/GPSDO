@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1080" viewBox="0 0 1400 1080"><style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",Arial,sans-serif;fill:#193047} .wire{fill:none;stroke:#187b68;stroke-width:3;stroke-linejoin:round} .part{fill:#fff;stroke:#34516c;stroke-width:3} .minor{fill:#54697c}</style><rect width="1400" height="1080" fill="#f4f7fb"/><rect x="35" y="120" width="1330" height="490" rx="16" fill="white"/>
+<text x="50" y="56" font-size="32" class="" text-anchor="start">PWM 精密幅度转换级 · 接线图</text>
+<text x="50" y="91" font-size="19" class="minor" text-anchor="start">GPSDO Rev1.0  |  SN74LVC1T45DBVR  |  REF5040 = 4.096 V</text>
+<rect class="part" x="460" y="235" width="340" height="255" rx="8"/>
+<text x="630" y="211" font-size="25" class="" text-anchor="middle">SN74LVC1T45DBVR</text>
+<path class="wire" d="M400 280 H460"/>
+<text x="425" y="270" font-size="19" class="" text-anchor="start">1</text>
+<text x="480" y="287" font-size="24" class="" text-anchor="start">VCCA</text>
+<path class="wire" d="M400 350 H460"/>
+<text x="425" y="340" font-size="19" class="" text-anchor="start">2</text>
+<text x="480" y="357" font-size="24" class="" text-anchor="start">GND</text>
+<path class="wire" d="M400 420 H460"/>
+<text x="425" y="410" font-size="19" class="" text-anchor="start">3</text>
+<text x="480" y="427" font-size="24" class="" text-anchor="start">A</text>
+<path class="wire" d="M800 280 H860"/>
+<text x="826" y="270" font-size="19" class="" text-anchor="start">6</text>
+<text x="780" y="287" font-size="24" class="" text-anchor="end">VCCB</text>
+<path class="wire" d="M800 350 H860"/>
+<text x="826" y="340" font-size="19" class="" text-anchor="start">5</text>
+<text x="780" y="357" font-size="24" class="" text-anchor="end">DIR</text>
+<path class="wire" d="M800 420 H860"/>
+<text x="826" y="410" font-size="19" class="" text-anchor="start">4</text>
+<text x="780" y="427" font-size="24" class="" text-anchor="end">B</text>
+<text x="630" y="463" font-size="19" class="minor" text-anchor="middle">DIR = HIGH → A → B</text>
+<path class="wire" d="M400 280 H250 V180 H140"/>
+<text x="235" y="159" font-size="22" class="" text-anchor="start">+3.3 V（MCU 电源）</text>
+<circle cx="250" cy="180" r="5" fill="#187b68"/>
+<path class="wire" d="M140 180 v30 m-18 0 h36 m-36 10 h36 m-18 0 v30"/>
+<path class="wire" d="M140 250 v12 m-16 0 h32 m-26 7 h20 m-14 7 h8"/>
+<text x="168" y="214" font-size="19" class="" text-anchor="start">CA 100 nF</text>
+<path class="wire" d="M400 350 H350 V363"/>
+<path class="wire" d="M350 363 v12 m-16 0 h32 m-26 7 h20 m-14 7 h8"/>
+<text x="305" y="389" font-size="17" class="" text-anchor="start">GND</text>
+<path class="wire" d="M90 420 H400"/>
+<text x="90" y="398" font-size="21" class="" text-anchor="start">PWM（MCU 输出）</text>
+<circle cx="250" cy="420" r="5" fill="#187b68"/>
+<path class="wire" d="M250 420 V455"/>
+<rect class="part" x="240" y="455" width="20" height="55"/>
+<path class="wire" d="M250 510 V530"/>
+<path class="wire" d="M250 530 v12 m-16 0 h32 m-26 7 h20 m-14 7 h8"/>
+<text x="280" y="479" font-size="19" class="" text-anchor="start">RPD 100 kΩ</text>
+<text x="280" y="505" font-size="17" class="minor" text-anchor="start">输入下拉</text>
+<path class="wire" d="M860 280 H980 V180 H1100"/>
+<circle cx="980" cy="180" r="5" fill="#187b68"/>
+<text x="910" y="155" font-size="22" class="" text-anchor="start">VREF = 4.096 V</text>
+<text x="910" y="130" font-size="18" class="minor" text-anchor="start">来自 REF5040 输出</text>
+<path class="wire" d="M1100 180 v30 m-18 0 h36 m-36 10 h36 m-18 0 v30"/>
+<path class="wire" d="M1100 250 v12 m-16 0 h32 m-26 7 h20 m-14 7 h8"/>
+<text x="1128" y="214" font-size="19" class="" text-anchor="start">CB 100 nF</text>
+<path class="wire" d="M860 350 H960"/>
+<text x="975" y="356" font-size="22" class="" text-anchor="start">+3.3 V</text>
+<text x="975" y="384" font-size="17" class="minor" text-anchor="start">与 pin 1 同一网络</text>
+<path class="wire" d="M860 420 H1040"/>
+<rect class="part" x="1040" y="408" width="80" height="24"/>
+<path class="wire" d="M1120 420 H1280"/>
+<path d="M1268 412 L1280 420 L1268 428" class="wire"/>
+<text x="1080" y="393" font-size="21" class="" text-anchor="middle">R19</text>
+<text x="1080" y="463" font-size="21" class="" text-anchor="middle">8.2 kΩ</text>
+<text x="1150" y="490" font-size="20" class="" text-anchor="start">接原有有源低通</text>
+<text x="870" y="533" font-size="20" class="" text-anchor="start">PWM_REF：约 0～4.096 V</text>
+<text x="70" y="581" font-size="18" class="minor" text-anchor="start">实心圆点表示连接；同名 +3.3 V 标签互相连接。CA、CB、RPD 为示意位号，加入工程后重新编号。</text>
+<text x="55" y="661" font-size="26" class="" text-anchor="start">逐脚接线</text>
+<rect x="50" y="683" width="1300" height="40" fill="#e8eef5"/>
+<text x="70" y="710" font-size="19" class="" text-anchor="start">1 · VCCA</text>
+<text x="300" y="710" font-size="19" class="" text-anchor="start">+3.3 V</text>
+<text x="550" y="710" font-size="19" class="" text-anchor="start">与 MCU 使用相同的 3.3 V 电源</text>
+<rect x="50" y="723" width="1300" height="40" fill="#ffffff"/>
+<text x="70" y="750" font-size="19" class="" text-anchor="start">2 · GND</text>
+<text x="300" y="750" font-size="19" class="" text-anchor="start">公共地</text>
+<text x="550" y="750" font-size="19" class="" text-anchor="start">与 MCU、REF5040、OPA388 共地</text>
+<rect x="50" y="763" width="1300" height="40" fill="#e8eef5"/>
+<text x="70" y="790" font-size="19" class="" text-anchor="start">3 · A</text>
+<text x="300" y="790" font-size="19" class="" text-anchor="start">MCU PWM</text>
+<text x="550" y="790" font-size="19" class="" text-anchor="start">100 kΩ 下拉到地，避免 MCU 复位时悬空</text>
+<rect x="50" y="803" width="1300" height="40" fill="#ffffff"/>
+<text x="70" y="830" font-size="19" class="" text-anchor="start">4 · B</text>
+<text x="300" y="830" font-size="19" class="" text-anchor="start">R19 左端</text>
+<text x="550" y="830" font-size="19" class="" text-anchor="start">替代原 PWM 直连 R19 的导线</text>
+<rect x="50" y="843" width="1300" height="40" fill="#e8eef5"/>
+<text x="70" y="870" font-size="19" class="" text-anchor="start">5 · DIR</text>
+<text x="300" y="870" font-size="19" class="" text-anchor="start">+3.3 V</text>
+<text x="550" y="870" font-size="19" class="" text-anchor="start">固定 A → B；不可接 VREF，也不可悬空</text>
+<rect x="50" y="883" width="1300" height="40" fill="#ffffff"/>
+<text x="70" y="910" font-size="19" class="" text-anchor="start">6 · VCCB</text>
+<text x="300" y="910" font-size="19" class="" text-anchor="start">VREF 4.096 V</text>
+<text x="550" y="910" font-size="19" class="" text-anchor="start">使用精密基准输出，不能接普通 +5 V</text>
+<text x="55" y="962" font-size="24" class="" text-anchor="start">布局与使用</text>
+<text x="55" y="998" font-size="19" class="" text-anchor="start">CA、CB 分别紧靠 pin 1、pin 6；保留 REF5040 原有输出电容。OPA388 继续使用 +5 V。</text>
+<text x="55" y="1028" font-size="19" class="" text-anchor="start">VCTRL 满量程变为约 4.096 V：核对 OCXO 允许范围；转换器位号勿与现有运放重复。</text>
+<text x="55" y="1061" font-size="16" class="minor" text-anchor="start">依据：TI SN74LVC1T45 数据手册 SCES515N，pin functions / function table。2026-10-16</text>
+</svg>

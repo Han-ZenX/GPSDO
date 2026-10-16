@@ -1,0 +1,158 @@
+(footprint "SN74LVC1T45DBVR"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ 1 1 1.65V~5.5V 1.65V~5.5V 420Mbps Bidirectional Tri-State SOT-23-6 Translators, Level Shifters ROHS")
+	(tags "C7843 SN74LVC1T45DBVR SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR Texas Instruments")
+	(property "Reference" "REF**"
+		(at 0 -2.55 0)
+		(layer "F.SilkS")
+		(uuid "a9107d7b-3f56-4410-ad5f-fcdaee58d9be")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 2.55016 0)
+		(layer "F.Fab")
+		(uuid "e2617be4-255d-4135-8d43-922720ab7780")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810151711_Texas-Instruments-SN74LVC1T45DBVR_C7843.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a9256762-2e22-4a0f-9588-ea5f6d13d706")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ 1 1 1.65V~5.5V 1.65V~5.5V 420Mbps Bidirectional Tri-State SOT-23-6 Translators, Level Shifters ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4390c82c-d237-43f1-b883-d16888b45800")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C7843"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e3c2ac98-4c09-4d6d-9e9b-3a6ff5deeaef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.9 -1.55)
+		(end 0.9 -1.55)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "91a6c45b-e0c7-4db0-915c-592e91e768fc")
+	)
+	(fp_line
+		(start -0.9 1.55)
+		(end 0.9 1.55)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "03374534-245d-48ca-8d81-7c38e90c16b1")
+	)
+	(fp_circle
+		(center 1.397 1.651)
+		(end 1.524 1.651)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "b819cbeb-8c92-409a-ac1a-c636fd5a38e8")
+	)
+	(fp_circle
+		(center 1.4 0.94996)
+		(end 1.5 0.94996)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "158e2cee-9bca-438c-af77-4b8cc38fbba9")
+	)
+	(pad "1" smd rect
+		(at 1.35 0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "830015fe-c790-4209-a2d5-6c40f68cc280")
+	)
+	(pad "2" smd rect
+		(at 1.35 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a4521c3a-6403-47fb-9f8c-7d9535d10356")
+	)
+	(pad "3" smd rect
+		(at 1.35 -0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ffa6fb80-6866-423e-bf55-74c914f8d56c")
+	)
+	(pad "4" smd rect
+		(at -1.35 -0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8472035f-235b-4740-ba96-fe3c05c3f085")
+	)
+	(pad "5" smd rect
+		(at -1.35 0)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c19e92d7-0b6c-4eba-bc62-339503b2c48c")
+	)
+	(pad "6" smd rect
+		(at -1.35 0.94996)
+		(size 1.1 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c68a7ab8-b8a3-4fb0-9ced-a5ed6b664748")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/SN74LVC1T45DBVR.wrl"
+		(offset
+			(xyz 0 0 0.049)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -180)
+		)
+	)
+)
