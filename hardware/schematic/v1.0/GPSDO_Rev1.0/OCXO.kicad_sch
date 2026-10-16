@@ -4841,7 +4841,7 @@
 		)
 		(uuid "f1eea092-b819-48a8-91d8-6517dd4f9008")
 	)
-	(global_label "OCXO_OUT"
+	(global_label "OCXO_RF"
 		(shape input)
 		(at 92.71 101.6 90)
 		(fields_autoplaced yes)
@@ -4853,7 +4853,7 @@
 		)
 		(uuid "3054a287-5923-4fdc-80dc-a217bb3df4c2")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 92.71 96.2562 90)
+			(at 92.71 90.1481 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4865,7 +4865,7 @@
 			)
 		)
 	)
-	(global_label "OCXO_OUT"
+	(global_label "OCXO_RF"
 		(shape output)
 		(at 130.81 55.88 270)
 		(fields_autoplaced yes)
@@ -4877,7 +4877,7 @@
 		)
 		(uuid "8d2b957f-ad85-44d5-bb30-90a61f22a64f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 130.81 68.6019 90)
+			(at 130.81 67.3319 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
