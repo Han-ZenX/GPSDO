@@ -4128,6 +4128,12 @@
 		(uuid "cb7c3d66-c8bf-4516-8018-c16424946d37")
 	)
 	(junction
+		(at 55.88 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d333ed29-a011-430f-8ab9-688eedb0213b")
+	)
+	(junction
 		(at 247.65 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4158,8 +4164,40 @@
 		(uuid "fc93139b-17fa-4927-b27a-8a7895fd4f89")
 	)
 	(no_connect
+		(at 104.14 129.54)
+		(uuid "1afd1566-8d5d-4f96-bd2c-a470082fb42c")
+	)
+	(no_connect
+		(at 104.14 152.4)
+		(uuid "221802ed-d54f-42d2-bd31-536ffd4c0585")
+	)
+	(no_connect
+		(at 104.14 116.84)
+		(uuid "2895dedc-c5c4-49eb-baeb-7d59b2a19295")
+	)
+	(no_connect
 		(at 55.88 132.08)
 		(uuid "32851a39-ab62-4d72-9cac-0b24634c0061")
+	)
+	(no_connect
+		(at 104.14 144.78)
+		(uuid "381afacb-d9d6-4bc1-9f6d-f91b9a932bc7")
+	)
+	(no_connect
+		(at 104.14 127)
+		(uuid "421f1b58-a168-4ff2-9a63-c5614d68a1f9")
+	)
+	(no_connect
+		(at 104.14 114.3)
+		(uuid "4f15e6ac-a1e9-4a98-9954-c378e1ea41e9")
+	)
+	(no_connect
+		(at 55.88 127)
+		(uuid "531e6eb6-c8df-4be8-a581-39b860a2118c")
+	)
+	(no_connect
+		(at 104.14 121.92)
+		(uuid "5da0a1a8-42e4-41fc-90e1-79f007f72fae")
 	)
 	(no_connect
 		(at 186.69 110.49)
@@ -4170,8 +4208,16 @@
 		(uuid "71cd4d64-0ae8-4ad5-a071-cda49d3b6abd")
 	)
 	(no_connect
+		(at 105.41 68.58)
+		(uuid "79d3602d-53ba-4b51-a71f-34e269274801")
+	)
+	(no_connect
 		(at 229.87 55.88)
 		(uuid "7c9daa9d-0872-402f-9dc8-80eb02b29d6a")
+	)
+	(no_connect
+		(at 104.14 147.32)
+		(uuid "8427851f-b590-496f-85b7-34e59a93265f")
 	)
 	(no_connect
 		(at 180.34 39.37)
@@ -4186,8 +4232,24 @@
 		(uuid "945cc7b1-61e7-4185-af29-22ed74e6f236")
 	)
 	(no_connect
+		(at 104.14 88.9)
+		(uuid "9e251618-6bed-466a-b2d5-ca0e502c49ff")
+	)
+	(no_connect
+		(at 104.14 137.16)
+		(uuid "9f089dc7-4ba1-4041-b323-311a78db210e")
+	)
+	(no_connect
 		(at 55.88 99.06)
 		(uuid "ac25193b-b62a-4c29-a5c6-6021bc0bab16")
+	)
+	(no_connect
+		(at 104.14 124.46)
+		(uuid "af3c4144-419f-493c-a3ef-263f087fc646")
+	)
+	(no_connect
+		(at 104.14 119.38)
+		(uuid "b163e018-460a-4f41-bd17-fdd582db4455")
 	)
 	(no_connect
 		(at 255.27 55.88)
@@ -4198,8 +4260,12 @@
 		(uuid "cb56fa94-dbbe-4653-abb2-1b6b9e098fb2")
 	)
 	(no_connect
-		(at 55.88 109.22)
-		(uuid "d2f86c69-84f8-446f-9efd-77fdfceedfea")
+		(at 104.14 149.86)
+		(uuid "dd1f96c8-36ef-425f-b8cd-0d817b7366b2")
+	)
+	(no_connect
+		(at 104.14 96.52)
+		(uuid "dd771b3c-bb88-4ef3-900a-316ddf758f34")
 	)
 	(wire
 		(pts
@@ -5140,6 +5206,16 @@
 			(type default)
 		)
 		(uuid "b6a34409-4993-470d-90b0-80b3ed604153")
+	)
+	(wire
+		(pts
+			(xy 55.88 106.68) (xy 55.88 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b82f9dea-29dc-47bc-bafd-1a206ef67ae1")
 	)
 	(polyline
 		(pts
