@@ -964,6 +964,26 @@
 				(justify left top)
 			)
 		)
+		(pin "PULSE_OUT" input
+			(at 106.68 110.49 180)
+			(uuid "415fdd5f-999e-41a0-a5c2-0a4b2acfcb65")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "10MHZ_OUT" input
+			(at 106.68 123.19 180)
+			(uuid "acbcb9a8-01f8-4fc9-bf30-0e8d40f6a527")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96"
@@ -1020,7 +1040,7 @@
 	)
 	(sheet
 		(at 109.22 52.07)
-		(size 13.97 27.94)
+		(size 21.59 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1054,6 +1074,36 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "GNSS_UART_RXD" input
+			(at 109.22 60.96 180)
+			(uuid "0d423530-88c5-4cca-9665-1a1f53060d0d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GNSS_UART_TXD" output
+			(at 109.22 63.5 180)
+			(uuid "f415c8b5-05af-4adc-9614-ad7a33e39f90")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PULSE_GNSS" output
+			(at 109.22 67.31 180)
+			(uuid "6b4870e8-7cdf-497f-bccf-db6241dd3afd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1100,6 +1150,86 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "10MHZ_TDC" input
+			(at 86.36 50.8 0)
+			(uuid "5df98a72-26c1-4e22-b2d6-c3b8a22d2a89")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP_SDA" bidirectional
+			(at 86.36 64.77 0)
+			(uuid "d3b74203-4551-4ea6-a3ff-dcc109854fe2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PULSE_GNSS" input
+			(at 86.36 72.39 0)
+			(uuid "fe92f49b-f988-4312-bfe9-424e38dc6996")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "10MHZ_MCU" input
+			(at 86.36 68.58 0)
+			(uuid "54b9821a-33c9-4023-9a5e-e85c3f40cd53")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM" output
+			(at 86.36 43.18 0)
+			(uuid "b475754e-81af-4dfb-a2c6-acd68f634333")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GNSS_UART_RXD" output
+			(at 86.36 57.15 0)
+			(uuid "4e046fab-5cc6-4e5e-adbd-e0e0a40aa991")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GNSS_UART_TXD" input
+			(at 86.36 59.69 0)
+			(uuid "0dba03cc-2cfe-4426-b017-9194b3e1db2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP_SCL" output
+			(at 86.36 62.23 0)
+			(uuid "ee22f761-7725-444d-99dd-80957355c702")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
