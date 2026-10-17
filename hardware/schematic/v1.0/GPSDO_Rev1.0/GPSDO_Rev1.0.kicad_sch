@@ -927,7 +927,7 @@
 		)
 	)
 	(sheet
-		(at 106.68 102.87)
+		(at 156.21 99.06)
 		(size 17.78 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -943,7 +943,7 @@
 		)
 		(uuid "1e6d2fc9-653e-45d2-a1bc-ab2903490aa7")
 		(property "Sheetname" "EXT"
-			(at 106.68 102.1584 0)
+			(at 156.21 98.3484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -954,7 +954,7 @@
 			)
 		)
 		(property "Sheetfile" "EXT.kicad_sch"
-			(at 106.68 132.6646 0)
+			(at 156.21 128.8546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -965,7 +965,7 @@
 			)
 		)
 		(pin "PULSE_OUT" input
-			(at 106.68 110.49 180)
+			(at 156.21 106.68 180)
 			(uuid "415fdd5f-999e-41a0-a5c2-0a4b2acfcb65")
 			(effects
 				(font
@@ -975,7 +975,7 @@
 			)
 		)
 		(pin "10MHZ_OUT" input
-			(at 106.68 123.19 180)
+			(at 156.21 119.38 180)
 			(uuid "acbcb9a8-01f8-4fc9-bf30-0e8d40f6a527")
 			(effects
 				(font
@@ -1028,6 +1028,76 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "10MHZ_OUT" output
+			(at 82.55 97.79 0)
+			(uuid "084908c4-1384-491c-80a1-614832f6a6dc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OCXO_VCC" bidirectional
+			(at 82.55 118.11 0)
+			(uuid "776d938b-f4cd-41df-9b65-6a281bd7b3ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP_SCL" input
+			(at 82.55 114.3 0)
+			(uuid "a6ce3cf4-ea60-4039-969d-424284312486")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "10MHZ_MCU" output
+			(at 82.55 100.33 0)
+			(uuid "bda07e82-3ef7-4727-9de0-f6681386cc4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TMP_SDA" bidirectional
+			(at 82.55 111.76 0)
+			(uuid "a5a477dc-4ac5-400a-9d98-72067bb48c3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWM" input
+			(at 82.55 106.68 0)
+			(uuid "9903a9fa-ec89-4c5b-9313-e574e4f6f72b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "10MHZ_TDC" output
+			(at 82.55 102.87 0)
+			(uuid "0f3a5a2a-1ae7-4124-9c10-2bdea16f3985")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1115,8 +1185,8 @@
 		)
 	)
 	(sheet
-		(at 55.88 36.83)
-		(size 30.48 40.64)
+		(at 105.41 91.44)
+		(size 35.56 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1131,7 +1201,7 @@
 		)
 		(uuid "a223c499-b8b9-41df-ac1a-b6212c61923a")
 		(property "Sheetname" "MCU"
-			(at 55.88 36.1184 0)
+			(at 105.41 90.7284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1142,7 +1212,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 55.88 78.0546 0)
+			(at 105.41 132.6646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1153,27 +1223,27 @@
 			)
 		)
 		(pin "10MHZ_TDC" input
-			(at 86.36 50.8 0)
+			(at 105.41 102.87 180)
 			(uuid "5df98a72-26c1-4e22-b2d6-c3b8a22d2a89")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "TMP_SDA" bidirectional
-			(at 86.36 64.77 0)
+			(at 105.41 111.76 180)
 			(uuid "d3b74203-4551-4ea6-a3ff-dcc109854fe2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "PULSE_GNSS" input
-			(at 86.36 72.39 0)
+			(at 140.97 127 0)
 			(uuid "fe92f49b-f988-4312-bfe9-424e38dc6996")
 			(effects
 				(font
@@ -1183,27 +1253,27 @@
 			)
 		)
 		(pin "10MHZ_MCU" input
-			(at 86.36 68.58 0)
+			(at 105.41 100.33 180)
 			(uuid "54b9821a-33c9-4023-9a5e-e85c3f40cd53")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "PWM" output
-			(at 86.36 43.18 0)
+			(at 105.41 106.68 180)
 			(uuid "b475754e-81af-4dfb-a2c6-acd68f634333")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "GNSS_UART_RXD" output
-			(at 86.36 57.15 0)
+			(at 140.97 111.76 0)
 			(uuid "4e046fab-5cc6-4e5e-adbd-e0e0a40aa991")
 			(effects
 				(font
@@ -1213,7 +1283,7 @@
 			)
 		)
 		(pin "GNSS_UART_TXD" input
-			(at 86.36 59.69 0)
+			(at 140.97 114.3 0)
 			(uuid "0dba03cc-2cfe-4426-b017-9194b3e1db2d")
 			(effects
 				(font
@@ -1223,13 +1293,13 @@
 			)
 		)
 		(pin "TMP_SCL" output
-			(at 86.36 62.23 0)
+			(at 105.41 114.3 180)
 			(uuid "ee22f761-7725-444d-99dd-80957355c702")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
@@ -1276,6 +1346,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "OCXO_VCC" output
+			(at 161.29 68.58 180)
+			(uuid "a219a105-c149-4ee4-abb2-58a9bdc21c24")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PDN" output
+			(at 161.29 73.66 180)
+			(uuid "60e9dc46-ca10-4601-bf15-500e539096c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
