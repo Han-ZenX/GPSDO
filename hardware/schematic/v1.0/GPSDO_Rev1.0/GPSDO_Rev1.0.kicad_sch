@@ -254,6 +254,16 @@
 		)
 		(uuid "dfafa48f-d977-4181-9bbe-344fe5569eae")
 	)
+	(wire
+		(pts
+			(xy 118.11 120.65) (xy 130.81 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36dbfabd-85d6-40f4-9a41-45cde514e734")
+	)
 	(polyline
 		(pts
 			(xy 276.86 125.73) (xy 276.86 163.83)
@@ -293,6 +303,146 @@
 			(type dash)
 		)
 		(uuid "674086bc-6fe4-4f8e-8f49-561db520bea7")
+	)
+	(wire
+		(pts
+			(xy 118.11 105.41) (xy 130.81 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b9af31d-c74d-4637-acd5-cda6683b14e3")
+	)
+	(wire
+		(pts
+			(xy 118.11 107.95) (xy 130.81 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "819ba791-66c7-4670-9446-3727a065f03f")
+	)
+	(wire
+		(pts
+			(xy 76.2 119.38) (xy 82.55 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c77b50-b226-433d-a87d-9c6940151d3d")
+	)
+	(wire
+		(pts
+			(xy 118.11 118.11) (xy 130.81 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3c8a7f9-98c1-4891-a079-465f7e249156")
+	)
+	(wire
+		(pts
+			(xy 124.46 91.44) (xy 172.72 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ada1f4c4-7922-40d3-8df8-c6208f7af48b")
+	)
+	(wire
+		(pts
+			(xy 118.11 111.76) (xy 130.81 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af8b65d5-60c9-4d00-8923-9434a7d0a366")
+	)
+	(wire
+		(pts
+			(xy 76.2 116.84) (xy 82.55 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6736f39-814e-4356-9ead-1c6cd2474c97")
+	)
+	(wire
+		(pts
+			(xy 76.2 113.03) (xy 82.55 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b81677d0-6a30-4288-943b-99b9b01171e5")
+	)
+	(wire
+		(pts
+			(xy 124.46 91.44) (xy 124.46 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b888e1bf-7b22-4e5b-b8a5-962a86d4d898")
+	)
+	(wire
+		(pts
+			(xy 118.11 99.06) (xy 124.46 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e8d638-940b-4c2d-99b4-3211268c1bff")
+	)
+	(wire
+		(pts
+			(xy 166.37 111.76) (xy 179.07 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c43dfd6f-ff57-4272-9052-71419d5c2f82")
+	)
+	(wire
+		(pts
+			(xy 172.72 91.44) (xy 172.72 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c93eba1d-eddc-4d4a-bb84-2d7e76e941e3")
+	)
+	(wire
+		(pts
+			(xy 118.11 114.3) (xy 130.81 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e14de665-f1ca-419b-a580-202c0e3a608f")
+	)
+	(wire
+		(pts
+			(xy 172.72 105.41) (xy 179.07 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e980a468-3394-4f4d-ad19-5873fd520fae")
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:MountingHole_Pad")
@@ -927,7 +1077,7 @@
 		)
 	)
 	(sheet
-		(at 151.13 87.63)
+		(at 179.07 100.33)
 		(size 17.78 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -943,7 +1093,7 @@
 		)
 		(uuid "1e6d2fc9-653e-45d2-a1bc-ab2903490aa7")
 		(property "Sheetname" "EXT"
-			(at 151.13 86.9184 0)
+			(at 179.07 99.6184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -954,7 +1104,7 @@
 			)
 		)
 		(property "Sheetfile" "EXT.kicad_sch"
-			(at 151.13 104.7246 0)
+			(at 179.07 117.4246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -965,7 +1115,7 @@
 			)
 		)
 		(pin "PULSE_OUT" input
-			(at 151.13 92.71 180)
+			(at 179.07 105.41 180)
 			(uuid "415fdd5f-999e-41a0-a5c2-0a4b2acfcb65")
 			(effects
 				(font
@@ -975,7 +1125,7 @@
 			)
 		)
 		(pin "10MHZ_OUT" input
-			(at 151.13 99.06 180)
+			(at 179.07 111.76 180)
 			(uuid "acbcb9a8-01f8-4fc9-bf30-0e8d40f6a527")
 			(effects
 				(font
@@ -993,8 +1143,8 @@
 		)
 	)
 	(sheet
-		(at 97.79 92.71)
-		(size 35.56 30.48)
+		(at 130.81 97.79)
+		(size 35.56 33.02)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1009,7 +1159,7 @@
 		)
 		(uuid "40d668d4-3bfe-4d48-b2dd-b6741ecb73a3")
 		(property "Sheetname" "OCXO"
-			(at 97.79 91.9984 0)
+			(at 130.81 97.0784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1020,7 +1170,7 @@
 			)
 		)
 		(property "Sheetfile" "OCXO.kicad_sch"
-			(at 97.79 123.7746 0)
+			(at 130.81 131.3946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1031,7 +1181,7 @@
 			)
 		)
 		(pin "10MHZ_OUT" output
-			(at 133.35 99.06 0)
+			(at 166.37 111.76 0)
 			(uuid "084908c4-1384-491c-80a1-614832f6a6dc")
 			(effects
 				(font
@@ -1041,7 +1191,7 @@
 			)
 		)
 		(pin "OCXO_VCC" bidirectional
-			(at 97.79 119.38 180)
+			(at 130.81 124.46 180)
 			(uuid "776d938b-f4cd-41df-9b65-6a281bd7b3ce")
 			(effects
 				(font
@@ -1051,7 +1201,7 @@
 			)
 		)
 		(pin "TMP_SCL" input
-			(at 97.79 115.57 180)
+			(at 130.81 120.65 180)
 			(uuid "a6ce3cf4-ea60-4039-969d-424284312486")
 			(effects
 				(font
@@ -1061,7 +1211,7 @@
 			)
 		)
 		(pin "10MHZ_MCU" output
-			(at 97.79 100.33 180)
+			(at 130.81 105.41 180)
 			(uuid "bda07e82-3ef7-4727-9de0-f6681386cc4a")
 			(effects
 				(font
@@ -1071,7 +1221,7 @@
 			)
 		)
 		(pin "TMP_SDA" bidirectional
-			(at 97.79 113.03 180)
+			(at 130.81 118.11 180)
 			(uuid "a5a477dc-4ac5-400a-9d98-72067bb48c3a")
 			(effects
 				(font
@@ -1081,7 +1231,7 @@
 			)
 		)
 		(pin "PWM" input
-			(at 97.79 109.22 180)
+			(at 130.81 111.76 180)
 			(uuid "9903a9fa-ec89-4c5b-9313-e574e4f6f72b")
 			(effects
 				(font
@@ -1091,8 +1241,18 @@
 			)
 		)
 		(pin "10MHZ_TDC" output
-			(at 97.79 102.87 180)
+			(at 130.81 107.95 180)
 			(uuid "0f3a5a2a-1ae7-4124-9c10-2bdea16f3985")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VCTL" output
+			(at 130.81 114.3 180)
+			(uuid "bffd9195-8db0-4962-8dd4-1519812ab0dd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1109,8 +1269,8 @@
 		)
 	)
 	(sheet
-		(at 179.07 132.08)
-		(size 21.59 27.94)
+		(at 54.61 109.22)
+		(size 21.59 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1125,7 +1285,7 @@
 		)
 		(uuid "73734292-4707-44de-b5e5-87f3016d7c18")
 		(property "Sheetname" "GNSS"
-			(at 179.07 131.3684 0)
+			(at 54.61 108.5084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1136,7 +1296,7 @@
 			)
 		)
 		(property "Sheetfile" "GNSS.kicad_sch"
-			(at 179.07 160.6046 0)
+			(at 54.61 123.7746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1147,33 +1307,33 @@
 			)
 		)
 		(pin "GNSS_UART_RXD" input
-			(at 179.07 140.97 180)
+			(at 76.2 119.38 0)
 			(uuid "0d423530-88c5-4cca-9665-1a1f53060d0d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "GNSS_UART_TXD" output
-			(at 179.07 143.51 180)
+			(at 76.2 116.84 0)
 			(uuid "f415c8b5-05af-4adc-9614-ad7a33e39f90")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "PULSE_GNSS" output
-			(at 179.07 147.32 180)
+			(at 76.2 113.03 0)
 			(uuid "6b4870e8-7cdf-497f-bccf-db6241dd3afd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
@@ -1185,8 +1345,8 @@
 		)
 	)
 	(sheet
-		(at 49.53 85.09)
-		(size 35.56 44.45)
+		(at 82.55 95.25)
+		(size 35.56 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1201,7 +1361,7 @@
 		)
 		(uuid "a223c499-b8b9-41df-ac1a-b6212c61923a")
 		(property "Sheetname" "MCU"
-			(at 49.53 84.3784 0)
+			(at 82.55 94.5384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1212,7 +1372,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 49.53 130.1246 0)
+			(at 82.55 127.5846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1223,83 +1383,103 @@
 			)
 		)
 		(pin "10MHZ_TDC" input
-			(at 49.53 96.52 180)
+			(at 118.11 107.95 0)
 			(uuid "5df98a72-26c1-4e22-b2d6-c3b8a22d2a89")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "TMP_SDA" bidirectional
-			(at 49.53 106.68 180)
+			(at 118.11 118.11 0)
 			(uuid "d3b74203-4551-4ea6-a3ff-dcc109854fe2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "PULSE_GNSS" input
-			(at 85.09 100.33 0)
+			(at 82.55 113.03 180)
 			(uuid "fe92f49b-f988-4312-bfe9-424e38dc6996")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "10MHZ_MCU" input
-			(at 49.53 93.98 180)
+			(at 118.11 105.41 0)
 			(uuid "54b9821a-33c9-4023-9a5e-e85c3f40cd53")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "PWM" output
-			(at 49.53 100.33 180)
+			(at 118.11 111.76 0)
 			(uuid "b475754e-81af-4dfb-a2c6-acd68f634333")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "GNSS_UART_RXD" output
-			(at 85.09 93.98 0)
+			(at 82.55 119.38 180)
 			(uuid "4e046fab-5cc6-4e5e-adbd-e0e0a40aa991")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "GNSS_UART_TXD" input
-			(at 85.09 96.52 0)
+			(at 82.55 116.84 180)
 			(uuid "0dba03cc-2cfe-4426-b017-9194b3e1db2d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "TMP_SCL" output
-			(at 49.53 109.22 180)
+			(at 118.11 120.65 0)
 			(uuid "ee22f761-7725-444d-99dd-80957355c702")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+		(pin "PULSE_MCU" output
+			(at 118.11 99.06 0)
+			(uuid "e831650d-8366-42d3-a170-94df1d466e0c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VCTL" input
+			(at 118.11 114.3 0)
+			(uuid "e9cd5838-0586-4d21-8a01-7ee4ab6f7c96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

@@ -3981,7 +3981,7 @@
 	)
 	(text "Microcontroller"
 		(exclude_from_sim no)
-		(at 48.26 26.416 0)
+		(at 35.814 27.432 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -3993,7 +3993,7 @@
 	)
 	(text "32bit TIM"
 		(exclude_from_sim no)
-		(at 116.332 68.834 0)
+		(at 122.428 145.034 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4253,6 +4253,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 139.7) (xy 125.73 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b374bed-f86d-41fa-9784-470621f1f74f")
+	)
+	(wire
+		(pts
 			(xy 247.65 110.49) (xy 247.65 113.03)
 		)
 		(stroke
@@ -4263,7 +4273,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 106.68) (xy 106.68 106.68)
+			(xy 104.14 106.68) (xy 118.11 106.68)
 		)
 		(stroke
 			(width 0)
@@ -4273,7 +4283,7 @@
 	)
 	(polyline
 		(pts
-			(xy 27.94 21.59) (xy 27.94 176.53)
+			(xy 16.51 21.59) (xy 16.51 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4433,7 +4443,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 119.38) (xy 55.88 119.38)
+			(xy 39.37 119.38) (xy 55.88 119.38)
 		)
 		(stroke
 			(width 0)
@@ -4481,9 +4491,19 @@
 		)
 		(uuid "3b138314-8e9b-43b1-a9c1-d84352352888")
 	)
+	(wire
+		(pts
+			(xy 104.14 142.24) (xy 127 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca5d7b9-d398-4a96-b38b-819f653f353c")
+	)
 	(polyline
 		(pts
-			(xy 27.94 176.53) (xy 139.7 176.53)
+			(xy 16.51 176.53) (xy 143.51 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4513,7 +4533,7 @@
 	)
 	(polyline
 		(pts
-			(xy 27.94 21.59) (xy 139.7 21.59)
+			(xy 16.51 21.59) (xy 143.51 21.59)
 		)
 		(stroke
 			(width 0)
@@ -4853,6 +4873,16 @@
 	)
 	(wire
 		(pts
+			(xy 118.11 99.06) (xy 104.14 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75e1a70f-946a-4220-a081-6b1b35800e1c")
+	)
+	(wire
+		(pts
 			(xy 104.14 104.14) (xy 113.03 104.14)
 		)
 		(stroke
@@ -4880,6 +4910,16 @@
 			(type default)
 		)
 		(uuid "789a724d-37c2-465f-a600-67b76d46d444")
+	)
+	(wire
+		(pts
+			(xy 118.11 71.12) (xy 104.14 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a0b51a-75e3-40ed-9c52-970fab5846cf")
 	)
 	(wire
 		(pts
@@ -5213,7 +5253,7 @@
 	)
 	(polyline
 		(pts
-			(xy 139.7 21.59) (xy 139.7 176.53)
+			(xy 143.51 21.59) (xy 143.51 176.53)
 		)
 		(stroke
 			(width 0)
@@ -5443,6 +5483,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 139.7) (xy 118.11 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9c9ca1a-5db3-4e70-a122-2fa57fb2dd7b")
+	)
+	(wire
+		(pts
 			(xy 104.14 101.6) (xy 113.03 101.6)
 		)
 		(stroke
@@ -5511,6 +5561,26 @@
 		)
 		(uuid "12cfd58b-05f9-4bfd-aa2d-2621b6ff7cfa")
 	)
+	(label "TIM2_CH3"
+		(at 105.41 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14381116-fded-448e-bc6d-769a4a7170d6")
+	)
+	(label "TIM2_CH4"
+		(at 105.41 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "24db04c3-ea99-41a1-b27e-ea44a98bdede")
+	)
 	(label "LED_GREEN"
 		(at 219.71 143.51 0)
 		(effects
@@ -5540,6 +5610,16 @@
 			(justify left bottom)
 		)
 		(uuid "2dde29ba-ca7b-44e1-a793-57c12349f7a1")
+	)
+	(label "TIM4_CH2"
+		(at 105.41 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "31a72161-d446-49a8-b176-8f98a8bf5f10")
 	)
 	(label "TDC_SPI1_MOSI"
 		(at 213.36 107.95 0)
@@ -5721,6 +5801,16 @@
 		)
 		(uuid "d6dfcdba-0502-4cd5-8aa2-4b6c6bde976b")
 	)
+	(label "ADC1_IN2"
+		(at 105.41 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9474814-c945-467d-8a79-d6b0b8ca9bd5")
+	)
 	(label "USB_D-"
 		(at 168.91 44.45 0)
 		(effects
@@ -5811,6 +5901,17 @@
 		)
 		(uuid "f6bd635c-dd5e-41e6-b25b-46efadb481aa")
 	)
+	(hierarchical_label "PULSE_GNSS"
+		(shape input)
+		(at 127 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "002f694f-9fa8-4578-8e38-81138eb28a28")
+	)
 	(hierarchical_label "TMP_SDA"
 		(shape bidirectional)
 		(at 106.68 132.08 0)
@@ -5844,6 +5945,17 @@
 		)
 		(uuid "2be89e07-d96e-48e7-b600-c1de0772f7a9")
 	)
+	(hierarchical_label "VCTL"
+		(shape input)
+		(at 118.11 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2dc2bf27-7e6c-4338-9c42-39e259046d55")
+	)
 	(hierarchical_label "GNSS_UART_RXD"
 		(shape output)
 		(at 118.11 73.66 0)
@@ -5857,7 +5969,7 @@
 	)
 	(hierarchical_label "PULSE_MCU"
 		(shape output)
-		(at 152.4 185.42 0)
+		(at 127 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5865,17 +5977,6 @@
 			(justify left)
 		)
 		(uuid "47451efc-e41a-4219-9859-513334de212b")
-	)
-	(hierarchical_label "PWM"
-		(shape output)
-		(at 105.41 68.58 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4e52504a-8879-4165-b059-bad7347b5396")
 	)
 	(hierarchical_label "10MHZ_TDC"
 		(shape input)
@@ -5888,20 +5989,20 @@
 		)
 		(uuid "5817731d-526a-474f-8af3-f883b526140f")
 	)
-	(hierarchical_label "PULSE_GNSS"
-		(shape input)
-		(at 50.8 119.38 180)
+	(hierarchical_label "PWM"
+		(shape output)
+		(at 118.11 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "74b96697-bfa9-4771-b8a7-eb4d9ed99241")
+		(uuid "85cbb9d3-48db-4009-98f9-2160aa655aec")
 	)
 	(hierarchical_label "TMP_SCL"
 		(shape output)
-		(at 106.68 106.68 0)
+		(at 118.11 106.68 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5995,6 +6096,85 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
 					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:R__R_0402_1005Metric")
+		(at 121.92 139.7 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "03ad8da2-2726-4393-9460-a8f6e8c553b2")
+		(property "Reference" "R38"
+			(at 117.094 138.176 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 125.476 138.176 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 121.92 137.922 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 121.92 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8727710-1605-4df7-a369-2746445c7896")
+		)
+		(pin "2"
+			(uuid "59f5a0cb-8b59-4e89-b2fe-5abbf571525e")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a"
+					(reference "R38")
 					(unit 1)
 				)
 			)

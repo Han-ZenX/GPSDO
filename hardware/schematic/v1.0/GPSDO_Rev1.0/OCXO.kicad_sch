@@ -3845,12 +3845,6 @@
 		(uuid "0744cd82-82ca-4dba-ad41-1de6425eca9f")
 	)
 	(junction
-		(at 147.32 173.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a5db616-e6ea-424a-8ba9-ba47dae68302")
-	)
-	(junction
 		(at 246.38 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3909,6 +3903,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7acf11bd-76ec-46b7-a02b-907359d08515")
+	)
+	(junction
+		(at 165.1 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cbb3159-bb7d-4337-9ced-30bf27964481")
 	)
 	(junction
 		(at 87.63 173.99)
@@ -3993,6 +3993,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c42ec1cd-c2b1-4f5a-a2da-949944fc73db")
+	)
+	(junction
+		(at 147.32 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c9951dc2-7101-4bb3-ad69-13edf3d6637f")
 	)
 	(junction
 		(at 24.13 156.21)
@@ -4256,9 +4262,19 @@
 		)
 		(uuid "1e8e1338-085b-4ef8-9cde-5a526679776e")
 	)
+	(wire
+		(pts
+			(xy 165.1 166.37) (xy 165.1 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f099375-ad06-4e2d-914f-58b65a135166")
+	)
 	(polyline
 		(pts
-			(xy 132.08 194.31) (xy 165.1 194.31)
+			(xy 132.08 194.31) (xy 161.29 194.31)
 		)
 		(stroke
 			(width 0)
@@ -4605,6 +4621,16 @@
 			(type dash)
 		)
 		(uuid "563fce68-5bcd-4fc6-abcd-6582527b28be")
+	)
+	(wire
+		(pts
+			(xy 165.1 173.99) (xy 167.64 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59487f8c-a671-4744-b257-f871b0241ed0")
 	)
 	(wire
 		(pts
@@ -5168,7 +5194,7 @@
 	)
 	(polyline
 		(pts
-			(xy 132.08 160.02) (xy 165.1 160.02)
+			(xy 132.08 160.02) (xy 161.29 160.02)
 		)
 		(stroke
 			(width 0)
@@ -5478,7 +5504,7 @@
 	)
 	(polyline
 		(pts
-			(xy 165.1 161.29) (xy 165.1 194.31)
+			(xy 161.29 160.02) (xy 161.29 194.31)
 		)
 		(stroke
 			(width 0)
@@ -5688,7 +5714,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 173.99) (xy 166.37 173.99)
+			(xy 147.32 173.99) (xy 165.1 173.99)
 		)
 		(stroke
 			(width 0)
@@ -5737,7 +5763,7 @@
 		(uuid "afb0bd62-c95c-45ef-bd4b-de0786ad765a")
 	)
 	(label "VCTRL"
-		(at 166.37 173.99 0)
+		(at 167.64 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5938,6 +5964,17 @@
 			(justify left)
 		)
 		(uuid "91a1953d-7ccd-4df4-a432-83280bd695da")
+	)
+	(hierarchical_label "VCTL"
+		(shape output)
+		(at 165.1 166.37 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca1e8185-3ca9-453d-82cc-f5682bc10b4e")
 	)
 	(symbol
 		(lib_id "GPSDO_Rev1.0:C__C_0402_1005Metric")
