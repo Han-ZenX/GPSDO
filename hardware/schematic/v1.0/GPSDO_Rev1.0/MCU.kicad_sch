@@ -5855,6 +5855,17 @@
 		)
 		(uuid "35d1a979-91ea-4762-8456-40759fe71b03")
 	)
+	(hierarchical_label "PULSE_MCU"
+		(shape output)
+		(at 152.4 185.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "47451efc-e41a-4219-9859-513334de212b")
+	)
 	(hierarchical_label "PWM"
 		(shape output)
 		(at 105.41 68.58 0)
