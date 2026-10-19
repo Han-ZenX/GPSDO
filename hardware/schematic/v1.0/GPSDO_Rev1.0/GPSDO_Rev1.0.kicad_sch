@@ -1190,16 +1190,6 @@
 				(justify right)
 			)
 		)
-		(pin "OCXO_VCC" bidirectional
-			(at 130.81 124.46 180)
-			(uuid "776d938b-f4cd-41df-9b65-6a281bd7b3ce")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "TMP_SCL" input
 			(at 130.81 120.65 180)
 			(uuid "a6ce3cf4-ea60-4039-969d-424284312486")
@@ -1491,7 +1481,7 @@
 		)
 	)
 	(sheet
-		(at 200.66 58.42)
+		(at 214.63 77.47)
 		(size 24.13 29.21)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1507,7 +1497,7 @@
 		)
 		(uuid "e383764a-0b62-4980-895b-607aaa53a70d")
 		(property "Sheetname" "POWER"
-			(at 200.66 57.7084 0)
+			(at 214.63 76.7584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1518,7 +1508,7 @@
 			)
 		)
 		(property "Sheetfile" "POWER.kicad_sch"
-			(at 200.66 88.2146 0)
+			(at 214.63 107.2646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1526,26 +1516,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "OCXO_VCC" output
-			(at 200.66 68.58 180)
-			(uuid "a219a105-c149-4ee4-abb2-58a9bdc21c24")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PDN" output
-			(at 200.66 73.66 180)
-			(uuid "60e9dc46-ca10-4601-bf15-500e539096c8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
