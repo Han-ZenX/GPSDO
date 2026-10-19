@@ -1,0 +1,284 @@
+(footprint "ISL55110IRZ-T"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+85℃ 0V~800mV 1.2ns 1.4ns 2 2V~5.5V 3.5A 3.5A 4mA 5V~13.2V MOSFET QFN-16-EP(4x4) Gate Drivers ROHS")
+	(tags "C2680304 ISL55110IRZ-T RENESAS VQFN-16_L4.0-W4.0-P0.50-TL-EP2.45")
+	(property "Reference" "REF**"
+		(at 0 -3.24 0)
+		(layer "F.SilkS")
+		(uuid "8ed99308-7f6c-4beb-811f-bab8ce579fd6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 3.24 0)
+		(layer "F.Fab")
+		(uuid "db288a62-9e6e-414c-ae9a-ca5e2e89df1e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2201121130_RENESAS-ISL55110IRZ-T_C2680304.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eb3aca44-28fa-4097-9a53-5dbb817876c2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+85℃ 0V~800mV 1.2ns 1.4ns 2 2V~5.5V 3.5A 3.5A 4mA 5V~13.2V MOSFET QFN-16-EP(4x4) Gate Drivers ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5eb20ff9-2433-467a-8147-998a4cffe1f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C2680304"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3c48cfa3-1a4d-43d2-a66b-7eed4f6b4f9f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.076196 -2.076196)
+		(end -1.042391 -2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "87b2f08d-0087-4707-8b2c-44eda652b242")
+	)
+	(fp_line
+		(start -2.076196 -1.042391)
+		(end -2.076196 -2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e6a4a1ab-25fa-4baa-a712-966f9a5abb24")
+	)
+	(fp_line
+		(start -2.076196 1.042391)
+		(end -2.076196 2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "676969c2-2479-4661-b30b-8df53cee2ade")
+	)
+	(fp_line
+		(start -2.076196 2.076196)
+		(end -1.042391 2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "93a743eb-72e7-4153-bb7e-d0f7d8385e1e")
+	)
+	(fp_line
+		(start 2.076196 -2.076196)
+		(end 1.042391 -2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4073c297-baee-40fc-ac89-ae138858d7c3")
+	)
+	(fp_line
+		(start 2.076196 -1.042391)
+		(end 2.076196 -2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1b6682d1-b1ff-482c-8ad7-9b3727c5684d")
+	)
+	(fp_line
+		(start 2.076196 1.042391)
+		(end 2.076196 2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a3fe9ba3-4ead-4449-9809-eb57296525a2")
+	)
+	(fp_line
+		(start 2.076196 2.076196)
+		(end 1.042391 2.076196)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4b183414-d1ff-4103-8c87-a163398df722")
+	)
+	(fp_circle
+		(center -2.54 -0.762)
+		(end -2.478278 -0.762)
+		(stroke
+			(width 0.062509)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "d11ce3aa-2a4f-4cc5-9d40-3ebc221c2aeb")
+	)
+	(fp_circle
+		(center -1.90754 -0.75)
+		(end -1.782572 -0.75)
+		(stroke
+			(width 0.25)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "19d99bbb-f072-4c55-b75f-d4c3fdfe9052")
+	)
+	(pad "1" smd rect
+		(at -1.90754 -0.75)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dfdc9e8d-5e50-4aab-8ea0-4457ef0394f6")
+	)
+	(pad "2" smd rect
+		(at -1.90754 -0.25)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a920436b-ac01-4215-9b4c-aa42b52a235b")
+	)
+	(pad "3" smd rect
+		(at -1.90754 0.25)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "951c127f-a69d-4c39-929c-150d551c3c02")
+	)
+	(pad "4" smd rect
+		(at -1.90754 0.75)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "575d10f0-f709-4a9e-89a7-edd452cfb0cc")
+	)
+	(pad "5" smd rect
+		(at -0.75 1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "38296b97-7f1b-4233-809f-9ae64b84065f")
+	)
+	(pad "6" smd rect
+		(at -0.25 1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "5e6c7fdc-8274-4906-8024-6e78f5d6a7b0")
+	)
+	(pad "7" smd rect
+		(at 0.25 1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "073c2542-6b28-4a3a-a8d1-1637496e53a5")
+	)
+	(pad "8" smd rect
+		(at 0.75 1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f37e5a6c-6980-48a9-87d7-7413d1ffee40")
+	)
+	(pad "9" smd rect
+		(at 1.90754 0.75)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "813aa235-ec92-4903-883c-187b19ae14ef")
+	)
+	(pad "10" smd rect
+		(at 1.90754 0.25)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "cffe7fff-ace6-4d12-b8ad-6652c522ce65")
+	)
+	(pad "11" smd rect
+		(at 1.90754 -0.25)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8eb0bba0-9c62-4a44-86df-e1e7b764ecb0")
+	)
+	(pad "12" smd rect
+		(at 1.90754 -0.75)
+		(size 0.665 0.28)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f3ca006c-67a5-46c3-b335-b08d4d56d1b9")
+	)
+	(pad "13" smd rect
+		(at 0.75 -1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "4c11be98-3947-447c-9377-49caed7260ca")
+	)
+	(pad "14" smd rect
+		(at 0.25 -1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "626dd9cf-2fdf-498a-9ad9-9a4574f29c28")
+	)
+	(pad "15" smd rect
+		(at -0.25 -1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "6e27b056-14f7-4838-8731-4ba86237d978")
+	)
+	(pad "16" smd rect
+		(at -0.75 -1.90754)
+		(size 0.28 0.665)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f70a008f-7310-4d4f-89b4-79304b7a2972")
+	)
+	(pad "17" smd rect
+		(at 0 0)
+		(size 2.45 2.45)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "2a86157f-03b7-4892-a582-948b7ca5ca6a")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/GPSDO_Rev1.0.3dshapes/ISL55110IRZ-T.wrl"
+		(offset
+			(xyz 0 0 0.02)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

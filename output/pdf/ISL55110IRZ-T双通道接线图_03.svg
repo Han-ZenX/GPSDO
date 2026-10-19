@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210"><rect width="297" height="210" fill="white"/>
+<text x="13" y="15" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="5.5" fill="#183146" text-anchor="start">GPSDO / ISL55110 接线图</text>
+<text x="13" y="23" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="4" fill="#236EA2" text-anchor="start">03 / 电源时序、输出端接与实现边界</text>
+<text x="13" y="29" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#587084" text-anchor="start">已核对 Renesas FN6228 Rev 9.0：引脚说明、第 4 页工作范围及第 14 页上电要求。</text>
+<line x1="13" y1="33" x2="284" y2="33" stroke="#CBD7DF" stroke-width="0.3"/>
+<rect x="15" y="40" width="130" height="41" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="19" y="47" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#BA4148" text-anchor="start">VH：标称 5 V 不等于满足最低 5 V</text>
+<text x="19" y="54" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">本方案只按约 5 V 的输出幅度设计。</text>
+<text x="19" y="59" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">USB、U18 及线缆压降可能使主 +5 V 低于 5 V；</text>
+<text x="19" y="64" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">此时 VH 超出推荐工作范围，不能保证表现。</text>
+<text x="19" y="69" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">建议由稳压级产生如 5.2 V 的本地驱动电源，</text>
+<text x="19" y="74" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">并保证负载开关后、10 脚的最差电压仍 ≥5.0 V。</text>
+<text x="19" y="79" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">5.2 V 是设计目标示例，不是要求上调整机电源。</text>
+<rect x="151" y="40" width="131" height="41" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="155" y="47" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#BA4148" text-anchor="start">时序：VDD 先于 VH</text>
+<text x="155" y="54" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">主 5 V 先到、3.3 V 后起的现有接法不能直接套用。</text>
+<text x="155" y="59" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">用负载开关 / 电源时序控制，使 3.3 V 稳定后</text>
+<text x="155" y="64" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">才向 VH 供电；关断按逆序设计并验证。</text>
+<text x="155" y="69" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">单纯把 PD 拉低或加 RC 不能代替电源时序控制。</text>
+<text x="155" y="74" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">VH 生成及开关电路本次未定型，不是已完成电路。</text>
+<text x="155" y="79" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">输入信号亦需避免在 VDD 未建立时反向供电。</text>
+<text x="15" y="99" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.2" fill="#236EA2" text-anchor="start">电源功能关系（须另行实现）：</text>
+<rect x="15" y="105" width="52" height="17" rx="1" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="41.0" y="112" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">主5V → 3.3V稳压</text>
+<text x="41.0" y="118" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">建立 U13 VDD</text>
+<rect x="91" y="105" width="59" height="17" rx="1" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="120.5" y="112" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">3.3V 电源有效检测</text>
+<text x="120.5" y="118" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">使能 VH 负载开关</text>
+<rect x="174" y="105" width="108" height="17" rx="1" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="228.0" y="112" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">主5V → 本地约5.2V稳压 → 开关</text>
+<text x="228.0" y="118" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#183146" text-anchor="middle">+5V_DRV → U13 的10脚</text>
+<line x1="67" y1="113" x2="91" y2="113" stroke="#236EA2" stroke-width="0.5"/>
+<line x1="91" y1="113" x2="89.24483487621926" y2="113.95885107720841" stroke="#236EA2" stroke-width="0.5"/>
+<line x1="91" y1="113" x2="89.24483487621926" y2="112.04114892279159" stroke="#236EA2" stroke-width="0.5"/>
+<line x1="150" y1="113" x2="174" y2="113" stroke="#236EA2" stroke-width="0.5"/>
+<line x1="174" y1="113" x2="172.24483487621924" y2="113.95885107720841" stroke="#236EA2" stroke-width="0.5"/>
+<line x1="174" y1="113" x2="172.24483487621924" y2="112.04114892279159" stroke="#236EA2" stroke-width="0.5"/>
+<rect x="15" y="129" width="130" height="46" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="19" y="136" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#17846B" text-anchor="start">49.9 Ω 与负载：不能承诺 50 Ω 端得到 5 V</text>
+<text x="19" y="143" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">保留 R20/R34 = 49.9 Ω 作首次调试起点，贴 OA/OB。</text>
+<text x="19" y="148" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">远端 50 Ω 终端时，理想幅度约为 VH/2，</text>
+<text x="19" y="153" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">VH=5.2 V 时约 2.6 V，实际还受输出电阻影响。</text>
+<text x="19" y="158" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">高阻接收端稳态幅度接近 VH；不要加重复50 Ω并联。</text>
+<text x="19" y="163" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">VH=5.2 V、忽略芯片输出电阻：串阻高态耗散约</text>
+<text x="19" y="168" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">0.135 W；50%占空比平均约0.068 W。</text>
+<text x="19" y="173" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">脉冲可能长时间为高，建议0805、0.25 W并做降额。</text>
+<rect x="151" y="129" width="131" height="46" rx="1.5" fill="#F4F7F9" stroke="#CBD7DF" stroke-width=".25"/>
+<text x="155" y="136" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="3.5" fill="#236EA2" text-anchor="start">布局、调试与交付范围</text>
+<text x="155" y="143" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">U13 靠 J1/J2，旁路电容贴 1脚/10脚。EP 接地散热。</text>
+<text x="155" y="148" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">D6/D7 靠接口；别让输出回流穿过 VCTRL/参考区。</text>
+<text x="155" y="153" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">先高阻观察，再接实际同轴及50 Ω负载，检查幅度、</text>
+<text x="155" y="158" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">振铃、占空比、温升及PPS延迟；再决定串阻微调。</text>
+<text x="155" y="163" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">本次仅生成接线文档，未删除 U4/U12 或连 U13。</text>
+<text x="155" y="168" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">接通条件：VH电压、上电顺序、输入电平及负载均确认。</text>
+<text x="155" y="173" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.9" fill="#183146" text-anchor="start">来源：Renesas ISL55110/ISL55111 数据手册（见说明）。</text>
+<a href="https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet"><text x="15" y="190" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.8" fill="#236EA2" text-anchor="start">Renesas 官方数据手册 / FN6228 Rev 9.0（点击打开）</text></a>
+<line x1="13" y1="198" x2="284" y2="198" stroke="#CBD7DF" stroke-width="0.25"/>
+<text x="13" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="start">2026-10-19  |  QFN-16 + EP  |  接线文档，电源时序级待实现</text>
+<text x="284" y="204" font-family="SimHei,Microsoft YaHei,sans-serif" font-size="2.5" fill="#587084" text-anchor="end">3 / 3</text>
+</svg>
