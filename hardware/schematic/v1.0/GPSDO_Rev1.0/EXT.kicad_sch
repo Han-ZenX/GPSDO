@@ -1960,17 +1960,6 @@
 		)
 		(uuid "758c51ea-79fc-49c2-b107-780180c38358")
 	)
-	(text "TODO: -5V source removed. U4 / U12 still use BUF602.\nReplace drivers or redesign supplies before operating outputs."
-		(exclude_from_sim no)
-		(at 61.976 155.702 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b52d2256-28f2-4d3d-b3fd-c5ff9f16e898")
-	)
 	(text "Pulse Outputs"
 		(exclude_from_sim no)
 		(at 109.22 43.434 0)
