@@ -1,0 +1,1171 @@
+{
+  "board": {
+    "width": 75,
+    "height": 75,
+    "origin_x": 106.415,
+    "origin_y": 63.44,
+    "units": "mm"
+  },
+  "fixed": {
+    "H1": {
+      "type": "corner",
+      "corner": "top_left",
+      "inset": 4
+    },
+    "H2": {
+      "type": "corner",
+      "corner": "top_right",
+      "inset": 4
+    },
+    "H3": {
+      "type": "corner",
+      "corner": "bottom_left",
+      "inset": 4
+    },
+    "H4": {
+      "type": "corner",
+      "corner": "bottom_right",
+      "inset": 4
+    }
+  },
+  "mechanical": {
+    "mounting_holes": {
+      "H1": {
+        "corner": "top_left",
+        "inset": 4
+      },
+      "H2": {
+        "corner": "top_right",
+        "inset": 4
+      },
+      "H3": {
+        "corner": "bottom_left",
+        "inset": 4
+      },
+      "H4": {
+        "corner": "bottom_right",
+        "inset": 4
+      }
+    }
+  },
+  "components": {
+    "C1": {
+      "role": "capacitor"
+    },
+    "C10": {
+      "role": "capacitor"
+    },
+    "C11": {
+      "role": "capacitor"
+    },
+    "C12": {
+      "role": "capacitor"
+    },
+    "C13": {
+      "role": "capacitor"
+    },
+    "C14": {
+      "role": "capacitor"
+    },
+    "C15": {
+      "role": "capacitor"
+    },
+    "C16": {
+      "role": "capacitor"
+    },
+    "C17": {
+      "role": "capacitor"
+    },
+    "C18": {
+      "role": "capacitor"
+    },
+    "C19": {
+      "role": "capacitor"
+    },
+    "C2": {
+      "role": "capacitor"
+    },
+    "C20": {
+      "role": "capacitor"
+    },
+    "C21": {
+      "role": "capacitor"
+    },
+    "C22": {
+      "role": "capacitor"
+    },
+    "C23": {
+      "role": "capacitor"
+    },
+    "C24": {
+      "role": "capacitor"
+    },
+    "C25": {
+      "role": "decoupling"
+    },
+    "C26": {
+      "role": "capacitor"
+    },
+    "C27": {
+      "role": "capacitor"
+    },
+    "C28": {
+      "role": "capacitor"
+    },
+    "C3": {
+      "role": "capacitor"
+    },
+    "C32": {
+      "role": "capacitor"
+    },
+    "C33": {
+      "role": "capacitor"
+    },
+    "C34": {
+      "role": "decoupling"
+    },
+    "C35": {
+      "role": "capacitor"
+    },
+    "C36": {
+      "role": "capacitor"
+    },
+    "C37": {
+      "role": "capacitor"
+    },
+    "C38": {
+      "role": "decoupling"
+    },
+    "C39": {
+      "role": "capacitor"
+    },
+    "C4": {
+      "role": "capacitor"
+    },
+    "C40": {
+      "role": "capacitor"
+    },
+    "C41": {
+      "role": "capacitor"
+    },
+    "C42": {
+      "role": "capacitor"
+    },
+    "C43": {
+      "role": "decoupling"
+    },
+    "C46": {
+      "role": "capacitor"
+    },
+    "C47": {
+      "role": "capacitor"
+    },
+    "C48": {
+      "role": "decoupling"
+    },
+    "C49": {
+      "role": "decoupling"
+    },
+    "C5": {
+      "role": "capacitor"
+    },
+    "C56": {
+      "role": "capacitor"
+    },
+    "C57": {
+      "role": "capacitor"
+    },
+    "C58": {
+      "role": "capacitor"
+    },
+    "C6": {
+      "role": "capacitor"
+    },
+    "C68": {
+      "role": "capacitor"
+    },
+    "C69": {
+      "role": "decoupling"
+    },
+    "C7": {
+      "role": "capacitor"
+    },
+    "C70": {
+      "role": "decoupling"
+    },
+    "C71": {
+      "role": "decoupling"
+    },
+    "C72": {
+      "role": "capacitor"
+    },
+    "C73": {
+      "role": "capacitor"
+    },
+    "C74": {
+      "role": "decoupling"
+    },
+    "C75": {
+      "role": "decoupling"
+    },
+    "C8": {
+      "role": "capacitor"
+    },
+    "C9": {
+      "role": "capacitor"
+    },
+    "CN1": {
+      "role": "power_connector",
+      "edge_required": true,
+      "access_side": "left",
+      "rotation": 270,
+      "allow_body_outside_board": true,
+      "locked": true
+    },
+    "D1": {
+      "role": "led"
+    },
+    "D2": {
+      "role": "led"
+    },
+    "D3": {
+      "role": "led"
+    },
+    "D4": {
+      "role": "led"
+    },
+    "D5": {
+      "role": "led"
+    },
+    "D6": {
+      "role": "unknown"
+    },
+    "D8": {
+      "role": "led"
+    },
+    "D9": {
+      "role": "unknown"
+    },
+    "F1": {
+      "role": "unknown"
+    },
+    "FB1": {
+      "role": "ferrite"
+    },
+    "FB2": {
+      "role": "ferrite"
+    },
+    "FB3": {
+      "role": "ferrite"
+    },
+    "FB4": {
+      "role": "ferrite"
+    },
+    "FB5": {
+      "role": "ferrite"
+    },
+    "FB6": {
+      "role": "ferrite"
+    },
+    "FB7": {
+      "role": "ferrite"
+    },
+    "FB8": {
+      "role": "ferrite"
+    },
+    "H1": {
+      "role": "mechanical"
+    },
+    "H2": {
+      "role": "mechanical"
+    },
+    "H3": {
+      "role": "mechanical"
+    },
+    "H4": {
+      "role": "mechanical"
+    },
+    "J1": {
+      "role": "connector",
+      "edge_required": true,
+      "access_side": "bottom",
+      "rotation": 270,
+      "allow_body_outside_board": true,
+      "locked": true
+    },
+    "J3": {
+      "role": "debug_header",
+      "edge_required": false,
+      "rotation": "keep",
+      "locked": true
+    },
+    "J4": {
+      "role": "connector",
+      "edge_required": true,
+      "access_side": "bottom",
+      "rotation": 270,
+      "allow_body_outside_board": true,
+      "locked": true
+    },
+    "JP1": {
+      "role": "unknown"
+    },
+    "L1": {
+      "role": "inductor"
+    },
+    "L2": {
+      "role": "inductor"
+    },
+    "R1": {
+      "role": "series"
+    },
+    "R10": {
+      "role": "series"
+    },
+    "R11": {
+      "role": "pullup_pulldown"
+    },
+    "R12": {
+      "role": "series"
+    },
+    "R13": {
+      "role": "series"
+    },
+    "R14": {
+      "role": "pullup_pulldown"
+    },
+    "R15": {
+      "role": "series"
+    },
+    "R16": {
+      "role": "series"
+    },
+    "R17": {
+      "role": "series"
+    },
+    "R18": {
+      "role": "series"
+    },
+    "R19": {
+      "role": "series"
+    },
+    "R2": {
+      "role": "series"
+    },
+    "R20": {
+      "role": "series"
+    },
+    "R21": {
+      "role": "series"
+    },
+    "R22": {
+      "role": "pullup_pulldown"
+    },
+    "R23": {
+      "role": "series"
+    },
+    "R24": {
+      "role": "series"
+    },
+    "R25": {
+      "role": "series"
+    },
+    "R26": {
+      "role": "series"
+    },
+    "R27": {
+      "role": "series"
+    },
+    "R28": {
+      "role": "pullup_pulldown"
+    },
+    "R29": {
+      "role": "series"
+    },
+    "R3": {
+      "role": "series"
+    },
+    "R30": {
+      "role": "pullup_pulldown"
+    },
+    "R31": {
+      "role": "series"
+    },
+    "R32": {
+      "role": "series"
+    },
+    "R33": {
+      "role": "pullup_pulldown"
+    },
+    "R34": {
+      "role": "series"
+    },
+    "R35": {
+      "role": "pullup_pulldown"
+    },
+    "R36": {
+      "role": "series"
+    },
+    "R37": {
+      "role": "pullup_pulldown"
+    },
+    "R38": {
+      "role": "series"
+    },
+    "R39": {
+      "role": "series"
+    },
+    "R4": {
+      "role": "series"
+    },
+    "R40": {
+      "role": "pullup_pulldown"
+    },
+    "R41": {
+      "role": "series"
+    },
+    "R42": {
+      "role": "pullup_pulldown"
+    },
+    "R43": {
+      "role": "series"
+    },
+    "R44": {
+      "role": "pullup_pulldown"
+    },
+    "R45": {
+      "role": "pullup_pulldown"
+    },
+    "R46": {
+      "role": "pullup_pulldown"
+    },
+    "R47": {
+      "role": "series"
+    },
+    "R48": {
+      "role": "pullup_pulldown"
+    },
+    "R49": {
+      "role": "series"
+    },
+    "R5": {
+      "role": "series"
+    },
+    "R50": {
+      "role": "pullup_pulldown"
+    },
+    "R51": {
+      "role": "pullup_pulldown"
+    },
+    "R52": {
+      "role": "pullup_pulldown"
+    },
+    "R53": {
+      "role": "series"
+    },
+    "R6": {
+      "role": "series"
+    },
+    "R7": {
+      "role": "series"
+    },
+    "R8": {
+      "role": "pullup_pulldown"
+    },
+    "R9": {
+      "role": "series"
+    },
+    "RF1": {
+      "role": "rf_connector",
+      "rotation": "keep",
+      "locked": true,
+      "edge_required": false
+    },
+    "RF2": {
+      "role": "rf_connector",
+      "rotation": "keep",
+      "locked": true,
+      "edge_required": false
+    },
+    "TP1": {
+      "role": "testpoint"
+    },
+    "TP2": {
+      "role": "testpoint"
+    },
+    "U1": {
+      "role": "ic"
+    },
+    "U10": {
+      "role": "ic"
+    },
+    "U11": {
+      "role": "ic"
+    },
+    "U13": {
+      "role": "ic"
+    },
+    "U14": {
+      "role": "power_regulator"
+    },
+    "U15": {
+      "role": "mcu"
+    },
+    "U16": {
+      "role": "power_regulator"
+    },
+    "U18": {
+      "role": "power_mux"
+    },
+    "U2": {
+      "role": "ic"
+    },
+    "U3": {
+      "role": "ic"
+    },
+    "U4": {
+      "role": "power_regulator"
+    },
+    "U5": {
+      "role": "oscillator",
+      "rotation": "keep",
+      "locked": true,
+      "edge_required": false
+    },
+    "U6": {
+      "role": "rf_module"
+    },
+    "U7": {
+      "role": "oscillator",
+      "rotation": "keep",
+      "locked": true,
+      "edge_required": false
+    },
+    "U8": {
+      "role": "ic"
+    },
+    "U9": {
+      "role": "ic"
+    },
+    "USB1": {
+      "role": "usb_connector",
+      "edge_required": true,
+      "access_side": "left",
+      "rotation": 270,
+      "allow_body_outside_board": true,
+      "locked": true
+    }
+  },
+  "roles": {
+    "C1": "capacitor",
+    "C10": "capacitor",
+    "C11": "capacitor",
+    "C12": "capacitor",
+    "C13": "capacitor",
+    "C14": "capacitor",
+    "C15": "capacitor",
+    "C16": "capacitor",
+    "C17": "capacitor",
+    "C18": "capacitor",
+    "C19": "capacitor",
+    "C2": "capacitor",
+    "C20": "capacitor",
+    "C21": "capacitor",
+    "C22": "capacitor",
+    "C23": "capacitor",
+    "C24": "capacitor",
+    "C25": "decoupling",
+    "C26": "capacitor",
+    "C27": "capacitor",
+    "C28": "capacitor",
+    "C3": "capacitor",
+    "C32": "capacitor",
+    "C33": "capacitor",
+    "C34": "decoupling",
+    "C35": "capacitor",
+    "C36": "capacitor",
+    "C37": "capacitor",
+    "C38": "decoupling",
+    "C39": "capacitor",
+    "C4": "capacitor",
+    "C40": "capacitor",
+    "C41": "capacitor",
+    "C42": "capacitor",
+    "C43": "decoupling",
+    "C46": "capacitor",
+    "C47": "capacitor",
+    "C48": "decoupling",
+    "C49": "decoupling",
+    "C5": "capacitor",
+    "C56": "capacitor",
+    "C57": "capacitor",
+    "C58": "capacitor",
+    "C6": "capacitor",
+    "C68": "capacitor",
+    "C69": "decoupling",
+    "C7": "capacitor",
+    "C70": "decoupling",
+    "C71": "decoupling",
+    "C72": "capacitor",
+    "C73": "capacitor",
+    "C74": "decoupling",
+    "C75": "decoupling",
+    "C8": "capacitor",
+    "C9": "capacitor",
+    "CN1": "power_connector",
+    "D1": "led",
+    "D2": "led",
+    "D3": "led",
+    "D4": "led",
+    "D5": "led",
+    "D6": "unknown",
+    "D8": "led",
+    "D9": "unknown",
+    "F1": "unknown",
+    "FB1": "ferrite",
+    "FB2": "ferrite",
+    "FB3": "ferrite",
+    "FB4": "ferrite",
+    "FB5": "ferrite",
+    "FB6": "ferrite",
+    "FB7": "ferrite",
+    "FB8": "ferrite",
+    "H1": "mechanical",
+    "H2": "mechanical",
+    "H3": "mechanical",
+    "H4": "mechanical",
+    "J1": "connector",
+    "J3": "debug_header",
+    "J4": "connector",
+    "JP1": "unknown",
+    "L1": "inductor",
+    "L2": "inductor",
+    "R1": "series",
+    "R10": "series",
+    "R11": "pullup_pulldown",
+    "R12": "series",
+    "R13": "series",
+    "R14": "pullup_pulldown",
+    "R15": "series",
+    "R16": "series",
+    "R17": "series",
+    "R18": "series",
+    "R19": "series",
+    "R2": "series",
+    "R20": "series",
+    "R21": "series",
+    "R22": "pullup_pulldown",
+    "R23": "series",
+    "R24": "series",
+    "R25": "series",
+    "R26": "series",
+    "R27": "series",
+    "R28": "pullup_pulldown",
+    "R29": "series",
+    "R3": "series",
+    "R30": "pullup_pulldown",
+    "R31": "series",
+    "R32": "series",
+    "R33": "pullup_pulldown",
+    "R34": "series",
+    "R35": "pullup_pulldown",
+    "R36": "series",
+    "R37": "pullup_pulldown",
+    "R38": "series",
+    "R39": "series",
+    "R4": "series",
+    "R40": "pullup_pulldown",
+    "R41": "series",
+    "R42": "pullup_pulldown",
+    "R43": "series",
+    "R44": "pullup_pulldown",
+    "R45": "pullup_pulldown",
+    "R46": "pullup_pulldown",
+    "R47": "series",
+    "R48": "pullup_pulldown",
+    "R49": "series",
+    "R5": "series",
+    "R50": "pullup_pulldown",
+    "R51": "pullup_pulldown",
+    "R52": "pullup_pulldown",
+    "R53": "series",
+    "R6": "series",
+    "R7": "series",
+    "R8": "pullup_pulldown",
+    "R9": "series",
+    "RF1": "rf_connector",
+    "RF2": "rf_connector",
+    "TP1": "testpoint",
+    "TP2": "testpoint",
+    "U1": "ic",
+    "U10": "ic",
+    "U11": "ic",
+    "U13": "ic",
+    "U14": "power_regulator",
+    "U15": "mcu",
+    "U16": "power_regulator",
+    "U18": "power_mux",
+    "U2": "ic",
+    "U3": "ic",
+    "U4": "power_regulator",
+    "U5": "oscillator",
+    "U6": "rf_module",
+    "U7": "oscillator",
+    "U8": "ic",
+    "U9": "ic",
+    "USB1": "usb_connector"
+  },
+  "clusters": [
+    {
+      "name": "U1_SUPPORT",
+      "anchor": "U1",
+      "members": [
+        "C12",
+        "C9",
+        "C10",
+        "R10",
+        "FB2",
+        "JP1"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U10_SUPPORT",
+      "anchor": "U10",
+      "members": [
+        "C22",
+        "C24",
+        "R35",
+        "R19"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U11_SUPPORT",
+      "anchor": "U11",
+      "members": [
+        "C27",
+        "C28",
+        "FB6"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U13_SUPPORT",
+      "anchor": "U13",
+      "members": [
+        "C48",
+        "C46",
+        "R20",
+        "R47",
+        "C49",
+        "C47",
+        "R42",
+        "R46"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U14_SUPPORT",
+      "anchor": "U14",
+      "members": [
+        "C34",
+        "C37",
+        "C35",
+        "R26",
+        "R30",
+        "C36",
+        "R27"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U15_SUPPORT",
+      "anchor": "U15",
+      "members": [
+        "C13",
+        "C14",
+        "C15",
+        "C32",
+        "C33",
+        "C42",
+        "R48",
+        "FB1",
+        "R38"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U16_SUPPORT",
+      "anchor": "U16",
+      "members": [
+        "C38",
+        "C41",
+        "C39",
+        "R32",
+        "R33",
+        "C40",
+        "R31"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U18_SUPPORT",
+      "anchor": "U18",
+      "members": [
+        "C70",
+        "C68",
+        "C69",
+        "C71",
+        "R43",
+        "R44",
+        "C25",
+        "C43"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U2_SUPPORT",
+      "anchor": "U2",
+      "members": [
+        "C4",
+        "C3",
+        "R6",
+        "R7",
+        "R36",
+        "R37",
+        "FB3"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U3_SUPPORT",
+      "anchor": "U3",
+      "members": [
+        "C16",
+        "R12",
+        "R16",
+        "R15"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U4_SUPPORT",
+      "anchor": "U4",
+      "members": [
+        "C74",
+        "L2",
+        "C73",
+        "C72",
+        "C75",
+        "R51",
+        "R52",
+        "R50",
+        "R49"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U6_SUPPORT",
+      "anchor": "U6",
+      "members": [
+        "C7",
+        "C8",
+        "C6",
+        "R2",
+        "R3",
+        "R1",
+        "L1",
+        "R8",
+        "R9",
+        "FB8"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U8_SUPPORT",
+      "anchor": "U8",
+      "members": [
+        "C11",
+        "C58",
+        "C57",
+        "C56",
+        "R29",
+        "R28"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "U9_SUPPORT",
+      "anchor": "U9",
+      "members": [
+        "C18",
+        "C17",
+        "C20",
+        "R18",
+        "R17",
+        "C21",
+        "FB7"
+      ],
+      "role": "pin_derived_support"
+    },
+    {
+      "name": "USB1_SUPPORT",
+      "anchor": "USB1",
+      "members": [
+        "R11",
+        "R14"
+      ],
+      "role": "pin_derived_support"
+    }
+  ],
+  "regions": {
+    "U4": {
+      "x": 28.5,
+      "y": 56.5,
+      "w": 11.5,
+      "h": 11.5
+    },
+    "U14": {
+      "x": 18,
+      "y": 49,
+      "w": 10.3,
+      "h": 10.5
+    },
+    "U16": {
+      "x": 7.2,
+      "y": 58,
+      "w": 10.8,
+      "h": 10
+    },
+    "U18": {
+      "x": 7.5,
+      "y": 47,
+      "w": 10.3,
+      "h": 10.799999999999997
+    },
+    "U13": {
+      "x": 41.8,
+      "y": 57.8,
+      "w": 13.200000000000003,
+      "h": 11.799999999999997
+    },
+    "U1": {
+      "x": 38,
+      "y": 20.5,
+      "w": 11,
+      "h": 14.5
+    },
+    "U15": {
+      "x": 52,
+      "y": 36.5,
+      "w": 14,
+      "h": 14.5
+    },
+    "U6": {
+      "x": 48,
+      "y": 6,
+      "w": 25,
+      "h": 22
+    },
+    "U2": {
+      "x": 12,
+      "y": 33.2,
+      "w": 15.5,
+      "h": 9.299999999999997
+    },
+    "U3": {
+      "x": 34.2,
+      "y": 24.5,
+      "w": 5.299999999999997,
+      "h": 8.5
+    },
+    "U9": {
+      "x": 24,
+      "y": 38.5,
+      "w": 16,
+      "h": 11.5
+    },
+    "U10": {
+      "x": 38.5,
+      "y": 49.5,
+      "w": 9.5,
+      "h": 6.700000000000003
+    },
+    "U8": {
+      "x": 40.2,
+      "y": 33.8,
+      "w": 12.299999999999997,
+      "h": 14.0
+    },
+    "U11": {
+      "x": 8,
+      "y": 36,
+      "w": 9.7,
+      "h": 9.799999999999997
+    },
+    "USB1": {
+      "x": 7.7,
+      "y": 35,
+      "w": 2.7,
+      "h": 10.5
+    }
+  },
+  "keepouts": [],
+  "spacing": {
+    "default": 0.23,
+    "passive_to_passive": 0.23,
+    "passive_to_ic": 0.23,
+    "ic_to_ic": 0.75,
+    "connector_to_component": 0.5,
+    "mechanical_to_component": 0.5
+  },
+  "power_islands": {
+    "BOOST_5V2": {
+      "regulator": "U4",
+      "input_caps": [
+        "C72",
+        "C73"
+      ],
+      "inductor": "L2",
+      "output_caps": [
+        "C74",
+        "C75"
+      ],
+      "feedback": [
+        "R51",
+        "R52"
+      ],
+      "switch_node": "Net-(U4-SW)"
+    },
+    "MAIN_3V3": {
+      "regulator": "U14",
+      "input_caps": [
+        "C34"
+      ],
+      "output_caps": [
+        "C37"
+      ],
+      "feedback": [
+        "R26",
+        "R30"
+      ]
+    },
+    "OCXO_3V3_OPTION": {
+      "regulator": "U16",
+      "input_caps": [
+        "C38"
+      ],
+      "output_caps": [
+        "C41"
+      ],
+      "feedback": [
+        "R32",
+        "R33"
+      ]
+    }
+  },
+  "functional_paths": {
+    "USB": {
+      "type": "high_speed_diff",
+      "sequence": [
+        "USB1",
+        "U11"
+      ],
+      "corridor_width_mm": 2,
+      "protect_first": false
+    },
+    "GNSS_RF": {
+      "type": "rf",
+      "sequence": [
+        "RF1",
+        "U6"
+      ],
+      "corridor_width_mm": 2,
+      "protect_first": false
+    },
+    "CLOCK_OUTPUT": {
+      "type": "clock",
+      "sequence": [
+        "U7",
+        "U2",
+        "U13",
+        "J1"
+      ],
+      "corridor_width_mm": 2,
+      "protect_first": false
+    }
+  },
+  "high_speed": {
+    "nets": [
+      "/MCU/USB_D+",
+      "/MCU/USB_D-",
+      "/MCU/10MHZ_TDC",
+      "/GNSS/PULSE_GNSS",
+      "Net-(RF1-SIG)"
+    ],
+    "interfaces": [
+      "USB",
+      "GNSS_RF",
+      "TDC_CLOCK"
+    ]
+  },
+  "routing": {
+    "mode": "all_nets_constrained"
+  },
+  "stackup": {
+    "layers": [
+      {
+        "name": "F.Cu",
+        "type": "signal"
+      },
+      {
+        "name": "In1.Cu",
+        "type": "plane",
+        "net": "GND"
+      },
+      {
+        "name": "In2.Cu",
+        "type": "power"
+      },
+      {
+        "name": "B.Cu",
+        "type": "signal"
+      }
+    ]
+  },
+  "differential_pairs": {
+    "USB": {
+      "p": "/MCU/USB_D+",
+      "n": "/MCU/USB_D-",
+      "impedance_ohms": 90
+    }
+  },
+  "simulation": {
+    "openems": {
+      "enabled": false
+    },
+    "ngspice": {
+      "enabled": false
+    }
+  },
+  "provenance": {
+    "generator": "Codex + kicad-pcb-placement pin solver + pcb-plan inspect",
+    "assumptions": [
+      "Placement only. No routing, vias, copper zones or schematic edits.",
+      "All components on front. Hidden reference/value fields are retained.",
+      "U5 and U7 remain at their original relative offset and are mutually exclusive assembly options; their body overlap is intentional.",
+      "RF2, C5 and R13 remain above OCXO as requested.",
+      "Edge connector rotations come from measured footprint geometry, not the generic auto-rotation hint.",
+      "J3 is an accessible vertical header; it does not require an outward-facing edge mating plane.",
+      "NEO-M8T uses an external antenna. L1 is a parallel antenna-bias branch, not a series element in the RF signal path.",
+      "No fabricated dielectric stackup supplied; no trace impedance or timing matching is verified.",
+      "All 157 candidate roles were reviewed. Role overrides and exact pin-owned recipes replace ambiguous global-rail inference.",
+      "The 67 high-speed-name hints include UART and unused pins; only real USB, GNSS RF and clock/TDC paths are promoted to interface intent.",
+      "Simulation candidates were reviewed and deferred: this request changes component placement only.",
+      "Imported KiCad groups are metadata, not ownership input. Ownership is specified from pin/net connectivity in relayout.py.",
+      "Sources: TI TPS61023 sec10.1, TPS7A52 sec10.1, TDC7200 sec10-11, Renesas ISL55110 Bypassing.",
+      "Re-running relayout.py replaces unlocked candidate poses; the live PCB is not written by that script."
+    ]
+  }
+}

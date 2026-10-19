@@ -1,0 +1,26 @@
+{
+  "classes": {
+    "high_speed_diff": {
+      "differential": true,
+      "impedance_ohms": 100,
+      "max_skew_mm": 0.25,
+      "si_candidate": true,
+      "source": "candidate_from_differential_pairs",
+      "trace_spacing_mm": 0.15,
+      "trace_width_mm": 0.12,
+      "via_policy": "avoid"
+    },
+    "low_speed": {
+      "clearance_mm": 0.15,
+      "preferred_layers": [
+        "F.Cu",
+        "B.Cu"
+      ],
+      "source": "candidate_default_low_speed",
+      "trace_width_mm": 0.15,
+      "via_policy": "allow"
+    }
+  },
+  "mode": "all_nets_constrained",
+  "note": "Candidate routing classes only. Controlled impedance always requires the actual fabricator stackup; treat trace widths/spacings as starting hints."
+}

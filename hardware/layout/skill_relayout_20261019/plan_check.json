@@ -1,0 +1,1102 @@
+{
+  "clusters_are_metadata": "Clusters preserve neighborhoods only; they are not atomic placement units. Each ref has exactly one placement owner (see ownership_model).",
+  "clusters_total": 20,
+  "components_parsed": 157,
+  "components_planned": 143,
+  "decoupling_groups": [
+    {
+      "effective_side": "auto",
+      "grouped": true,
+      "inferred_pad_side": null,
+      "members": [
+        "C25",
+        "C43",
+        "C70",
+        "C71"
+      ],
+      "pad": null,
+      "parent": "U11",
+      "parent_near_board_edge": false,
+      "power_net": "+5V",
+      "primitive": "DecouplingArray",
+      "stagger_recommended": true
+    },
+    {
+      "grouped": false,
+      "members": [
+        "C69"
+      ],
+      "pad": null,
+      "parent": "U11",
+      "power_net": "VBUS",
+      "primitive": "Decoupling"
+    },
+    {
+      "effective_side": "top",
+      "grouped": true,
+      "inferred_pad_side": "top",
+      "members": [
+        "C48",
+        "C49"
+      ],
+      "pad": "10",
+      "parent": "U13",
+      "parent_near_board_edge": false,
+      "power_net": "+5V2",
+      "primitive": "DecouplingArray",
+      "stagger_recommended": false
+    }
+  ],
+  "differential_pairs_inferred": 1,
+  "duplicate_rule_refs": [],
+  "edge_required_components": [
+    "CN1",
+    "J1",
+    "J4",
+    "USB1"
+  ],
+  "edge_rotation_plan": [
+    {
+      "access_side": "left",
+      "allow_body_outside_board": true,
+      "edge_required": true,
+      "locked": true,
+      "ref": "CN1",
+      "rotation": 270
+    },
+    {
+      "access_side": "bottom",
+      "allow_body_outside_board": true,
+      "edge_required": true,
+      "locked": true,
+      "ref": "J1",
+      "rotation": 270
+    },
+    {
+      "access_side": "right",
+      "allow_body_outside_board": false,
+      "edge_required": false,
+      "locked": true,
+      "ref": "J3",
+      "rotation": "auto"
+    },
+    {
+      "access_side": "bottom",
+      "allow_body_outside_board": true,
+      "edge_required": true,
+      "locked": true,
+      "ref": "J4",
+      "rotation": 270
+    },
+    {
+      "access_side": "right",
+      "allow_body_outside_board": false,
+      "edge_required": false,
+      "locked": true,
+      "ref": "RF1",
+      "rotation": "auto"
+    },
+    {
+      "access_side": "top",
+      "allow_body_outside_board": false,
+      "edge_required": false,
+      "locked": true,
+      "ref": "RF2",
+      "rotation": "auto"
+    },
+    {
+      "access_side": "left",
+      "allow_body_outside_board": true,
+      "edge_required": true,
+      "locked": true,
+      "ref": "USB1",
+      "rotation": 270
+    }
+  ],
+  "functional_paths": {
+    "CLOCK_OUTPUT": {
+      "corridor_width_mm": 2.0,
+      "protect_first": false,
+      "sequence": [
+        "U7",
+        "U2",
+        "U13",
+        "J1"
+      ],
+      "source": "board.pln",
+      "type": "clock"
+    },
+    "GNSS_RF": {
+      "corridor_width_mm": 2.0,
+      "protect_first": false,
+      "sequence": [
+        "RF1",
+        "U6"
+      ],
+      "source": "board.pln",
+      "type": "rf"
+    },
+    "USB": {
+      "corridor_width_mm": 2.0,
+      "protect_first": false,
+      "sequence": [
+        "USB1",
+        "U11"
+      ],
+      "source": "board.pln",
+      "type": "high_speed_diff"
+    }
+  },
+  "high_speed_constraints_complete": true,
+  "high_speed_paths": {
+    "USB": {
+      "corridor_width_mm": 2.0,
+      "protect_first": false,
+      "sequence": [
+        "USB1",
+        "U11"
+      ],
+      "source": "board.pln",
+      "type": "high_speed_diff"
+    }
+  },
+  "invalid_series_candidates": [
+    "R1: rejected Series() inference (no validated A-resistor-B topology)",
+    "R10: rejected Series() inference (no validated A-resistor-B topology)",
+    "R12: rejected Series() inference (no validated A-resistor-B topology)",
+    "R13: rejected Series() inference (no validated A-resistor-B topology)",
+    "R15: rejected Series() inference (no validated A-resistor-B topology)",
+    "R16: rejected Series() inference (no validated A-resistor-B topology)",
+    "R17: rejected Series() inference (no validated A-resistor-B topology)",
+    "R18: rejected Series() inference (no validated A-resistor-B topology)",
+    "R19: rejected Series() inference (no validated A-resistor-B topology)",
+    "R20: rejected Series() inference (no validated A-resistor-B topology)",
+    "R27: rejected Series() inference (no validated A-resistor-B topology)",
+    "R31: rejected Series() inference (no validated A-resistor-B topology)",
+    "R39: rejected Series() inference (no validated A-resistor-B topology)",
+    "R41: rejected Series() inference (no validated A-resistor-B topology)",
+    "R43: rejected Series() inference (no validated A-resistor-B topology)",
+    "R47: rejected Series() inference (no validated A-resistor-B topology)",
+    "R53: rejected Series() inference (no validated A-resistor-B topology)",
+    "R7: rejected Series() inference (no validated A-resistor-B topology)",
+    "R9: rejected Series() inference (no validated A-resistor-B topology)"
+  ],
+  "mechanical_constraints": {
+    "keepouts": [],
+    "mounting_holes": []
+  },
+  "multi_group_components": [
+    "C25",
+    "C34",
+    "C38",
+    "C41",
+    "C48",
+    "C49",
+    "C69",
+    "C70",
+    "C71",
+    "C72",
+    "C73",
+    "C74",
+    "C75",
+    "J1",
+    "L2",
+    "R30",
+    "R32",
+    "R33",
+    "R51",
+    "R52",
+    "RF1",
+    "U10",
+    "U11",
+    "U13",
+    "U14",
+    "U16",
+    "U2",
+    "U4",
+    "U6",
+    "USB1"
+  ],
+  "multi_member_clusters": 19,
+  "nets_parsed": 150,
+  "ownership_model": {
+    "C1": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C1\", parent=\"U2\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C10": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "C11": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U8\", anchor=\"U8\", members=[\"U8\", \"C11\", \"C56\", \"C57\", \"C58\", \"R28\", \"R29\"], placement=Anchor(x=59.874, y=23.609), role=\"ic\")"
+    },
+    "C12": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "C13": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "C14": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "C15": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "C16": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U3\", anchor=\"U3\", members=[\"U3\", \"C16\", \"R15\"], placement=Anchor(x=19.794, y=36.821), role=\"ic\")"
+    },
+    "C17": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "C18": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "C19": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "C2": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C2\", parent=\"USB1\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C20": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "C21": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "C22": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U10\", anchor=\"U10\", members=[\"U10\", \"C22\", \"C24\", \"C73\", \"L2\", \"R19\", \"U13\"], placement=Anchor(x=32.459, y=17.661), role=\"ic\")"
+    },
+    "C23": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C23\", parent=\"USB1\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C24": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U10\", anchor=\"U10\", members=[\"U10\", \"C22\", \"C24\", \"C73\", \"L2\", \"R19\", \"U13\"], placement=Anchor(x=32.459, y=17.661), role=\"ic\")"
+    },
+    "C25": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C25\", \"C43\", \"C70\", \"C71\"], parent=\"U11\", side=\"auto\", distance=2.0, spacing=1.5, stagger=True, rows=\"auto\", max_per_row=3, role=\"decoupling\", power_net=\"+5V\", ground_net=\"GND\")"
+    },
+    "C26": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "C27": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U11\", anchor=\"U11\", members=[\"U11\", \"C27\", \"C28\", \"FB6\", \"R43\", \"R44\", \"USB1\"], placement=Anchor(x=19.233, y=26.682), role=\"ic\")"
+    },
+    "C28": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U11\", anchor=\"U11\", members=[\"U11\", \"C27\", \"C28\", \"FB6\", \"R43\", \"R44\", \"USB1\"], placement=Anchor(x=19.233, y=26.682), role=\"ic\")"
+    },
+    "C3": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U2\", anchor=\"U2\", members=[\"U2\", \"C3\", \"C4\", \"FB3\", \"R36\", \"R37\", \"R4\", \"R7\"], placement=Anchor(x=62.298, y=16.449), role=\"ic\")"
+    },
+    "C32": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "C33": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "C34": {
+      "owner": "decoupling",
+      "rank": 4,
+      "rule": "Decoupling(\"C34\", parent=\"U14\", distance=1.2, power_net=None, ground_net=\"GND\", role=\"input_cap\")"
+    },
+    "C35": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U14\", anchor=\"U14\", members=[\"U14\", \"C25\", \"C34\", \"C35\", \"C69\", \"D1\", \"R30\"], placement=Anchor(x=10.525, y=38.360), role=\"power_regulator\")"
+    },
+    "C36": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C36\", parent=\"U14\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C37": {
+      "owner": "decoupling",
+      "rank": 4,
+      "rule": "Decoupling(\"C37\", parent=\"U14\", distance=1.5, power_net=None, ground_net=\"GND\", role=\"output_cap\")"
+    },
+    "C38": {
+      "owner": "decoupling",
+      "rank": 4,
+      "rule": "Decoupling(\"C38\", parent=\"U16\", distance=1.2, power_net=None, ground_net=\"GND\", role=\"input_cap\")"
+    },
+    "C39": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U16\", anchor=\"U16\", members=[\"U16\", \"C38\", \"C39\", \"C40\", \"C41\", \"C68\", \"C70\", \"C71\", \"R31\", \"R32\", \"R33\", \"R34\", \"R45\"], placement=Anchor(x=47.307, y=15.173), role=\"power_regulator\")"
+    },
+    "C4": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U2\", anchor=\"U2\", members=[\"U2\", \"C3\", \"C4\", \"FB3\", \"R36\", \"R37\", \"R4\", \"R7\"], placement=Anchor(x=62.298, y=16.449), role=\"ic\")"
+    },
+    "C40": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U16\", anchor=\"U16\", members=[\"U16\", \"C38\", \"C39\", \"C40\", \"C41\", \"C68\", \"C70\", \"C71\", \"R31\", \"R32\", \"R33\", \"R34\", \"R45\"], placement=Anchor(x=47.307, y=15.173), role=\"power_regulator\")"
+    },
+    "C41": {
+      "owner": "decoupling",
+      "rank": 4,
+      "rule": "Decoupling(\"C41\", parent=\"U16\", distance=1.5, power_net=None, ground_net=\"GND\", role=\"output_cap\")"
+    },
+    "C42": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C42\", parent=\"U15\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C43": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C25\", \"C43\", \"C70\", \"C71\"], parent=\"U11\", side=\"auto\", distance=2.0, spacing=1.5, stagger=True, rows=\"auto\", max_per_row=3, role=\"decoupling\", power_net=\"+5V\", ground_net=\"GND\")"
+    },
+    "C46": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U13\", anchor=\"U13\", members=[\"U13\", \"C46\", \"C47\", \"C48\", \"C49\", \"C72\", \"R42\", \"R46\", \"U10\"], placement=Anchor(x=11.240, y=11.421), role=\"ic\")"
+    },
+    "C47": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U13\", anchor=\"U13\", members=[\"U13\", \"C46\", \"C47\", \"C48\", \"C49\", \"C72\", \"R42\", \"R46\", \"U10\"], placement=Anchor(x=11.240, y=11.421), role=\"ic\")"
+    },
+    "C48": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C48\", \"C49\"], parent=\"U13\", pad=\"10\", side=\"top\", distance=2.0, spacing=1.5, stagger=True, rows=\"auto\", role=\"decoupling\", power_net=\"+5V2\", ground_net=\"GND\")"
+    },
+    "C49": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C48\", \"C49\"], parent=\"U13\", pad=\"10\", side=\"top\", distance=2.0, spacing=1.5, stagger=True, rows=\"auto\", role=\"decoupling\", power_net=\"+5V2\", ground_net=\"GND\")"
+    },
+    "C5": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C5\", parent=\"U3\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C56": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U8\", anchor=\"U8\", members=[\"U8\", \"C11\", \"C56\", \"C57\", \"C58\", \"R28\", \"R29\"], placement=Anchor(x=59.874, y=23.609), role=\"ic\")"
+    },
+    "C57": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U8\", anchor=\"U8\", members=[\"U8\", \"C11\", \"C56\", \"C57\", \"C58\", \"R28\", \"R29\"], placement=Anchor(x=59.874, y=23.609), role=\"ic\")"
+    },
+    "C58": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U8\", anchor=\"U8\", members=[\"U8\", \"C11\", \"C56\", \"C57\", \"C58\", \"R28\", \"R29\"], placement=Anchor(x=59.874, y=23.609), role=\"ic\")"
+    },
+    "C6": {
+      "owner": "satellite",
+      "rank": 6,
+      "rule": "Satellite(\"C6\", parent=\"U6\", side=\"auto\", distance=2.5, role=\"capacitor\")"
+    },
+    "C68": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U16\", anchor=\"U16\", members=[\"U16\", \"C38\", \"C39\", \"C40\", \"C41\", \"C68\", \"C70\", \"C71\", \"R31\", \"R32\", \"R33\", \"R34\", \"R45\"], placement=Anchor(x=47.307, y=15.173), role=\"power_regulator\")"
+    },
+    "C69": {
+      "owner": "decoupling",
+      "rank": 4,
+      "rule": "Decoupling(\"C69\", parent=\"U11\", distance=2.0, power_net=\"VBUS\", ground_net=\"GND\")"
+    },
+    "C7": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_MODULE_U6\", anchor=\"U6\", members=[\"U6\", \"C7\", \"C8\", \"FB8\", \"L1\", \"R8\", \"R9\", \"RF1\"], placement=Anchor(x=49.298, y=36.938), role=\"rf_module\")"
+    },
+    "C70": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C25\", \"C43\", \"C70\", \"C71\"], parent=\"U11\", side=\"auto\", distance=2.0, spacing=1.5, stagger=True, rows=\"auto\", max_per_row=3, role=\"decoupling\", power_net=\"+5V\", ground_net=\"GND\")"
+    },
+    "C71": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C25\", \"C43\", \"C70\", \"C71\"], parent=\"U11\", side=\"auto\", distance=2.0, spacing=1.5, stagger=True, rows=\"auto\", max_per_row=3, role=\"decoupling\", power_net=\"+5V\", ground_net=\"GND\")"
+    },
+    "C72": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C72\", \"C73\"], parent=\"U4\", side=\"auto\", distance=1.2, spacing=1.5, stagger=True, rows=\"auto\", role=\"input_cap\", power_net=None, ground_net=\"GND\")"
+    },
+    "C73": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C72\", \"C73\"], parent=\"U4\", side=\"auto\", distance=1.2, spacing=1.5, stagger=True, rows=\"auto\", role=\"input_cap\", power_net=None, ground_net=\"GND\")"
+    },
+    "C74": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C74\", \"C75\"], parent=\"U4\", side=\"auto\", distance=1.5, spacing=1.5, stagger=True, rows=\"auto\", role=\"output_cap\", power_net=None, ground_net=\"GND\")"
+    },
+    "C75": {
+      "owner": "decoupling_array",
+      "rank": 4,
+      "rule": "DecouplingArray(refs=[\"C74\", \"C75\"], parent=\"U4\", side=\"auto\", distance=1.5, spacing=1.5, stagger=True, rows=\"auto\", role=\"output_cap\", power_net=None, ground_net=\"GND\")"
+    },
+    "C8": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_MODULE_U6\", anchor=\"U6\", members=[\"U6\", \"C7\", \"C8\", \"FB8\", \"L1\", \"R8\", \"R9\", \"RF1\"], placement=Anchor(x=49.298, y=36.938), role=\"rf_module\")"
+    },
+    "C9": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "CN1": {
+      "owner": "edge_required_connector",
+      "rank": 1,
+      "rule": "Cluster(\"POWER_CONNECTOR_CN1\", anchor=\"CN1\", members=[\"CN1\"], placement=Edge(edge=\"left\", y=52.250, inset=2.0, rot=270, locked=True, edge_required=True, mechanical=True, access_side=\"left\", allow_body_outside_board=True), role=\"power_connector\")"
+    },
+    "D1": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U14\", anchor=\"U14\", members=[\"U14\", \"C25\", \"C34\", \"C35\", \"C69\", \"D1\", \"R30\"], placement=Anchor(x=10.525, y=38.360), role=\"power_regulator\")"
+    },
+    "FB1": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "FB2": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "FB3": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U2\", anchor=\"U2\", members=[\"U2\", \"C3\", \"C4\", \"FB3\", \"R36\", \"R37\", \"R4\", \"R7\"], placement=Anchor(x=62.298, y=16.449), role=\"ic\")"
+    },
+    "FB4": {
+      "owner": "between",
+      "rank": 3,
+      "rule": "Between(\"FB4\", a=\"R22\", b=\"R23\", t=0.5, offset=0, role=\"ferrite\")"
+    },
+    "FB5": {
+      "owner": "between",
+      "rank": 3,
+      "rule": "Between(\"FB5\", a=\"R22\", b=\"R23\", t=0.5, offset=0, role=\"ferrite\")"
+    },
+    "FB6": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U11\", anchor=\"U11\", members=[\"U11\", \"C27\", \"C28\", \"FB6\", \"R43\", \"R44\", \"USB1\"], placement=Anchor(x=19.233, y=26.682), role=\"ic\")"
+    },
+    "FB7": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "FB8": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_MODULE_U6\", anchor=\"U6\", members=[\"U6\", \"C7\", \"C8\", \"FB8\", \"L1\", \"R8\", \"R9\", \"RF1\"], placement=Anchor(x=49.298, y=36.938), role=\"rf_module\")"
+    },
+    "H1": {
+      "owner": "corner",
+      "rank": 0,
+      "rule": "Corner(\"H1\", corner=\"top_left\", inset=4, role=\"fixed_mechanical\")"
+    },
+    "H2": {
+      "owner": "corner",
+      "rank": 0,
+      "rule": "Corner(\"H2\", corner=\"top_right\", inset=4, role=\"fixed_mechanical\")"
+    },
+    "H3": {
+      "owner": "corner",
+      "rank": 0,
+      "rule": "Corner(\"H3\", corner=\"bottom_left\", inset=4, role=\"fixed_mechanical\")"
+    },
+    "H4": {
+      "owner": "corner",
+      "rank": 0,
+      "rule": "Corner(\"H4\", corner=\"bottom_right\", inset=4, role=\"fixed_mechanical\")"
+    },
+    "J1": {
+      "owner": "edge_required_connector",
+      "rank": 1,
+      "rule": "Cluster(\"CONNECTOR_J1\", anchor=\"J1\", members=[\"J1\"], placement=Edge(edge=\"bottom\", x=23.295, inset=2.0, rot=270, locked=True, edge_required=True, mechanical=True, access_side=\"bottom\", allow_body_outside_board=True), role=\"connector\")"
+    },
+    "J3": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"DEBUG_HEADER_J3\", anchor=\"J3\", members=[\"J3\"], placement=Edge(edge=\"right\", y=52.250, inset=2.0, locked=True, edge_required=False, mechanical=True, access_side=\"right\", allow_body_outside_board=False), role=\"debug_header\")"
+    },
+    "J4": {
+      "owner": "edge_required_connector",
+      "rank": 1,
+      "rule": "Cluster(\"CONNECTOR_J4\", anchor=\"J4\", members=[\"J4\"], placement=Edge(edge=\"bottom\", x=51.705, inset=2.0, rot=270, locked=True, edge_required=True, mechanical=True, access_side=\"bottom\", allow_body_outside_board=True), role=\"connector\")"
+    },
+    "JP1": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "L1": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_MODULE_U6\", anchor=\"U6\", members=[\"U6\", \"C7\", \"C8\", \"FB8\", \"L1\", \"R8\", \"R9\", \"RF1\"], placement=Anchor(x=49.298, y=36.938), role=\"rf_module\")"
+    },
+    "L2": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"L2\", parent=\"U4\", pad=\"5\", distance=1.5, role=\"inductor\")"
+    },
+    "R10": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "R11": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R11\", \"R14\"], parent=\"USB1\", nets=[\"Net-(USB1-CC1)\", \"Net-(USB1-CC2)\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R14": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R11\", \"R14\"], parent=\"USB1\", nets=[\"Net-(USB1-CC1)\", \"Net-(USB1-CC2)\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R15": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U3\", anchor=\"U3\", members=[\"U3\", \"C16\", \"R15\"], placement=Anchor(x=19.794, y=36.821), role=\"ic\")"
+    },
+    "R17": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "R18": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "R19": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U10\", anchor=\"U10\", members=[\"U10\", \"C22\", \"C24\", \"C73\", \"L2\", \"R19\", \"U13\"], placement=Anchor(x=32.459, y=17.661), role=\"ic\")"
+    },
+    "R2": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R2\", a=\"U15\", b=\"U6\", t=0.5, offset=0)"
+    },
+    "R21": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R21\", a=\"U15\", b=\"D3\", t=0.5, offset=0)"
+    },
+    "R22": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R22\", parent=\"U7\", net=\"OCXO_VCC\", pad=\"5\", distance=3.0)"
+    },
+    "R23": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R23\", a=\"U16\", b=\"U7\", t=0.5, offset=0)"
+    },
+    "R24": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R24\", a=\"U15\", b=\"D4\", t=0.5, offset=0)"
+    },
+    "R25": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R25\", a=\"U15\", b=\"D5\", t=0.5, offset=0)"
+    },
+    "R26": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"R26\", parent=\"U14\", pad=\"9\", distance=1.5, role=\"feedback\")"
+    },
+    "R28": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R28\", parent=\"U8\", net=\"Net-(U8-VIN)\", pad=\"2\", distance=3.0)"
+    },
+    "R29": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R29\", a=\"U8\", b=\"U10\", t=0.5, offset=0)"
+    },
+    "R3": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R3\", a=\"U15\", b=\"U6\", t=0.5, offset=0)"
+    },
+    "R30": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"R30\", parent=\"U14\", pad=\"9\", distance=1.5, role=\"feedback\")"
+    },
+    "R31": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U16\", anchor=\"U16\", members=[\"U16\", \"C38\", \"C39\", \"C40\", \"C41\", \"C68\", \"C70\", \"C71\", \"R31\", \"R32\", \"R33\", \"R34\", \"R45\"], placement=Anchor(x=47.307, y=15.173), role=\"power_regulator\")"
+    },
+    "R32": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"R32\", parent=\"U16\", pad=\"9\", distance=1.5, role=\"feedback\")"
+    },
+    "R33": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"R33\", parent=\"U16\", pad=\"9\", distance=1.5, role=\"feedback\")"
+    },
+    "R34": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R34\", a=\"D2\", b=\"U7\", t=0.5, offset=0)"
+    },
+    "R35": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R35\", \"R40\", \"R48\"], parent=\"U15\", nets=[\"/MCU/PWM\", \"Net-(R39-Pad1)\", \"Net-(U15-PB8-BOOT0)\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R36": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R36\", a=\"U2\", b=\"U7\", t=0.5, offset=0)"
+    },
+    "R37": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R37\", parent=\"U2\", net=\"/OCXO/OCXO_OUT\", pad=\"1\", distance=3.0)"
+    },
+    "R38": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R38\", a=\"U13\", b=\"U15\", t=0.5, offset=0)"
+    },
+    "R4": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R4\", a=\"U5\", b=\"U7\", t=0.5, offset=0)"
+    },
+    "R40": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R35\", \"R40\", \"R48\"], parent=\"U15\", nets=[\"/MCU/PWM\", \"Net-(R39-Pad1)\", \"Net-(U15-PB8-BOOT0)\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R41": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "R42": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R42\", \"R46\"], parent=\"U13\", nets=[\"/EXT/10MHZ_OUT\", \"/EXT/PULSE_OUT\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R43": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U11\", anchor=\"U11\", members=[\"U11\", \"C27\", \"C28\", \"FB6\", \"R43\", \"R44\", \"USB1\"], placement=Anchor(x=19.233, y=26.682), role=\"ic\")"
+    },
+    "R44": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R44\", parent=\"U18\", net=\"/POWER/MUX_PR1\", pad=\"4\", distance=3.0)"
+    },
+    "R45": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R45\", parent=\"D8\", net=\"Net-(D8-A)\", pad=\"2\", distance=3.0)"
+    },
+    "R46": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R42\", \"R46\"], parent=\"U13\", nets=[\"/EXT/10MHZ_OUT\", \"/EXT/PULSE_OUT\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R48": {
+      "owner": "pullup_array",
+      "rank": 5,
+      "rule": "PullupArray(refs=[\"R35\", \"R40\", \"R48\"], parent=\"U15\", nets=[\"/MCU/PWM\", \"Net-(R39-Pad1)\", \"Net-(U15-PB8-BOOT0)\"], side=\"auto\", distance=4.0, spacing=2.0, role=\"pullup\")"
+    },
+    "R49": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R49\", a=\"U15\", b=\"U4\", t=0.5, offset=0)"
+    },
+    "R5": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R5\", a=\"U5\", b=\"U7\", t=0.5, offset=0)"
+    },
+    "R50": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R50\", parent=\"U4\", net=\"Net-(U4-EN)\", pad=\"2\", distance=3.0)"
+    },
+    "R51": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"R51\", parent=\"U4\", pad=\"1\", distance=1.5, role=\"feedback\")"
+    },
+    "R52": {
+      "owner": "nearpad",
+      "rank": 4,
+      "rule": "NearPad(\"R52\", parent=\"U4\", pad=\"1\", distance=1.5, role=\"feedback\")"
+    },
+    "R6": {
+      "owner": "series",
+      "rank": 3,
+      "rule": "Series(\"R6\", a=\"U15\", b=\"U2\", t=0.5, offset=0)"
+    },
+    "R7": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U2\", anchor=\"U2\", members=[\"U2\", \"C3\", \"C4\", \"FB3\", \"R36\", \"R37\", \"R4\", \"R7\"], placement=Anchor(x=62.298, y=16.449), role=\"ic\")"
+    },
+    "R8": {
+      "owner": "pullup",
+      "rank": 5,
+      "rule": "Pullup(\"R8\", parent=\"U6\", net=\"Net-(U6-VDD_USB)\", pad=\"7\", distance=3.0)"
+    },
+    "R9": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_MODULE_U6\", anchor=\"U6\", members=[\"U6\", \"C7\", \"C8\", \"FB8\", \"L1\", \"R8\", \"R9\", \"RF1\"], placement=Anchor(x=49.298, y=36.938), role=\"rf_module\")"
+    },
+    "RF1": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_CONNECTOR_RF1\", anchor=\"RF1\", members=[\"RF1\"], placement=Edge(edge=\"right\", y=22.750, inset=2.0, locked=True, edge_required=False, mechanical=True, access_side=\"right\", allow_body_outside_board=False), role=\"rf_connector\")"
+    },
+    "RF2": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_CONNECTOR_RF2\", anchor=\"RF2\", members=[\"RF2\"], placement=Edge(edge=\"top\", x=37.500, inset=2.0, locked=True, edge_required=False, mechanical=True, access_side=\"top\", allow_body_outside_board=False), role=\"rf_connector\")"
+    },
+    "U1": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U1\", anchor=\"U1\", members=[\"U1\", \"C10\", \"C12\", \"C9\", \"FB2\", \"JP1\", \"R10\"], placement=Anchor(x=19.029, y=12.731), role=\"ic\")"
+    },
+    "U10": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U10\", anchor=\"U10\", members=[\"U10\", \"C22\", \"C24\", \"C73\", \"L2\", \"R19\", \"U13\"], placement=Anchor(x=32.459, y=17.661), role=\"ic\")"
+    },
+    "U11": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U11\", anchor=\"U11\", members=[\"U11\", \"C27\", \"C28\", \"FB6\", \"R43\", \"R44\", \"USB1\"], placement=Anchor(x=19.233, y=26.682), role=\"ic\")"
+    },
+    "U13": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U10\", anchor=\"U10\", members=[\"U10\", \"C22\", \"C24\", \"C73\", \"L2\", \"R19\", \"U13\"], placement=Anchor(x=32.459, y=17.661), role=\"ic\")"
+    },
+    "U14": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U14\", anchor=\"U14\", members=[\"U14\", \"C25\", \"C34\", \"C35\", \"C69\", \"D1\", \"R30\"], placement=Anchor(x=10.525, y=38.360), role=\"power_regulator\")"
+    },
+    "U15": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U15\", anchor=\"U15\", members=[\"U15\", \"C13\", \"C14\", \"C15\", \"C26\", \"C32\", \"C33\", \"FB1\", \"R21\", \"R38\", \"R40\", \"R41\", \"R48\"], placement=Anchor(x=29.304, y=30.255), role=\"mcu\")"
+    },
+    "U16": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U16\", anchor=\"U16\", members=[\"U16\", \"C38\", \"C39\", \"C40\", \"C41\", \"C68\", \"C70\", \"C71\", \"R31\", \"R32\", \"R33\", \"R34\", \"R45\"], placement=Anchor(x=47.307, y=15.173), role=\"power_regulator\")"
+    },
+    "U2": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U2\", anchor=\"U2\", members=[\"U2\", \"C3\", \"C4\", \"FB3\", \"R36\", \"R37\", \"R4\", \"R7\"], placement=Anchor(x=62.298, y=16.449), role=\"ic\")"
+    },
+    "U3": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U3\", anchor=\"U3\", members=[\"U3\", \"C16\", \"R15\"], placement=Anchor(x=19.794, y=36.821), role=\"ic\")"
+    },
+    "U4": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"POWER_REGULATOR_U4\", anchor=\"U4\", members=[\"U4\", \"C74\", \"C75\", \"R50\", \"R51\", \"R52\"], placement=Anchor(x=38.690, y=48.525), role=\"power_regulator\")"
+    },
+    "U6": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"RF_MODULE_U6\", anchor=\"U6\", members=[\"U6\", \"C7\", \"C8\", \"FB8\", \"L1\", \"R8\", \"R9\", \"RF1\"], placement=Anchor(x=49.298, y=36.938), role=\"rf_module\")"
+    },
+    "U8": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U8\", anchor=\"U8\", members=[\"U8\", \"C11\", \"C56\", \"C57\", \"C58\", \"R28\", \"R29\"], placement=Anchor(x=59.874, y=23.609), role=\"ic\")"
+    },
+    "U9": {
+      "owner": "cluster",
+      "rank": 9,
+      "rule": "Cluster(\"IC_U9\", anchor=\"U9\", members=[\"U9\", \"C17\", \"C18\", \"C19\", \"C20\", \"C21\", \"FB7\", \"R17\", \"R18\"], placement=Anchor(x=25.012, y=46.175), role=\"ic\")"
+    },
+    "USB1": {
+      "owner": "edge_required_connector",
+      "rank": 1,
+      "rule": "Cluster(\"HIGH_SPEED_CONNECTOR_USB1\", anchor=\"USB1\", members=[\"USB1\"], placement=Edge(edge=\"left\", y=22.750, inset=2.0, rot=270, locked=True, edge_required=True, mechanical=True, access_side=\"left\", allow_body_outside_board=True), role=\"high_speed_connector\")"
+    }
+  },
+  "placement_quality_score": 91.5,
+  "plan_confidence": {
+    "level": "high",
+    "reasons": [
+      "19 Series() inference(s) were rejected as invalid"
+    ],
+    "score": 90
+  },
+  "power_islands": [
+    {
+      "feedback": [
+        "R26",
+        "R30"
+      ],
+      "inductor": null,
+      "input_caps": [
+        "C34"
+      ],
+      "name": "MAIN_3V3",
+      "output_caps": [
+        "C37"
+      ],
+      "regulator": "U14",
+      "source": "board.pln",
+      "switch_net": null
+    },
+    {
+      "feedback": [
+        "R32",
+        "R33"
+      ],
+      "inductor": null,
+      "input_caps": [
+        "C38"
+      ],
+      "name": "OCXO_3V3_OPTION",
+      "output_caps": [
+        "C41"
+      ],
+      "regulator": "U16",
+      "source": "board.pln",
+      "switch_net": null
+    },
+    {
+      "feedback": [
+        "R51",
+        "R52"
+      ],
+      "inductor": "L2",
+      "input_caps": [
+        "C72",
+        "C73"
+      ],
+      "name": "BOOST_5V2",
+      "output_caps": [
+        "C74",
+        "C75"
+      ],
+      "regulator": "U4",
+      "source": "board.pln",
+      "switch_net": "Net-(U4-SW)"
+    }
+  ],
+  "pullup_groups": [
+    {
+      "grouped": false,
+      "members": [
+        "R45"
+      ],
+      "owner": "D8",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": true,
+      "members": [
+        "R42",
+        "R46"
+      ],
+      "owner": "U13",
+      "primitive": "PullupArray"
+    },
+    {
+      "grouped": true,
+      "members": [
+        "R35",
+        "R40",
+        "R48"
+      ],
+      "owner": "U15",
+      "primitive": "PullupArray"
+    },
+    {
+      "grouped": false,
+      "members": [
+        "R44"
+      ],
+      "owner": "U18",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": false,
+      "members": [
+        "R37"
+      ],
+      "owner": "U2",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": false,
+      "members": [
+        "R50"
+      ],
+      "owner": "U4",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": false,
+      "members": [
+        "R8"
+      ],
+      "owner": "U6",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": false,
+      "members": [
+        "R22"
+      ],
+      "owner": "U7",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": false,
+      "members": [
+        "R28"
+      ],
+      "owner": "U8",
+      "primitive": "Pullup"
+    },
+    {
+      "grouped": true,
+      "members": [
+        "R11",
+        "R14"
+      ],
+      "owner": "USB1",
+      "primitive": "PullupArray"
+    }
+  ],
+  "series_components_validated": 14,
+  "simulation_triggers": [],
+  "single_member_clusters": 1,
+  "spacing_profile": {
+    "connector_to_component": 0.5,
+    "default": 0.23,
+    "ic_to_ic": 0.75,
+    "mechanical_to_component": 0.5,
+    "passive_to_ic": 0.23,
+    "passive_to_passive": 0.23
+  },
+  "unplaced_components": [
+    "D6",
+    "D9",
+    "F1",
+    "R1",
+    "R12",
+    "R13",
+    "R16",
+    "R20",
+    "R27",
+    "R39",
+    "R47",
+    "R53",
+    "TP1",
+    "TP2"
+  ],
+  "warnings": [
+    "no semantic aliases found in netlist; tried json: Expecting value: line 1 column 1 (char 0)",
+    "floorplan: distributed 2 connector(s) along left edge with 29.50 mm pitch",
+    "floorplan: distributed 2 connector(s) along right edge with 29.50 mm pitch",
+    "floorplan: distributed 2 connector(s) along bottom edge with 28.41 mm pitch",
+    "floorplan: weighted pin-to-pin wirelength 2560 -> 2027 mm (21% shorter)",
+    "WARNING: R1 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R1 -> B topology; rejecting Series() inference.",
+    "WARNING: R10 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R10 -> B topology; rejecting Series() inference.",
+    "WARNING: R12 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R12 -> B topology; rejecting Series() inference.",
+    "WARNING: R13 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R13 -> B topology; rejecting Series() inference.",
+    "WARNING: R15 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R15 -> B topology; rejecting Series() inference.",
+    "WARNING: R16 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R16 -> B topology; rejecting Series() inference.",
+    "WARNING: R17 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R17 -> B topology; rejecting Series() inference.",
+    "WARNING: R18 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R18 -> B topology; rejecting Series() inference.",
+    "WARNING: R19 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R19 -> B topology; rejecting Series() inference.",
+    "WARNING: R20 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R20 -> B topology; rejecting Series() inference.",
+    "WARNING: R27 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R27 -> B topology; rejecting Series() inference.",
+    "WARNING: R31 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R31 -> B topology; rejecting Series() inference.",
+    "WARNING: R39 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R39 -> B topology; rejecting Series() inference.",
+    "WARNING: R41 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R41 -> B topology; rejecting Series() inference.",
+    "WARNING: R43 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R43 -> B topology; rejecting Series() inference.",
+    "WARNING: R47 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R47 -> B topology; rejecting Series() inference.",
+    "WARNING: R53 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R53 -> B topology; rejecting Series() inference.",
+    "WARNING: R7 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R7 -> B topology; rejecting Series() inference.",
+    "WARNING: R9 looks like a two-pin series component, but the connectivity graph could not find a unique A -> R9 -> B topology; rejecting Series() inference.",
+    "Support components without generated placement rules require review: R1, R12, R13, R16, R20, R27, R39, R47, R53, TP1, TP2"
+  ]
+}

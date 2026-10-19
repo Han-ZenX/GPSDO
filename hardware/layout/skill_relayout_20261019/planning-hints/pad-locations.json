@@ -1,0 +1,9843 @@
+{
+  "C1": [
+    {
+      "abs_x": 112.915,
+      "abs_y": 73.46,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 112.915,
+      "abs_y": 74.42,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_VCC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C10": [
+    {
+      "abs_x": 154.34,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U1-VDD)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 155.89000000000001,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C11": [
+    {
+      "abs_x": 151.335,
+      "abs_y": 110.34,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 152.295,
+      "abs_y": 110.34,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U8-VIN)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C12": [
+    {
+      "abs_x": 152.835,
+      "abs_y": 96.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U1-VDD)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 153.795,
+      "abs_y": 96.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C13": [
+    {
+      "abs_x": 172.415,
+      "abs_y": 103.96,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 172.415,
+      "abs_y": 104.92,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C14": [
+    {
+      "abs_x": 162.115,
+      "abs_y": 107.75999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 162.115,
+      "abs_y": 108.72,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C15": [
+    {
+      "abs_x": 162.115,
+      "abs_y": 109.96,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 162.115,
+      "abs_y": 110.92,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C16": [
+    {
+      "abs_x": 142.435,
+      "abs_y": 94.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 143.39499999999998,
+      "abs_y": 94.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C17": [
+    {
+      "abs_x": 129.64,
+      "abs_y": 112.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U9-V+)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 131.19,
+      "abs_y": 112.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C18": [
+    {
+      "abs_x": 131.535,
+      "abs_y": 110.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U9-V+)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 132.49499999999998,
+      "abs_y": 110.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C19": [
+    {
+      "abs_x": 132.115,
+      "abs_y": 103.66499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/OCXO/VCTRL",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 132.115,
+      "abs_y": 105.215,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C2": [
+    {
+      "abs_x": 110.415,
+      "abs_y": 73.16499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 110.415,
+      "abs_y": 74.715,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_VCC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C20": [
+    {
+      "abs_x": 145.015,
+      "abs_y": 105.865,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U9-+IN)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 145.015,
+      "abs_y": 107.415,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C21": [
+    {
+      "abs_x": 142.23999999999998,
+      "abs_y": 112.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(C21-Pad1)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 143.79,
+      "abs_y": 112.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U9--IN)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C22": [
+    {
+      "abs_x": 150.415,
+      "abs_y": 117.46,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 150.415,
+      "abs_y": 118.42,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C23": [
+    {
+      "abs_x": 110.715,
+      "abs_y": 78.57945,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.86055,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "OCXO_VCC",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.50622,
+        2.376
+      ]
+    },
+    {
+      "abs_x": 110.715,
+      "abs_y": 82.30055,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.86055,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.50622,
+        2.376
+      ]
+    }
+  ],
+  "C24": [
+    {
+      "abs_x": 144.415,
+      "abs_y": 117.46,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "VREF",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 144.415,
+      "abs_y": 118.42,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C25": [
+    {
+      "abs_x": 121.64,
+      "abs_y": 117.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 123.19000000000001,
+      "abs_y": 117.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C26": [
+    {
+      "abs_x": 166.235,
+      "abs_y": 101.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VCTL",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 167.195,
+      "abs_y": 101.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C27": [
+    {
+      "abs_x": 117.935,
+      "abs_y": 106.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U11-V3)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 118.89500000000001,
+      "abs_y": 106.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C28": [
+    {
+      "abs_x": 117.64,
+      "abs_y": 107.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U11-V3)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 119.19000000000001,
+      "abs_y": 107.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C3": [
+    {
+      "abs_x": 130.215,
+      "abs_y": 103.76499899999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U2-1G)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 130.215,
+      "abs_y": 105.314999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C32": [
+    {
+      "abs_x": 164.735,
+      "abs_y": 112.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 165.695,
+      "abs_y": 112.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C33": [
+    {
+      "abs_x": 169.435,
+      "abs_y": 112.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 170.39499999999998,
+      "abs_y": 112.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C34": [
+    {
+      "abs_x": 126.715,
+      "abs_y": 113.99,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 126.715,
+      "abs_y": 115.89,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C35": [
+    {
+      "abs_x": 126.435,
+      "abs_y": 118.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/LDO_3V3_NR",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 127.39500000000001,
+      "abs_y": 118.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C36": [
+    {
+      "abs_x": 134.515,
+      "abs_y": 117.75999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 134.515,
+      "abs_y": 118.72,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/LDO_3V3_FB",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C37": [
+    {
+      "abs_x": 132.915,
+      "abs_y": 113.99,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 132.915,
+      "abs_y": 115.89,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C38": [
+    {
+      "abs_x": 115.315,
+      "abs_y": 123.99,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 115.315,
+      "abs_y": 125.89,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C39": [
+    {
+      "abs_x": 115.035,
+      "abs_y": 128.139999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/LDO_OCXO_NR",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 115.995,
+      "abs_y": 128.139999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C4": [
+    {
+      "abs_x": 127.93499999999999,
+      "abs_y": 103.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U2-1G)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 128.89499999999998,
+      "abs_y": 103.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C40": [
+    {
+      "abs_x": 123.115,
+      "abs_y": 127.76,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "3.3V_OCXO",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 123.115,
+      "abs_y": 128.72,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/LDO_OCXO_FB",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C41": [
+    {
+      "abs_x": 121.515,
+      "abs_y": 123.99,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "3.3V_OCXO",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 121.515,
+      "abs_y": 125.89,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C42": [
+    {
+      "abs_x": 168.935,
+      "abs_y": 101.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 169.89499999999998,
+      "abs_y": 101.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/NRST",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C43": [
+    {
+      "abs_x": 120.335,
+      "abs_y": 111.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 121.295,
+      "abs_y": 111.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C46": [
+    {
+      "abs_x": 155.435,
+      "abs_y": 123.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 156.39499999999998,
+      "abs_y": 123.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C47": [
+    {
+      "abs_x": 158.44,
+      "abs_y": 123.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 159.99,
+      "abs_y": 123.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C48": [
+    {
+      "abs_x": 152.935,
+      "abs_y": 129.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V2",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 153.89499999999998,
+      "abs_y": 129.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C49": [
+    {
+      "abs_x": 152.64,
+      "abs_y": 131.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V2",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 154.19,
+      "abs_y": 131.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C5": [
+    {
+      "abs_x": 125.63499999999999,
+      "abs_y": 68.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/OCXO/OCXO_MON_RF",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 126.595,
+      "abs_y": 68.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/OCXO/OCXO_MON",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C56": [
+    {
+      "abs_x": 147.815,
+      "abs_y": 108.065,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U8-VIN)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 147.815,
+      "abs_y": 109.61500000000001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C57": [
+    {
+      "abs_x": 156.215,
+      "abs_y": 102.26499899999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U8-TRIM/NR)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 156.215,
+      "abs_y": 103.814999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C58": [
+    {
+      "abs_x": 151.14,
+      "abs_y": 100.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U8-VOUT)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 152.69,
+      "abs_y": 100.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C6": [
+    {
+      "abs_x": 155.98994,
+      "abs_y": 88.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U6-VCC)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 157.53994,
+      "abs_y": 88.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C68": [
+    {
+      "abs_x": 115.215,
+      "abs_y": 113.66499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/EXT_5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 115.215,
+      "abs_y": 115.215,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C69": [
+    {
+      "abs_x": 117.14,
+      "abs_y": 112.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "VBUS",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 118.69000000000001,
+      "abs_y": 112.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C7": [
+    {
+      "abs_x": 159.38494,
+      "abs_y": 88.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U6-VCC)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 160.34493999999998,
+      "abs_y": 88.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C70": [
+    {
+      "abs_x": 120.415,
+      "abs_y": 113.96,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 120.415,
+      "abs_y": 114.92,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C71": [
+    {
+      "abs_x": 122.415,
+      "abs_y": 113.49,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 122.415,
+      "abs_y": 115.39,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C72": [
+    {
+      "abs_x": 141.64,
+      "abs_y": 121.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 143.19,
+      "abs_y": 121.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C73": [
+    {
+      "abs_x": 141.835,
+      "abs_y": 123.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.48,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    },
+    {
+      "abs_x": 142.795,
+      "abs_y": 123.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.48,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.56,
+        0.62
+      ]
+    }
+  ],
+  "C74": [
+    {
+      "abs_x": 138.36499999999998,
+      "abs_y": 127.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V2",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 136.465,
+      "abs_y": 127.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C75": [
+    {
+      "abs_x": 138.36499999999998,
+      "abs_y": 129.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.95,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V2",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    },
+    {
+      "abs_x": 136.465,
+      "abs_y": 129.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.95,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.0,
+        1.45
+      ]
+    }
+  ],
+  "C8": [
+    {
+      "abs_x": 155.98994,
+      "abs_y": 85.01,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U6-V_BCKP)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 157.53994,
+      "abs_y": 85.01,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "C9": [
+    {
+      "abs_x": 149.23999999999998,
+      "abs_y": 96.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U1-VREG)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 150.79,
+      "abs_y": 96.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.9,
+        0.95
+      ]
+    }
+  ],
+  "CN1": [
+    {
+      "abs_x": 110.215,
+      "abs_y": 118.189999,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -1.249999,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/+5V_IN",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.524,
+        1.5
+      ]
+    },
+    {
+      "abs_x": 110.215,
+      "abs_y": 115.690001,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 1.249999,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        1.5,
+        1.5
+      ]
+    }
+  ],
+  "D1": [
+    {
+      "abs_x": 127.6275,
+      "abs_y": 121.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 129.2025,
+      "abs_y": 121.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D1-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "D2": [
+    {
+      "abs_x": 116.12750000000001,
+      "abs_y": 131.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 117.7025,
+      "abs_y": 131.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D2-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "D3": [
+    {
+      "abs_x": 176.1275,
+      "abs_y": 114.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 177.7025,
+      "abs_y": 114.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D3-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "D4": [
+    {
+      "abs_x": 176.1275,
+      "abs_y": 118.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 177.7025,
+      "abs_y": 118.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D4-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "D5": [
+    {
+      "abs_x": 176.1275,
+      "abs_y": 122.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 177.7025,
+      "abs_y": 122.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D5-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "D6": [
+    {
+      "abs_x": 140.415,
+      "abs_y": 130.939999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.499999,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(J1-In)",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 140.415,
+      "abs_y": 129.940001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.499999,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.6,
+        0.6
+      ]
+    }
+  ],
+  "D8": [
+    {
+      "abs_x": 114.62750000000001,
+      "abs_y": 119.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 116.2025,
+      "abs_y": 119.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D8-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "D9": [
+    {
+      "abs_x": 164.415,
+      "abs_y": 130.939999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.499999,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(J4-In)",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        0.6,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 164.415,
+      "abs_y": 129.940001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.499999,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.6,
+        0.6
+      ]
+    }
+  ],
+  "F1": [
+    {
+      "abs_x": 110.97000000000001,
+      "abs_y": 110.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.445,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/+5V_IN",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.19,
+        1.728
+      ]
+    },
+    {
+      "abs_x": 113.86,
+      "abs_y": 110.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.445,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/EXT_5V",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.19,
+        1.728
+      ]
+    }
+  ],
+  "FB1": [
+    {
+      "abs_x": 163.6275,
+      "abs_y": 114.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 165.2025,
+      "abs_y": 114.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+3.3V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB2": [
+    {
+      "abs_x": 157.415,
+      "abs_y": 95.1525,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U1-VDD)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 157.415,
+      "abs_y": 96.72749999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+3.3V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB3": [
+    {
+      "abs_x": 126.3275,
+      "abs_y": 105.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U2-1G)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 127.90249999999999,
+      "abs_y": 105.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+3.3V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB4": [
+    {
+      "abs_x": 110.415,
+      "abs_y": 84.6525,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "OCXO_VCC",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 110.415,
+      "abs_y": 86.22749999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_VCC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB5": [
+    {
+      "abs_x": 112.915,
+      "abs_y": 84.6525,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "OCXO_VCC",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 112.915,
+      "abs_y": 86.22749999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_VCC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB6": [
+    {
+      "abs_x": 122.115,
+      "abs_y": 106.3525,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U11-V3)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 122.115,
+      "abs_y": 107.9275,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+3.3V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB7": [
+    {
+      "abs_x": 135.0275,
+      "abs_y": 113.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U9-V+)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 136.6025,
+      "abs_y": 113.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+5V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "FB8": [
+    {
+      "abs_x": 155.97744,
+      "abs_y": 90.51,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.7875,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 157.55244,
+      "abs_y": 90.51,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.7875,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U6-VCC)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.875,
+        0.95
+      ]
+    }
+  ],
+  "H1": [
+    {
+      "abs_x": 110.415,
+      "abs_y": 67.44,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "circle",
+      "size": [
+        6.4,
+        6.4
+      ]
+    }
+  ],
+  "H2": [
+    {
+      "abs_x": 177.415,
+      "abs_y": 67.44,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "circle",
+      "size": [
+        6.4,
+        6.4
+      ]
+    }
+  ],
+  "H3": [
+    {
+      "abs_x": 110.415,
+      "abs_y": 134.44,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "circle",
+      "size": [
+        6.4,
+        6.4
+      ]
+    }
+  ],
+  "H4": [
+    {
+      "abs_x": 177.415,
+      "abs_y": 134.44,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "circle",
+      "size": [
+        6.4,
+        6.4
+      ]
+    }
+  ],
+  "J1": [
+    {
+      "abs_x": 140.415,
+      "abs_y": 135.38,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(J1-In)",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 136.165,
+      "abs_y": 135.38,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 136.165,
+      "abs_y": 135.38,
+      "layers": [
+        "B.Cu",
+        "B.Mask",
+        "B.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 144.665,
+      "abs_y": 135.38,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 144.665,
+      "abs_y": 135.38,
+      "layers": [
+        "B.Cu",
+        "B.Mask",
+        "B.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    }
+  ],
+  "J3": [
+    {
+      "abs_x": 176.415,
+      "abs_y": 91.44,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/NRST",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.7,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 176.415,
+      "abs_y": 93.98,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 2.54,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "circle",
+      "size": [
+        1.7,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 176.415,
+      "abs_y": 96.52,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 5.08,
+      "name": "3",
+      "net": "/MCU/SWCLK",
+      "number": "3",
+      "shape": "circle",
+      "size": [
+        1.7,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 176.415,
+      "abs_y": 99.06,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 7.62,
+      "name": "4",
+      "net": "/MCU/SWDIO",
+      "number": "4",
+      "shape": "circle",
+      "size": [
+        1.7,
+        1.7
+      ]
+    }
+  ],
+  "J4": [
+    {
+      "abs_x": 164.415,
+      "abs_y": 135.38,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(J4-In)",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 160.165,
+      "abs_y": 135.38,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 160.165,
+      "abs_y": 135.38,
+      "layers": [
+        "B.Cu",
+        "B.Mask",
+        "B.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 168.665,
+      "abs_y": 135.38,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    },
+    {
+      "abs_x": 168.665,
+      "abs_y": 135.38,
+      "layers": [
+        "B.Cu",
+        "B.Mask",
+        "B.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 4.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.5,
+        5.08
+      ]
+    }
+  ],
+  "JP1": [
+    {
+      "abs_x": 149.765,
+      "abs_y": 86.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "local_x": -0.65,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/10MHZ_TDC",
+      "number": "1",
+      "shape": "custom",
+      "size": [
+        1.0,
+        0.5
+      ]
+    },
+    {
+      "abs_x": 151.065,
+      "abs_y": 86.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "local_x": 0.65,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(JP1-B)",
+      "number": "2",
+      "shape": "custom",
+      "size": [
+        1.0,
+        0.5
+      ]
+    }
+  ],
+  "L1": [
+    {
+      "abs_x": 175.26494,
+      "abs_y": 76.125,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.485,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(RF1-SIG)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.59,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 175.26494,
+      "abs_y": 77.095,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.485,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/GNSS/VCC_RF",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.59,
+        0.64
+      ]
+    }
+  ],
+  "L2": [
+    {
+      "abs_x": 137.215,
+      "abs_y": 123.715,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.725,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.55,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 137.215,
+      "abs_y": 125.16499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.725,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U4-SW)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.55,
+        1.6
+      ]
+    }
+  ],
+  "R1": [
+    {
+      "abs_x": 174.75494,
+      "abs_y": 84.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U6-TIMEPULSE)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 175.77494,
+      "abs_y": 84.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/GNSS/PULSE_GNSS",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R10": [
+    {
+      "abs_x": 146.915,
+      "abs_y": 95.72999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U1-VDD)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 146.915,
+      "abs_y": 96.75,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U1-INTB)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R11": [
+    {
+      "abs_x": 114.715,
+      "abs_y": 101.42999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 114.715,
+      "abs_y": 102.45,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(USB1-CC1)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R12": [
+    {
+      "abs_x": 141.10500000000002,
+      "abs_y": 96.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 142.125,
+      "abs_y": 96.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/TMP_SDA",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R13": [
+    {
+      "abs_x": 127.90499999999999,
+      "abs_y": 68.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/OCXO/OCXO_MON",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 128.92499999999998,
+      "abs_y": 68.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_RF",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R14": [
+    {
+      "abs_x": 115.215,
+      "abs_y": 106.92999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 115.215,
+      "abs_y": 107.95,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(USB1-CC2)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R15": [
+    {
+      "abs_x": 142.405,
+      "abs_y": 98.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 143.42499999999998,
+      "abs_y": 98.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U3-ALERT)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R16": [
+    {
+      "abs_x": 143.60500000000002,
+      "abs_y": 96.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 144.625,
+      "abs_y": 96.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/TMP_SCL",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R17": [
+    {
+      "abs_x": 132.315,
+      "abs_y": 106.91499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U9--IN)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 132.315,
+      "abs_y": 108.565,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/OCXO/VCTRL",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R18": [
+    {
+      "abs_x": 142.715,
+      "abs_y": 105.815,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(C21-Pad1)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 142.715,
+      "abs_y": 107.465,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U9-+IN)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R19": [
+    {
+      "abs_x": 145.615,
+      "abs_y": 109.315,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U10-B)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 145.615,
+      "abs_y": 110.965,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(C21-Pad1)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R2": [
+    {
+      "abs_x": 156.25494,
+      "abs_y": 81.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/GNSS/GNSS_UART_TXD",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 157.27494,
+      "abs_y": 81.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U6-TXD/SPIMISO)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R20": [
+    {
+      "abs_x": 149.915,
+      "abs_y": 129.6525,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.9125,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U13-OA)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    },
+    {
+      "abs_x": 149.915,
+      "abs_y": 127.82750000000001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.9125,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(J1-In)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    }
+  ],
+  "R21": [
+    {
+      "abs_x": 172.405,
+      "abs_y": 114.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(D3-A)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 173.42499999999998,
+      "abs_y": 114.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/LED_GREEN",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R22": [
+    {
+      "abs_x": 109.50250000000001,
+      "abs_y": 90.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.9125,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "OCXO_VCC",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    },
+    {
+      "abs_x": 111.3275,
+      "abs_y": 90.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.9125,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+5V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    }
+  ],
+  "R23": [
+    {
+      "abs_x": 109.50250000000001,
+      "abs_y": 93.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.9125,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "3.3V_OCXO",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    },
+    {
+      "abs_x": 111.3275,
+      "abs_y": 93.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.9125,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_VCC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    }
+  ],
+  "R24": [
+    {
+      "abs_x": 172.405,
+      "abs_y": 118.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(D4-A)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 173.42499999999998,
+      "abs_y": 118.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/LED_YELLOW",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R25": [
+    {
+      "abs_x": 172.405,
+      "abs_y": 122.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(D5-A)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 173.42499999999998,
+      "abs_y": 122.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/LED_RED",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R26": [
+    {
+      "abs_x": 132.10500000000002,
+      "abs_y": 117.539999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 133.125,
+      "abs_y": 117.539999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/LDO_3V3_FB",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R27": [
+    {
+      "abs_x": 129.305,
+      "abs_y": 118.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 130.325,
+      "abs_y": 118.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U14-PG)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R28": [
+    {
+      "abs_x": 147.59,
+      "abs_y": 112.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U8-VIN)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 149.23999999999998,
+      "abs_y": 112.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+5V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R29": [
+    {
+      "abs_x": 156.215,
+      "abs_y": 105.815,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U8-VOUT)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 156.215,
+      "abs_y": 107.465,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "VREF",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R3": [
+    {
+      "abs_x": 156.25494,
+      "abs_y": 82.91,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U6-RXD/SPIMOSI)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 157.27494,
+      "abs_y": 82.91,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/GNSS/GNSS_UART_RXD",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R30": [
+    {
+      "abs_x": 132.10500000000002,
+      "abs_y": 119.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/LDO_3V3_FB",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 133.125,
+      "abs_y": 119.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R31": [
+    {
+      "abs_x": 117.905,
+      "abs_y": 128.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "3.3V_OCXO",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 118.92500000000001,
+      "abs_y": 128.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/LDO_OCXO_PG",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R32": [
+    {
+      "abs_x": 120.705,
+      "abs_y": 127.539999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "3.3V_OCXO",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 121.72500000000001,
+      "abs_y": 127.539999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/LDO_OCXO_FB",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R33": [
+    {
+      "abs_x": 120.705,
+      "abs_y": 129.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/LDO_OCXO_FB",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 121.72500000000001,
+      "abs_y": 129.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R34": [
+    {
+      "abs_x": 119.60499999999999,
+      "abs_y": 131.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(D2-A)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 120.625,
+      "abs_y": 131.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_VCC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R35": [
+    {
+      "abs_x": 149.905001,
+      "abs_y": 115.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.509999,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/PWM",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 150.92499899999999,
+      "abs_y": 115.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.509999,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R36": [
+    {
+      "abs_x": 123.59,
+      "abs_y": 98.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/OCXO/OCXO_OUT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 125.24000000000001,
+      "abs_y": 98.14,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_RF",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R37": [
+    {
+      "abs_x": 123.905,
+      "abs_y": 100.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/OCXO/OCXO_OUT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 124.92500000000001,
+      "abs_y": 100.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R38": [
+    {
+      "abs_x": 161.60500000000002,
+      "abs_y": 112.74,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/EXT/PULSE_OUT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 162.625,
+      "abs_y": 112.74,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U15-PB10)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R39": [
+    {
+      "abs_x": 163.915,
+      "abs_y": 98.430001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.509999,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(R39-Pad1)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 163.915,
+      "abs_y": 99.44999899999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.509999,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/OCXO/VCTRL",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R4": [
+    {
+      "abs_x": 126.905,
+      "abs_y": 98.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U5-RF)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 127.92500000000001,
+      "abs_y": 98.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "OCXO_RF",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R40": [
+    {
+      "abs_x": 163.405001,
+      "abs_y": 101.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.509999,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 164.42499899999999,
+      "abs_y": 101.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.509999,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(R39-Pad1)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R41": [
+    {
+      "abs_x": 166.715,
+      "abs_y": 98.42999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/VCTL",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 166.715,
+      "abs_y": 99.45,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(R39-Pad1)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R42": [
+    {
+      "abs_x": 149.915,
+      "abs_y": 123.92999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/EXT/10MHZ_OUT",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 149.915,
+      "abs_y": 124.95,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R43": [
+    {
+      "abs_x": 115.405,
+      "abs_y": 117.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/EXT_5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 116.42500000000001,
+      "abs_y": 117.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/MUX_PR1",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R44": [
+    {
+      "abs_x": 117.905,
+      "abs_y": 117.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/MUX_PR1",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 118.92500000000001,
+      "abs_y": 117.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R45": [
+    {
+      "abs_x": 117.905,
+      "abs_y": 119.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 118.92500000000001,
+      "abs_y": 119.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D8-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R46": [
+    {
+      "abs_x": 150.405,
+      "abs_y": 122.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 151.42499999999998,
+      "abs_y": 122.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/EXT/PULSE_OUT",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R47": [
+    {
+      "abs_x": 156.915,
+      "abs_y": 129.6525,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.9125,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U13-OB)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    },
+    {
+      "abs_x": 156.915,
+      "abs_y": 127.82750000000001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.9125,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(J4-In)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    }
+  ],
+  "R48": [
+    {
+      "abs_x": 172.405,
+      "abs_y": 107.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U15-PB8-BOOT0)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 173.42499999999998,
+      "abs_y": 107.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R49": [
+    {
+      "abs_x": 145.115,
+      "abs_y": 121.52999899999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/MCU/BOOST_EN",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 145.115,
+      "abs_y": 122.549999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U4-EN)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R5": [
+    {
+      "abs_x": 110.50250000000001,
+      "abs_y": 88.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.9125,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "OCXO_VCC",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    },
+    {
+      "abs_x": 112.3275,
+      "abs_y": 88.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.9125,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U5-VCC)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        1.025,
+        1.4
+      ]
+    }
+  ],
+  "R50": [
+    {
+      "abs_x": 145.115,
+      "abs_y": 123.92999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U4-EN)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 145.115,
+      "abs_y": 124.95,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R51": [
+    {
+      "abs_x": 142.10500000000002,
+      "abs_y": 125.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+5V2",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 143.125,
+      "abs_y": 125.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/POWER/BOOST_FB",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R52": [
+    {
+      "abs_x": 142.10500000000002,
+      "abs_y": 127.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "/POWER/BOOST_FB",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 143.125,
+      "abs_y": 127.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R53": [
+    {
+      "abs_x": 131.10500000000002,
+      "abs_y": 121.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 132.125,
+      "abs_y": 121.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(D1-A)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R6": [
+    {
+      "abs_x": 133.99,
+      "abs_y": 99.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U2-Y1)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 135.64,
+      "abs_y": 99.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/10MHZ_MCU",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R7": [
+    {
+      "abs_x": 133.99,
+      "abs_y": 101.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.825,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U2-Y2)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    },
+    {
+      "abs_x": 135.64,
+      "abs_y": 101.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.825,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "/MCU/10MHZ_TDC",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.8,
+        0.95
+      ]
+    }
+  ],
+  "R8": [
+    {
+      "abs_x": 174.75494,
+      "abs_y": 79.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 175.77494,
+      "abs_y": 79.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "Net-(U6-VDD_USB)",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "R9": [
+    {
+      "abs_x": 157.45494000000002,
+      "abs_y": 86.61,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.51,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "Net-(U6-V_BCKP)",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    },
+    {
+      "abs_x": 158.47494,
+      "abs_y": 86.61,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.51,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "+3.3V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.54,
+        0.64
+      ]
+    }
+  ],
+  "RF1": [
+    {
+      "abs_x": 174.84,
+      "abs_y": 73.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 1.42494,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.05,
+        1.0
+      ]
+    },
+    {
+      "abs_x": 176.26494,
+      "abs_y": 71.61,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.5,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        2.2,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 176.26494,
+      "abs_y": 74.61,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.5,
+      "local_y": 0.0,
+      "name": "3",
+      "net": "GND",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        2.2,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 177.68988,
+      "abs_y": 73.11,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -1.42494,
+      "name": "4",
+      "net": "Net-(RF1-SIG)",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        1.05,
+        1.0
+      ]
+    }
+  ],
+  "RF2": [
+    {
+      "abs_x": 122.915,
+      "abs_y": 65.61505899999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 1.42494,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.05,
+        1.0
+      ]
+    },
+    {
+      "abs_x": 124.415,
+      "abs_y": 67.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.5,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        2.2,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 121.415,
+      "abs_y": 67.039999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.5,
+      "local_y": 0.0,
+      "name": "3",
+      "net": "GND",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        2.2,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 122.915,
+      "abs_y": 68.464939,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -1.42494,
+      "name": "4",
+      "net": "/OCXO/OCXO_MON_RF",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        1.05,
+        1.0
+      ]
+    }
+  ],
+  "TP1": [
+    {
+      "abs_x": 108.415,
+      "abs_y": 87.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "OCXO_VCC",
+      "number": "1",
+      "shape": "circle",
+      "size": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "TP2": [
+    {
+      "abs_x": 113.415,
+      "abs_y": 91.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "circle",
+      "size": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "U1": [
+    {
+      "abs_x": 152.36499999999998,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.95,
+      "local_y": 2.8,
+      "name": "1",
+      "net": "/MCU/TDC_ENABLE",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 151.715,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.3,
+      "local_y": 2.8,
+      "name": "2",
+      "net": "unconnected-(U1-TRIGG-Pad2)",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 151.065,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.65,
+      "local_y": 2.8,
+      "name": "3",
+      "net": "/GNSS/PULSE_GNSS",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 150.415,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 2.8,
+      "name": "4",
+      "net": "Net-(JP1-B)",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 149.765,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.65,
+      "local_y": 2.8,
+      "name": "5",
+      "net": "/MCU/10MHZ_TDC",
+      "number": "5",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 149.11499999999998,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.3,
+      "local_y": 2.8,
+      "name": "6",
+      "net": "unconnected-(U1-N.C.-Pad6)",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 148.465,
+      "abs_y": 89.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.95,
+      "local_y": 2.8,
+      "name": "7",
+      "net": "GND",
+      "number": "7",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 148.465,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.95,
+      "local_y": -2.8,
+      "name": "8",
+      "net": "Net-(U1-INTB)",
+      "number": "8",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 149.11499999999998,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.3,
+      "local_y": -2.8,
+      "name": "9",
+      "net": "/MCU/TDC_SPI1_MISO",
+      "number": "9",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 149.765,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.65,
+      "local_y": -2.8,
+      "name": "10",
+      "net": "/MCU/TDC_SPI1_MOSI",
+      "number": "10",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 150.415,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -2.8,
+      "name": "11",
+      "net": "/MCU/TDC_SPI1_NSS",
+      "number": "11",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 151.065,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.65,
+      "local_y": -2.8,
+      "name": "12",
+      "net": "/MCU/TDC_SPI1_SCK",
+      "number": "12",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 151.715,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.3,
+      "local_y": -2.8,
+      "name": "13",
+      "net": "Net-(U1-VREG)",
+      "number": "13",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    },
+    {
+      "abs_x": 152.36499999999998,
+      "abs_y": 95.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.95,
+      "local_y": -2.8,
+      "name": "14",
+      "net": "Net-(U1-VDD)",
+      "number": "14",
+      "shape": "rect",
+      "size": [
+        0.4,
+        1.7
+      ]
+    }
+  ],
+  "U10": [
+    {
+      "abs_x": 148.765,
+      "abs_y": 117.88996,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.35,
+      "local_y": 0.94996,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.1,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 148.765,
+      "abs_y": 116.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.35,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.1,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 148.765,
+      "abs_y": 115.99004,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.35,
+      "local_y": -0.94996,
+      "name": "3",
+      "net": "/MCU/PWM",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        1.1,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 146.065,
+      "abs_y": 115.99004,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.35,
+      "local_y": -0.94996,
+      "name": "4",
+      "net": "Net-(U10-B)",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        1.1,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 146.065,
+      "abs_y": 116.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.35,
+      "local_y": 0.0,
+      "name": "5",
+      "net": "+3.3V",
+      "number": "5",
+      "shape": "rect",
+      "size": [
+        1.1,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 146.065,
+      "abs_y": 117.88996,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.35,
+      "local_y": 0.94996,
+      "name": "6",
+      "net": "VREF",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        1.1,
+        0.6
+      ]
+    }
+  ],
+  "U11": [
+    {
+      "abs_x": 116.305,
+      "abs_y": 102.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.0,
+      "local_y": 2.11,
+      "name": "1",
+      "net": "/MCU/USB_D+",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 116.305,
+      "abs_y": 102.940128,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.499872,
+      "local_y": 2.11,
+      "name": "2",
+      "net": "/MCU/USB_D-",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 116.305,
+      "abs_y": 103.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 2.11,
+      "name": "3",
+      "net": "GND",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 116.305,
+      "abs_y": 103.94012599999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.500126,
+      "local_y": 2.11,
+      "name": "4",
+      "net": "unconnected-(U11-RTS#-Pad4)",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 116.305,
+      "abs_y": 104.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.0,
+      "local_y": 2.11,
+      "name": "5",
+      "net": "unconnected-(U11-CTS#-Pad5)",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 120.525,
+      "abs_y": 104.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.0,
+      "local_y": -2.11,
+      "name": "6",
+      "net": "unconnected-(U11-TNOW-Pad6)",
+      "number": "6",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 120.525,
+      "abs_y": 103.94012599999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.500126,
+      "local_y": -2.11,
+      "name": "7",
+      "net": "Net-(U11-V3)",
+      "number": "7",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 120.525,
+      "abs_y": 103.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -2.11,
+      "name": "8",
+      "net": "/MCU/USART1_RX",
+      "number": "8",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 120.525,
+      "abs_y": 102.940128,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.499872,
+      "local_y": -2.11,
+      "name": "9",
+      "net": "/MCU/USART1_TX",
+      "number": "9",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    },
+    {
+      "abs_x": 120.525,
+      "abs_y": 102.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.0,
+      "local_y": -2.11,
+      "name": "10",
+      "net": "Net-(U11-V3)",
+      "number": "10",
+      "shape": "oval",
+      "size": [
+        0.28,
+        1.62
+      ]
+    }
+  ],
+  "U13": [
+    {
+      "abs_x": 152.664999,
+      "abs_y": 128.34754,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.90754,
+      "local_y": -0.750001,
+      "name": "1",
+      "net": "+3.3V",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 153.165,
+      "abs_y": 128.34754,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.90754,
+      "local_y": -0.25,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 153.665,
+      "abs_y": 128.34754,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.90754,
+      "local_y": 0.25,
+      "name": "3",
+      "net": "GND",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 154.165001,
+      "abs_y": 128.34754,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.90754,
+      "local_y": 0.750001,
+      "name": "4",
+      "net": "/EXT/PULSE_OUT",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 155.32254,
+      "abs_y": 127.190001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.750001,
+      "local_y": 1.90754,
+      "name": "5",
+      "net": "/EXT/10MHZ_OUT",
+      "number": "5",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 155.32254,
+      "abs_y": 126.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.25,
+      "local_y": 1.90754,
+      "name": "6",
+      "net": "unconnected-(U13-NC-Pad6)",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 155.32254,
+      "abs_y": 126.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.25,
+      "local_y": 1.90754,
+      "name": "7",
+      "net": "unconnected-(U13-NC-Pad7)",
+      "number": "7",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 155.32254,
+      "abs_y": 125.689999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.750001,
+      "local_y": 1.90754,
+      "name": "8",
+      "net": "unconnected-(U13-NC-Pad8)",
+      "number": "8",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 154.165001,
+      "abs_y": 124.53246,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.90754,
+      "local_y": 0.750001,
+      "name": "9",
+      "net": "Net-(U13-OA)",
+      "number": "9",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 153.665,
+      "abs_y": 124.53246,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.90754,
+      "local_y": 0.25,
+      "name": "10",
+      "net": "+5V2",
+      "number": "10",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 153.165,
+      "abs_y": 124.53246,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.90754,
+      "local_y": -0.25,
+      "name": "11",
+      "net": "GND",
+      "number": "11",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 152.664999,
+      "abs_y": 124.53246,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.90754,
+      "local_y": -0.750001,
+      "name": "12",
+      "net": "Net-(U13-OB)",
+      "number": "12",
+      "shape": "rect",
+      "size": [
+        0.665,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 151.50745999999998,
+      "abs_y": 125.689999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.750001,
+      "local_y": -1.90754,
+      "name": "13",
+      "net": "unconnected-(U13-NC-Pad13)",
+      "number": "13",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 151.50745999999998,
+      "abs_y": 126.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.25,
+      "local_y": -1.90754,
+      "name": "14",
+      "net": "unconnected-(U13-NC-Pad14)",
+      "number": "14",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 151.50745999999998,
+      "abs_y": 126.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.25,
+      "local_y": -1.90754,
+      "name": "15",
+      "net": "unconnected-(U13-NC-Pad15)",
+      "number": "15",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 151.50745999999998,
+      "abs_y": 127.190001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.750001,
+      "local_y": -1.90754,
+      "name": "16",
+      "net": "unconnected-(U13-NC-Pad16)",
+      "number": "16",
+      "shape": "rect",
+      "size": [
+        0.28,
+        0.665
+      ]
+    },
+    {
+      "abs_x": 153.415,
+      "abs_y": 126.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "17",
+      "net": "GND",
+      "number": "17",
+      "shape": "rect",
+      "size": [
+        2.45,
+        2.45
+      ]
+    }
+  ],
+  "U14": [
+    {
+      "abs_x": 128.89,
+      "abs_y": 114.789,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.925,
+      "local_y": -1.151,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 129.04,
+      "abs_y": 115.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": -0.5,
+      "name": "2",
+      "net": "+5V",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.25,
+        1.05
+      ]
+    },
+    {
+      "abs_x": 128.815,
+      "abs_y": 115.93987299999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.0,
+      "local_y": -0.000127,
+      "name": "3",
+      "net": "+5V",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 128.815,
+      "abs_y": 116.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.0,
+      "local_y": 0.5,
+      "name": "4",
+      "net": "/POWER/LDO_3V3_NR",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 128.89,
+      "abs_y": 117.091,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.925,
+      "local_y": 1.151,
+      "name": "5",
+      "net": "GND",
+      "number": "5",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 129.815,
+      "abs_y": 116.978479,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 1.038479,
+      "name": "6",
+      "net": "GND",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 130.74,
+      "abs_y": 117.091,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.925,
+      "local_y": 1.151,
+      "name": "7",
+      "net": "GND",
+      "number": "7",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 130.815,
+      "abs_y": 116.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.0,
+      "local_y": 0.5,
+      "name": "8",
+      "net": "Net-(U14-PG)",
+      "number": "8",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 130.815,
+      "abs_y": 115.93987299999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.0,
+      "local_y": -0.000127,
+      "name": "9",
+      "net": "/POWER/LDO_3V3_FB",
+      "number": "9",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 130.59,
+      "abs_y": 115.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": -0.5,
+      "name": "10",
+      "net": "+3.3V",
+      "number": "10",
+      "shape": "rect",
+      "size": [
+        0.25,
+        1.05
+      ]
+    },
+    {
+      "abs_x": 130.74,
+      "abs_y": 114.789,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.925,
+      "local_y": -1.151,
+      "name": "11",
+      "net": "+3.3V",
+      "number": "11",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 129.815,
+      "abs_y": 114.801445,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -1.138555,
+      "name": "12",
+      "net": "GND",
+      "number": "12",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    }
+  ],
+  "U15": [
+    {
+      "abs_x": 170.165,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -2.75,
+      "local_y": 3.47472,
+      "name": "1",
+      "net": "/MCU/VBAT",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 169.665,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -2.25,
+      "local_y": 3.47472,
+      "name": "2",
+      "net": "unconnected-(U15-PC13-Pad2)",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 169.16505999999998,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.75006,
+      "local_y": 3.47472,
+      "name": "3",
+      "net": "unconnected-(U15-PC14-OSC32_IN-Pad3)",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 168.665,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.25,
+      "local_y": 3.47472,
+      "name": "4",
+      "net": "unconnected-(U15-PC15-OSC32_OUT-Pad4)",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 168.165,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.75,
+      "local_y": 3.47472,
+      "name": "5",
+      "net": "/MCU/10MHZ_MCU",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 167.665,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.25,
+      "local_y": 3.47472,
+      "name": "6",
+      "net": "unconnected-(U15-PF1-OSC_OUT-Pad6)",
+      "number": "6",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 167.165,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.25,
+      "local_y": 3.47472,
+      "name": "7",
+      "net": "/MCU/NRST",
+      "number": "7",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 166.665,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.75,
+      "local_y": 3.47472,
+      "name": "8",
+      "net": "unconnected-(U15-PA0-Pad8)",
+      "number": "8",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 166.165,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.25,
+      "local_y": 3.47472,
+      "name": "9",
+      "net": "/MCU/VCTL",
+      "number": "9",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 165.66494,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.75006,
+      "local_y": 3.47472,
+      "name": "10",
+      "net": "/GNSS/GNSS_UART_RXD",
+      "number": "10",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 165.165,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 2.25,
+      "local_y": 3.47472,
+      "name": "11",
+      "net": "/GNSS/GNSS_UART_TXD",
+      "number": "11",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 164.665,
+      "abs_y": 103.96527999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 2.75,
+      "local_y": 3.47472,
+      "name": "12",
+      "net": "/MCU/TDC_SPI1_NSS",
+      "number": "12",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 104.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": 2.75,
+      "name": "13",
+      "net": "/MCU/TDC_SPI1_SCK",
+      "number": "13",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 105.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": 2.25,
+      "name": "14",
+      "net": "/MCU/TDC_SPI1_MISO",
+      "number": "14",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 105.68993999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": 1.75006,
+      "name": "15",
+      "net": "/MCU/TDC_SPI1_MOSI",
+      "number": "15",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 106.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": 1.25,
+      "name": "16",
+      "net": "unconnected-(U15-PC4-Pad16)",
+      "number": "16",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 106.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": 0.75,
+      "name": "17",
+      "net": "/MCU/BOOST_EN",
+      "number": "17",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 107.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": 0.25,
+      "name": "18",
+      "net": "unconnected-(U15-PB1-Pad18)",
+      "number": "18",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 107.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": -0.25,
+      "name": "19",
+      "net": "unconnected-(U15-PB2-Pad19)",
+      "number": "19",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 108.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": -0.75,
+      "name": "20",
+      "net": "/MCU/VBAT",
+      "number": "20",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 108.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": -1.25,
+      "name": "21",
+      "net": "/MCU/VBAT",
+      "number": "21",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 109.19006,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": -1.75006,
+      "name": "22",
+      "net": "Net-(U15-PB10)",
+      "number": "22",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 109.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": -2.25,
+      "name": "23",
+      "net": "/MCU/VBAT",
+      "number": "23",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 163.94028,
+      "abs_y": 110.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.47472,
+      "local_y": -2.75,
+      "name": "24",
+      "net": "/GNSS/PULSE_GNSS",
+      "number": "24",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 164.665,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 2.75,
+      "local_y": -3.47472,
+      "name": "25",
+      "net": "unconnected-(U15-PB12-Pad25)",
+      "number": "25",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 165.165,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 2.25,
+      "local_y": -3.47472,
+      "name": "26",
+      "net": "unconnected-(U15-PB13-Pad26)",
+      "number": "26",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 165.66494,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.75006,
+      "local_y": -3.47472,
+      "name": "27",
+      "net": "unconnected-(U15-PB14-Pad27)",
+      "number": "27",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 166.165,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.25,
+      "local_y": -3.47472,
+      "name": "28",
+      "net": "unconnected-(U15-PB15-Pad28)",
+      "number": "28",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 166.665,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.75,
+      "local_y": -3.47472,
+      "name": "29",
+      "net": "unconnected-(U15-PC6-Pad29)",
+      "number": "29",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 167.165,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.25,
+      "local_y": -3.47472,
+      "name": "30",
+      "net": "/MCU/TDC_ENABLE",
+      "number": "30",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 167.665,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.25,
+      "local_y": -3.47472,
+      "name": "31",
+      "net": "/MCU/USART1_TX",
+      "number": "31",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 168.165,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.75,
+      "local_y": -3.47472,
+      "name": "32",
+      "net": "/MCU/USART1_RX",
+      "number": "32",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 168.665,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.25,
+      "local_y": -3.47472,
+      "name": "33",
+      "net": "unconnected-(U15-PA11-Pad33)",
+      "number": "33",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 169.16505999999998,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.75006,
+      "local_y": -3.47472,
+      "name": "34",
+      "net": "/MCU/PWM",
+      "number": "34",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 169.665,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -2.25,
+      "local_y": -3.47472,
+      "name": "35",
+      "net": "/MCU/VBAT",
+      "number": "35",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 170.165,
+      "abs_y": 110.91472,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -2.75,
+      "local_y": -3.47472,
+      "name": "36",
+      "net": "/MCU/SWDIO",
+      "number": "36",
+      "shape": "oval",
+      "size": [
+        0.28,
+        0.85
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 110.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": -2.75,
+      "name": "37",
+      "net": "/MCU/SWCLK",
+      "number": "37",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 109.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": -2.25,
+      "name": "38",
+      "net": "/MCU/TMP_SCL",
+      "number": "38",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 109.19006,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": -1.75006,
+      "name": "39",
+      "net": "/MCU/LED_GREEN",
+      "number": "39",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 108.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": -1.25,
+      "name": "40",
+      "net": "/MCU/LED_YELLOW",
+      "number": "40",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 108.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": -0.75,
+      "name": "41",
+      "net": "/MCU/LED_RED",
+      "number": "41",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 107.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": -0.25,
+      "name": "42",
+      "net": "unconnected-(U15-PB4-Pad42)",
+      "number": "42",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 107.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": 0.25,
+      "name": "43",
+      "net": "unconnected-(U15-PB5-Pad43)",
+      "number": "43",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 106.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": 0.75,
+      "name": "44",
+      "net": "unconnected-(U15-PB6-Pad44)",
+      "number": "44",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 106.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": 1.25,
+      "name": "45",
+      "net": "/MCU/TMP_SDA",
+      "number": "45",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 105.68993999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": 1.75006,
+      "name": "46",
+      "net": "Net-(U15-PB8-BOOT0)",
+      "number": "46",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 105.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": 2.25,
+      "name": "47",
+      "net": "unconnected-(U15-PB9-Pad47)",
+      "number": "47",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 170.88971999999998,
+      "abs_y": 104.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.47472,
+      "local_y": 2.75,
+      "name": "48",
+      "net": "/MCU/VBAT",
+      "number": "48",
+      "shape": "oval",
+      "size": [
+        0.85,
+        0.28
+      ]
+    },
+    {
+      "abs_x": 167.415,
+      "abs_y": 107.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "49",
+      "net": "GND",
+      "number": "49",
+      "shape": "rect",
+      "size": [
+        5.5,
+        5.5
+      ]
+    }
+  ],
+  "U16": [
+    {
+      "abs_x": 117.49000000000001,
+      "abs_y": 124.789,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.925,
+      "local_y": -1.151,
+      "name": "1",
+      "net": "+5V",
+      "number": "1",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 117.64,
+      "abs_y": 125.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.775,
+      "local_y": -0.5,
+      "name": "2",
+      "net": "+5V",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.25,
+        1.05
+      ]
+    },
+    {
+      "abs_x": 117.415,
+      "abs_y": 125.93987299999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.0,
+      "local_y": -0.000127,
+      "name": "3",
+      "net": "+5V",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 117.415,
+      "abs_y": 126.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.0,
+      "local_y": 0.5,
+      "name": "4",
+      "net": "/POWER/LDO_OCXO_NR",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 117.49000000000001,
+      "abs_y": 127.091,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.925,
+      "local_y": 1.151,
+      "name": "5",
+      "net": "GND",
+      "number": "5",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 118.415,
+      "abs_y": 126.978479,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 1.038479,
+      "name": "6",
+      "net": "GND",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 119.34,
+      "abs_y": 127.091,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.925,
+      "local_y": 1.151,
+      "name": "7",
+      "net": "GND",
+      "number": "7",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 119.415,
+      "abs_y": 126.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.0,
+      "local_y": 0.5,
+      "name": "8",
+      "net": "/POWER/LDO_OCXO_PG",
+      "number": "8",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 119.415,
+      "abs_y": 125.93987299999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.0,
+      "local_y": -0.000127,
+      "name": "9",
+      "net": "/POWER/LDO_OCXO_FB",
+      "number": "9",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 119.19000000000001,
+      "abs_y": 125.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.775,
+      "local_y": -0.5,
+      "name": "10",
+      "net": "3.3V_OCXO",
+      "number": "10",
+      "shape": "rect",
+      "size": [
+        0.25,
+        1.05
+      ]
+    },
+    {
+      "abs_x": 119.34,
+      "abs_y": 124.789,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.925,
+      "local_y": -1.151,
+      "name": "11",
+      "net": "3.3V_OCXO",
+      "number": "11",
+      "shape": "custom",
+      "size": [
+        0.1,
+        0.1
+      ]
+    },
+    {
+      "abs_x": 118.415,
+      "abs_y": 124.801445,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": -1.138555,
+      "name": "12",
+      "net": "GND",
+      "number": "12",
+      "shape": "rect",
+      "size": [
+        0.25,
+        0.6
+      ]
+    }
+  ],
+  "U18": [
+    {
+      "abs_x": 117.17500000000001,
+      "abs_y": 113.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.74,
+      "local_y": -0.75,
+      "name": "1",
+      "net": "GND",
+      "number": "1",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 117.17500000000001,
+      "abs_y": 114.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.74,
+      "local_y": -0.25,
+      "name": "2",
+      "net": "+5V",
+      "number": "2",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 117.17500000000001,
+      "abs_y": 114.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.74,
+      "local_y": 0.25,
+      "name": "3",
+      "net": "/POWER/EXT_5V",
+      "number": "3",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 117.17500000000001,
+      "abs_y": 115.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.74,
+      "local_y": 0.75,
+      "name": "4",
+      "net": "/POWER/MUX_PR1",
+      "number": "4",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 118.655,
+      "abs_y": 115.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.74,
+      "local_y": 0.75,
+      "name": "5",
+      "net": "/POWER/EXT_5V",
+      "number": "5",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 118.655,
+      "abs_y": 114.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.74,
+      "local_y": 0.25,
+      "name": "6",
+      "net": "VBUS",
+      "number": "6",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 118.655,
+      "abs_y": 114.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.74,
+      "local_y": -0.25,
+      "name": "7",
+      "net": "+5V",
+      "number": "7",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    },
+    {
+      "abs_x": 118.655,
+      "abs_y": 113.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.74,
+      "local_y": -0.75,
+      "name": "8",
+      "net": "unconnected-(U18-ST-Pad8)",
+      "number": "8",
+      "shape": "roundrect",
+      "size": [
+        0.67,
+        0.3
+      ]
+    }
+  ],
+  "U2": [
+    {
+      "abs_x": 132.34199999999998,
+      "abs_y": 101.91499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.975,
+      "local_y": 2.927,
+      "name": "1",
+      "net": "/OCXO/OCXO_OUT",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 132.34199999999998,
+      "abs_y": 101.264866,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.324866,
+      "local_y": 2.927,
+      "name": "2",
+      "net": "Net-(U2-1G)",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 132.34199999999998,
+      "abs_y": 100.61488,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.32512,
+      "local_y": 2.927,
+      "name": "3",
+      "net": "/EXT/10MHZ_OUT",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 132.34199999999998,
+      "abs_y": 99.965,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.975,
+      "local_y": 2.927,
+      "name": "4",
+      "net": "GND",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 126.48799999999999,
+      "abs_y": 99.965,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.975,
+      "local_y": -2.927,
+      "name": "5",
+      "net": "Net-(U2-Y2)",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 126.48799999999999,
+      "abs_y": 100.61488,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.32512,
+      "local_y": -2.927,
+      "name": "6",
+      "net": "Net-(U2-1G)",
+      "number": "6",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 126.48799999999999,
+      "abs_y": 101.264866,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.324866,
+      "local_y": -2.927,
+      "name": "7",
+      "net": "unconnected-(U2-NC-Pad7)",
+      "number": "7",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    },
+    {
+      "abs_x": 126.48799999999999,
+      "abs_y": 101.91499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.975,
+      "local_y": -2.927,
+      "name": "8",
+      "net": "Net-(U2-Y1)",
+      "number": "8",
+      "shape": "oval",
+      "size": [
+        0.353,
+        1.454
+      ]
+    }
+  ],
+  "U3": [
+    {
+      "abs_x": 141.886554,
+      "abs_y": 91.78999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.028446,
+      "local_y": -0.65,
+      "name": "1",
+      "net": "/MCU/TMP_SCL",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        0.364,
+        0.607
+      ]
+    },
+    {
+      "abs_x": 141.886554,
+      "abs_y": 92.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.028446,
+      "local_y": 0.0,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        0.364,
+        0.607
+      ]
+    },
+    {
+      "abs_x": 141.886554,
+      "abs_y": 93.09,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.028446,
+      "local_y": 0.65,
+      "name": "3",
+      "net": "Net-(U3-ALERT)",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        0.364,
+        0.607
+      ]
+    },
+    {
+      "abs_x": 143.943446,
+      "abs_y": 93.09,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.028446,
+      "local_y": 0.65,
+      "name": "4",
+      "net": "GND",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        0.364,
+        0.607
+      ]
+    },
+    {
+      "abs_x": 143.943446,
+      "abs_y": 92.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.028446,
+      "local_y": 0.0,
+      "name": "5",
+      "net": "+3.3V",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        0.364,
+        0.607
+      ]
+    },
+    {
+      "abs_x": 143.943446,
+      "abs_y": 91.78999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.028446,
+      "local_y": -0.65,
+      "name": "6",
+      "net": "/MCU/TMP_SDA",
+      "number": "6",
+      "shape": "oval",
+      "size": [
+        0.364,
+        0.607
+      ]
+    },
+    {
+      "abs_x": 142.915,
+      "abs_y": 92.44,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.0,
+      "local_y": 0.0,
+      "name": "7",
+      "net": "GND",
+      "number": "7",
+      "shape": "rect",
+      "size": [
+        1.0,
+        1.6
+      ]
+    }
+  ],
+  "U4": [
+    {
+      "abs_x": 140.665,
+      "abs_y": 124.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.75,
+      "local_y": 0.5,
+      "name": "1",
+      "net": "/POWER/BOOST_FB",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 140.665,
+      "abs_y": 124.440127,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.75,
+      "local_y": 0.000127,
+      "name": "2",
+      "net": "Net-(U4-EN)",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 140.665,
+      "abs_y": 123.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.75,
+      "local_y": -0.5,
+      "name": "3",
+      "net": "+3.3V",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 139.165,
+      "abs_y": 123.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.75,
+      "local_y": -0.5,
+      "name": "4",
+      "net": "GND",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 139.165,
+      "abs_y": 124.440127,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.75,
+      "local_y": 0.000127,
+      "name": "5",
+      "net": "Net-(U4-SW)",
+      "number": "5",
+      "shape": "rect",
+      "size": [
+        0.3,
+        0.6
+      ]
+    },
+    {
+      "abs_x": 139.165,
+      "abs_y": 124.94,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.75,
+      "local_y": 0.5,
+      "name": "6",
+      "net": "+5V2",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        0.3,
+        0.6
+      ]
+    }
+  ],
+  "U5": [
+    {
+      "abs_x": 119.82799999999999,
+      "abs_y": 90.753,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -7.62,
+      "local_y": 10.75,
+      "name": "1",
+      "net": "Net-(U5-VCC)",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 127.448,
+      "abs_y": 90.753,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 0.0,
+      "local_y": 10.75,
+      "name": "2",
+      "net": "Net-(U5-RF)",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 135.06799999999998,
+      "abs_y": 90.753,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 7.62,
+      "local_y": 10.75,
+      "name": "3",
+      "net": "GND",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 135.06799999999998,
+      "abs_y": 75.513,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 7.62,
+      "local_y": -4.49,
+      "name": "4",
+      "net": "/OCXO/VCTRL",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 119.82799999999999,
+      "abs_y": 75.513,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -7.62,
+      "local_y": -4.49,
+      "name": "5",
+      "net": "unconnected-(U5-VREF/NC-Pad5)",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    }
+  ],
+  "U6": [
+    {
+      "abs_x": 172.36475,
+      "abs_y": 86.109999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -6.999999,
+      "name": "1",
+      "net": "unconnected-(U6-TP2/SAFEBOOT_N-Pad1)",
+      "number": "1",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 85.01,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -5.9,
+      "name": "2",
+      "net": "unconnected-(U6-D_SEL-Pad2)",
+      "number": "2",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 83.909838,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -4.799838,
+      "name": "3",
+      "net": "Net-(U6-TIMEPULSE)",
+      "number": "3",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 82.81,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -3.7,
+      "name": "4",
+      "net": "unconnected-(U6-EXTINT0-Pad4)",
+      "number": "4",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 81.710001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -2.600001,
+      "name": "5",
+      "net": "unconnected-(U6-USB_DM-Pad5)",
+      "number": "5",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 80.60987,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -1.49987,
+      "name": "6",
+      "net": "unconnected-(U6-USB_DP-Pad6)",
+      "number": "6",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 79.51,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": -0.4,
+      "name": "7",
+      "net": "Net-(U6-VDD_USB)",
+      "number": "7",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 76.509999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": 2.600001,
+      "name": "8",
+      "net": "unconnected-(U6-RESET_N-Pad8)",
+      "number": "8",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 75.41,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": 3.7,
+      "name": "9",
+      "net": "/GNSS/VCC_RF",
+      "number": "9",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 74.309999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": 4.800001,
+      "name": "10",
+      "net": "GND",
+      "number": "10",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 73.209835,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": 5.900165,
+      "name": "11",
+      "net": "Net-(RF1-SIG)",
+      "number": "11",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 172.36475,
+      "abs_y": 72.110001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -6.09981,
+      "local_y": 6.999999,
+      "name": "12",
+      "net": "GND",
+      "number": "12",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 72.110001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": 6.999999,
+      "name": "13",
+      "net": "GND",
+      "number": "13",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 73.209835,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": 5.900165,
+      "name": "14",
+      "net": "unconnected-(U6-LNA_EN-Pad14)",
+      "number": "14",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 74.309999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": 4.800001,
+      "name": "15",
+      "net": "unconnected-(U6-EXTINT1-Pad15)",
+      "number": "15",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 75.41,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": 3.7,
+      "name": "16",
+      "net": "unconnected-(U6-Reserved-Pad16)",
+      "number": "16",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 76.509999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": 2.600001,
+      "name": "17",
+      "net": "unconnected-(U6-Reserved-Pad17)",
+      "number": "17",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 79.51,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -0.4,
+      "name": "18",
+      "net": "unconnected-(U6-SDA/SPICS_N-Pad18)",
+      "number": "18",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 80.60987,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -1.49987,
+      "name": "19",
+      "net": "unconnected-(U6-SCL/SPICLK-Pad19)",
+      "number": "19",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 81.710001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -2.600001,
+      "name": "20",
+      "net": "Net-(U6-TXD/SPIMISO)",
+      "number": "20",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 82.81,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -3.7,
+      "name": "21",
+      "net": "Net-(U6-RXD/SPIMOSI)",
+      "number": "21",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 83.90983800000001,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -4.799838,
+      "name": "22",
+      "net": "Net-(U6-V_BCKP)",
+      "number": "22",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 85.01,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -5.9,
+      "name": "23",
+      "net": "Net-(U6-VCC)",
+      "number": "23",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    },
+    {
+      "abs_x": 160.16513,
+      "abs_y": 86.109999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 6.09981,
+      "local_y": -6.999999,
+      "name": "24",
+      "net": "GND",
+      "number": "24",
+      "shape": "rect",
+      "size": [
+        1.8,
+        0.8
+      ]
+    }
+  ],
+  "U7": [
+    {
+      "abs_x": 117.89500000000001,
+      "abs_y": 92.95992,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -9.52,
+      "local_y": 9.51992,
+      "name": "1",
+      "net": "OCXO_RF",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 127.414873,
+      "abs_y": 92.95992,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -0.000127,
+      "local_y": 9.51992,
+      "name": "2",
+      "net": "GND",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 136.935,
+      "abs_y": 92.95992,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 9.52,
+      "local_y": 9.51992,
+      "name": "3",
+      "net": "/OCXO/VCTRL",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 136.935,
+      "abs_y": 73.92008,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 9.52,
+      "local_y": -9.51992,
+      "name": "4",
+      "net": "unconnected-(U7-VREF/NC-Pad4)",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 117.89500000000001,
+      "abs_y": 73.92008,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -9.52,
+      "local_y": -9.51992,
+      "name": "5",
+      "net": "OCXO_VCC",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        1.6,
+        1.6
+      ]
+    }
+  ],
+  "U8": [
+    {
+      "abs_x": 150.51,
+      "abs_y": 108.53999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.905,
+      "local_y": 2.6,
+      "name": "1",
+      "net": "unconnected-(U8-DNC/2-Pad1)",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 151.78,
+      "abs_y": 108.53999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.635,
+      "local_y": 2.6,
+      "name": "2",
+      "net": "Net-(U8-VIN)",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 153.04999999999998,
+      "abs_y": 108.53999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.635,
+      "local_y": 2.6,
+      "name": "3",
+      "net": "unconnected-(U8-TEMP-Pad3)",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 154.32,
+      "abs_y": 108.53999999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.905,
+      "local_y": 2.6,
+      "name": "4",
+      "net": "GND",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 154.32,
+      "abs_y": 103.34,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.905,
+      "local_y": -2.6,
+      "name": "5",
+      "net": "Net-(U8-TRIM/NR)",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 153.04999999999998,
+      "abs_y": 103.34,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.635,
+      "local_y": -2.6,
+      "name": "6",
+      "net": "Net-(U8-VOUT)",
+      "number": "6",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 151.78,
+      "abs_y": 103.34,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.635,
+      "local_y": -2.6,
+      "name": "7",
+      "net": "unconnected-(U8-NC-Pad7)",
+      "number": "7",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 150.51,
+      "abs_y": 103.34,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.905,
+      "local_y": -2.6,
+      "name": "8",
+      "net": "unconnected-(U8-DNC-Pad8)",
+      "number": "8",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    }
+  ],
+  "U9": [
+    {
+      "abs_x": 134.815,
+      "abs_y": 106.535,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.905,
+      "local_y": 2.6,
+      "name": "1",
+      "net": "unconnected-(U9-NC-Pad1)",
+      "number": "1",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 134.815,
+      "abs_y": 107.80499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.635,
+      "local_y": 2.6,
+      "name": "2",
+      "net": "Net-(U9--IN)",
+      "number": "2",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 134.815,
+      "abs_y": 109.075,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.635,
+      "local_y": 2.6,
+      "name": "3",
+      "net": "Net-(U9-+IN)",
+      "number": "3",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 134.815,
+      "abs_y": 110.345,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.905,
+      "local_y": 2.6,
+      "name": "4",
+      "net": "GND",
+      "number": "4",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 140.015,
+      "abs_y": 110.345,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.905,
+      "local_y": -2.6,
+      "name": "5",
+      "net": "unconnected-(U9-NC-Pad5)",
+      "number": "5",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 140.015,
+      "abs_y": 109.075,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.635,
+      "local_y": -2.6,
+      "name": "6",
+      "net": "Net-(U9--IN)",
+      "number": "6",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 140.015,
+      "abs_y": 107.80499999999999,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.635,
+      "local_y": -2.6,
+      "name": "7",
+      "net": "Net-(U9-V+)",
+      "number": "7",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    },
+    {
+      "abs_x": 140.015,
+      "abs_y": 106.535,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.905,
+      "local_y": -2.6,
+      "name": "8",
+      "net": "unconnected-(U9-NC-Pad8)",
+      "number": "8",
+      "shape": "oval",
+      "size": [
+        0.588,
+        1.8
+      ]
+    }
+  ],
+  "USB1": [
+    {
+      "abs_x": 109.61,
+      "abs_y": 106.33,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -2.89,
+      "local_y": -1.305,
+      "name": "",
+      "net": null,
+      "number": "",
+      "shape": "circle",
+      "size": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "abs_x": 109.61000000000001,
+      "abs_y": 100.54986099999999,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 2.890139,
+      "local_y": -1.305,
+      "name": "",
+      "net": null,
+      "number": "",
+      "shape": "circle",
+      "size": [
+        0.7,
+        0.7
+      ]
+    },
+    {
+      "abs_x": 109.09,
+      "abs_y": 107.765,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -4.325,
+      "local_y": -1.825,
+      "name": "13",
+      "net": "GND",
+      "number": "13",
+      "shape": "oval",
+      "size": [
+        1.1,
+        1.9
+      ]
+    },
+    {
+      "abs_x": 113.29,
+      "abs_y": 107.765,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": -4.325,
+      "local_y": 2.375,
+      "name": "13",
+      "net": "GND",
+      "number": "13",
+      "shape": "oval",
+      "size": [
+        1.2,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 109.09,
+      "abs_y": 99.115,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 4.325,
+      "local_y": -1.825,
+      "name": "14",
+      "net": "GND",
+      "number": "14",
+      "shape": "oval",
+      "size": [
+        1.1,
+        1.9
+      ]
+    },
+    {
+      "abs_x": 113.29,
+      "abs_y": 99.115,
+      "layers": [
+        "*.Cu",
+        "*.Mask"
+      ],
+      "local_x": 4.325,
+      "local_y": 2.375,
+      "name": "14",
+      "net": "GND",
+      "number": "14",
+      "shape": "oval",
+      "size": [
+        1.2,
+        1.6
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 106.64,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -3.2,
+      "local_y": -2.375,
+      "name": "A1B12",
+      "net": "GND",
+      "number": "A1B12",
+      "shape": "rect",
+      "size": [
+        0.55,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 105.84,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -2.4,
+      "local_y": -2.375,
+      "name": "A4B9",
+      "net": "VBUS",
+      "number": "A4B9",
+      "shape": "rect",
+      "size": [
+        0.55,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 104.689807,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.249807,
+      "local_y": -2.375,
+      "name": "A5",
+      "net": "Net-(USB1-CC1)",
+      "number": "A5",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 103.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.25,
+      "local_y": -2.375,
+      "name": "A6",
+      "net": "/MCU/USB_D+",
+      "number": "A6",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 103.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.25,
+      "local_y": -2.375,
+      "name": "A7",
+      "net": "/MCU/USB_D-",
+      "number": "A7",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 102.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.25,
+      "local_y": -2.375,
+      "name": "A8",
+      "net": "unconnected-(USB1-SBU1-PadA8)",
+      "number": "A8",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 100.24,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 3.2,
+      "local_y": -2.375,
+      "name": "B1A12",
+      "net": "GND",
+      "number": "B1A12",
+      "shape": "rect",
+      "size": [
+        0.55,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 101.039827,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 2.400173,
+      "local_y": -2.375,
+      "name": "B4A9",
+      "net": "VBUS",
+      "number": "B4A9",
+      "shape": "rect",
+      "size": [
+        0.55,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 101.689813,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 1.750187,
+      "local_y": -2.375,
+      "name": "B5",
+      "net": "Net-(USB1-CC2)",
+      "number": "B5",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 102.69,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": 0.75,
+      "local_y": -2.375,
+      "name": "B6",
+      "net": "/MCU/USB_D+",
+      "number": "B6",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 104.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -0.75,
+      "local_y": -2.375,
+      "name": "B7",
+      "net": "/MCU/USB_D-",
+      "number": "B7",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    },
+    {
+      "abs_x": 108.54,
+      "abs_y": 105.19,
+      "layers": [
+        "F.Cu",
+        "F.Mask",
+        "F.Paste"
+      ],
+      "local_x": -1.75,
+      "local_y": -2.375,
+      "name": "B8",
+      "net": "unconnected-(USB1-SBU2-PadB8)",
+      "number": "B8",
+      "shape": "rect",
+      "size": [
+        0.3,
+        1.1
+      ]
+    }
+  ]
+}

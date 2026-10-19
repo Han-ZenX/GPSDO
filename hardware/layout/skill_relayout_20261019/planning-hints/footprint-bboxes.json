@@ -1,0 +1,3299 @@
+{
+  "C1": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 113.375,
+      "max_y": 74.85,
+      "min_x": 112.45500000000001,
+      "min_y": 73.03,
+      "width": 0.9199999999999875
+    },
+    "centroid": [
+      112.915,
+      73.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF",
+    "x": 112.915,
+    "y": 73.94
+  },
+  "C10": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 156.595,
+      "max_y": 95.97,
+      "min_x": 153.63500000000002,
+      "min_y": 94.50999999999999,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      155.115,
+      95.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF",
+    "x": 155.115,
+    "y": 95.24
+  },
+  "C11": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 152.725,
+      "max_y": 110.8,
+      "min_x": 150.905,
+      "min_y": 109.88000000000001,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      151.815,
+      110.34
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 151.815,
+    "y": 110.34
+  },
+  "C12": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 154.225,
+      "max_y": 97.39999999999999,
+      "min_x": 152.405,
+      "min_y": 96.48,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      153.315,
+      96.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 153.315,
+    "y": 96.94
+  },
+  "C13": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 172.875,
+      "max_y": 105.35,
+      "min_x": 171.95499999999998,
+      "min_y": 103.53,
+      "width": 0.9200000000000159
+    },
+    "centroid": [
+      172.415,
+      104.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF",
+    "x": 172.415,
+    "y": 104.44
+  },
+  "C14": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 162.57500000000002,
+      "max_y": 109.14999999999999,
+      "min_x": 161.655,
+      "min_y": 107.33,
+      "width": 0.9200000000000159
+    },
+    "centroid": [
+      162.115,
+      108.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF",
+    "x": 162.115,
+    "y": 108.24
+  },
+  "C15": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 162.57500000000002,
+      "max_y": 111.35,
+      "min_x": 161.655,
+      "min_y": 109.53,
+      "width": 0.9200000000000159
+    },
+    "centroid": [
+      162.115,
+      110.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF",
+    "x": 162.115,
+    "y": 110.44
+  },
+  "C16": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 143.825,
+      "max_y": 95.3,
+      "min_x": 142.005,
+      "min_y": 94.38000000000001,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      142.915,
+      94.84
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 142.915,
+    "y": 94.84
+  },
+  "C17": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 131.89499999999998,
+      "max_y": 112.97,
+      "min_x": 128.935,
+      "min_y": 111.50999999999999,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      130.415,
+      112.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF",
+    "x": 130.415,
+    "y": 112.24
+  },
+  "C18": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 132.92499999999998,
+      "max_y": 111.1,
+      "min_x": 131.105,
+      "min_y": 110.18,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      132.015,
+      110.64
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 132.015,
+    "y": 110.64
+  },
+  "C19": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 132.845,
+      "max_y": 105.92,
+      "min_x": 131.38500000000002,
+      "min_y": 102.96,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      132.115,
+      104.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10uF",
+    "x": 132.115,
+    "y": 104.44
+  },
+  "C2": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 111.14500000000001,
+      "max_y": 75.42,
+      "min_x": 109.685,
+      "min_y": 72.46,
+      "width": 1.460000000000008
+    },
+    "centroid": [
+      110.415,
+      73.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10uF",
+    "x": 110.415,
+    "y": 73.94
+  },
+  "C20": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 145.74499999999998,
+      "max_y": 108.12,
+      "min_x": 144.285,
+      "min_y": 105.16,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      145.015,
+      106.64
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1uF",
+    "x": 145.015,
+    "y": 106.64
+  },
+  "C21": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 144.49499999999998,
+      "max_y": 112.769999,
+      "min_x": 141.535,
+      "min_y": 111.30999899999999,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      143.015,
+      112.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "2.2uF",
+    "x": 143.015,
+    "y": 112.039999
+  },
+  "C22": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 150.875,
+      "max_y": 118.85,
+      "min_x": 149.95499999999998,
+      "min_y": 117.03,
+      "width": 0.9200000000000159
+    },
+    "centroid": [
+      150.415,
+      117.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF",
+    "x": 150.415,
+    "y": 117.94
+  },
+  "C23": {
+    "bbox": {
+      "height": 5.227319999999992,
+      "max_x": 112.267397,
+      "max_y": 83.05366,
+      "min_x": 109.162603,
+      "min_y": 77.82634,
+      "width": 3.1047939999999983
+    },
+    "centroid": [
+      110.715,
+      80.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TAJB107M010RNJ",
+    "footprint_area_mm2": 16.2298,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "TAJB107M010RNJ",
+    "x": 110.715,
+    "y": 80.44
+  },
+  "C24": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 144.875,
+      "max_y": 118.85,
+      "min_x": 143.95499999999998,
+      "min_y": 117.03,
+      "width": 0.9200000000000159
+    },
+    "centroid": [
+      144.415,
+      117.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF",
+    "x": 144.415,
+    "y": 117.94
+  },
+  "C25": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 123.89500000000001,
+      "max_y": 118.17,
+      "min_x": 120.935,
+      "min_y": 116.71,
+      "width": 2.960000000000008
+    },
+    "centroid": [
+      122.415,
+      117.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10uF",
+    "x": 122.415,
+    "y": 117.44
+  },
+  "C26": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 167.625,
+      "max_y": 101.69999999999999,
+      "min_x": 165.805,
+      "min_y": 100.78,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      166.715,
+      101.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 166.715,
+    "y": 101.24
+  },
+  "C27": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 119.325,
+      "max_y": 106.49999899999999,
+      "min_x": 117.50500000000001,
+      "min_y": 105.579999,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      118.415,
+      106.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 118.415,
+    "y": 106.039999
+  },
+  "C28": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 119.89500000000001,
+      "max_y": 108.67,
+      "min_x": 116.935,
+      "min_y": 107.21,
+      "width": 2.960000000000008
+    },
+    "centroid": [
+      118.415,
+      107.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF",
+    "x": 118.415,
+    "y": 107.94
+  },
+  "C3": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 130.945,
+      "max_y": 106.019999,
+      "min_x": 129.485,
+      "min_y": 103.05999899999999,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      130.215,
+      104.539999
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1uF",
+    "x": 130.215,
+    "y": 104.539999
+  },
+  "C32": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 166.125,
+      "max_y": 112.69999999999999,
+      "min_x": 164.305,
+      "min_y": 111.78,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      165.215,
+      112.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 165.215,
+    "y": 112.24
+  },
+  "C33": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 170.825,
+      "max_y": 112.89999999999999,
+      "min_x": 169.005,
+      "min_y": 111.98,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      169.915,
+      112.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 169.915,
+    "y": 112.44
+  },
+  "C34": {
+    "bbox": {
+      "height": 3.4000000000000057,
+      "max_x": 127.69500000000001,
+      "max_y": 116.64,
+      "min_x": 125.735,
+      "min_y": 113.24,
+      "width": 1.960000000000008
+    },
+    "centroid": [
+      126.715,
+      114.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "22uF",
+    "x": 126.715,
+    "y": 114.94
+  },
+  "C35": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 127.825,
+      "max_y": 118.6,
+      "min_x": 126.00500000000001,
+      "min_y": 117.68,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      126.915,
+      118.14
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 126.915,
+    "y": 118.14
+  },
+  "C36": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 134.975,
+      "max_y": 119.14999999999999,
+      "min_x": 134.05499999999998,
+      "min_y": 117.33,
+      "width": 0.9200000000000159
+    },
+    "centroid": [
+      134.515,
+      118.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10nF",
+    "x": 134.515,
+    "y": 118.24
+  },
+  "C37": {
+    "bbox": {
+      "height": 3.4000000000000057,
+      "max_x": 133.89499999999998,
+      "max_y": 116.64,
+      "min_x": 131.935,
+      "min_y": 113.24,
+      "width": 1.9599999999999795
+    },
+    "centroid": [
+      132.915,
+      114.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "22uF",
+    "x": 132.915,
+    "y": 114.94
+  },
+  "C38": {
+    "bbox": {
+      "height": 3.4000000000000057,
+      "max_x": 116.295,
+      "max_y": 126.64,
+      "min_x": 114.335,
+      "min_y": 123.24,
+      "width": 1.960000000000008
+    },
+    "centroid": [
+      115.315,
+      124.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "22uF",
+    "x": 115.315,
+    "y": 124.94
+  },
+  "C39": {
+    "bbox": {
+      "height": 0.9200000000000017,
+      "max_x": 116.425,
+      "max_y": 128.599999,
+      "min_x": 114.605,
+      "min_y": 127.679999,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      115.515,
+      128.139999
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 115.515,
+    "y": 128.139999
+  },
+  "C4": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 129.325,
+      "max_y": 104.1,
+      "min_x": 127.505,
+      "min_y": 103.18,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      128.415,
+      103.64
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 128.415,
+    "y": 103.64
+  },
+  "C40": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 123.57499999999999,
+      "max_y": 129.15,
+      "min_x": 122.655,
+      "min_y": 127.33000000000001,
+      "width": 0.9199999999999875
+    },
+    "centroid": [
+      123.115,
+      128.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10nF",
+    "x": 123.115,
+    "y": 128.24
+  },
+  "C41": {
+    "bbox": {
+      "height": 3.4000000000000057,
+      "max_x": 122.495,
+      "max_y": 126.64,
+      "min_x": 120.535,
+      "min_y": 123.24,
+      "width": 1.960000000000008
+    },
+    "centroid": [
+      121.515,
+      124.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "22uF",
+    "x": 121.515,
+    "y": 124.94
+  },
+  "C42": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 170.325,
+      "max_y": 102.1,
+      "min_x": 168.505,
+      "min_y": 101.18,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      169.415,
+      101.64
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 169.415,
+    "y": 101.64
+  },
+  "C43": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 121.725,
+      "max_y": 112.3,
+      "min_x": 119.905,
+      "min_y": 111.38000000000001,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      120.815,
+      111.84
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 120.815,
+    "y": 111.84
+  },
+  "C46": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 156.825,
+      "max_y": 123.69999999999999,
+      "min_x": 155.005,
+      "min_y": 122.78,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      155.915,
+      123.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 155.915,
+    "y": 123.24
+  },
+  "C47": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 160.695,
+      "max_y": 123.97,
+      "min_x": 157.735,
+      "min_y": 122.50999999999999,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      159.215,
+      123.24
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "4.7uF",
+    "x": 159.215,
+    "y": 123.24
+  },
+  "C48": {
+    "bbox": {
+      "height": 0.9200000000000159,
+      "max_x": 154.325,
+      "max_y": 130.4,
+      "min_x": 152.505,
+      "min_y": 129.48,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      153.415,
+      129.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 153.415,
+    "y": 129.94
+  },
+  "C49": {
+    "bbox": {
+      "height": 1.4599999999999795,
+      "max_x": 154.89499999999998,
+      "max_y": 132.67,
+      "min_x": 151.935,
+      "min_y": 131.21,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      153.415,
+      131.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "4.7uF",
+    "x": 153.415,
+    "y": 131.94
+  },
+  "C5": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 127.02499999999999,
+      "max_y": 69.3,
+      "min_x": 125.205,
+      "min_y": 68.38000000000001,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      126.115,
+      68.84
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 126.115,
+    "y": 68.84
+  },
+  "C56": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 148.545,
+      "max_y": 110.32000000000001,
+      "min_x": 147.085,
+      "min_y": 107.36,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      147.815,
+      108.84
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10uF",
+    "x": 147.815,
+    "y": 108.84
+  },
+  "C57": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 156.945,
+      "max_y": 104.519999,
+      "min_x": 155.485,
+      "min_y": 101.55999899999999,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      156.215,
+      103.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1uF",
+    "x": 156.215,
+    "y": 103.039999
+  },
+  "C58": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 153.39499999999998,
+      "max_y": 101.57000000000001,
+      "min_x": 150.435,
+      "min_y": 100.11,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      151.915,
+      100.84
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10uF",
+    "x": 151.915,
+    "y": 100.84
+  },
+  "C6": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 158.24493999999999,
+      "max_y": 88.84,
+      "min_x": 155.28494,
+      "min_y": 87.38,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      156.76494,
+      88.11
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF",
+    "x": 156.76494,
+    "y": 88.11
+  },
+  "C68": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 115.94500000000001,
+      "max_y": 115.92,
+      "min_x": 114.485,
+      "min_y": 112.96,
+      "width": 1.460000000000008
+    },
+    "centroid": [
+      115.215,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1uF / 16V",
+    "x": 115.215,
+    "y": 114.44
+  },
+  "C69": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 119.39500000000001,
+      "max_y": 112.769999,
+      "min_x": 116.435,
+      "min_y": 111.30999899999999,
+      "width": 2.960000000000008
+    },
+    "centroid": [
+      117.915,
+      112.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF / 16V",
+    "x": 117.915,
+    "y": 112.039999
+  },
+  "C7": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 160.77494,
+      "max_y": 88.57,
+      "min_x": 158.95494,
+      "min_y": 87.65,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      159.86494,
+      88.11
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 159.86494,
+    "y": 88.11
+  },
+  "C70": {
+    "bbox": {
+      "height": 1.8199999999999932,
+      "max_x": 120.875,
+      "max_y": 115.35,
+      "min_x": 119.95500000000001,
+      "min_y": 113.53,
+      "width": 0.9199999999999875
+    },
+    "centroid": [
+      120.415,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100nF / 16V",
+    "x": 120.415,
+    "y": 114.44
+  },
+  "C71": {
+    "bbox": {
+      "height": 3.4000000000000057,
+      "max_x": 123.39500000000001,
+      "max_y": 116.14,
+      "min_x": 121.435,
+      "min_y": 112.74,
+      "width": 1.960000000000008
+    },
+    "centroid": [
+      122.415,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "22uF / 10V",
+    "x": 122.415,
+    "y": 114.44
+  },
+  "C72": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 143.89499999999998,
+      "max_y": 122.17,
+      "min_x": 140.935,
+      "min_y": 120.71,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      142.415,
+      121.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10uF / 10V",
+    "x": 142.415,
+    "y": 121.44
+  },
+  "C73": {
+    "bbox": {
+      "height": 0.9199999999999875,
+      "max_x": 143.225,
+      "max_y": 123.6,
+      "min_x": 141.405,
+      "min_y": 122.68,
+      "width": 1.8199999999999932
+    },
+    "centroid": [
+      142.315,
+      123.14
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0402_1005Metric",
+    "footprint_area_mm2": 1.6744,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100nF",
+    "x": 142.315,
+    "y": 123.14
+  },
+  "C74": {
+    "bbox": {
+      "height": 1.9599999999999937,
+      "max_x": 139.11499999999998,
+      "max_y": 128.42,
+      "min_x": 135.715,
+      "min_y": 126.46,
+      "width": 3.3999999999999773
+    },
+    "centroid": [
+      137.415,
+      127.44
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 180.0,
+    "value": "22uF / 10V",
+    "x": 137.415,
+    "y": 127.44
+  },
+  "C75": {
+    "bbox": {
+      "height": 1.9599999999999795,
+      "max_x": 139.11499999999998,
+      "max_y": 130.92,
+      "min_x": 135.715,
+      "min_y": 128.96,
+      "width": 3.3999999999999773
+    },
+    "centroid": [
+      137.415,
+      129.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0805_2012Metric",
+    "footprint_area_mm2": 6.664,
+    "layer": "F.Cu",
+    "rotation": 180.0,
+    "value": "22uF / 10V",
+    "x": 137.415,
+    "y": 129.94
+  },
+  "C8": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 158.24493999999999,
+      "max_y": 85.74000000000001,
+      "min_x": 155.28494,
+      "min_y": 84.28,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      156.76494,
+      85.01
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF",
+    "x": 156.76494,
+    "y": 85.01
+  },
+  "C9": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 151.49499999999998,
+      "max_y": 97.67,
+      "min_x": 148.535,
+      "min_y": 96.21,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      150.015,
+      96.94
+    ],
+    "footprint": "GPSDO_Rev1.0:C_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1uF",
+    "x": 150.015,
+    "y": 96.94
+  },
+  "CN1": {
+    "bbox": {
+      "height": 7.5,
+      "max_x": 112.61500000000001,
+      "max_y": 120.69,
+      "min_x": 106.715,
+      "min_y": 113.19,
+      "width": 5.900000000000006
+    },
+    "centroid": [
+      110.215,
+      116.94
+    ],
+    "footprint": "GPSDO_Rev1.0:LAIL-PHC2_54-2P-01-XH-L",
+    "footprint_area_mm2": 44.25,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "LAIL-PHC2_54-2P-01-XH-L",
+    "x": 110.215,
+    "y": 116.94
+  },
+  "D1": {
+    "bbox": {
+      "height": 1.4699999999999989,
+      "max_x": 129.89499999999998,
+      "max_y": 122.175,
+      "min_x": 126.92999999999999,
+      "min_y": 120.705,
+      "width": 2.964999999999989
+    },
+    "centroid": [
+      128.415,
+      121.44
+    ],
+    "footprint": "GPSDO_Rev1.0:LED_0603_1608Metric",
+    "footprint_area_mm2": 4.3585,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "LED",
+    "x": 128.415,
+    "y": 121.44
+  },
+  "D2": {
+    "bbox": {
+      "height": 1.4700000000000273,
+      "max_x": 118.39500000000001,
+      "max_y": 132.175,
+      "min_x": 115.43,
+      "min_y": 130.70499999999998,
+      "width": 2.9650000000000034
+    },
+    "centroid": [
+      116.915,
+      131.44
+    ],
+    "footprint": "GPSDO_Rev1.0:LED_0603_1608Metric",
+    "footprint_area_mm2": 4.3586,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "LED",
+    "x": 116.915,
+    "y": 131.44
+  },
+  "D3": {
+    "bbox": {
+      "height": 1.4699999999999989,
+      "max_x": 178.39499999999998,
+      "max_y": 115.175,
+      "min_x": 175.42999999999998,
+      "min_y": 113.705,
+      "width": 2.9650000000000034
+    },
+    "centroid": [
+      176.915,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:LED_0603_1608Metric",
+    "footprint_area_mm2": 4.3586,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "GREEN",
+    "x": 176.915,
+    "y": 114.44
+  },
+  "D4": {
+    "bbox": {
+      "height": 1.4699999999999989,
+      "max_x": 178.39499999999998,
+      "max_y": 119.175,
+      "min_x": 175.42999999999998,
+      "min_y": 117.705,
+      "width": 2.9650000000000034
+    },
+    "centroid": [
+      176.915,
+      118.44
+    ],
+    "footprint": "GPSDO_Rev1.0:LED_0603_1608Metric",
+    "footprint_area_mm2": 4.3586,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "YELLOW",
+    "x": 176.915,
+    "y": 118.44
+  },
+  "D5": {
+    "bbox": {
+      "height": 1.4699999999999989,
+      "max_x": 178.39499999999998,
+      "max_y": 123.175,
+      "min_x": 175.42999999999998,
+      "min_y": 121.705,
+      "width": 2.9650000000000034
+    },
+    "centroid": [
+      176.915,
+      122.44
+    ],
+    "footprint": "GPSDO_Rev1.0:LED_0603_1608Metric",
+    "footprint_area_mm2": 4.3586,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "RED",
+    "x": 176.915,
+    "y": 122.44
+  },
+  "D6": {
+    "bbox": {
+      "height": 1.5999980000000278,
+      "max_x": 140.915,
+      "max_y": 131.239999,
+      "min_x": 139.915,
+      "min_y": 129.64000099999998,
+      "width": 1.0
+    },
+    "centroid": [
+      140.415,
+      130.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TPD1E10B06DPYR",
+    "footprint_area_mm2": 1.6,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "TPD1E10B06DPYR",
+    "x": 140.415,
+    "y": 130.44
+  },
+  "D8": {
+    "bbox": {
+      "height": 1.4699999999999989,
+      "max_x": 116.89500000000001,
+      "max_y": 120.575,
+      "min_x": 113.93,
+      "min_y": 119.105,
+      "width": 2.9650000000000034
+    },
+    "centroid": [
+      115.415,
+      119.84
+    ],
+    "footprint": "GPSDO_Rev1.0:LED_0603_1608Metric",
+    "footprint_area_mm2": 4.3586,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "LED",
+    "x": 115.415,
+    "y": 119.84
+  },
+  "D9": {
+    "bbox": {
+      "height": 1.5999980000000278,
+      "max_x": 164.915,
+      "max_y": 131.239999,
+      "min_x": 163.915,
+      "min_y": 129.64000099999998,
+      "width": 1.0
+    },
+    "centroid": [
+      164.415,
+      130.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TPD1E10B06DPYR",
+    "footprint_area_mm2": 1.6,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "TPD1E10B06DPYR",
+    "x": 164.415,
+    "y": 130.44
+  },
+  "F1": {
+    "bbox": {
+      "height": 2.185212000000007,
+      "max_x": 114.68370300000001,
+      "max_y": 112.032606,
+      "min_x": 110.146297,
+      "min_y": 109.847394,
+      "width": 4.537406000000004
+    },
+    "centroid": [
+      112.415,
+      110.94
+    ],
+    "footprint": "GPSDO_Rev1.0:BSMD1206C-1300T",
+    "footprint_area_mm2": 9.9152,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "BSMD1206C-1300T",
+    "x": 112.415,
+    "y": 110.94
+  },
+  "FB1": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 165.89499999999998,
+      "max_y": 115.17,
+      "min_x": 162.935,
+      "min_y": 113.71,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      164.415,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100R",
+    "x": 164.415,
+    "y": 114.44
+  },
+  "FB2": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 158.14499999999998,
+      "max_y": 97.42,
+      "min_x": 156.685,
+      "min_y": 94.46,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      157.415,
+      95.94
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100R",
+    "x": 157.415,
+    "y": 95.94
+  },
+  "FB3": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 128.595,
+      "max_y": 106.17,
+      "min_x": 125.63499999999999,
+      "min_y": 104.71,
+      "width": 2.960000000000008
+    },
+    "centroid": [
+      127.115,
+      105.44
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100R",
+    "x": 127.115,
+    "y": 105.44
+  },
+  "FB4": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 111.14500000000001,
+      "max_y": 86.92,
+      "min_x": 109.685,
+      "min_y": 83.96,
+      "width": 1.460000000000008
+    },
+    "centroid": [
+      110.415,
+      85.44
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100R",
+    "x": 110.415,
+    "y": 85.44
+  },
+  "FB5": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 113.64500000000001,
+      "max_y": 86.92,
+      "min_x": 112.185,
+      "min_y": 83.96,
+      "width": 1.460000000000008
+    },
+    "centroid": [
+      112.915,
+      85.44
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100R",
+    "x": 112.915,
+    "y": 85.44
+  },
+  "FB6": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 122.845,
+      "max_y": 108.62,
+      "min_x": 121.38499999999999,
+      "min_y": 105.66,
+      "width": 1.460000000000008
+    },
+    "centroid": [
+      122.115,
+      107.14
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100R",
+    "x": 122.115,
+    "y": 107.14
+  },
+  "FB7": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 137.295,
+      "max_y": 113.87,
+      "min_x": 134.335,
+      "min_y": 112.41,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      135.815,
+      113.14
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "600R",
+    "x": 135.815,
+    "y": 113.14
+  },
+  "FB8": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 158.24493999999999,
+      "max_y": 91.24000000000001,
+      "min_x": 155.28494,
+      "min_y": 89.78,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      156.76494,
+      90.51
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100R",
+    "x": 156.76494,
+    "y": 90.51
+  },
+  "H1": {
+    "bbox": {
+      "height": 6.900000000000006,
+      "max_x": 113.86500000000001,
+      "max_y": 70.89,
+      "min_x": 106.965,
+      "min_y": 63.989999999999995,
+      "width": 6.900000000000006
+    },
+    "centroid": [
+      110.415,
+      67.44
+    ],
+    "footprint": "GPSDO_Rev1.0:MountingHole_3.2mm_M3_Pad",
+    "footprint_area_mm2": 47.61,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "MountingHole_Pad",
+    "x": 110.415,
+    "y": 67.44
+  },
+  "H2": {
+    "bbox": {
+      "height": 6.900000000000006,
+      "max_x": 180.86499999999998,
+      "max_y": 70.89,
+      "min_x": 173.965,
+      "min_y": 63.989999999999995,
+      "width": 6.899999999999977
+    },
+    "centroid": [
+      177.415,
+      67.44
+    ],
+    "footprint": "GPSDO_Rev1.0:MountingHole_3.2mm_M3_Pad",
+    "footprint_area_mm2": 47.61,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "MountingHole_Pad",
+    "x": 177.415,
+    "y": 67.44
+  },
+  "H3": {
+    "bbox": {
+      "height": 6.899999999999977,
+      "max_x": 113.86500000000001,
+      "max_y": 137.89,
+      "min_x": 106.965,
+      "min_y": 130.99,
+      "width": 6.900000000000006
+    },
+    "centroid": [
+      110.415,
+      134.44
+    ],
+    "footprint": "GPSDO_Rev1.0:MountingHole_3.2mm_M3_Pad",
+    "footprint_area_mm2": 47.61,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "MountingHole_Pad",
+    "x": 110.415,
+    "y": 134.44
+  },
+  "H4": {
+    "bbox": {
+      "height": 6.899999999999977,
+      "max_x": 180.86499999999998,
+      "max_y": 137.89,
+      "min_x": 173.965,
+      "min_y": 130.99,
+      "width": 6.899999999999977
+    },
+    "centroid": [
+      177.415,
+      134.44
+    ],
+    "footprint": "GPSDO_Rev1.0:MountingHole_3.2mm_M3_Pad",
+    "footprint_area_mm2": 47.61,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "MountingHole_Pad",
+    "x": 177.415,
+    "y": 134.44
+  },
+  "J1": {
+    "bbox": {
+      "height": 18.180000000000007,
+      "max_x": 147.20499999999998,
+      "max_y": 139.09,
+      "min_x": 133.625,
+      "min_y": 120.91,
+      "width": 13.579999999999984
+    },
+    "centroid": [
+      140.415,
+      135.38
+    ],
+    "footprint": "GPSDO_Rev1.0:SMA_Amphenol_132289_EdgeMount",
+    "footprint_area_mm2": 246.8844,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "Conn_Coaxial",
+    "x": 140.415,
+    "y": 135.38
+  },
+  "J3": {
+    "bbox": {
+      "height": 11.159999999999997,
+      "max_x": 178.185,
+      "max_y": 100.83,
+      "min_x": 174.64499999999998,
+      "min_y": 89.67,
+      "width": 3.5400000000000205
+    },
+    "centroid": [
+      176.415,
+      91.44
+    ],
+    "footprint": "GPSDO_Rev1.0:PinHeader_1x04_P2.54mm_Vertical",
+    "footprint_area_mm2": 39.5064,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "Conn_01x04_Socket",
+    "x": 176.415,
+    "y": 91.44
+  },
+  "J4": {
+    "bbox": {
+      "height": 18.180000000000007,
+      "max_x": 171.20499999999998,
+      "max_y": 139.09,
+      "min_x": 157.625,
+      "min_y": 120.91,
+      "width": 13.579999999999984
+    },
+    "centroid": [
+      164.415,
+      135.38
+    ],
+    "footprint": "GPSDO_Rev1.0:SMA_Amphenol_132289_EdgeMount",
+    "footprint_area_mm2": 246.8844,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "Conn_Coaxial",
+    "x": 164.415,
+    "y": 135.38
+  },
+  "JP1": {
+    "bbox": {
+      "height": 2.5,
+      "max_x": 152.065,
+      "max_y": 87.89,
+      "min_x": 148.765,
+      "min_y": 85.39,
+      "width": 3.3000000000000114
+    },
+    "centroid": [
+      150.415,
+      86.64
+    ],
+    "footprint": "GPSDO_Rev1.0:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm",
+    "footprint_area_mm2": 8.25,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "SolderJumper_2_Bridged",
+    "x": 150.415,
+    "y": 86.64
+  },
+  "L1": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 175.73494,
+      "max_y": 77.54,
+      "min_x": 174.79494,
+      "min_y": 75.67999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      175.26494,
+      76.61
+    ],
+    "footprint": "GPSDO_Rev1.0:L_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "33nH",
+    "x": 175.26494,
+    "y": 76.61
+  },
+  "L2": {
+    "bbox": {
+      "height": 2.5,
+      "max_x": 138.275,
+      "max_y": 125.69,
+      "min_x": 136.155,
+      "min_y": 123.19,
+      "width": 2.1200000000000045
+    },
+    "centroid": [
+      137.215,
+      124.44
+    ],
+    "footprint": "GPSDO_Rev1.0:L_Murata_DFE201610P",
+    "footprint_area_mm2": 5.3,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1uH / DFE201610P",
+    "x": 137.215,
+    "y": 124.44
+  },
+  "R1": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 176.19494,
+      "max_y": 84.58,
+      "min_x": 174.33494,
+      "min_y": 83.64,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      175.26494,
+      84.11
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 175.26494,
+    "y": 84.11
+  },
+  "R10": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 147.385,
+      "max_y": 97.17,
+      "min_x": 146.445,
+      "min_y": 95.30999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      146.915,
+      96.24
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100K",
+    "x": 146.915,
+    "y": 96.24
+  },
+  "R11": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 115.185,
+      "max_y": 102.87,
+      "min_x": 114.245,
+      "min_y": 101.00999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      114.715,
+      101.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "5.1K",
+    "x": 114.715,
+    "y": 101.94
+  },
+  "R12": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 142.54500000000002,
+      "max_y": 97.11,
+      "min_x": 140.685,
+      "min_y": 96.17,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      141.615,
+      96.64
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "4K7",
+    "x": 141.615,
+    "y": 96.64
+  },
+  "R13": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 129.345,
+      "max_y": 69.31,
+      "min_x": 127.48499999999999,
+      "min_y": 68.37,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      128.415,
+      68.84
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1K",
+    "x": 128.415,
+    "y": 68.84
+  },
+  "R14": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 115.685,
+      "max_y": 108.37,
+      "min_x": 114.745,
+      "min_y": 106.50999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      115.215,
+      107.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "5.1K",
+    "x": 115.215,
+    "y": 107.44
+  },
+  "R15": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 143.845,
+      "max_y": 98.91,
+      "min_x": 141.98499999999999,
+      "min_y": 97.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      142.915,
+      98.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "4K7",
+    "x": 142.915,
+    "y": 98.44
+  },
+  "R16": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 145.04500000000002,
+      "max_y": 97.11,
+      "min_x": 143.185,
+      "min_y": 96.17,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      144.115,
+      96.64
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "4K7",
+    "x": 144.115,
+    "y": 96.64
+  },
+  "R17": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 133.045,
+      "max_y": 109.22,
+      "min_x": 131.585,
+      "min_y": 106.25999999999999,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      132.315,
+      107.74
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100R",
+    "x": 132.315,
+    "y": 107.74
+  },
+  "R18": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 143.445,
+      "max_y": 108.12,
+      "min_x": 141.985,
+      "min_y": 105.16,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      142.715,
+      106.64
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "15K",
+    "x": 142.715,
+    "y": 106.64
+  },
+  "R19": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 146.345,
+      "max_y": 111.62,
+      "min_x": 144.88500000000002,
+      "min_y": 108.66,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      145.615,
+      110.14
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "8.2K",
+    "x": 145.615,
+    "y": 110.14
+  },
+  "R2": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 157.69494,
+      "max_y": 81.58,
+      "min_x": 155.83494,
+      "min_y": 80.64,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      156.76494,
+      81.11
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "33",
+    "x": 156.76494,
+    "y": 81.11
+  },
+  "R20": {
+    "bbox": {
+      "height": 3.3600000000000136,
+      "max_x": 150.86499999999998,
+      "max_y": 130.42000000000002,
+      "min_x": 148.965,
+      "min_y": 127.06,
+      "width": 1.8999999999999773
+    },
+    "centroid": [
+      149.915,
+      128.74
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0805_2012Metric",
+    "footprint_area_mm2": 6.384,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "49.9",
+    "x": 149.915,
+    "y": 128.74
+  },
+  "R21": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 173.845,
+      "max_y": 114.91,
+      "min_x": 171.98499999999999,
+      "min_y": 113.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      172.915,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "2.2K",
+    "x": 172.915,
+    "y": 114.44
+  },
+  "R22": {
+    "bbox": {
+      "height": 1.9000000000000057,
+      "max_x": 112.09500000000001,
+      "max_y": 91.89,
+      "min_x": 108.735,
+      "min_y": 89.99,
+      "width": 3.3600000000000136
+    },
+    "centroid": [
+      110.415,
+      90.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0805_2012Metric",
+    "footprint_area_mm2": 6.384,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 110.415,
+    "y": 90.94
+  },
+  "R23": {
+    "bbox": {
+      "height": 1.9000000000000057,
+      "max_x": 112.09500000000001,
+      "max_y": 94.89,
+      "min_x": 108.735,
+      "min_y": 92.99,
+      "width": 3.3600000000000136
+    },
+    "centroid": [
+      110.415,
+      93.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0805_2012Metric",
+    "footprint_area_mm2": 6.384,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 110.415,
+    "y": 93.94
+  },
+  "R24": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 173.845,
+      "max_y": 118.91,
+      "min_x": 171.98499999999999,
+      "min_y": 117.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      172.915,
+      118.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "2.2K",
+    "x": 172.915,
+    "y": 118.44
+  },
+  "R25": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 173.845,
+      "max_y": 122.91,
+      "min_x": 171.98499999999999,
+      "min_y": 121.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      172.915,
+      122.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "2.2K",
+    "x": 172.915,
+    "y": 122.44
+  },
+  "R26": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 133.54500000000002,
+      "max_y": 118.009999,
+      "min_x": 131.685,
+      "min_y": 117.069999,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      132.615,
+      117.539999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "12.1K",
+    "x": 132.615,
+    "y": 117.539999
+  },
+  "R27": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 130.745,
+      "max_y": 119.41,
+      "min_x": 128.885,
+      "min_y": 118.47,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      129.815,
+      118.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100K",
+    "x": 129.815,
+    "y": 118.94
+  },
+  "R28": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 149.89499999999998,
+      "max_y": 112.769999,
+      "min_x": 146.935,
+      "min_y": 111.30999899999999,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      148.415,
+      112.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10R",
+    "x": 148.415,
+    "y": 112.039999
+  },
+  "R29": {
+    "bbox": {
+      "height": 2.960000000000008,
+      "max_x": 156.945,
+      "max_y": 108.12,
+      "min_x": 155.485,
+      "min_y": 105.16,
+      "width": 1.4599999999999795
+    },
+    "centroid": [
+      156.215,
+      106.64
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "0R",
+    "x": 156.215,
+    "y": 106.64
+  },
+  "R3": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 157.69494,
+      "max_y": 83.38,
+      "min_x": 155.83494,
+      "min_y": 82.44,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      156.76494,
+      82.91
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "33",
+    "x": 156.76494,
+    "y": 82.91
+  },
+  "R30": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 133.54500000000002,
+      "max_y": 119.509999,
+      "min_x": 131.685,
+      "min_y": 118.569999,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      132.615,
+      119.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "3.87K",
+    "x": 132.615,
+    "y": 119.039999
+  },
+  "R31": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 119.34500000000001,
+      "max_y": 129.41,
+      "min_x": 117.485,
+      "min_y": 128.47,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      118.415,
+      128.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100K",
+    "x": 118.415,
+    "y": 128.94
+  },
+  "R32": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 122.14500000000001,
+      "max_y": 128.009999,
+      "min_x": 120.285,
+      "min_y": 127.069999,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      121.215,
+      127.539999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "12.1K",
+    "x": 121.215,
+    "y": 127.539999
+  },
+  "R33": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 122.14500000000001,
+      "max_y": 129.509999,
+      "min_x": 120.285,
+      "min_y": 128.569999,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      121.215,
+      129.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "3.87K",
+    "x": 121.215,
+    "y": 129.039999
+  },
+  "R34": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 121.045,
+      "max_y": 131.91,
+      "min_x": 119.18499999999999,
+      "min_y": 130.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      120.115,
+      131.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "2.2K",
+    "x": 120.115,
+    "y": 131.44
+  },
+  "R35": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 151.345,
+      "max_y": 116.11,
+      "min_x": 149.48499999999999,
+      "min_y": 115.17,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      150.415,
+      115.64
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100K",
+    "x": 150.415,
+    "y": 115.64
+  },
+  "R36": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 125.89500000000001,
+      "max_y": 98.87,
+      "min_x": 122.935,
+      "min_y": 97.41,
+      "width": 2.960000000000008
+    },
+    "centroid": [
+      124.415,
+      98.14
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 124.415,
+    "y": 98.14
+  },
+  "R37": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 125.34500000000001,
+      "max_y": 100.71,
+      "min_x": 123.485,
+      "min_y": 99.77,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      124.415,
+      100.24
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 124.415,
+    "y": 100.24
+  },
+  "R38": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 163.04500000000002,
+      "max_y": 113.21,
+      "min_x": 161.185,
+      "min_y": 112.27,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      162.115,
+      112.74
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 162.115,
+    "y": 112.74
+  },
+  "R39": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 164.385,
+      "max_y": 99.87,
+      "min_x": 163.445,
+      "min_y": 98.00999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      163.915,
+      98.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "100K",
+    "x": 163.915,
+    "y": 98.94
+  },
+  "R4": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 128.345,
+      "max_y": 98.509999,
+      "min_x": 126.485,
+      "min_y": 97.569999,
+      "width": 1.8599999999999994
+    },
+    "centroid": [
+      127.415,
+      98.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 127.415,
+    "y": 98.039999
+  },
+  "R40": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 164.845,
+      "max_y": 101.71,
+      "min_x": 162.98499999999999,
+      "min_y": 100.77,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      163.915,
+      101.24
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100K",
+    "x": 163.915,
+    "y": 101.24
+  },
+  "R41": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 167.185,
+      "max_y": 99.87,
+      "min_x": 166.245,
+      "min_y": 98.00999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      166.715,
+      98.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1K",
+    "x": 166.715,
+    "y": 98.94
+  },
+  "R42": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 150.385,
+      "max_y": 125.37,
+      "min_x": 149.445,
+      "min_y": 123.50999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      149.915,
+      124.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10K",
+    "x": 149.915,
+    "y": 124.44
+  },
+  "R43": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 116.84500000000001,
+      "max_y": 117.91,
+      "min_x": 114.985,
+      "min_y": 116.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      115.915,
+      117.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "30.1K 1%",
+    "x": 115.915,
+    "y": 117.44
+  },
+  "R44": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 119.34500000000001,
+      "max_y": 117.91,
+      "min_x": 117.485,
+      "min_y": 116.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      118.415,
+      117.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10K 1%",
+    "x": 118.415,
+    "y": 117.44
+  },
+  "R45": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 119.34500000000001,
+      "max_y": 120.31,
+      "min_x": 117.485,
+      "min_y": 119.37,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      118.415,
+      119.84
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "1K",
+    "x": 118.415,
+    "y": 119.84
+  },
+  "R46": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 151.845,
+      "max_y": 123.11,
+      "min_x": 149.98499999999999,
+      "min_y": 122.17,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      150.915,
+      122.64
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10K",
+    "x": 150.915,
+    "y": 122.64
+  },
+  "R47": {
+    "bbox": {
+      "height": 3.3600000000000136,
+      "max_x": 157.86499999999998,
+      "max_y": 130.42000000000002,
+      "min_x": 155.965,
+      "min_y": 127.06,
+      "width": 1.8999999999999773
+    },
+    "centroid": [
+      156.915,
+      128.74
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0805_2012Metric",
+    "footprint_area_mm2": 6.384,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "49.9",
+    "x": 156.915,
+    "y": 128.74
+  },
+  "R48": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 173.845,
+      "max_y": 107.91,
+      "min_x": 171.98499999999999,
+      "min_y": 106.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      172.915,
+      107.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10K",
+    "x": 172.915,
+    "y": 107.44
+  },
+  "R49": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 145.585,
+      "max_y": 122.969999,
+      "min_x": 144.645,
+      "min_y": 121.10999899999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      145.115,
+      122.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "1K",
+    "x": 145.115,
+    "y": 122.039999
+  },
+  "R5": {
+    "bbox": {
+      "height": 1.9000000000000057,
+      "max_x": 113.09500000000001,
+      "max_y": 89.19,
+      "min_x": 109.735,
+      "min_y": 87.28999999999999,
+      "width": 3.3600000000000136
+    },
+    "centroid": [
+      111.415,
+      88.24
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0805_2012Metric",
+    "footprint_area_mm2": 6.384,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 111.415,
+    "y": 88.24
+  },
+  "R50": {
+    "bbox": {
+      "height": 1.8600000000000136,
+      "max_x": 145.585,
+      "max_y": 125.37,
+      "min_x": 144.645,
+      "min_y": 123.50999999999999,
+      "width": 0.9399999999999977
+    },
+    "centroid": [
+      145.115,
+      124.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "10K",
+    "x": 145.115,
+    "y": 124.44
+  },
+  "R51": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 143.54500000000002,
+      "max_y": 126.41,
+      "min_x": 141.685,
+      "min_y": 125.47,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      142.615,
+      125.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "77.4K 0.1%",
+    "x": 142.615,
+    "y": 125.94
+  },
+  "R52": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 143.54500000000002,
+      "max_y": 127.91,
+      "min_x": 141.685,
+      "min_y": 126.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      142.615,
+      127.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "10K 0.1%",
+    "x": 142.615,
+    "y": 127.44
+  },
+  "R53": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 132.54500000000002,
+      "max_y": 121.91,
+      "min_x": 130.685,
+      "min_y": 120.97,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      131.615,
+      121.44
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "2.2K",
+    "x": 131.615,
+    "y": 121.44
+  },
+  "R6": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 136.295,
+      "max_y": 100.67,
+      "min_x": 133.335,
+      "min_y": 99.21,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      134.815,
+      99.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 134.815,
+    "y": 99.94
+  },
+  "R7": {
+    "bbox": {
+      "height": 1.460000000000008,
+      "max_x": 136.295,
+      "max_y": 102.67,
+      "min_x": 133.335,
+      "min_y": 101.21,
+      "width": 2.9599999999999795
+    },
+    "centroid": [
+      134.815,
+      101.94
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0603_1608Metric",
+    "footprint_area_mm2": 4.3216,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "0",
+    "x": 134.815,
+    "y": 101.94
+  },
+  "R8": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 176.19494,
+      "max_y": 79.58,
+      "min_x": 174.33494,
+      "min_y": 78.64,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      175.26494,
+      79.11
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "100K",
+    "x": 175.26494,
+    "y": 79.11
+  },
+  "R9": {
+    "bbox": {
+      "height": 0.9399999999999977,
+      "max_x": 158.89494000000002,
+      "max_y": 87.08,
+      "min_x": 157.03494,
+      "min_y": 86.14,
+      "width": 1.8600000000000136
+    },
+    "centroid": [
+      157.96494,
+      86.61
+    ],
+    "footprint": "GPSDO_Rev1.0:R_0402_1005Metric",
+    "footprint_area_mm2": 1.7484,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "470",
+    "x": 157.96494,
+    "y": 86.61
+  },
+  "RF1": {
+    "bbox": {
+      "height": 5.199999999999989,
+      "max_x": 178.18988,
+      "max_y": 75.71,
+      "min_x": 174.34,
+      "min_y": 70.51,
+      "width": 3.8498799999999846
+    },
+    "centroid": [
+      176.26494,
+      73.11
+    ],
+    "footprint": "GPSDO_Rev1.0:KH-IPEX-K501-29",
+    "footprint_area_mm2": 20.0194,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "KH-IPEX-K501-29",
+    "x": 176.26494,
+    "y": 73.11
+  },
+  "RF2": {
+    "bbox": {
+      "height": 3.849880000000013,
+      "max_x": 125.515,
+      "max_y": 68.964939,
+      "min_x": 120.31500000000001,
+      "min_y": 65.11505899999999,
+      "width": 5.199999999999989
+    },
+    "centroid": [
+      122.915,
+      67.039999
+    ],
+    "footprint": "GPSDO_Rev1.0:KH-IPEX-K501-29",
+    "footprint_area_mm2": 20.0194,
+    "layer": "F.Cu",
+    "rotation": 180.0,
+    "value": "KH-IPEX-K501-29",
+    "x": 122.915,
+    "y": 67.039999
+  },
+  "TP1": {
+    "bbox": {
+      "height": 2.0,
+      "max_x": 109.415,
+      "max_y": 88.94,
+      "min_x": 107.415,
+      "min_y": 86.94,
+      "width": 2.0
+    },
+    "centroid": [
+      108.415,
+      87.94
+    ],
+    "footprint": "GPSDO_Rev1.0:TestPoint_Pad_D1.0mm",
+    "footprint_area_mm2": 4.0,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "Volt TestPoint",
+    "x": 108.415,
+    "y": 87.94
+  },
+  "TP2": {
+    "bbox": {
+      "height": 2.0,
+      "max_x": 114.415,
+      "max_y": 92.44,
+      "min_x": 112.415,
+      "min_y": 90.44,
+      "width": 2.0
+    },
+    "centroid": [
+      113.415,
+      91.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TestPoint_Pad_D1.0mm",
+    "footprint_area_mm2": 4.0,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "TestPoint",
+    "x": 113.415,
+    "y": 91.44
+  },
+  "U1": {
+    "bbox": {
+      "height": 7.462000000000003,
+      "max_x": 152.9296,
+      "max_y": 96.09,
+      "min_x": 147.915,
+      "min_y": 88.628,
+      "width": 5.0146000000000015
+    },
+    "centroid": [
+      150.415,
+      92.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TDC7200PWR",
+    "footprint_area_mm2": 37.4189,
+    "layer": "F.Cu",
+    "rotation": 180.0,
+    "value": "TDC7200PWR",
+    "x": 150.415,
+    "y": 92.44
+  },
+  "U10": {
+    "bbox": {
+      "height": 3.328000000000003,
+      "max_x": 149.315,
+      "max_y": 118.718,
+      "min_x": 145.515,
+      "min_y": 115.39,
+      "width": 3.8000000000000114
+    },
+    "centroid": [
+      147.415,
+      116.94
+    ],
+    "footprint": "GPSDO_Rev1.0:SN74LVC1T45DBVR",
+    "footprint_area_mm2": 12.6464,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "SN74LVC1T45DBVR",
+    "x": 147.415,
+    "y": 116.94
+  },
+  "U11": {
+    "bbox": {
+      "height": 3.3186369999999954,
+      "max_x": 121.33500000000001,
+      "max_y": 105.01619699999999,
+      "min_x": 115.495,
+      "min_y": 101.69756,
+      "width": 5.840000000000003
+    },
+    "centroid": [
+      118.415,
+      103.44
+    ],
+    "footprint": "GPSDO_Rev1.0:CH340E",
+    "footprint_area_mm2": 19.3808,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "CH340E",
+    "x": 118.415,
+    "y": 103.44
+  },
+  "U13": {
+    "bbox": {
+      "height": 4.841761999999989,
+      "max_x": 155.65503999999999,
+      "max_y": 129.041722,
+      "min_x": 151.17496,
+      "min_y": 124.19996,
+      "width": 4.480079999999987
+    },
+    "centroid": [
+      153.415,
+      126.44
+    ],
+    "footprint": "GPSDO_Rev1.0:ISL55110IRZ-T",
+    "footprint_area_mm2": 21.6915,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "ISL55110IRZ-T",
+    "x": 153.415,
+    "y": 126.44
+  },
+  "U14": {
+    "bbox": {
+      "height": 3.0801820000000077,
+      "max_x": 131.065,
+      "max_y": 117.43987,
+      "min_x": 128.014748,
+      "min_y": 114.35968799999999,
+      "width": 3.0502520000000004
+    },
+    "centroid": [
+      129.815,
+      115.94
+    ],
+    "footprint": "GPSDO_Rev1.0:TPS7A5201RPSR",
+    "footprint_area_mm2": 9.3953,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "TPS7A5201RPSR",
+    "x": 129.815,
+    "y": 115.94
+  },
+  "U15": {
+    "bbox": {
+      "height": 8.063720000000004,
+      "max_x": 171.31472,
+      "max_y": 111.33972,
+      "min_x": 163.51528,
+      "min_y": 103.276,
+      "width": 7.799440000000004
+    },
+    "centroid": [
+      167.415,
+      107.44
+    ],
+    "footprint": "GPSDO_Rev1.0:STM32G431CBU6",
+    "footprint_area_mm2": 62.8925,
+    "layer": "F.Cu",
+    "rotation": 180.0,
+    "value": "STM32G431CBU6",
+    "x": 167.415,
+    "y": 107.44
+  },
+  "U16": {
+    "bbox": {
+      "height": 3.0801820000000077,
+      "max_x": 119.665,
+      "max_y": 127.43987,
+      "min_x": 116.614748,
+      "min_y": 124.35968799999999,
+      "width": 3.0502520000000004
+    },
+    "centroid": [
+      118.415,
+      125.94
+    ],
+    "footprint": "GPSDO_Rev1.0:TPS7A5201RPSR",
+    "footprint_area_mm2": 9.3953,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "TPS7A5201RPSR",
+    "x": 118.415,
+    "y": 125.94
+  },
+  "U18": {
+    "bbox": {
+      "height": 2.739999999999995,
+      "max_x": 119.235,
+      "max_y": 115.74,
+      "min_x": 116.59500000000001,
+      "min_y": 113.0,
+      "width": 2.6399999999999864
+    },
+    "centroid": [
+      117.915,
+      114.44
+    ],
+    "footprint": "GPSDO_Rev1.0:SOT-583-8",
+    "footprint_area_mm2": 7.2336,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "TPS2116DRLR",
+    "x": 117.915,
+    "y": 114.44
+  },
+  "U2": {
+    "bbox": {
+      "height": 3.0011400000000066,
+      "max_x": 133.165,
+      "max_y": 102.44114,
+      "min_x": 125.761,
+      "min_y": 99.44,
+      "width": 7.403999999999996
+    },
+    "centroid": [
+      129.415,
+      100.94
+    ],
+    "footprint": "GPSDO_Rev1.0:LMK1C1103PWR",
+    "footprint_area_mm2": 22.2204,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "LMK1C1103PWR",
+    "x": 129.415,
+    "y": 100.94
+  },
+  "U3": {
+    "bbox": {
+      "height": 2.15239600000001,
+      "max_x": 144.12544599999998,
+      "max_y": 93.516198,
+      "min_x": 141.20802,
+      "min_y": 91.36380199999999,
+      "width": 2.9174259999999776
+    },
+    "centroid": [
+      142.915,
+      92.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TMP117AIDRVR",
+    "footprint_area_mm2": 6.2795,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "TMP117AIDRVR",
+    "x": 142.915,
+    "y": 92.44
+  },
+  "U4": {
+    "bbox": {
+      "height": 1.789999999999992,
+      "max_x": 140.824701,
+      "max_y": 125.42999999999999,
+      "min_x": 139.015,
+      "min_y": 123.64,
+      "width": 1.8097010000000182
+    },
+    "centroid": [
+      139.915,
+      124.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TPS61023DRLR",
+    "footprint_area_mm2": 3.2394,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "TPS61023DRLR",
+    "x": 139.915,
+    "y": 124.44
+  },
+  "U5": {
+    "bbox": {
+      "height": 20.0,
+      "max_x": 137.44799999999998,
+      "max_y": 92.753,
+      "min_x": 117.448,
+      "min_y": 72.753,
+      "width": 19.999999999999986
+    },
+    "centroid": [
+      127.448,
+      80.003
+    ],
+    "footprint": "GPSDO_Rev1.0:OCXO_20x20mm",
+    "footprint_area_mm2": 400.0,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "OCXO_20x20mm",
+    "x": 127.448,
+    "y": 80.003
+  },
+  "U6": {
+    "bbox": {
+      "height": 16.208426000000003,
+      "max_x": 173.534942,
+      "max_y": 87.318264,
+      "min_x": 159.26513,
+      "min_y": 71.109838,
+      "width": 14.269812000000002
+    },
+    "centroid": [
+      166.26494,
+      79.11
+    ],
+    "footprint": "GPSDO_Rev1.0:NEO-M8T-0",
+    "footprint_area_mm2": 231.2912,
+    "layer": "F.Cu",
+    "rotation": 180.0,
+    "value": "NEO-M8T-0",
+    "x": 166.26494,
+    "y": 79.11
+  },
+  "U7": {
+    "bbox": {
+      "height": 25.400000000000006,
+      "max_x": 140.115,
+      "max_y": 96.14,
+      "min_x": 114.715,
+      "min_y": 70.74,
+      "width": 25.400000000000006
+    },
+    "centroid": [
+      127.415,
+      83.44
+    ],
+    "footprint": "GPSDO_Rev1.0:DOPFITKR2-10M",
+    "footprint_area_mm2": 645.16,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "OCXO_25.4x25.4mm",
+    "x": 127.415,
+    "y": 83.44
+  },
+  "U8": {
+    "bbox": {
+      "height": 7.049999999999997,
+      "max_x": 154.941208,
+      "max_y": 109.49,
+      "min_x": 149.888792,
+      "min_y": 102.44,
+      "width": 5.052415999999994
+    },
+    "centroid": [
+      152.415,
+      105.94
+    ],
+    "footprint": "GPSDO_Rev1.0:REF5040",
+    "footprint_area_mm2": 35.6195,
+    "layer": "F.Cu",
+    "rotation": 0.0,
+    "value": "REF5040",
+    "x": 152.415,
+    "y": 105.94
+  },
+  "U9": {
+    "bbox": {
+      "height": 5.052415999999994,
+      "max_x": 140.915,
+      "max_y": 110.966208,
+      "min_x": 133.86499999999998,
+      "min_y": 105.913792,
+      "width": 7.050000000000011
+    },
+    "centroid": [
+      137.415,
+      108.44
+    ],
+    "footprint": "GPSDO_Rev1.0:OPA388IDR",
+    "footprint_area_mm2": 35.6195,
+    "layer": "F.Cu",
+    "rotation": 90.0,
+    "value": "OPA388IDR",
+    "x": 137.415,
+    "y": 108.44
+  },
+  "USB1": {
+    "bbox": {
+      "height": 9.849999999999994,
+      "max_x": 115.89,
+      "max_y": 108.365,
+      "min_x": 107.99000000000001,
+      "min_y": 98.515,
+      "width": 7.8999999999999915
+    },
+    "centroid": [
+      110.915,
+      103.44
+    ],
+    "footprint": "GPSDO_Rev1.0:TYPE-C_16PIN_2MD_073",
+    "footprint_area_mm2": 77.815,
+    "layer": "F.Cu",
+    "rotation": -90.0,
+    "value": "TYPE-C_16PIN_2MD_073",
+    "x": 110.915,
+    "y": 103.44
+  }
+}

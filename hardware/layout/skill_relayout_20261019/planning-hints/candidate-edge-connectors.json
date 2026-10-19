@@ -1,0 +1,60 @@
+[
+  {
+    "allow_body_outside_board_hint": true,
+    "candidate_access_side": "bottom",
+    "candidate_edge_required": true,
+    "candidate_role": "connector",
+    "candidate_rotation_auto_deg": 180.0,
+    "distance_to_nearest_edge_mm": 3.06,
+    "high_speed_nets": [],
+    "metadata_only": true,
+    "near_board_edge": true,
+    "nets": [
+      "GND",
+      "Net-(J1-In)"
+    ],
+    "note": "Candidate edge connector hint; confirm access side, rotation, and edge_required against the enclosure before committing in board.pln.",
+    "ref": "J1",
+    "role": "connector"
+  },
+  {
+    "allow_body_outside_board_hint": true,
+    "candidate_access_side": "right",
+    "candidate_edge_required": true,
+    "candidate_role": "debug_header",
+    "candidate_rotation_auto_deg": 90.0,
+    "distance_to_nearest_edge_mm": 5.0,
+    "high_speed_nets": [
+      "/MCU/SWCLK"
+    ],
+    "metadata_only": true,
+    "near_board_edge": true,
+    "nets": [
+      "/MCU/NRST",
+      "/MCU/SWCLK",
+      "/MCU/SWDIO",
+      "GND"
+    ],
+    "note": "Candidate edge connector hint; confirm access side, rotation, and edge_required against the enclosure before committing in board.pln.",
+    "ref": "J3",
+    "role": "debug_header"
+  },
+  {
+    "allow_body_outside_board_hint": true,
+    "candidate_access_side": "bottom",
+    "candidate_edge_required": true,
+    "candidate_role": "connector",
+    "candidate_rotation_auto_deg": 180.0,
+    "distance_to_nearest_edge_mm": 3.06,
+    "high_speed_nets": [],
+    "metadata_only": true,
+    "near_board_edge": true,
+    "nets": [
+      "GND",
+      "Net-(J4-In)"
+    ],
+    "note": "Candidate edge connector hint; confirm access side, rotation, and edge_required against the enclosure before committing in board.pln.",
+    "ref": "J4",
+    "role": "connector"
+  }
+]

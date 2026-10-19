@@ -1,0 +1,2965 @@
+{
+  "before": [
+    {
+      "ref": "C74",
+      "owner": "U4",
+      "pin": "6",
+      "limit": 1.8,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.625,
+      "ok": false
+    },
+    {
+      "ref": "L2",
+      "owner": "U4",
+      "pin": "5",
+      "limit": 2.5,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.08,
+      "ok": true
+    },
+    {
+      "ref": "C73",
+      "owner": "U4",
+      "pin": "3",
+      "limit": 1.5,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 1.417,
+      "ok": true
+    },
+    {
+      "ref": "C72",
+      "owner": "U4",
+      "pin": "3",
+      "limit": 3.0,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.683,
+      "ok": true
+    },
+    {
+      "ref": "C75",
+      "owner": "U4",
+      "pin": "6",
+      "limit": 3.5,
+      "priority": 6,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 5.064,
+      "ok": false
+    },
+    {
+      "ref": "R51",
+      "owner": "U4",
+      "pin": "1",
+      "limit": 2.0,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.655,
+      "ok": false
+    },
+    {
+      "ref": "R52",
+      "owner": "U4",
+      "pin": "1",
+      "limit": 2.0,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.885,
+      "ok": false
+    },
+    {
+      "ref": "R50",
+      "owner": "U4",
+      "pin": "2",
+      "limit": 3.0,
+      "priority": 7,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 4.479,
+      "ok": false
+    },
+    {
+      "ref": "R49",
+      "owner": "U4",
+      "pin": "2",
+      "limit": 3.5,
+      "priority": 8,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 5.317,
+      "ok": false
+    },
+    {
+      "ref": "C34",
+      "owner": "U14",
+      "pin": "1",
+      "limit": 2.4,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.438,
+      "ok": false
+    },
+    {
+      "ref": "C37",
+      "owner": "U14",
+      "pin": "11",
+      "limit": 2.3,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.438,
+      "ok": false
+    },
+    {
+      "ref": "C35",
+      "owner": "U14",
+      "pin": "4",
+      "limit": 2.0,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.925,
+      "ok": false
+    },
+    {
+      "ref": "R26",
+      "owner": "U14",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.81,
+      "ok": false
+    },
+    {
+      "ref": "R30",
+      "owner": "U14",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 3.358,
+      "ok": false
+    },
+    {
+      "ref": "C36",
+      "owner": "U14",
+      "pin": "9",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 4.123,
+      "ok": false
+    },
+    {
+      "ref": "R27",
+      "owner": "U14",
+      "pin": "8",
+      "limit": 3.0,
+      "priority": 6,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.548,
+      "ok": true
+    },
+    {
+      "ref": "C38",
+      "owner": "U16",
+      "pin": "1",
+      "limit": 2.4,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.438,
+      "ok": false
+    },
+    {
+      "ref": "C41",
+      "owner": "U16",
+      "pin": "11",
+      "limit": 2.3,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.438,
+      "ok": false
+    },
+    {
+      "ref": "C39",
+      "owner": "U16",
+      "pin": "4",
+      "limit": 2.0,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.925,
+      "ok": false
+    },
+    {
+      "ref": "R32",
+      "owner": "U16",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.81,
+      "ok": false
+    },
+    {
+      "ref": "R33",
+      "owner": "U16",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 3.358,
+      "ok": false
+    },
+    {
+      "ref": "C40",
+      "owner": "U16",
+      "pin": "9",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 4.123,
+      "ok": false
+    },
+    {
+      "ref": "R31",
+      "owner": "U16",
+      "pin": "8",
+      "limit": 3.0,
+      "priority": 6,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.548,
+      "ok": true
+    },
+    {
+      "ref": "C48",
+      "owner": "U13",
+      "pin": "10",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.609,
+      "ok": false
+    },
+    {
+      "ref": "C46",
+      "owner": "U13",
+      "pin": "1",
+      "limit": 1.5,
+      "priority": 1,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.812,
+      "ok": false
+    },
+    {
+      "ref": "R20",
+      "owner": "U13",
+      "pin": "9",
+      "limit": 2.5,
+      "priority": 2,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 2.799,
+      "ok": false
+    },
+    {
+      "ref": "R47",
+      "owner": "U13",
+      "pin": "12",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 2.799,
+      "ok": false
+    },
+    {
+      "ref": "C49",
+      "owner": "U13",
+      "pin": "10",
+      "limit": 3.5,
+      "priority": 4,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 3.631,
+      "ok": false
+    },
+    {
+      "ref": "C47",
+      "owner": "U13",
+      "pin": "1",
+      "limit": 3.5,
+      "priority": 5,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 4.466,
+      "ok": false
+    },
+    {
+      "ref": "R42",
+      "owner": "U13",
+      "pin": "5",
+      "limit": 3.5,
+      "priority": 6,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.756,
+      "ok": true
+    },
+    {
+      "ref": "R46",
+      "owner": "U13",
+      "pin": "4",
+      "limit": 3.5,
+      "priority": 7,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 2.263,
+      "ok": true
+    },
+    {
+      "ref": "C12",
+      "owner": "U1",
+      "pin": "14",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 1.764,
+      "ok": false
+    },
+    {
+      "ref": "C9",
+      "owner": "U1",
+      "pin": "13",
+      "limit": 2.2,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 3.003,
+      "ok": false
+    },
+    {
+      "ref": "C10",
+      "owner": "U1",
+      "pin": "14",
+      "limit": 3.5,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 1.975,
+      "ok": true
+    },
+    {
+      "ref": "R10",
+      "owner": "U1",
+      "pin": "8",
+      "limit": 3.5,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 1.626,
+      "ok": true
+    },
+    {
+      "ref": "FB2",
+      "owner": "U1",
+      "pin": "14",
+      "limit": 5.0,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 5.265,
+      "ok": false
+    },
+    {
+      "ref": "JP1",
+      "owner": "U1",
+      "pin": "4",
+      "limit": 3.5,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 3.07,
+      "ok": true
+    },
+    {
+      "ref": "C13",
+      "owner": "U15",
+      "pin": "48",
+      "limit": 1.8,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.543,
+      "ok": true
+    },
+    {
+      "ref": "C14",
+      "owner": "U15",
+      "pin": "23",
+      "limit": 1.8,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.067,
+      "ok": false
+    },
+    {
+      "ref": "C15",
+      "owner": "U15",
+      "pin": "21",
+      "limit": 1.8,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.882,
+      "ok": false
+    },
+    {
+      "ref": "C32",
+      "owner": "U15",
+      "pin": "35",
+      "limit": 1.8,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.105,
+      "ok": false
+    },
+    {
+      "ref": "C33",
+      "owner": "U15",
+      "pin": "1",
+      "limit": 1.8,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 8.506,
+      "ok": false
+    },
+    {
+      "ref": "C42",
+      "owner": "U15",
+      "pin": "7",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.586,
+      "ok": false
+    },
+    {
+      "ref": "R48",
+      "owner": "U15",
+      "pin": "46",
+      "limit": 3.0,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.315,
+      "ok": true
+    },
+    {
+      "ref": "FB1",
+      "owner": "U15",
+      "pin": "23",
+      "limit": 5.0,
+      "priority": 7,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.76,
+      "ok": true
+    },
+    {
+      "ref": "R38",
+      "owner": "U15",
+      "pin": "22",
+      "limit": 3.0,
+      "priority": 8,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.786,
+      "ok": false
+    },
+    {
+      "ref": "C7",
+      "owner": "U6",
+      "pin": "23",
+      "limit": 1.8,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.197,
+      "ok": false
+    },
+    {
+      "ref": "C8",
+      "owner": "U6",
+      "pin": "22",
+      "limit": 2.2,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.318,
+      "ok": false
+    },
+    {
+      "ref": "C6",
+      "owner": "U6",
+      "pin": "23",
+      "limit": 3.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.2,
+      "ok": false
+    },
+    {
+      "ref": "R2",
+      "owner": "U6",
+      "pin": "20",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.952,
+      "ok": false
+    },
+    {
+      "ref": "R3",
+      "owner": "U6",
+      "pin": "21",
+      "limit": 3.0,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.911,
+      "ok": false
+    },
+    {
+      "ref": "R1",
+      "owner": "U6",
+      "pin": "3",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.399,
+      "ok": true
+    },
+    {
+      "ref": "L1",
+      "owner": "U6",
+      "pin": "11",
+      "limit": 3.5,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.848,
+      "ok": false
+    },
+    {
+      "ref": "R8",
+      "owner": "U6",
+      "pin": "7",
+      "limit": 3.0,
+      "priority": 7,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.434,
+      "ok": false
+    },
+    {
+      "ref": "R9",
+      "owner": "U6",
+      "pin": "22",
+      "limit": 3.5,
+      "priority": 8,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.826,
+      "ok": false
+    },
+    {
+      "ref": "FB8",
+      "owner": "U6",
+      "pin": "23",
+      "limit": 5.0,
+      "priority": 9,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 6.089,
+      "ok": false
+    },
+    {
+      "ref": "C4",
+      "owner": "U2",
+      "pin": "6",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.006,
+      "ok": false
+    },
+    {
+      "ref": "C3",
+      "owner": "U2",
+      "pin": "6",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.574,
+      "ok": false
+    },
+    {
+      "ref": "R6",
+      "owner": "U2",
+      "pin": "8",
+      "limit": 2.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.648,
+      "ok": true
+    },
+    {
+      "ref": "R7",
+      "owner": "U2",
+      "pin": "5",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.648,
+      "ok": true
+    },
+    {
+      "ref": "R36",
+      "owner": "U2",
+      "pin": "1",
+      "limit": 2.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.425,
+      "ok": false
+    },
+    {
+      "ref": "R37",
+      "owner": "U2",
+      "pin": "1",
+      "limit": 3.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.598,
+      "ok": true
+    },
+    {
+      "ref": "FB3",
+      "owner": "U2",
+      "pin": "6",
+      "limit": 4.5,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 7.321,
+      "ok": false
+    },
+    {
+      "ref": "C18",
+      "owner": "U9",
+      "pin": "7",
+      "limit": 1.9,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.634,
+      "ok": false
+    },
+    {
+      "ref": "C17",
+      "owner": "U9",
+      "pin": "7",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 6.066,
+      "ok": false
+    },
+    {
+      "ref": "C20",
+      "owner": "U9",
+      "pin": "3",
+      "limit": 2.3,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.015,
+      "ok": false
+    },
+    {
+      "ref": "R18",
+      "owner": "U9",
+      "pin": "3",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.354,
+      "ok": false
+    },
+    {
+      "ref": "R17",
+      "owner": "U9",
+      "pin": "6",
+      "limit": 2.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.613,
+      "ok": false
+    },
+    {
+      "ref": "C21",
+      "owner": "U9",
+      "pin": "6",
+      "limit": 4.0,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 9.924,
+      "ok": false
+    },
+    {
+      "ref": "FB7",
+      "owner": "U9",
+      "pin": "7",
+      "limit": 5.0,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.071,
+      "ok": true
+    },
+    {
+      "ref": "C22",
+      "owner": "U10",
+      "pin": "1",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.733,
+      "ok": false
+    },
+    {
+      "ref": "C24",
+      "owner": "U10",
+      "pin": "6",
+      "limit": 1.5,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.733,
+      "ok": false
+    },
+    {
+      "ref": "R35",
+      "owner": "U10",
+      "pin": "3",
+      "limit": 3.0,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.193,
+      "ok": true
+    },
+    {
+      "ref": "R19",
+      "owner": "U10",
+      "pin": "4",
+      "limit": 4.0,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.045,
+      "ok": false
+    },
+    {
+      "ref": "C11",
+      "owner": "U8",
+      "pin": "2",
+      "limit": 2.0,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.872,
+      "ok": true
+    },
+    {
+      "ref": "C58",
+      "owner": "U8",
+      "pin": "6",
+      "limit": 2.5,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.146,
+      "ok": false
+    },
+    {
+      "ref": "C57",
+      "owner": "U8",
+      "pin": "5",
+      "limit": 2.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.954,
+      "ok": true
+    },
+    {
+      "ref": "C56",
+      "owner": "U8",
+      "pin": "2",
+      "limit": 3.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.108,
+      "ok": false
+    },
+    {
+      "ref": "R29",
+      "owner": "U8",
+      "pin": "6",
+      "limit": 3.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.199,
+      "ok": false
+    },
+    {
+      "ref": "R28",
+      "owner": "U8",
+      "pin": "2",
+      "limit": 4.0,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.459,
+      "ok": false
+    },
+    {
+      "ref": "C27",
+      "owner": "U11",
+      "pin": "10",
+      "limit": 1.9,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.284,
+      "ok": false
+    },
+    {
+      "ref": "C28",
+      "owner": "U11",
+      "pin": "10",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.746,
+      "ok": false
+    },
+    {
+      "ref": "FB6",
+      "owner": "U11",
+      "pin": "7",
+      "limit": 4.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 7.657,
+      "ok": false
+    },
+    {
+      "ref": "R11",
+      "owner": "USB1",
+      "pin": "A5",
+      "limit": 3.0,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.615,
+      "ok": true
+    },
+    {
+      "ref": "R14",
+      "owner": "USB1",
+      "pin": "B5",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.595,
+      "ok": true
+    },
+    {
+      "ref": "C70",
+      "owner": "U18",
+      "pin": "2",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.321,
+      "ok": false
+    },
+    {
+      "ref": "C68",
+      "owner": "U18",
+      "pin": "3",
+      "limit": 2.3,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.029,
+      "ok": true
+    },
+    {
+      "ref": "C69",
+      "owner": "U18",
+      "pin": "6",
+      "limit": 2.3,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.052,
+      "ok": false
+    },
+    {
+      "ref": "C71",
+      "owner": "U18",
+      "pin": "7",
+      "limit": 3.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.947,
+      "ok": false
+    },
+    {
+      "ref": "R43",
+      "owner": "U18",
+      "pin": "4",
+      "limit": 2.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.372,
+      "ok": true
+    },
+    {
+      "ref": "R44",
+      "owner": "U18",
+      "pin": "4",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.365,
+      "ok": true
+    },
+    {
+      "ref": "C25",
+      "owner": "U18",
+      "pin": "7",
+      "limit": 4.5,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.413,
+      "ok": true
+    },
+    {
+      "ref": "C43",
+      "owner": "U18",
+      "pin": "2",
+      "limit": 3.0,
+      "priority": 7,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.938,
+      "ok": false
+    },
+    {
+      "ref": "C16",
+      "owner": "U3",
+      "pin": "5",
+      "limit": 2.0,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.835,
+      "ok": false
+    },
+    {
+      "ref": "R12",
+      "owner": "U3",
+      "pin": "6",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.18,
+      "ok": false
+    },
+    {
+      "ref": "R16",
+      "owner": "U3",
+      "pin": "1",
+      "limit": 3.0,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.57,
+      "ok": false
+    },
+    {
+      "ref": "R15",
+      "owner": "U3",
+      "pin": "3",
+      "limit": 3.0,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 5.567,
+      "ok": false
+    }
+  ],
+  "after": [
+    {
+      "ref": "C74",
+      "owner": "U4",
+      "pin": "6",
+      "limit": 1.8,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 1.354,
+      "ok": true
+    },
+    {
+      "ref": "L2",
+      "owner": "U4",
+      "pin": "5",
+      "limit": 2.5,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 1.687,
+      "ok": true
+    },
+    {
+      "ref": "C73",
+      "owner": "U4",
+      "pin": "3",
+      "limit": 1.5,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 1.318,
+      "ok": true
+    },
+    {
+      "ref": "C72",
+      "owner": "U4",
+      "pin": "3",
+      "limit": 3.0,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.642,
+      "ok": true
+    },
+    {
+      "ref": "C75",
+      "owner": "U4",
+      "pin": "6",
+      "limit": 3.5,
+      "priority": 6,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.214,
+      "ok": true
+    },
+    {
+      "ref": "R51",
+      "owner": "U4",
+      "pin": "1",
+      "limit": 2.0,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 1.317,
+      "ok": true
+    },
+    {
+      "ref": "R52",
+      "owner": "U4",
+      "pin": "1",
+      "limit": 2.0,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 1.1,
+      "ok": true
+    },
+    {
+      "ref": "R50",
+      "owner": "U4",
+      "pin": "2",
+      "limit": 3.0,
+      "priority": 7,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.683,
+      "ok": true
+    },
+    {
+      "ref": "R49",
+      "owner": "U4",
+      "pin": "2",
+      "limit": 3.5,
+      "priority": 8,
+      "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+      "mm": 2.992,
+      "ok": true
+    },
+    {
+      "ref": "C34",
+      "owner": "U14",
+      "pin": "1",
+      "limit": 2.4,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.301,
+      "ok": true
+    },
+    {
+      "ref": "C37",
+      "owner": "U14",
+      "pin": "11",
+      "limit": 2.3,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 1.801,
+      "ok": true
+    },
+    {
+      "ref": "C35",
+      "owner": "U14",
+      "pin": "4",
+      "limit": 2.0,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 1.9,
+      "ok": true
+    },
+    {
+      "ref": "R26",
+      "owner": "U14",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.398,
+      "ok": false
+    },
+    {
+      "ref": "R30",
+      "owner": "U14",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.392,
+      "ok": false
+    },
+    {
+      "ref": "C36",
+      "owner": "U14",
+      "pin": "9",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.827,
+      "ok": false
+    },
+    {
+      "ref": "R27",
+      "owner": "U14",
+      "pin": "8",
+      "limit": 3.0,
+      "priority": 6,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.415,
+      "ok": true
+    },
+    {
+      "ref": "C38",
+      "owner": "U16",
+      "pin": "1",
+      "limit": 2.4,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.301,
+      "ok": true
+    },
+    {
+      "ref": "C41",
+      "owner": "U16",
+      "pin": "11",
+      "limit": 2.3,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 1.801,
+      "ok": true
+    },
+    {
+      "ref": "C39",
+      "owner": "U16",
+      "pin": "4",
+      "limit": 2.0,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 1.9,
+      "ok": true
+    },
+    {
+      "ref": "R32",
+      "owner": "U16",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.392,
+      "ok": false
+    },
+    {
+      "ref": "R33",
+      "owner": "U16",
+      "pin": "9",
+      "limit": 2.0,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.409,
+      "ok": false
+    },
+    {
+      "ref": "C40",
+      "owner": "U16",
+      "pin": "9",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.827,
+      "ok": false
+    },
+    {
+      "ref": "R31",
+      "owner": "U16",
+      "pin": "8",
+      "limit": 3.0,
+      "priority": 6,
+      "source": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+      "mm": 2.478,
+      "ok": true
+    },
+    {
+      "ref": "C48",
+      "owner": "U13",
+      "pin": "10",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.115,
+      "ok": true
+    },
+    {
+      "ref": "C46",
+      "owner": "U13",
+      "pin": "1",
+      "limit": 1.5,
+      "priority": 1,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.501,
+      "ok": false
+    },
+    {
+      "ref": "R20",
+      "owner": "U13",
+      "pin": "9",
+      "limit": 2.5,
+      "priority": 2,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.971,
+      "ok": true
+    },
+    {
+      "ref": "R47",
+      "owner": "U13",
+      "pin": "12",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 2.044,
+      "ok": true
+    },
+    {
+      "ref": "C49",
+      "owner": "U13",
+      "pin": "10",
+      "limit": 3.5,
+      "priority": 4,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 3.03,
+      "ok": true
+    },
+    {
+      "ref": "C47",
+      "owner": "U13",
+      "pin": "1",
+      "limit": 3.5,
+      "priority": 5,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 2.528,
+      "ok": true
+    },
+    {
+      "ref": "R42",
+      "owner": "U13",
+      "pin": "5",
+      "limit": 3.5,
+      "priority": 6,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.414,
+      "ok": true
+    },
+    {
+      "ref": "R46",
+      "owner": "U13",
+      "pin": "4",
+      "limit": 3.5,
+      "priority": 7,
+      "source": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping",
+      "mm": 1.652,
+      "ok": true
+    },
+    {
+      "ref": "C12",
+      "owner": "U1",
+      "pin": "14",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 1.5,
+      "ok": false
+    },
+    {
+      "ref": "C9",
+      "owner": "U1",
+      "pin": "13",
+      "limit": 2.2,
+      "priority": 1,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 1.904,
+      "ok": true
+    },
+    {
+      "ref": "C10",
+      "owner": "U1",
+      "pin": "14",
+      "limit": 3.5,
+      "priority": 2,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 3.044,
+      "ok": true
+    },
+    {
+      "ref": "R10",
+      "owner": "U1",
+      "pin": "8",
+      "limit": 3.5,
+      "priority": 3,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 1.504,
+      "ok": true
+    },
+    {
+      "ref": "FB2",
+      "owner": "U1",
+      "pin": "14",
+      "limit": 5.0,
+      "priority": 4,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 2.254,
+      "ok": true
+    },
+    {
+      "ref": "JP1",
+      "owner": "U1",
+      "pin": "4",
+      "limit": 3.5,
+      "priority": 5,
+      "source": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+      "mm": 2.704,
+      "ok": true
+    },
+    {
+      "ref": "C13",
+      "owner": "U15",
+      "pin": "48",
+      "limit": 1.8,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.206,
+      "ok": true
+    },
+    {
+      "ref": "C14",
+      "owner": "U15",
+      "pin": "23",
+      "limit": 1.8,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.2,
+      "ok": true
+    },
+    {
+      "ref": "C15",
+      "owner": "U15",
+      "pin": "21",
+      "limit": 1.8,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.711,
+      "ok": true
+    },
+    {
+      "ref": "C32",
+      "owner": "U15",
+      "pin": "35",
+      "limit": 1.8,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.2,
+      "ok": true
+    },
+    {
+      "ref": "C33",
+      "owner": "U15",
+      "pin": "1",
+      "limit": 1.8,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.533,
+      "ok": true
+    },
+    {
+      "ref": "C42",
+      "owner": "U15",
+      "pin": "7",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.52,
+      "ok": true
+    },
+    {
+      "ref": "R48",
+      "owner": "U15",
+      "pin": "46",
+      "limit": 3.0,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.838,
+      "ok": true
+    },
+    {
+      "ref": "FB1",
+      "owner": "U15",
+      "pin": "23",
+      "limit": 5.0,
+      "priority": 7,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.13,
+      "ok": true
+    },
+    {
+      "ref": "R38",
+      "owner": "U15",
+      "pin": "22",
+      "limit": 3.0,
+      "priority": 8,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.5,
+      "ok": true
+    },
+    {
+      "ref": "C7",
+      "owner": "U6",
+      "pin": "23",
+      "limit": 1.8,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.7,
+      "ok": true
+    },
+    {
+      "ref": "C8",
+      "owner": "U6",
+      "pin": "22",
+      "limit": 2.2,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.045,
+      "ok": true
+    },
+    {
+      "ref": "C6",
+      "owner": "U6",
+      "pin": "23",
+      "limit": 3.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.221,
+      "ok": true
+    },
+    {
+      "ref": "R2",
+      "owner": "U6",
+      "pin": "20",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.132,
+      "ok": true
+    },
+    {
+      "ref": "R3",
+      "owner": "U6",
+      "pin": "21",
+      "limit": 3.0,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.49,
+      "ok": false
+    },
+    {
+      "ref": "R1",
+      "owner": "U6",
+      "pin": "3",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.2,
+      "ok": true
+    },
+    {
+      "ref": "L1",
+      "owner": "U6",
+      "pin": "11",
+      "limit": 3.5,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.001,
+      "ok": true
+    },
+    {
+      "ref": "R8",
+      "owner": "U6",
+      "pin": "7",
+      "limit": 3.0,
+      "priority": 7,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.2,
+      "ok": true
+    },
+    {
+      "ref": "R9",
+      "owner": "U6",
+      "pin": "22",
+      "limit": 3.5,
+      "priority": 8,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.186,
+      "ok": true
+    },
+    {
+      "ref": "FB8",
+      "owner": "U6",
+      "pin": "23",
+      "limit": 5.0,
+      "priority": 9,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.501,
+      "ok": true
+    },
+    {
+      "ref": "C4",
+      "owner": "U2",
+      "pin": "6",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.5,
+      "ok": false
+    },
+    {
+      "ref": "C3",
+      "owner": "U2",
+      "pin": "6",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.507,
+      "ok": true
+    },
+    {
+      "ref": "R6",
+      "owner": "U2",
+      "pin": "8",
+      "limit": 2.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.687,
+      "ok": true
+    },
+    {
+      "ref": "R7",
+      "owner": "U2",
+      "pin": "5",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.088,
+      "ok": true
+    },
+    {
+      "ref": "R36",
+      "owner": "U2",
+      "pin": "1",
+      "limit": 2.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.0,
+      "ok": true
+    },
+    {
+      "ref": "R37",
+      "owner": "U2",
+      "pin": "1",
+      "limit": 3.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.4,
+      "ok": true
+    },
+    {
+      "ref": "FB3",
+      "owner": "U2",
+      "pin": "6",
+      "limit": 4.5,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.027,
+      "ok": true
+    },
+    {
+      "ref": "C18",
+      "owner": "U9",
+      "pin": "7",
+      "limit": 1.9,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.704,
+      "ok": true
+    },
+    {
+      "ref": "C17",
+      "owner": "U9",
+      "pin": "7",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.0,
+      "ok": false
+    },
+    {
+      "ref": "C20",
+      "owner": "U9",
+      "pin": "3",
+      "limit": 2.3,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.134,
+      "ok": true
+    },
+    {
+      "ref": "R18",
+      "owner": "U9",
+      "pin": "3",
+      "limit": 2.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.882,
+      "ok": false
+    },
+    {
+      "ref": "R17",
+      "owner": "U9",
+      "pin": "6",
+      "limit": 2.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.0,
+      "ok": false
+    },
+    {
+      "ref": "C21",
+      "owner": "U9",
+      "pin": "6",
+      "limit": 4.0,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.3,
+      "ok": true
+    },
+    {
+      "ref": "FB7",
+      "owner": "U9",
+      "pin": "7",
+      "limit": 5.0,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 4.469,
+      "ok": true
+    },
+    {
+      "ref": "C22",
+      "owner": "U10",
+      "pin": "1",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.3,
+      "ok": true
+    },
+    {
+      "ref": "C24",
+      "owner": "U10",
+      "pin": "6",
+      "limit": 1.5,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.302,
+      "ok": true
+    },
+    {
+      "ref": "R35",
+      "owner": "U10",
+      "pin": "3",
+      "limit": 3.0,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.351,
+      "ok": true
+    },
+    {
+      "ref": "R19",
+      "owner": "U10",
+      "pin": "4",
+      "limit": 4.0,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.9,
+      "ok": true
+    },
+    {
+      "ref": "C11",
+      "owner": "U8",
+      "pin": "2",
+      "limit": 2.0,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.927,
+      "ok": true
+    },
+    {
+      "ref": "C58",
+      "owner": "U8",
+      "pin": "6",
+      "limit": 2.5,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.001,
+      "ok": true
+    },
+    {
+      "ref": "C57",
+      "owner": "U8",
+      "pin": "5",
+      "limit": 2.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.875,
+      "ok": true
+    },
+    {
+      "ref": "C56",
+      "owner": "U8",
+      "pin": "2",
+      "limit": 3.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.44,
+      "ok": true
+    },
+    {
+      "ref": "R29",
+      "owner": "U8",
+      "pin": "6",
+      "limit": 3.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.674,
+      "ok": true
+    },
+    {
+      "ref": "R28",
+      "owner": "U8",
+      "pin": "2",
+      "limit": 4.0,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.0,
+      "ok": true
+    },
+    {
+      "ref": "C27",
+      "owner": "U11",
+      "pin": "10",
+      "limit": 1.9,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.751,
+      "ok": true
+    },
+    {
+      "ref": "C28",
+      "owner": "U11",
+      "pin": "10",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.3,
+      "ok": false
+    },
+    {
+      "ref": "FB6",
+      "owner": "U11",
+      "pin": "7",
+      "limit": 4.5,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.202,
+      "ok": true
+    },
+    {
+      "ref": "R11",
+      "owner": "USB1",
+      "pin": "A5",
+      "limit": 3.0,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.266,
+      "ok": false
+    },
+    {
+      "ref": "R14",
+      "owner": "USB1",
+      "pin": "B5",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.483,
+      "ok": true
+    },
+    {
+      "ref": "C70",
+      "owner": "U18",
+      "pin": "2",
+      "limit": 1.5,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.412,
+      "ok": true
+    },
+    {
+      "ref": "C68",
+      "owner": "U18",
+      "pin": "3",
+      "limit": 2.3,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.095,
+      "ok": true
+    },
+    {
+      "ref": "C69",
+      "owner": "U18",
+      "pin": "6",
+      "limit": 2.3,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.709,
+      "ok": true
+    },
+    {
+      "ref": "C71",
+      "owner": "U18",
+      "pin": "7",
+      "limit": 3.5,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.952,
+      "ok": true
+    },
+    {
+      "ref": "R43",
+      "owner": "U18",
+      "pin": "4",
+      "limit": 2.5,
+      "priority": 4,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.99,
+      "ok": false
+    },
+    {
+      "ref": "R44",
+      "owner": "U18",
+      "pin": "4",
+      "limit": 2.5,
+      "priority": 5,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.26,
+      "ok": false
+    },
+    {
+      "ref": "C25",
+      "owner": "U18",
+      "pin": "7",
+      "limit": 4.5,
+      "priority": 6,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.511,
+      "ok": true
+    },
+    {
+      "ref": "C43",
+      "owner": "U18",
+      "pin": "2",
+      "limit": 3.0,
+      "priority": 7,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.402,
+      "ok": true
+    },
+    {
+      "ref": "C16",
+      "owner": "U3",
+      "pin": "5",
+      "limit": 2.0,
+      "priority": 0,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 1.921,
+      "ok": true
+    },
+    {
+      "ref": "R12",
+      "owner": "U3",
+      "pin": "6",
+      "limit": 3.0,
+      "priority": 1,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.997,
+      "ok": true
+    },
+    {
+      "ref": "R16",
+      "owner": "U3",
+      "pin": "1",
+      "limit": 3.0,
+      "priority": 2,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 3.2,
+      "ok": false
+    },
+    {
+      "ref": "R15",
+      "owner": "U3",
+      "pin": "3",
+      "limit": 3.0,
+      "priority": 3,
+      "source": "Project pin/net-derived placement; same-side local support",
+      "mm": 2.6,
+      "ok": true
+    }
+  ],
+  "positions": {
+    "R30": [
+      24.3,
+      50.1,
+      90,
+      false
+    ],
+    "U6": [
+      59.84993999999999,
+      15.670000000000002,
+      180.0,
+      false
+    ],
+    "L1": [
+      65.55,
+      6.77,
+      180,
+      false
+    ],
+    "C12": [
+      46.45,
+      30.3,
+      90,
+      false
+    ],
+    "R28": [
+      43.365,
+      41.8,
+      90,
+      false
+    ],
+    "U16": [
+      12,
+      62,
+      0,
+      false
+    ],
+    "C13": [
+      63.675,
+      40.85,
+      270,
+      false
+    ],
+    "U18": [
+      11.5,
+      51.0,
+      0.0,
+      false
+    ],
+    "RF2": [
+      16.5,
+      3.599998999999997,
+      180.0,
+      false
+    ],
+    "FB8": [
+      54.45,
+      25.07,
+      180,
+      false
+    ],
+    "RF1": [
+      69.84993999999999,
+      9.670000000000002,
+      90.0,
+      false
+    ],
+    "R7": [
+      23.027,
+      40.075,
+      270,
+      false
+    ],
+    "C71": [
+      11.84,
+      53.65,
+      180,
+      false
+    ],
+    "U11": [
+      12.0,
+      40.0,
+      90.0,
+      false
+    ],
+    "FB6": [
+      10.59,
+      37.3,
+      0,
+      false
+    ],
+    "FB3": [
+      25.727,
+      37.125,
+      0,
+      false
+    ],
+    "R8": [
+      68.15,
+      16.57,
+      90,
+      false
+    ],
+    "C14": [
+      54.325,
+      44.75,
+      90,
+      false
+    ],
+    "R33": [
+      13.3,
+      64.9,
+      270,
+      false
+    ],
+    "C68": [
+      9.06,
+      53.25,
+      270,
+      false
+    ],
+    "R11": [
+      8.675,
+      35.75,
+      180,
+      false
+    ],
+    "C25": [
+      15.74,
+      50.25,
+      90,
+      false
+    ],
+    "C40": [
+      11.2,
+      59.5,
+      0,
+      false
+    ],
+    "R35": [
+      46.15,
+      50.65,
+      0,
+      false
+    ],
+    "C6": [
+      51.75,
+      24.87,
+      270,
+      false
+    ],
+    "C3": [
+      20.427,
+      39.225,
+      180,
+      false
+    ],
+    "C39": [
+      11.5,
+      64.4,
+      0,
+      false
+    ],
+    "C73": [
+      35.45,
+      59.2,
+      0,
+      false
+    ],
+    "R20": [
+      44.85,
+      67.208,
+      270,
+      false
+    ],
+    "R2": [
+      51.55,
+      16.97,
+      0,
+      false
+    ],
+    "R16": [
+      38.672,
+      26.85,
+      90,
+      false
+    ],
+    "R9": [
+      50.25,
+      21.57,
+      180,
+      false
+    ],
+    "R1": [
+      68.15,
+      19.97,
+      90,
+      false
+    ],
+    "C1": [
+      6.5,
+      10.5,
+      90.0,
+      false
+    ],
+    "D4": [
+      70.49999999999999,
+      55.0,
+      0.0,
+      false
+    ],
+    "R42": [
+      43.492,
+      61.35,
+      180,
+      false
+    ],
+    "C21": [
+      26.4,
+      47.765,
+      90,
+      false
+    ],
+    "C56": [
+      45.165,
+      45.5,
+      270,
+      false
+    ],
+    "R46": [
+      45.05,
+      59.592,
+      0,
+      false
+    ],
+    "R6": [
+      24.427,
+      35.325,
+      0,
+      false
+    ],
+    "J4": [
+      57.999999999999986,
+      71.94,
+      270.0,
+      false
+    ],
+    "U5": [
+      21.032999999999987,
+      16.563000000000002,
+      0.0,
+      false
+    ],
+    "R34": [
+      13.699999999999989,
+      68.0,
+      0.0,
+      false
+    ],
+    "R27": [
+      26.4,
+      55.4,
+      180,
+      false
+    ],
+    "R38": [
+      53.025,
+      44.25,
+      270,
+      false
+    ],
+    "R21": [
+      66.49999999999999,
+      51.0,
+      0.0,
+      false
+    ],
+    "R4": [
+      21,
+      33.6,
+      0,
+      false
+    ],
+    "R51": [
+      35.05,
+      62.8,
+      180,
+      false
+    ],
+    "R13": [
+      21.999999999999986,
+      5.400000000000006,
+      0.0,
+      false
+    ],
+    "FB4": [
+      4.0,
+      22.0,
+      90.0,
+      false
+    ],
+    "C32": [
+      60.75,
+      47.675,
+      180,
+      false
+    ],
+    "R5": [
+      5.0,
+      24.799999999999997,
+      0.0,
+      false
+    ],
+    "U1": [
+      43,
+      28,
+      180,
+      false
+    ],
+    "C26": [
+      64.8,
+      35.8,
+      0,
+      false
+    ],
+    "D1": [
+      21.999999999999986,
+      58.0,
+      0.0,
+      false
+    ],
+    "F1": [
+      6.0,
+      47.5,
+      0.0,
+      false
+    ],
+    "D8": [
+      9.0,
+      56.400000000000006,
+      0.0,
+      false
+    ],
+    "D3": [
+      70.49999999999999,
+      51.0,
+      0.0,
+      false
+    ],
+    "C48": [
+      47.05,
+      66.008,
+      0,
+      false
+    ],
+    "C9": [
+      43.4,
+      32.7,
+      180,
+      false
+    ],
+    "R25": [
+      66.49999999999999,
+      59.0,
+      0.0,
+      false
+    ],
+    "R41": [
+      64.8,
+      33.5,
+      90,
+      false
+    ],
+    "R29": [
+      45.035,
+      35.4,
+      180,
+      false
+    ],
+    "D2": [
+      10.5,
+      68.0,
+      0.0,
+      false
+    ],
+    "R48": [
+      64.175,
+      42.65,
+      0,
+      false
+    ],
+    "C10": [
+      46.65,
+      27.5,
+      90,
+      false
+    ],
+    "C69": [
+      13.94,
+      50.65,
+      90,
+      false
+    ],
+    "C72": [
+      38.15,
+      60.8,
+      0,
+      false
+    ],
+    "C23": [
+      4.299999999999997,
+      17.0,
+      90.0,
+      false
+    ],
+    "C27": [
+      10.79,
+      42.7,
+      0,
+      false
+    ],
+    "C58": [
+      48.335,
+      35.4,
+      0,
+      false
+    ],
+    "C7": [
+      52.05,
+      22.07,
+      270,
+      false
+    ],
+    "J1": [
+      33.999999999999986,
+      71.94,
+      270.0,
+      false
+    ],
+    "C11": [
+      47.165,
+      44.5,
+      180,
+      false
+    ],
+    "R37": [
+      16.573,
+      34.125,
+      0,
+      false
+    ],
+    "R22": [
+      4.0,
+      27.5,
+      0.0,
+      false
+    ],
+    "C4": [
+      23.427,
+      37.325,
+      270,
+      false
+    ],
+    "JP1": [
+      42.5,
+      22.5,
+      0,
+      false
+    ],
+    "R18": [
+      36.5,
+      42.365,
+      180,
+      false
+    ],
+    "U4": [
+      34,
+      61,
+      0,
+      false
+    ],
+    "C28": [
+      10.69,
+      44.3,
+      0,
+      false
+    ],
+    "C46": [
+      47.25,
+      59.592,
+      180,
+      false
+    ],
+    "D6": [
+      33.999999999999986,
+      67.0,
+      270.0,
+      false
+    ],
+    "R31": [
+      15.1,
+      64.4,
+      180,
+      false
+    ],
+    "FB5": [
+      6.5,
+      22.0,
+      90.0,
+      false
+    ],
+    "R43": [
+      10.76,
+      48.25,
+      270,
+      false
+    ],
+    "R53": [
+      25.200000000000003,
+      58.0,
+      0.0,
+      false
+    ],
+    "R40": [
+      62,
+      35.8,
+      0,
+      false
+    ],
+    "D9": [
+      57.999999999999986,
+      67.0,
+      270.0,
+      false
+    ],
+    "R44": [
+      9.46,
+      48.25,
+      90,
+      false
+    ],
+    "C8": [
+      51.75,
+      19.27,
+      90,
+      false
+    ],
+    "R50": [
+      37.25,
+      62.8,
+      0,
+      false
+    ],
+    "R12": [
+      35.528,
+      28.95,
+      0,
+      false
+    ],
+    "U7": [
+      21.0,
+      20.0,
+      0.0,
+      false
+    ],
+    "C75": [
+      32.05,
+      63.7,
+      180,
+      false
+    ],
+    "C43": [
+      12.06,
+      48.25,
+      90,
+      false
+    ],
+    "U9": [
+      31,
+      45,
+      90,
+      false
+    ],
+    "U13": [
+      46.999999999999986,
+      63.0,
+      270.0,
+      false
+    ],
+    "TP2": [
+      7.0,
+      28.0,
+      0.0,
+      false
+    ],
+    "C19": [
+      25.700000000000003,
+      41.0,
+      90.0,
+      false
+    ],
+    "C15": [
+      54.325,
+      42.55,
+      90,
+      false
+    ],
+    "U8": [
+      47,
+      40,
+      0,
+      false
+    ],
+    "C70": [
+      9.36,
+      50.45,
+      90,
+      false
+    ],
+    "R47": [
+      49.25,
+      67.208,
+      270,
+      false
+    ],
+    "C24": [
+      40.35,
+      52.55,
+      90,
+      false
+    ],
+    "C34": [
+      20.175,
+      52.849,
+      270,
+      false
+    ],
+    "C57": [
+      50.705,
+      38.7,
+      270,
+      false
+    ],
+    "U15": [
+      59,
+      43,
+      180,
+      false
+    ],
+    "C74": [
+      30.95,
+      61.4,
+      180,
+      false
+    ],
+    "R14": [
+      8.275,
+      42.75,
+      90,
+      false
+    ],
+    "R3": [
+      49.75,
+      19.37,
+      180,
+      false
+    ],
+    "R26": [
+      24.6,
+      55.9,
+      90,
+      false
+    ],
+    "C36": [
+      22.6,
+      50.5,
+      0,
+      false
+    ],
+    "FB2": [
+      46.95,
+      32.7,
+      0,
+      false
+    ],
+    "CN1": [
+      3.799999999999997,
+      53.5,
+      270.0,
+      false
+    ],
+    "R17": [
+      29.2,
+      41.365,
+      0,
+      false
+    ],
+    "C49": [
+      43.75,
+      63.708,
+      90,
+      false
+    ],
+    "C47": [
+      50.25,
+      60.692,
+      90,
+      false
+    ],
+    "C17": [
+      29.2,
+      48.635,
+      0,
+      false
+    ],
+    "C2": [
+      4.0,
+      10.5,
+      90.0,
+      false
+    ],
+    "USB1": [
+      4.5,
+      40.0,
+      270.0,
+      false
+    ],
+    "C18": [
+      26.7,
+      45.035,
+      90,
+      false
+    ],
+    "U2": [
+      19,
+      36.5,
+      270,
+      false
+    ],
+    "R45": [
+      12.0,
+      56.400000000000006,
+      0.0,
+      false
+    ],
+    "C37": [
+      26.125,
+      52.849,
+      270,
+      false
+    ],
+    "R36": [
+      14.073,
+      36.325,
+      270,
+      false
+    ],
+    "C22": [
+      45.65,
+      52.45,
+      90,
+      false
+    ],
+    "R49": [
+      37.65,
+      59.2,
+      180,
+      false
+    ],
+    "R15": [
+      35.972,
+      30.25,
+      180,
+      false
+    ],
+    "FB7": [
+      32.5,
+      48.635,
+      0,
+      false
+    ],
+    "C16": [
+      37.728,
+      28.9,
+      0,
+      false
+    ],
+    "C20": [
+      36.5,
+      44.165,
+      0,
+      false
+    ],
+    "C42": [
+      58.75,
+      37.525,
+      270,
+      false
+    ],
+    "C5": [
+      19.69999999999999,
+      5.400000000000006,
+      0.0,
+      false
+    ],
+    "TP1": [
+      2.0,
+      24.5,
+      0.0,
+      false
+    ],
+    "R39": [
+      62,
+      33.5,
+      90,
+      false
+    ],
+    "C33": [
+      61.55,
+      37.525,
+      90,
+      false
+    ],
+    "U14": [
+      23.4,
+      53,
+      0,
+      false
+    ],
+    "U3": [
+      36.5,
+      27,
+      0,
+      false
+    ],
+    "R52": [
+      35.85,
+      61.0,
+      90,
+      false
+    ],
+    "C41": [
+      14.725,
+      61.849,
+      270,
+      false
+    ],
+    "U10": [
+      43,
+      52,
+      0,
+      false
+    ],
+    "R32": [
+      12.9,
+      59.1,
+      270,
+      false
+    ],
+    "C35": [
+      22.9,
+      55.4,
+      0,
+      false
+    ],
+    "R23": [
+      4.0,
+      30.5,
+      0.0,
+      false
+    ],
+    "R10": [
+      39.55,
+      31.2,
+      90,
+      false
+    ],
+    "FB1": [
+      54.025,
+      47.55,
+      270,
+      false
+    ],
+    "J3": [
+      69.99999999999999,
+      28.0,
+      0.0,
+      false
+    ],
+    "R24": [
+      66.49999999999999,
+      55.0,
+      0.0,
+      false
+    ],
+    "C38": [
+      8.775,
+      61.849,
+      270,
+      false
+    ],
+    "D5": [
+      70.49999999999999,
+      59.0,
+      0.0,
+      false
+    ],
+    "R19": [
+      42.45,
+      54.95,
+      0,
+      false
+    ],
+    "L2": [
+      33.05,
+      58.6,
+      270,
+      false
+    ]
+  },
+  "regions": {
+    "U4": [
+      28.5,
+      56.5,
+      40,
+      68
+    ],
+    "U14": [
+      18,
+      49,
+      28.3,
+      59.5
+    ],
+    "U16": [
+      7.2,
+      58,
+      18,
+      68
+    ],
+    "U18": [
+      7.5,
+      47,
+      17.8,
+      57.8
+    ],
+    "U13": [
+      41.8,
+      57.8,
+      55,
+      69.6
+    ],
+    "U1": [
+      38,
+      20.5,
+      49,
+      35
+    ],
+    "U15": [
+      52,
+      36.5,
+      66,
+      51
+    ],
+    "U6": [
+      48,
+      6,
+      73,
+      28
+    ],
+    "U2": [
+      12,
+      33.2,
+      27.5,
+      42.5
+    ],
+    "U3": [
+      34.2,
+      24.5,
+      39.5,
+      33
+    ],
+    "U9": [
+      24,
+      38.5,
+      40,
+      50
+    ],
+    "U10": [
+      38.5,
+      49.5,
+      48,
+      56.2
+    ],
+    "U8": [
+      40.2,
+      33.8,
+      52.5,
+      47.8
+    ],
+    "U11": [
+      8,
+      36,
+      17.7,
+      45.8
+    ],
+    "USB1": [
+      7.7,
+      35,
+      10.4,
+      45.5
+    ]
+  },
+  "sources": {
+    "U4": "https://www.ti.com/lit/ds/symlink/tps61023.pdf section 10.1",
+    "U14": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+    "U16": "https://www.ti.com/lit/ds/symlink/tps7a52.pdf section 10.1",
+    "U1": "https://www.ti.com/lit/ds/symlink/tdc7200.pdf sections 10-11",
+    "U13": "https://www.renesas.com/en/document/dst/isl55110-isl55111-datasheet Bypassing/Output Damping"
+  }
+}

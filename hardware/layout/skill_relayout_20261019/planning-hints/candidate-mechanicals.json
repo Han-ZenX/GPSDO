@@ -1,0 +1,42 @@
+[
+  {
+    "corner": "top_left",
+    "kind": "anchor",
+    "metadata_only": true,
+    "ref": "H1",
+    "rot": 0.0,
+    "source": "existing_distinct_corners",
+    "x": 4.0,
+    "y": 4.0
+  },
+  {
+    "corner": "top_right",
+    "kind": "anchor",
+    "metadata_only": true,
+    "ref": "H2",
+    "rot": 0.0,
+    "source": "existing_distinct_corners",
+    "x": 70.99999999999999,
+    "y": 4.0
+  },
+  {
+    "corner": "bottom_left",
+    "kind": "anchor",
+    "metadata_only": true,
+    "ref": "H3",
+    "rot": 0.0,
+    "source": "existing_distinct_corners",
+    "x": 4.0,
+    "y": 71.0
+  },
+  {
+    "corner": "bottom_right",
+    "kind": "anchor",
+    "metadata_only": true,
+    "ref": "H4",
+    "rot": 0.0,
+    "source": "existing_distinct_corners",
+    "x": 70.99999999999999,
+    "y": 71.0
+  }
+]

@@ -484,12 +484,8 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [
-      "GPSDO_Rev1.0"
-    ],
-    "pinned_symbol_libs": [
-      "GPSDO_Rev1.0"
-    ]
+    "pinned_footprint_libs": [],
+    "pinned_symbol_libs": []
   },
   "meta": {
     "filename": "GPSDO_Rev1.0.kicad_pro",
@@ -649,38 +645,13 @@
       {
         "filename": "GPSDO_Rev1.0.kicad_sch",
         "name": "GPSDO_Rev1.0",
-        "uuid": "7fcb1340-2836-48b1-8b47-374fa7e6ca96"
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
-    "used_designators": "U1-17,L1-2,#PWR1-58,#PWR63,#PWR66-71,#PWR126-172,#PWR181-193,#PWR195,#PWR201-202,R1-42,R46-47,R53,#FLG1,#FLG4-5,TP1-2,RF1-2,RF10,C1-50,C56-58,JP1,J1-4,USB1,FB1-8,CN1-2,D1-9,H2-5,F1",
+    "used_designators": "",
     "variants": []
   },
-  "sheets": [
-    [
-      "7fcb1340-2836-48b1-8b47-374fa7e6ca96",
-      "GPSDO_Rev1.0"
-    ],
-    [
-      "a223c499-b8b9-41df-ac1a-b6212c61923a",
-      "MCU"
-    ],
-    [
-      "40d668d4-3bfe-4d48-b2dd-b6741ecb73a3",
-      "OCXO"
-    ],
-    [
-      "1e6d2fc9-653e-45d2-a1bc-ab2903490aa7",
-      "EXT"
-    ],
-    [
-      "73734292-4707-44de-b5e5-87f3016d7c18",
-      "GNSS"
-    ],
-    [
-      "e383764a-0b62-4980-895b-607aaa53a70d",
-      "POWER"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
