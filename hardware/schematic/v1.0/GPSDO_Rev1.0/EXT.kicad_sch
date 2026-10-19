@@ -1761,6 +1761,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GPSDO_Rev1.0:R__R_0805_2012Metric"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:R_0805_2012Metric"
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_0201_0603Metric R_0402_1005Metric R_0603_1608Metric R_0805_2012Metric R_1206_3216Metric R_1210_3225Metric"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R__R_0805_2012Metric_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R__R_0805_2012Metric_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GPSDO_Rev1.0:TPD1E10B06DPYR"
 			(pin_names
 				(offset 1.016)
@@ -1962,7 +2102,7 @@
 	)
 	(text "Pulse Outputs"
 		(exclude_from_sim no)
-		(at 109.22 43.434 0)
+		(at 110.998 44.45 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -1992,16 +2132,16 @@
 		(uuid "31b60897-9311-4b5b-a424-81e378cdbae1")
 	)
 	(junction
+		(at 165.1 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "328d6bc9-05b7-45c1-9853-2830b7a52cf6")
+	)
+	(junction
 		(at 93.98 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c649114-2303-4c6b-bcfd-7d8e730ba4b8")
-	)
-	(junction
-		(at 165.1 115.57)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9cb64dbe-f50d-420f-bb78-7b8671e30289")
 	)
 	(junction
 		(at 101.6 113.03)
@@ -2434,7 +2574,7 @@
 		(uuid "f871f9b3-193a-484d-afd1-b7ed026c9587")
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:R__C_0603_1608Metric")
+		(lib_id "GPSDO_Rev1.0:R__R_0805_2012Metric")
 		(at 179.07 102.87 90)
 		(unit 1)
 		(body_style 1)
@@ -2464,7 +2604,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+		(property "Footprint" "GPSDO_Rev1.0:R_0805_2012Metric"
 			(at 179.07 104.648 90)
 			(hide yes)
 			(show_name no)
@@ -2486,7 +2626,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "49.9 ohm source series resistor; select 0805 >=0.25W and verify temperature derating / load duty cycle"
 			(at 179.07 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -2665,6 +2805,84 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
 					(reference "R42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:+5V")
+		(at 171.45 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1d552d05-675e-4862-b4ed-06d9ebe79773")
+		(property "Reference" "#PWR0202"
+			(at 173.45 114.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "+5V2"
+			(at 171.45 112.014 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 171.45 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fc876470-5214-42ee-8a5a-2cfaa0c64f1f")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -3786,7 +4004,7 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:R__C_0603_1608Metric")
+		(lib_id "GPSDO_Rev1.0:R__R_0805_2012Metric")
 		(at 107.95 113.03 270)
 		(mirror x)
 		(unit 1)
@@ -3817,7 +4035,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+		(property "Footprint" "GPSDO_Rev1.0:R_0805_2012Metric"
 			(at 107.95 114.808 90)
 			(hide yes)
 			(show_name no)
@@ -3839,7 +4057,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "49.9 ohm source series resistor; select 0805 >=0.25W and verify temperature derating / load duty cycle"
 			(at 107.95 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -4646,84 +4864,6 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
 					(reference "#PWR0187")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "GPSDO_Rev1.0:+5V")
-		(at 171.45 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6a2e687-481f-47ea-b0b2-7662c041e1d1")
-		(property "Reference" "#PWR058"
-			(at 171.45 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 171.45 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 171.45 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4ead3095-0184-4ef6-aaeb-017bae057d55")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7"
-					(reference "#PWR058")
 					(unit 1)
 				)
 			)

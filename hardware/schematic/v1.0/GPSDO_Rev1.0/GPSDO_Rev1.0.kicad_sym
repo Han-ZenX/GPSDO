@@ -12864,6 +12864,282 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "TPS61023DRLR"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 7.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS61023DRLR"
+			(at 0 -7.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:TPS61023DRLR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://item.szlcsc.com/188416.html"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+125℃@(TJ) 1 1MHz 2.2V~5.5V 3A 3uA 500mV~5.5V Adjustable Boost Boost Built-in Overcurrent Protection、Light load efficient mode、Load disconnect Yes SOT-563 DC-DC Converters ROHS"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C919459"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "TPS61023DRLR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "C919459 SOT-563_L1.6-W1.2-P0.50-LS1.6-BR TPS61023DRLR Texas Instruments"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TPS61023DRLR_0_1"
+			(circle
+				(center -6.35 3.81)
+				(radius 0.381)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type outline)
+				)
+			)
+			(polyline
+				(pts
+					(xy 7.112 -5.08)
+					(xy 7.2111 -5.0702)
+					(xy 7.3064 -5.0413)
+					(xy 7.3942 -4.9944)
+					(xy 7.4712 -4.9312)
+					(xy 7.5344 -4.8542)
+					(xy 7.5813 -4.7664)
+					(xy 7.6102 -4.6711)
+					(xy 7.62 -4.572)
+					(xy 7.6102 4.6711)
+					(xy 7.5813 4.7664)
+					(xy 7.5344 4.8542)
+					(xy 7.4712 4.9312)
+					(xy 7.3942 4.9944)
+					(xy 7.3064 5.0413)
+					(xy 7.2111 5.0702)
+					(xy 7.112 5.08)
+					(xy -7.2111 5.0702)
+					(xy -7.3064 5.0413)
+					(xy -7.3942 4.9944)
+					(xy -7.4712 4.9312)
+					(xy -7.5344 4.8542)
+					(xy -7.5813 4.7664)
+					(xy -7.6102 4.6711)
+					(xy -7.62 4.572)
+					(xy -7.6102 -4.6711)
+					(xy -7.5813 -4.7664)
+					(xy -7.5344 -4.8542)
+					(xy -7.4712 -4.9312)
+					(xy -7.3942 -4.9944)
+					(xy -7.3064 -5.0413)
+					(xy -7.2111 -5.0702)
+					(xy -7.112 -5.08)
+					(xy 7.112 -5.08)
+				)
+				(stroke
+					(width 0.254)
+					(type solid)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TPS61023DRLR_1_1"
+			(pin input line
+				(at -10.16 2.54 0)
+				(length 2.54)
+				(name "FB"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 10.16 -2.54 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name "SW"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 10.16 2.54 180)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "TPS63700"
 		(pin_names
 			(offset 1.016)
@@ -13638,7 +13914,7 @@
 			)
 		)
 		(symbol "TPS7A5201RPSR_1_1"
-			(pin passive line
+			(pin power_in line
 				(at -11.43 6.35 0)
 				(length 2.54)
 				(name "IN"
@@ -13656,7 +13932,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -11.43 3.81 0)
 				(length 2.54)
 				(name "IN"
@@ -13674,7 +13950,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at -11.43 1.27 0)
 				(length 2.54)
 				(name "EN"
@@ -13710,7 +13986,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -11.43 -3.81 0)
 				(length 2.54)
 				(name "BIAS"
@@ -13728,7 +14004,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at -11.43 -6.35 0)
 				(length 2.54)
 				(name "GND"
@@ -13746,7 +14022,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 11.43 -6.35 180)
 				(length 2.54)
 				(name "GND"
@@ -13764,7 +14040,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin open_collector line
 				(at 11.43 -3.81 180)
 				(length 2.54)
 				(name "PG"
@@ -13782,7 +14058,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin input line
 				(at 11.43 -1.27 180)
 				(length 2.54)
 				(name "FB"
@@ -13800,7 +14076,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_out line
 				(at 11.43 1.27 180)
 				(length 2.54)
 				(name "OUT"
@@ -13836,7 +14112,7 @@
 					)
 				)
 			)
-			(pin passive line
+			(pin power_in line
 				(at 11.43 6.35 180)
 				(length 2.54)
 				(name "GND"
@@ -14630,6 +14906,185 @@
 					)
 				)
 				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+
+(symbol "L__L_Murata_DFE201610P"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "L"
+			(at -1.27 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L"
+			(at 1.905 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:L_Murata_DFE201610P"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DFE201610P-1R0M=P2; 1uH; 2.0x1.6x1.0mm shielded; 3.1A inductance-decrease rating, 2.2A thermal rating. 200mA boost design, validate startup."
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "inductor choke coil reactor magnetic"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "L_0201_0603Metric L_0402_1005Metric L_0603_1608Metric L_0805_2012Metric L_1206_3216Metric L_1210_3225Metric"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "L__L_Murata_DFE201610P_0_1"
+			(arc
+				(start 0 2.54)
+				(mid 0.6323 1.905)
+				(end 0 1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 1.27)
+				(mid 0.6323 0.635)
+				(end 0 0)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 0)
+				(mid 0.6323 -0.635)
+				(end 0 -1.27)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start 0 -1.27)
+				(mid 0.6323 -1.905)
+				(end 0 -2.54)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "L__L_Murata_DFE201610P_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)

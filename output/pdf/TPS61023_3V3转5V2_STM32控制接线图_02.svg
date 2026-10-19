@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297mm" height="210mm" viewBox="0 0 297 210"><rect width="297" height="210" fill="white"/>
+<text x="12" y="14" font-size="5.4" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">负载接法、元件规格与 STM32 启动流程</text>
+<text x="12" y="22" font-size="3" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#637487" text-anchor="start">GPSDO / 保留 ISL55110 / 3.3 V 输入 / STM32 软件使能 / 接线设计图</text>
+<line x1="12" y1="27" x2="285" y2="27" stroke="#637487" stroke-width="0.25"/>
+<text x="15" y="37" font-size="3.8" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#1468A0" text-anchor="start">02 / ISL55110 供电局部图</text>
+<rect x="198" y="57" width="73" height="54" fill="#F0F6FA" stroke="#203448" stroke-width=".35"/>
+<text x="234" y="66" font-size="3.5" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="middle">ISL55110IRZ-T</text>
+<text x="15" y="48" font-size="3.2" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#137B62" text-anchor="start">+3.3V（直接供电）</text>
+<line x1="15" y1="53" x2="190" y2="53" stroke="#137B62" stroke-width="0.45"/>
+<line x1="190" y1="53" x2="190" y2="76" stroke="#137B62" stroke-width="0.45"/>
+<line x1="190" y1="76" x2="198" y2="76" stroke="#137B62" stroke-width="0.45"/>
+<text x="201" y="77" font-size="3" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">1  VDD</text>
+<line x1="44" y1="53" x2="44" y2="58" stroke="#137B62" stroke-width="0.45"/>
+<circle cx="44" cy="53" r=".65" fill="#137B62"/>
+<line x1="44" y1="58" x2="44" y2="63" stroke="#137B62" stroke-width="0.45"/>
+<line x1="41" y1="63" x2="47" y2="63" stroke="#203448" stroke-width="0.6"/>
+<line x1="41" y1="65" x2="47" y2="65" stroke="#203448" stroke-width="0.6"/>
+<line x1="44" y1="65" x2="44" y2="70" stroke="#137B62" stroke-width="0.45"/>
+<line x1="44" y1="70" x2="44" y2="72" stroke="#137B62" stroke-width="0.45"/>
+<line x1="41.5" y1="72" x2="46.5" y2="72" stroke="#137B62" stroke-width="0.45"/>
+<line x1="42.5" y1="73" x2="45.5" y2="73" stroke="#137B62" stroke-width="0.45"/>
+<line x1="43.5" y1="74" x2="44.5" y2="74" stroke="#137B62" stroke-width="0.45"/>
+<text x="48" y="61" font-size="2.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">C5</text>
+<text x="48" y="66" font-size="2.5" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">100nF</text>
+<line x1="93" y1="53" x2="93" y2="58" stroke="#137B62" stroke-width="0.45"/>
+<circle cx="93" cy="53" r=".65" fill="#137B62"/>
+<line x1="93" y1="58" x2="93" y2="63" stroke="#137B62" stroke-width="0.45"/>
+<line x1="90" y1="63" x2="96" y2="63" stroke="#203448" stroke-width="0.6"/>
+<line x1="90" y1="65" x2="96" y2="65" stroke="#203448" stroke-width="0.6"/>
+<line x1="93" y1="65" x2="93" y2="70" stroke="#137B62" stroke-width="0.45"/>
+<line x1="93" y1="70" x2="93" y2="72" stroke="#137B62" stroke-width="0.45"/>
+<line x1="90.5" y1="72" x2="95.5" y2="72" stroke="#137B62" stroke-width="0.45"/>
+<line x1="91.5" y1="73" x2="94.5" y2="73" stroke="#137B62" stroke-width="0.45"/>
+<line x1="92.5" y1="74" x2="93.5" y2="74" stroke="#137B62" stroke-width="0.45"/>
+<text x="97" y="61" font-size="2.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">C6</text>
+<text x="97" y="66" font-size="2.5" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">4.7uF / 10V</text>
+<text x="15" y="84" font-size="3.2" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#137B62" text-anchor="start">+5V2_DRV（升压输出）</text>
+<line x1="15" y1="89" x2="190" y2="89" stroke="#137B62" stroke-width="0.45"/>
+<line x1="190" y1="89" x2="198" y2="89" stroke="#137B62" stroke-width="0.45"/>
+<text x="201" y="90" font-size="3" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">10  VH</text>
+<line x1="44" y1="89" x2="44" y2="94" stroke="#137B62" stroke-width="0.45"/>
+<circle cx="44" cy="89" r=".65" fill="#137B62"/>
+<line x1="44" y1="94" x2="44" y2="99" stroke="#137B62" stroke-width="0.45"/>
+<line x1="41" y1="99" x2="47" y2="99" stroke="#203448" stroke-width="0.6"/>
+<line x1="41" y1="101" x2="47" y2="101" stroke="#203448" stroke-width="0.6"/>
+<line x1="44" y1="101" x2="44" y2="106" stroke="#137B62" stroke-width="0.45"/>
+<line x1="44" y1="106" x2="44" y2="108" stroke="#137B62" stroke-width="0.45"/>
+<line x1="41.5" y1="108" x2="46.5" y2="108" stroke="#137B62" stroke-width="0.45"/>
+<line x1="42.5" y1="109" x2="45.5" y2="109" stroke="#137B62" stroke-width="0.45"/>
+<line x1="43.5" y1="110" x2="44.5" y2="110" stroke="#137B62" stroke-width="0.45"/>
+<text x="48" y="97" font-size="2.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">C7</text>
+<text x="48" y="102" font-size="2.5" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">100nF</text>
+<line x1="93" y1="89" x2="93" y2="94" stroke="#137B62" stroke-width="0.45"/>
+<circle cx="93" cy="89" r=".65" fill="#137B62"/>
+<line x1="93" y1="94" x2="93" y2="99" stroke="#137B62" stroke-width="0.45"/>
+<line x1="90" y1="99" x2="96" y2="99" stroke="#203448" stroke-width="0.6"/>
+<line x1="90" y1="101" x2="96" y2="101" stroke="#203448" stroke-width="0.6"/>
+<line x1="93" y1="101" x2="93" y2="106" stroke="#137B62" stroke-width="0.45"/>
+<line x1="93" y1="106" x2="93" y2="108" stroke="#137B62" stroke-width="0.45"/>
+<line x1="90.5" y1="108" x2="95.5" y2="108" stroke="#137B62" stroke-width="0.45"/>
+<line x1="91.5" y1="109" x2="94.5" y2="109" stroke="#137B62" stroke-width="0.45"/>
+<line x1="92.5" y1="110" x2="93.5" y2="110" stroke="#137B62" stroke-width="0.45"/>
+<text x="97" y="97" font-size="2.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">C8</text>
+<text x="97" y="102" font-size="2.5" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">4.7uF / 10V</text>
+<text x="234" y="104" font-size="3" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="middle">11 GND / 17 EP</text>
+<line x1="234" y1="111" x2="234" y2="116" stroke="#137B62" stroke-width="0.45"/>
+<line x1="234" y1="116" x2="234" y2="118" stroke="#137B62" stroke-width="0.45"/>
+<line x1="231.5" y1="118" x2="236.5" y2="118" stroke="#137B62" stroke-width="0.45"/>
+<line x1="232.5" y1="119" x2="235.5" y2="119" stroke="#137B62" stroke-width="0.45"/>
+<line x1="233.5" y1="120" x2="234.5" y2="120" stroke="#137B62" stroke-width="0.45"/>
+<text x="134" y="100" font-size="2.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#637487" text-anchor="start">C5、C7 紧贴对应供电脚</text>
+<text x="134" y="106" font-size="2.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#B34839" text-anchor="start">两条电源仅共地，不互连</text>
+<text x="15" y="123" font-size="3.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#1468A0" text-anchor="start">03 / 外围选型与布局</text>
+<rect x="15" y="128" width="267" height="8" fill="#F2F6F8" stroke="#D3DDE4" stroke-width=".35"/>
+<text x="18" y="133.5" font-size="2.6" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">L1</text>
+<text x="66" y="133.5" font-size="2.65" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">1uH，屏蔽型；初选 Isat ≥ 5A、Irms ≥ 1.5A；按启动/故障电流复核</text>
+<rect x="15" y="136" width="267" height="8" fill="white" stroke="#D3DDE4" stroke-width=".35"/>
+<text x="18" y="141.5" font-size="2.6" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">C1 / C2</text>
+<text x="66" y="141.5" font-size="2.65" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">10uF：0805 X5R/X7R，3.3V 下有效 ≥ 4.7uF；100nF：0402</text>
+<rect x="15" y="144" width="267" height="8" fill="#F2F6F8" stroke="#D3DDE4" stroke-width=".35"/>
+<text x="18" y="149.5" font-size="2.6" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">C3 / C4</text>
+<text x="66" y="149.5" font-size="2.65" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">各 22uF：0805/1206 X5R/X7R；5.2V 下合计有效容量 ≥ 10uF</text>
+<rect x="15" y="152" width="267" height="8" fill="white" stroke="#D3DDE4" stroke-width=".35"/>
+<text x="18" y="157.5" font-size="2.6" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">R1 / R2 / R3 / R4</text>
+<text x="66" y="157.5" font-size="2.65" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">0402；R3、R4 用 0.1%。反馈从输出电容正端安静取样</text>
+<text x="15" y="169" font-size="3.7" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#1468A0" text-anchor="start">04 / 控制与验证</text>
+<text x="15" y="176" font-size="2.8" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">启动：GPIO 先置低 → 初始化 → 3.3V 稳定后延时（初选 20ms）→ EN 拉高 → 确认 VH 稳定。</text>
+<text x="15" y="182" font-size="2.8" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">欠压/重启：启用合适 BOR；EN 关断不会主动放空输出电容，快速重启需检查 VH 残压与时序。</text>
+<text x="15" y="188" font-size="2.8" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#203448" text-anchor="start">布线：C3/C4 紧靠 VOUT/GND，缩小高频回路；电感和 SW 远离 TDC、GNSS 与调谐电压。</text>
+<line x1="12" y1="197" x2="285" y2="197" stroke="#637487" stroke-width="0.25"/>
+<text x="12" y="204" font-size="2.6" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#637487" text-anchor="start">2026-10-19 | 示例位号；未修改 KiCad 工程 | 图形及 PDF 电路均为矢量</text>
+<text x="285" y="204" font-size="2.8" font-family="SimHei,Microsoft YaHei,sans-serif" fill="#637487" text-anchor="end">2 / 2</text>
+</svg>

@@ -4836,7 +4836,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 50.8) (xy 168.91 50.8)
+			(xy 158.75 50.8) (xy 162.56 50.8)
 		)
 		(stroke
 			(width 0)
@@ -11965,7 +11965,7 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:R__C_0603_1608Metric")
+		(lib_id "GPSDO_Rev1.0:R")
 		(at 250.19 116.84 90)
 		(unit 1)
 		(body_style 1)
@@ -11995,7 +11995,7 @@
 				)
 			)
 		)
-		(property "Footprint" "GPSDO_Rev1.0:C_0603_1608Metric"
+		(property "Footprint" "GPSDO_Rev1.0:R_0603_1608Metric"
 			(at 250.19 118.618 90)
 			(hide yes)
 			(show_name no)
