@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-19T13:39:41",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.4",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/7fcb1340-2836-48b1-8b47-374fa7e6ca96",
+            "violations": [
+                {
+                    "description": "未连接的连线端点",
+                    "items": [
+                        {
+                            "description": "水平线, 长度 0.1016 mm",
+                            "pos": {
+                                "x": 1.0414,
+                                "y": 1.2192
+                            },
+                            "uuid": "eb990cf7-6271-4e81-86b3-1d82c21734b2"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                }
+            ]
+        },
+        {
+            "path": "/MCU/",
+            "uuid_path": "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/a223c499-b8b9-41df-ac1a-b6212c61923a",
+            "violations": []
+        },
+        {
+            "path": "/OCXO/",
+            "uuid_path": "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/40d668d4-3bfe-4d48-b2dd-b6741ecb73a3",
+            "violations": []
+        },
+        {
+            "path": "/EXT/",
+            "uuid_path": "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/1e6d2fc9-653e-45d2-a1bc-ab2903490aa7",
+            "violations": []
+        },
+        {
+            "path": "/GNSS/",
+            "uuid_path": "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18",
+            "violations": []
+        },
+        {
+            "path": "/POWER/",
+            "uuid_path": "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/e383764a-0b62-4980-895b-607aaa53a70d",
+            "violations": []
+        }
+    ],
+    "source": "GPSDO_Rev1.0.kicad_sch"
+}
