@@ -6312,7 +6312,7 @@
 	)
 	(hierarchical_label "10MHZ_TDC"
 		(shape input)
-		(at 170.18 107.95 270)
+		(at 170.18 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
