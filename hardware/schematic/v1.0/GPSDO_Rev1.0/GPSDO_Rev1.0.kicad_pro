@@ -645,13 +645,38 @@
       {
         "filename": "GPSDO_Rev1.0.kicad_sch",
         "name": "GPSDO_Rev1.0",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "7fcb1340-2836-48b1-8b47-374fa7e6ca96"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "7fcb1340-2836-48b1-8b47-374fa7e6ca96",
+      "GPSDO_Rev1.0"
+    ],
+    [
+      "a223c499-b8b9-41df-ac1a-b6212c61923a",
+      "MCU"
+    ],
+    [
+      "40d668d4-3bfe-4d48-b2dd-b6741ecb73a3",
+      "OCXO"
+    ],
+    [
+      "1e6d2fc9-653e-45d2-a1bc-ab2903490aa7",
+      "EXT"
+    ],
+    [
+      "73734292-4707-44de-b5e5-87f3016d7c18",
+      "GNSS"
+    ],
+    [
+      "e383764a-0b62-4980-895b-607aaa53a70d",
+      "POWER"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
