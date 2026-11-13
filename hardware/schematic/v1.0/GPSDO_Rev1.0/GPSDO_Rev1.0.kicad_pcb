@@ -2869,7 +2869,7 @@
 	(footprint "GPSDO_Rev1.0:CH340E"
 		(layer "F.Cu")
 		(uuid "2269f236-dfee-4304-abcb-19183b553ffa")
-		(at 118.415 103.44 90)
+		(at 118.78 103.94 -90)
 		(descr "150uA 20mA 2Mbps 3.3V、5V Transceiver USB 2.0 MSOP-10 USB Converters ROHS")
 		(tags "C99652 CH340E MSOP-10_L3.0-W3.0-P0.50-LS5.0-BL WCH(Jiangsu Qin Heng)")
 		(property "Reference" "U11"
@@ -2944,28 +2944,18 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 1.576197 -1.071397)
-			(end 1.576197 1.071397)
+			(start -1.576198 1.071397)
+			(end -1.576198 -1.071397)
 			(stroke
 				(width 0.1524)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "704ffa52-c012-460d-abf9-b01dbd464c0a")
+			(uuid "1876871f-a2ce-4901-8782-849827ec4848")
 		)
 		(fp_line
-			(start -1.576197 -1.071397)
-			(end 1.576197 -1.071397)
-			(stroke
-				(width 0.1524)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "08abdf7c-e330-4208-a0e5-d240a4eb7787")
-		)
-		(fp_line
-			(start 1.576197 1.071397)
-			(end -1.576197 1.071397)
+			(start 1.576198 1.071397)
+			(end -1.576198 1.071397)
 			(stroke
 				(width 0.1524)
 				(type solid)
@@ -2974,25 +2964,24 @@
 			(uuid "842ea797-c9d6-4fcf-b451-e3f5787dfa22")
 		)
 		(fp_line
-			(start -1.576197 1.071397)
-			(end -1.576197 -1.071397)
+			(start -1.576198 -1.071397)
+			(end 1.576198 -1.071397)
 			(stroke
 				(width 0.1524)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1876871f-a2ce-4901-8782-849827ec4848")
+			(uuid "08abdf7c-e330-4208-a0e5-d240a4eb7787")
 		)
-		(fp_circle
-			(center -1 0.319)
-			(end -0.85 0.319)
+		(fp_line
+			(start 1.576198 -1.071397)
+			(end 1.576198 1.071397)
 			(stroke
-				(width 0.3)
+				(width 0.1524)
 				(type solid)
 			)
-			(fill no)
 			(layer "F.SilkS")
-			(uuid "2cd8faf1-4361-4a97-9c33-79ca7de421d9")
+			(uuid "704ffa52-c012-460d-abf9-b01dbd464c0a")
 		)
 		(fp_circle
 			(center -1.592326 2.11)
@@ -3006,6 +2995,17 @@
 			(uuid "13ef79fb-11e3-498d-a2d4-e595611b6fa8")
 		)
 		(fp_circle
+			(center -1 0.319)
+			(end -0.85 0.319)
+			(stroke
+				(width 0.3)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "2cd8faf1-4361-4a97-9c33-79ca7de421d9")
+		)
+		(fp_circle
 			(center -1.016 2.794)
 			(end -0.916 2.794)
 			(stroke
@@ -3017,7 +3017,7 @@
 			(uuid "072bfea6-4081-45ec-804a-f24eb01d969c")
 		)
 		(pad "1" smd oval
-			(at -1 2.11 90)
+			(at -1 2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/MCU/USB_D+")
@@ -3026,7 +3026,7 @@
 			(uuid "116c7f87-7428-4468-bbe2-23e1e48fe80e")
 		)
 		(pad "2" smd oval
-			(at -0.499872 2.11 90)
+			(at -0.499872 2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/MCU/USB_D-")
@@ -3035,7 +3035,7 @@
 			(uuid "02fbc529-d799-4aa3-af0e-a11720722c44")
 		)
 		(pad "3" smd oval
-			(at 0 2.11 90)
+			(at 0 2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "GND")
@@ -3044,7 +3044,7 @@
 			(uuid "3e3f7e3b-ff71-4de7-a55e-a79b45f6c2f8")
 		)
 		(pad "4" smd oval
-			(at 0.500126 2.11 90)
+			(at 0.500126 2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U11-RTS#-Pad4)")
@@ -3053,7 +3053,7 @@
 			(uuid "4544a70f-47e6-463a-88c1-c1776de427f7")
 		)
 		(pad "5" smd oval
-			(at 1 2.11 90)
+			(at 1 2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U11-CTS#-Pad5)")
@@ -3062,7 +3062,7 @@
 			(uuid "c2c3a77d-b2be-4b4c-b7b6-d9c191ff820b")
 		)
 		(pad "6" smd oval
-			(at 1 -2.11 90)
+			(at 1 -2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U11-TNOW-Pad6)")
@@ -3071,7 +3071,7 @@
 			(uuid "119285f3-66a4-4210-a170-3c1835dfc972")
 		)
 		(pad "7" smd oval
-			(at 0.500126 -2.11 90)
+			(at 0.500126 -2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U11-V3)")
@@ -3080,7 +3080,7 @@
 			(uuid "567bc821-c2a4-43b5-b8d9-12684ee90f3c")
 		)
 		(pad "8" smd oval
-			(at 0 -2.11 90)
+			(at 0 -2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/MCU/USART1_RX")
@@ -3089,7 +3089,7 @@
 			(uuid "d749c055-77b7-4b7a-afdc-119659fd4705")
 		)
 		(pad "9" smd oval
-			(at -0.499872 -2.11 90)
+			(at -0.499872 -2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "/MCU/USART1_TX")
@@ -3098,7 +3098,7 @@
 			(uuid "2a5f2e33-c395-4122-aeb0-85f5e1d75646")
 		)
 		(pad "10" smd oval
-			(at -1 -2.11 90)
+			(at -1 -2.11 270)
 			(size 0.28 1.62)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "Net-(U11-V3)")
@@ -3122,7 +3122,7 @@
 	(footprint "GPSDO_Rev1.0:L_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "23a383b8-4468-44f1-a13f-d68734cc6f5b")
-		(at 117.005 100.74)
+		(at 117.74 100.94)
 		(descr "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "inductor")
 		(property "Reference" "FB6"
@@ -6328,7 +6328,7 @@
 	(footprint "GPSDO_Rev1.0:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "4d1b484d-4a27-40fa-8663-5549d7e9657c")
-		(at 177.13 123.56)
+		(at 176.2 123.54)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D4"
@@ -8500,7 +8500,7 @@
 	(footprint "GPSDO_Rev1.0:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "5ffd85eb-555e-463d-870b-68664cb5db31")
-		(at 173.1075 121.23)
+		(at 172.1775 121.21)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R21"
@@ -10691,7 +10691,7 @@
 	(footprint "GPSDO_Rev1.0:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "76fbb5cc-f2c1-45d0-96eb-9ef727fad5c7")
-		(at 177.1075 121.23)
+		(at 176.1775 121.21)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D3"
@@ -11222,7 +11222,7 @@
 	(footprint "GPSDO_Rev1.0:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "7b6c8138-f2c3-4771-aa94-58a99920f4f5")
-		(at 173.1375 125.89)
+		(at 172.2075 125.87)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R25"
@@ -27889,7 +27889,7 @@
 	(footprint "GPSDO_Rev1.0:R_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "f7975e5b-91b7-448d-8c3a-55a1973c025b")
-		(at 173.13 123.56)
+		(at 172.2 123.54)
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
 		(tags "resistor")
 		(property "Reference" "R24"
@@ -28332,7 +28332,7 @@
 	(footprint "GPSDO_Rev1.0:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "fa766944-23f2-437a-9501-2aca430c2487")
-		(at 177.1375 125.89)
+		(at 176.2075 125.87)
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "LED")
 		(property "Reference" "D5"
@@ -28891,14 +28891,6 @@
 			"9e5652c4-85a0-4bd9-a958-5ed7c3d5db82" "a791c706-48d8-4f17-a50e-f84e050d5516"
 			"ace170b7-c81d-46f2-b809-5d4b1e12fcfa" "ccdafca3-f0cd-40b1-bb50-2a30f7ceb524"
 			"dd09d248-edaa-4d98-8906-e769a51773b4" "ea3f8fb8-0598-40bf-bf8c-65a118406ee4"
-		)
-	)
-	(group "U11_USB_UART"
-		(uuid "438a230b-8a93-48aa-b8db-d5760f0e3a19")
-		(members "2269f236-dfee-4304-abcb-19183b553ffa" "23a383b8-4468-44f1-a13f-d68734cc6f5b"
-			"318f4c69-85d9-4d7d-85c2-549299a34aca" "8a29f680-acd6-4bba-b1f9-63cf9bc255fd"
-			"9a160601-4db4-4019-90bf-949ee673f27d" "c1e75716-f26f-4557-b344-67b62b544fbd"
-			"cf0420d4-b2d8-4ce8-9c37-753b664e9cc7"
 		)
 	)
 	(group "OCXO_RF_MONITOR"
