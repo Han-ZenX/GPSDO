@@ -454,6 +454,192 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "GPSDO_Rev1.0:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "GPSDO_Rev1.0:SMA_Amphenol_132289_EdgeMount"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "GPSDO_Rev1.0:FerriteBead_Small"
 			(pin_numbers
 				(hide yes)
@@ -2240,6 +2426,12 @@
 		(uuid "44ff6d5c-da61-402b-82ab-61845536ce0d")
 	)
 	(junction
+		(at 72.39 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d72d156-1227-4967-86b7-9ce960c5dac8")
+	)
+	(junction
 		(at 167.64 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2323,6 +2515,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 69.85) (xy 72.39 69.85)
+		)
+		(stroke
+			(width 0.508)
+			(type default)
+		)
+		(uuid "05365cd8-8649-4ef5-9052-24cd011c3993")
+	)
+	(wire
+		(pts
 			(xy 184.15 58.42) (xy 184.15 59.69)
 		)
 		(stroke
@@ -2340,6 +2542,26 @@
 			(type default)
 		)
 		(uuid "0bc5a376-d78e-475f-a7c5-878e3848611a")
+	)
+	(wire
+		(pts
+			(xy 72.39 58.42) (xy 72.39 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17da5499-bd68-4949-915d-06f134ef488a")
+	)
+	(wire
+		(pts
+			(xy 72.39 45.72) (xy 72.39 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c5ee7be-78b8-473d-a249-80c44dab7010")
 	)
 	(wire
 		(pts
@@ -2480,6 +2702,16 @@
 			(type default)
 		)
 		(uuid "8e8fa6a6-01a1-4106-bcb5-39499ecaee3e")
+	)
+	(wire
+		(pts
+			(xy 60.96 69.85) (xy 62.23 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94870ecc-e2bb-445c-b021-c47583c3de2e")
 	)
 	(wire
 		(pts
@@ -2738,6 +2970,164 @@
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:GND")
+		(at 48.26 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1004d6e4-7814-484c-bffd-05b26a75a351")
+		(property "Reference" "#PWR02"
+			(at 48.26 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 48.26 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 48.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0766c313-ae7f-4e9a-a2e4-c27d981e78b5")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:GND")
+		(at 67.31 40.64 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "115889f1-b1e9-46a5-bbed-e0a620c61bca")
+		(property "Reference" "#PWR0154"
+			(at 60.96 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.262 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73b9a5b2-a835-4eed-9a48-c188c2a1017c")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
+					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
@@ -3481,8 +3871,8 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:KH-IPEX-K501-29")
-		(at 59.69 69.85 270)
+		(lib_id "GPSDO_Rev1.0:GND")
+		(at 48.26 57.15 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3490,29 +3880,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "50e18c18-6982-4625-a2e0-d663936a24ec")
-		(property "Reference" "RF1"
-			(at 59.944 48.26 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "KH-IPEX-K501-29"
-			(at 59.944 50.8 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "GPSDO_Rev1.0:KH-IPEX-K501-29"
-			(at 59.69 69.85 0)
+		(fields_autoplaced yes)
+		(uuid "53fd74b5-a1a1-45a6-8186-e56228f1a10e")
+		(property "Reference" "#PWR04"
+			(at 48.26 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3522,8 +3893,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
-			(at 86.868 66.548 0)
+		(property "Value" "GND"
+			(at 48.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3533,8 +3904,8 @@
 				)
 			)
 		)
-		(property "Description" "-40℃~+90℃ 1 1.25mm 2mm 3GHz 50Ω Board Side IPEX Male Pin SMD Coaxial Connectors (RF) ROHS"
-			(at 86.868 66.548 0)
+		(property "Footprint" ""
+			(at 48.26 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3544,8 +3915,8 @@
 				)
 			)
 		)
-		(property "LCSC" "C411563"
-			(at 59.69 69.85 0)
+		(property "Datasheet" ""
+			(at 48.26 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3555,8 +3926,8 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Shenzhen Kinghelm Elec"
-			(at 59.69 69.85 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 48.26 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3565,34 +3936,256 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Manufacturer Part" "KH-IPEX-K501-29"
-			(at 59.69 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "b699b115-7b9d-4275-8483-5b7954d0bd18")
 		)
 		(pin "1"
-			(uuid "8f0d0aa2-7a07-4ce2-9c00-49d55fb32348")
-		)
-		(pin "3"
-			(uuid "affbe83a-975a-4e47-bb5b-562aacd89635")
-		)
-		(pin "2"
-			(uuid "b69f7366-a3b1-4951-b3a6-f7c1a62d3213")
+			(uuid "a9e850f9-da8f-4ac9-95fd-fa3841b60f83")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
-					(reference "RF1")
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:GND")
+		(at 35.56 69.85 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70bfcce3-dfa4-48a5-8479-c436866fc33f")
+		(property "Reference" "#PWR03"
+			(at 29.21 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 35.56 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 35.56 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0aa70491-de2d-4032-ab9e-75ec5792b883")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:Conn_Coaxial")
+		(at 72.39 40.64 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "722f82c4-c09f-4120-86f8-689063fe6b30")
+		(property "Reference" "J2"
+			(at 72.39 33.528 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 77.47 36.322 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:SMA_Amphenol_132289_EdgeMount"
+			(at 72.39 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 72.39 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a86e6068-9b01-4500-968c-58fb2e32a700")
+		)
+		(pin "2"
+			(uuid "46a6f113-f54a-4871-b5f2-0e7ee806cd84")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "GPSDO_Rev1.0:R__R_0402_1005Metric")
+		(at 72.39 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7fc4ad57-ec9a-4079-a0cb-7698782dea6e")
+		(property "Reference" "R54"
+			(at 67.056 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 69.088 55.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 70.612 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 72.39 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 72.39 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "fcb48c05-25cd-4a86-9809-0bde19b50f2d")
+		)
+		(pin "1"
+			(uuid "7cdccea4-62c4-49c0-abac-34c7ff3160b8")
+		)
+		(instances
+			(project "GPSDO_Rev1.0"
+				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -3678,8 +4271,8 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:GND")
-		(at 59.69 82.55 0)
+		(lib_id "GPSDO_Rev1.0:KH-IPEX-K501-29")
+		(at 48.26 69.85 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3687,10 +4280,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bb4c8c7-ca8d-416c-8974-b0c3d1526c05")
-		(property "Reference" "#PWR02"
-			(at 59.69 88.9 0)
+		(uuid "8caebe9d-f1fc-4d68-a227-53d76f7f097d")
+		(property "Reference" "RF1"
+			(at 48.514 48.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "KH-IPEX-K501-29"
+			(at 48.514 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "GPSDO_Rev1.0:KH-IPEX-K501-29"
+			(at 48.26 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3700,8 +4312,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 59.69 87.63 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121237_Shenzhen-Kinghelm-Elec-KH-IPEX-K501-29_C411563.pdf"
+			(at 75.438 66.548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3711,8 +4323,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 59.69 82.55 0)
+		(property "Description" "-40℃~+90℃ 1 1.25mm 2mm 3GHz 50Ω Board Side IPEX Male Pin SMD Coaxial Connectors (RF) ROHS"
+			(at 75.438 66.548 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3722,8 +4334,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 59.69 82.55 0)
+		(property "LCSC" "C411563"
+			(at 48.26 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3733,8 +4345,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 82.55 0)
+		(property "Manufacturer" "Shenzhen Kinghelm Elec"
+			(at 48.26 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3743,93 +4355,34 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(property "Manufacturer Part" "KH-IPEX-K501-29"
+			(at 48.26 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "6934333e-1c67-476a-94d8-d5a789717e67")
 		)
 		(pin "1"
-			(uuid "4396bbb2-5e71-4a29-87e7-7156b6fddf46")
+			(uuid "c6a26e79-cc36-4b3c-926f-f5ee766c6dff")
+		)
+		(pin "3"
+			(uuid "4244dd5b-a018-46bc-983c-e7be2834caa4")
+		)
+		(pin "2"
+			(uuid "2dd61acb-c4ea-44f0-9489-4271d7d034d4")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "GPSDO_Rev1.0:GND")
-		(at 59.69 57.15 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8bfb64ce-6cc9-4707-b346-a085f9aac412")
-		(property "Reference" "#PWR04"
-			(at 59.69 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5c93b701-6e69-4004-bc90-f90029ab8854")
-		)
-		(instances
-			(project "GPSDO_Rev1.0"
-				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
-					(reference "#PWR04")
+					(reference "RF1")
 					(unit 1)
 				)
 			)
@@ -4312,8 +4865,8 @@
 		)
 	)
 	(symbol
-		(lib_id "GPSDO_Rev1.0:GND")
-		(at 46.99 69.85 270)
+		(lib_id "GPSDO_Rev1.0:R__R_0402_1005Metric")
+		(at 66.04 69.85 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4321,32 +4874,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "df65826b-cc63-4730-8aeb-1e26cc27a537")
-		(property "Reference" "#PWR03"
-			(at 40.64 69.85 0)
-			(hide yes)
+		(uuid "ed657dc0-85f4-4bbc-833a-695d8ffe523d")
+		(property "Reference" "R55"
+			(at 67.818 67.564 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 41.91 69.85 0)
-			(hide yes)
+		(property "Value" "0"
+			(at 66.802 72.39 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 46.99 69.85 0)
+		(property "Footprint" "GPSDO_Rev1.0:R_0402_1005Metric"
+			(at 66.04 71.628 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4357,7 +4909,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 69.85 0)
+			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4367,8 +4919,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 69.85 0)
+		(property "Description" "Resistor"
+			(at 66.04 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4377,14 +4929,17 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "2"
+			(uuid "3d1815e2-59d2-4909-a6e1-11173602e70d")
 		)
 		(pin "1"
-			(uuid "37ccf96a-0cba-40e2-b8fd-34436c1b0cf9")
+			(uuid "a0922824-71a2-4e77-bd63-924f8c203c36")
 		)
 		(instances
 			(project "GPSDO_Rev1.0"
 				(path "/7fcb1340-2836-48b1-8b47-374fa7e6ca96/73734292-4707-44de-b5e5-87f3016d7c18"
-					(reference "#PWR03")
+					(reference "R55")
 					(unit 1)
 				)
 			)
